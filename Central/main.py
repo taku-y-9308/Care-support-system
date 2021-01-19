@@ -21,7 +21,7 @@ def callback(bt_addr, rssi, packet, additional_info):
 	temp=((temp_humi>>3)&0xFF)+10
 	humi=(((temp_humi)&0x07)*2)+20
 	press=1013
-	current_consumption=(((press_cons)*12.5)+1000
+	current_consumption=((press_cons)*12.5)+1000
 	#POST data
 	data={}
 	#value from sensors
