@@ -13,7 +13,7 @@ db = influxdb.InfluxDBClient(
 )
 def callback(bt_addr, rssi, packet, additional_info):
 	#Treat "start" as a global variable
-	global start
+	global start,weather_info
 	IR=(int(additional_info['minor'])>>8)&0xFF
 	Capsense=(additional_info['minor'])&0xFF
 	temp_humi=(int(additional_info['major'])>>8)&0xFF
