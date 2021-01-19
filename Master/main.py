@@ -13,7 +13,7 @@ db = influxdb.InfluxDBClient(
 )
 def callback(bt_addr, rssi, packet, additional_info):
 	#Treat "start" as a global variable
-	global start,weather_info
+	global start
 	IR=(int(additional_info['minor'])>>8)&0xFF
 	Capsense=(additional_info['minor'])&0xFF
 	temp_humi=(int(additional_info['major'])>>8)&0xFF
@@ -29,16 +29,16 @@ def callback(bt_addr, rssi, packet, additional_info):
 	data['humi']=humi
 	data['pressure']=press
 	data['RSSI']=rssi
-	data['weather_info']=weather_info
+
 	#Get weather information every 30 minutes
 	if time.time()-start>1800:
-		weather_info=get_weather_info.weather_info()
-		#Reset the 1800s count by substituing the current UNIX time
-		start=time.time()
+		data['weather_info']=get_weather_info.weather_info()
+		start=time.time()#Reset the 1800s count by substituting the current UNIX time
 
 	dt_now=datetime.datetime.utcnow()
 	print(dt_now,data)
 	write_to_influxdb(data)
+	data['weather_info']=0
 
 def write_to_influxdb(data):
     json_body = [{
@@ -49,11 +49,8 @@ def write_to_influxdb(data):
     db.write_points(json_body)
 
 if __name__ == "__main__":
+	start=time.time()#Get the current UNIX time
 
-	#Get the current UNIX time
-	start=time.time()
-
-	weather_info=get_weather_info.weather_info()
 	try:
 
 		while True:
