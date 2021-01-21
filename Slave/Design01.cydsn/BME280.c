@@ -73,7 +73,7 @@ uint8_t BME280_init()
 {
 	//Check the settings structure values to determine how to setup the device
 	uint8_t data_to_write = 0, device_address;  //Temporary variable
-	SCB_1_Start();
+	//SCB_1_Start();
     //I2C_Sleep();
     
 	//Reading all compensation data, range 0x88:A1, 0xE1:E7
