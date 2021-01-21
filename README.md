@@ -1,20 +1,16 @@
 # Care-support-system
 
-The care-support-system is
+Care-support-system uses the Apple provided iBeacon.
 
-* Slave : A PSoC attached to a tracheostomy tube
-* Master: A Raspy in the role of a server
-
-The Care-support-system consists of the above two components.
+* Peripheral : A PSoC attached to a tracheostomy tube
+* Central: A Raspberrypi in the role of a server
 
 ----------------------------------------------------------------
 
-Care-support-systemは、
+Care-support-systemは、Appleの提供するiBeaconを使用しています。
 
-* Slave : 気管切開チューブに取り付けたPSoC
-* Master : サーバーの役割のラズパイ
-
-の２つから構成されています。
+* Peripheral : 気管切開チューブに取り付けたPSoC
+* Central : サーバーの役割のラズパイ
 
 ## Development Environment
 Slave:PSoC4BLE(CYBLE-022001-00)  
