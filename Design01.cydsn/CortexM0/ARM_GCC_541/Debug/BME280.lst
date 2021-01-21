@@ -1,0 +1,4569 @@
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"BME280.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.global	bme280
+  20              		.data
+  21              		.align	2
+  22              		.type	bme280, %object
+  23              		.size	bme280, 64
+  24              	bme280:
+  25 0000 00       		.byte	0
+  26 0001 76       		.byte	118
+  27 0002 0A       		.byte	10
+  28 0003 03       		.byte	3
+  29 0004 0000     		.space	2
+  30 0006 01       		.byte	1
+  31 0007 01       		.byte	1
+  32 0008 01       		.byte	1
+  33 0009 00       		.space	1
+  34 000a 00000000 		.space	36
+  34      00000000 
+  34      00000000 
+  34      00000000 
+  34      00000000 
+  35 002e 0000     		.space	2
+  36 0030 00000000 		.word	0
+  37 0034 003C1CC6 		.word	-971228160
+  38 0038 003C1CC6 		.word	-971228160
+  39 003c 003C1CC6 		.word	-971228160
+  40              		.section	.text.BME280_start,"ax",%progbits
+  41              		.align	2
+  42              		.global	BME280_start
+  43              		.code	16
+  44              		.thumb_func
+  45              		.type	BME280_start, %function
+  46              	BME280_start:
+  47              	.LFB35:
+  48              		.file 1 "..\\..\\ble-beacon_capsense+vl6180+bme280\\Design01.cydsn\\BME280.c"
+   1:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** /******************************************************************************
+   2:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** SparkFunBME280.cpp
+   3:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** BME280 Arduino and Teensy Driver
+   4:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** Marshall Taylor @ SparkFun Electronics
+   5:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** May 20, 2015
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 2
+
+
+   6:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** https://github.com/sparkfun/BME280_Breakout
+   7:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+   8:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** Resources:
+   9:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** Uses Wire.h for i2c operation
+  10:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** Uses SPI.h for SPI operation
+  11:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+  12:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** Development environment specifics:
+  13:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** Arduino IDE 1.6.4
+  14:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** Teensy loader 1.23
+  15:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+  16:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** This code is released under the [MIT License](http://opensource.org/licenses/MIT).
+  17:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** Please review the LICENSE.md file included with this example. If you have any questions 
+  18:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** or concerns with licensing, please contact techsupport@sparkfun.com.
+  19:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** Distributed as-is; no warranty is given.
+  20:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** ******************************************************************************/
+  21:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //See SparkFunBME280.h for additional topology notes.
+  22:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+  23:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** #include "BME280.h"
+  24:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** #include <math.h>
+  25:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+  26:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+  27:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //****************************************************************************//
+  28:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //
+  29:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //  Settings and configuration
+  30:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //
+  31:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //****************************************************************************//
+  32:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+  33:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //Construct with these default settings if nothing is specified
+  34:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** BME280 bme280 = {
+  35:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     .settings = {
+  36:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****         //Select interface mode
+  37:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****         .commInterface  = BME280_I2C_MODE,
+  38:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     	//Select address for I2C.  Does nothing for SPI            
+  39:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****         .I2CAddress     = 0x76,
+  40:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     	//Select CS pin for SPI.  Does nothing for I2C            
+  41:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****         .chipSelectPin  = 10,
+  42:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****         .runMode        = 3,
+  43:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****         .tempOverSample = 1,
+  44:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****         .pressOverSample= 1,
+  45:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****         .humidOverSample= 1
+  46:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****         },
+  47:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     .calibration = {},
+  48:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     .t_fine = 0,
+  49:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     .temp_C     = -9999,
+  50:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     .press_Pa   = -9999,
+  51:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     .RH         = -9999
+  52:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** };
+  53:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+  54:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** void BME280_start() {
+  49              		.loc 1 54 0
+  50              		.cfi_startproc
+  51              		@ args = 0, pretend = 0, frame = 0
+  52              		@ frame_needed = 1, uses_anonymous_args = 0
+  53 0000 80B5     		push	{r7, lr}
+  54              		.cfi_def_cfa_offset 8
+  55              		.cfi_offset 7, -8
+  56              		.cfi_offset 14, -4
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 3
+
+
+  57 0002 00AF     		add	r7, sp, #0
+  58              		.cfi_def_cfa_register 7
+  55:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     SCB_1_Start();
+  59              		.loc 1 55 0
+  60 0004 FFF7FEFF 		bl	SCB_1_Start
+  56:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     //I2C_Sleep();
+  57:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** }
+  61              		.loc 1 57 0
+  62 0008 C046     		nop
+  63 000a BD46     		mov	sp, r7
+  64              		@ sp needed
+  65 000c 80BD     		pop	{r7, pc}
+  66              		.cfi_endproc
+  67              	.LFE35:
+  68              		.size	BME280_start, .-BME280_start
+  69 000e C046     		.section	.text.BME280_stop,"ax",%progbits
+  70              		.align	2
+  71              		.global	BME280_stop
+  72              		.code	16
+  73              		.thumb_func
+  74              		.type	BME280_stop, %function
+  75              	BME280_stop:
+  76              	.LFB36:
+  58:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+  59:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** void BME280_stop() {
+  77              		.loc 1 59 0
+  78              		.cfi_startproc
+  79              		@ args = 0, pretend = 0, frame = 0
+  80              		@ frame_needed = 1, uses_anonymous_args = 0
+  81 0000 80B5     		push	{r7, lr}
+  82              		.cfi_def_cfa_offset 8
+  83              		.cfi_offset 7, -8
+  84              		.cfi_offset 14, -4
+  85 0002 00AF     		add	r7, sp, #0
+  86              		.cfi_def_cfa_register 7
+  60:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     SCB_1_Stop();
+  87              		.loc 1 60 0
+  88 0004 FFF7FEFF 		bl	SCB_1_Stop
+  61:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** }
+  89              		.loc 1 61 0
+  90 0008 C046     		nop
+  91 000a BD46     		mov	sp, r7
+  92              		@ sp needed
+  93 000c 80BD     		pop	{r7, pc}
+  94              		.cfi_endproc
+  95              	.LFE36:
+  96              		.size	BME280_stop, .-BME280_stop
+  97 000e C046     		.section	.text.BME280_init,"ax",%progbits
+  98              		.align	2
+  99              		.global	BME280_init
+ 100              		.code	16
+ 101              		.thumb_func
+ 102              		.type	BME280_init, %function
+ 103              	BME280_init:
+ 104              	.LFB37:
+  62:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+  63:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //****************************************************************************//
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 4
+
+
+  64:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //
+  65:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //  Configuration section
+  66:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //
+  67:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //  This uses the stored SensorSettings to start the IMU
+  68:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //  Use statements such as "mySensor.settings.commInterface = SPI_MODE;" to 
+  69:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //  configure before calling .begin();
+  70:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //
+  71:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //****************************************************************************//
+  72:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** uint8_t BME280_init()
+  73:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** {
+ 105              		.loc 1 73 0
+ 106              		.cfi_startproc
+ 107              		@ args = 0, pretend = 0, frame = 8
+ 108              		@ frame_needed = 1, uses_anonymous_args = 0
+ 109 0000 90B5     		push	{r4, r7, lr}
+ 110              		.cfi_def_cfa_offset 12
+ 111              		.cfi_offset 4, -12
+ 112              		.cfi_offset 7, -8
+ 113              		.cfi_offset 14, -4
+ 114 0002 83B0     		sub	sp, sp, #12
+ 115              		.cfi_def_cfa_offset 24
+ 116 0004 00AF     		add	r7, sp, #0
+ 117              		.cfi_def_cfa_register 7
+  74:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	//Check the settings structure values to determine how to setup the device
+  75:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	uint8_t data_to_write = 0, device_address;  //Temporary variable
+ 118              		.loc 1 75 0
+ 119 0006 FB1D     		adds	r3, r7, #7
+ 120 0008 0022     		movs	r2, #0
+ 121 000a 1A70     		strb	r2, [r3]
+  76:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	SCB_1_Start();
+ 122              		.loc 1 76 0
+ 123 000c FFF7FEFF 		bl	SCB_1_Start
+  77:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     //I2C_Sleep();
+  78:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     
+  79:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	//Reading all compensation data, range 0x88:A1, 0xE1:E7
+  80:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	bme280.calibration.dig_T1 = ((uint16_t)((BME280_readRegister(BME280_DIG_T1_MSB_REG) << 8) + BME280
+ 124              		.loc 1 80 0
+ 125 0010 8920     		movs	r0, #137
+ 126 0012 FFF7FEFF 		bl	BME280_readRegister
+ 127 0016 0300     		movs	r3, r0
+ 128 0018 9BB2     		uxth	r3, r3
+ 129 001a 1B02     		lsls	r3, r3, #8
+ 130 001c 9CB2     		uxth	r4, r3
+ 131 001e 8820     		movs	r0, #136
+ 132 0020 FFF7FEFF 		bl	BME280_readRegister
+ 133 0024 0300     		movs	r3, r0
+ 134 0026 9BB2     		uxth	r3, r3
+ 135 0028 E318     		adds	r3, r4, r3
+ 136 002a 9AB2     		uxth	r2, r3
+ 137 002c B44B     		ldr	r3, .L5
+ 138 002e 5A81     		strh	r2, [r3, #10]
+  81:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	bme280.calibration.dig_T2 = ((int16_t)((BME280_readRegister(BME280_DIG_T2_MSB_REG) << 8) + BME280_
+ 139              		.loc 1 81 0
+ 140 0030 8B20     		movs	r0, #139
+ 141 0032 FFF7FEFF 		bl	BME280_readRegister
+ 142 0036 0300     		movs	r3, r0
+ 143 0038 9BB2     		uxth	r3, r3
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 5
+
+
+ 144 003a 1B02     		lsls	r3, r3, #8
+ 145 003c 9CB2     		uxth	r4, r3
+ 146 003e 8A20     		movs	r0, #138
+ 147 0040 FFF7FEFF 		bl	BME280_readRegister
+ 148 0044 0300     		movs	r3, r0
+ 149 0046 9BB2     		uxth	r3, r3
+ 150 0048 E318     		adds	r3, r4, r3
+ 151 004a 9BB2     		uxth	r3, r3
+ 152 004c 1AB2     		sxth	r2, r3
+ 153 004e AC4B     		ldr	r3, .L5
+ 154 0050 9A81     		strh	r2, [r3, #12]
+  82:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	bme280.calibration.dig_T3 = ((int16_t)((BME280_readRegister(BME280_DIG_T3_MSB_REG) << 8) + BME280_
+ 155              		.loc 1 82 0
+ 156 0052 8D20     		movs	r0, #141
+ 157 0054 FFF7FEFF 		bl	BME280_readRegister
+ 158 0058 0300     		movs	r3, r0
+ 159 005a 9BB2     		uxth	r3, r3
+ 160 005c 1B02     		lsls	r3, r3, #8
+ 161 005e 9CB2     		uxth	r4, r3
+ 162 0060 8C20     		movs	r0, #140
+ 163 0062 FFF7FEFF 		bl	BME280_readRegister
+ 164 0066 0300     		movs	r3, r0
+ 165 0068 9BB2     		uxth	r3, r3
+ 166 006a E318     		adds	r3, r4, r3
+ 167 006c 9BB2     		uxth	r3, r3
+ 168 006e 1AB2     		sxth	r2, r3
+ 169 0070 A34B     		ldr	r3, .L5
+ 170 0072 DA81     		strh	r2, [r3, #14]
+  83:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+  84:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	bme280.calibration.dig_P1 = ((uint16_t)((BME280_readRegister(BME280_DIG_P1_MSB_REG) << 8) + BME280
+ 171              		.loc 1 84 0
+ 172 0074 8F20     		movs	r0, #143
+ 173 0076 FFF7FEFF 		bl	BME280_readRegister
+ 174 007a 0300     		movs	r3, r0
+ 175 007c 9BB2     		uxth	r3, r3
+ 176 007e 1B02     		lsls	r3, r3, #8
+ 177 0080 9CB2     		uxth	r4, r3
+ 178 0082 8E20     		movs	r0, #142
+ 179 0084 FFF7FEFF 		bl	BME280_readRegister
+ 180 0088 0300     		movs	r3, r0
+ 181 008a 9BB2     		uxth	r3, r3
+ 182 008c E318     		adds	r3, r4, r3
+ 183 008e 9AB2     		uxth	r2, r3
+ 184 0090 9B4B     		ldr	r3, .L5
+ 185 0092 1A82     		strh	r2, [r3, #16]
+  85:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	bme280.calibration.dig_P2 = ((int16_t)((BME280_readRegister(BME280_DIG_P2_MSB_REG) << 8) + BME280_
+ 186              		.loc 1 85 0
+ 187 0094 9120     		movs	r0, #145
+ 188 0096 FFF7FEFF 		bl	BME280_readRegister
+ 189 009a 0300     		movs	r3, r0
+ 190 009c 9BB2     		uxth	r3, r3
+ 191 009e 1B02     		lsls	r3, r3, #8
+ 192 00a0 9CB2     		uxth	r4, r3
+ 193 00a2 9020     		movs	r0, #144
+ 194 00a4 FFF7FEFF 		bl	BME280_readRegister
+ 195 00a8 0300     		movs	r3, r0
+ 196 00aa 9BB2     		uxth	r3, r3
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 6
+
+
+ 197 00ac E318     		adds	r3, r4, r3
+ 198 00ae 9BB2     		uxth	r3, r3
+ 199 00b0 1AB2     		sxth	r2, r3
+ 200 00b2 934B     		ldr	r3, .L5
+ 201 00b4 5A82     		strh	r2, [r3, #18]
+  86:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	bme280.calibration.dig_P3 = ((int16_t)((BME280_readRegister(BME280_DIG_P3_MSB_REG) << 8) + BME280_
+ 202              		.loc 1 86 0
+ 203 00b6 9320     		movs	r0, #147
+ 204 00b8 FFF7FEFF 		bl	BME280_readRegister
+ 205 00bc 0300     		movs	r3, r0
+ 206 00be 9BB2     		uxth	r3, r3
+ 207 00c0 1B02     		lsls	r3, r3, #8
+ 208 00c2 9CB2     		uxth	r4, r3
+ 209 00c4 9220     		movs	r0, #146
+ 210 00c6 FFF7FEFF 		bl	BME280_readRegister
+ 211 00ca 0300     		movs	r3, r0
+ 212 00cc 9BB2     		uxth	r3, r3
+ 213 00ce E318     		adds	r3, r4, r3
+ 214 00d0 9BB2     		uxth	r3, r3
+ 215 00d2 1AB2     		sxth	r2, r3
+ 216 00d4 8A4B     		ldr	r3, .L5
+ 217 00d6 9A82     		strh	r2, [r3, #20]
+  87:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	bme280.calibration.dig_P4 = ((int16_t)((BME280_readRegister(BME280_DIG_P4_MSB_REG) << 8) + BME280_
+ 218              		.loc 1 87 0
+ 219 00d8 9520     		movs	r0, #149
+ 220 00da FFF7FEFF 		bl	BME280_readRegister
+ 221 00de 0300     		movs	r3, r0
+ 222 00e0 9BB2     		uxth	r3, r3
+ 223 00e2 1B02     		lsls	r3, r3, #8
+ 224 00e4 9CB2     		uxth	r4, r3
+ 225 00e6 9420     		movs	r0, #148
+ 226 00e8 FFF7FEFF 		bl	BME280_readRegister
+ 227 00ec 0300     		movs	r3, r0
+ 228 00ee 9BB2     		uxth	r3, r3
+ 229 00f0 E318     		adds	r3, r4, r3
+ 230 00f2 9BB2     		uxth	r3, r3
+ 231 00f4 1AB2     		sxth	r2, r3
+ 232 00f6 824B     		ldr	r3, .L5
+ 233 00f8 DA82     		strh	r2, [r3, #22]
+  88:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	bme280.calibration.dig_P5 = ((int16_t)((BME280_readRegister(BME280_DIG_P5_MSB_REG) << 8) + BME280_
+ 234              		.loc 1 88 0
+ 235 00fa 9720     		movs	r0, #151
+ 236 00fc FFF7FEFF 		bl	BME280_readRegister
+ 237 0100 0300     		movs	r3, r0
+ 238 0102 9BB2     		uxth	r3, r3
+ 239 0104 1B02     		lsls	r3, r3, #8
+ 240 0106 9CB2     		uxth	r4, r3
+ 241 0108 9620     		movs	r0, #150
+ 242 010a FFF7FEFF 		bl	BME280_readRegister
+ 243 010e 0300     		movs	r3, r0
+ 244 0110 9BB2     		uxth	r3, r3
+ 245 0112 E318     		adds	r3, r4, r3
+ 246 0114 9BB2     		uxth	r3, r3
+ 247 0116 1AB2     		sxth	r2, r3
+ 248 0118 794B     		ldr	r3, .L5
+ 249 011a 1A83     		strh	r2, [r3, #24]
+  89:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	bme280.calibration.dig_P6 = ((int16_t)((BME280_readRegister(BME280_DIG_P6_MSB_REG) << 8) + BME280_
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 7
+
+
+ 250              		.loc 1 89 0
+ 251 011c 9920     		movs	r0, #153
+ 252 011e FFF7FEFF 		bl	BME280_readRegister
+ 253 0122 0300     		movs	r3, r0
+ 254 0124 9BB2     		uxth	r3, r3
+ 255 0126 1B02     		lsls	r3, r3, #8
+ 256 0128 9CB2     		uxth	r4, r3
+ 257 012a 9820     		movs	r0, #152
+ 258 012c FFF7FEFF 		bl	BME280_readRegister
+ 259 0130 0300     		movs	r3, r0
+ 260 0132 9BB2     		uxth	r3, r3
+ 261 0134 E318     		adds	r3, r4, r3
+ 262 0136 9BB2     		uxth	r3, r3
+ 263 0138 1AB2     		sxth	r2, r3
+ 264 013a 714B     		ldr	r3, .L5
+ 265 013c 5A83     		strh	r2, [r3, #26]
+  90:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	bme280.calibration.dig_P7 = ((int16_t)((BME280_readRegister(BME280_DIG_P7_MSB_REG) << 8) + BME280_
+ 266              		.loc 1 90 0
+ 267 013e 9B20     		movs	r0, #155
+ 268 0140 FFF7FEFF 		bl	BME280_readRegister
+ 269 0144 0300     		movs	r3, r0
+ 270 0146 9BB2     		uxth	r3, r3
+ 271 0148 1B02     		lsls	r3, r3, #8
+ 272 014a 9CB2     		uxth	r4, r3
+ 273 014c 9A20     		movs	r0, #154
+ 274 014e FFF7FEFF 		bl	BME280_readRegister
+ 275 0152 0300     		movs	r3, r0
+ 276 0154 9BB2     		uxth	r3, r3
+ 277 0156 E318     		adds	r3, r4, r3
+ 278 0158 9BB2     		uxth	r3, r3
+ 279 015a 1AB2     		sxth	r2, r3
+ 280 015c 684B     		ldr	r3, .L5
+ 281 015e 9A83     		strh	r2, [r3, #28]
+  91:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	bme280.calibration.dig_P8 = ((int16_t)((BME280_readRegister(BME280_DIG_P8_MSB_REG) << 8) + BME280_
+ 282              		.loc 1 91 0
+ 283 0160 9D20     		movs	r0, #157
+ 284 0162 FFF7FEFF 		bl	BME280_readRegister
+ 285 0166 0300     		movs	r3, r0
+ 286 0168 9BB2     		uxth	r3, r3
+ 287 016a 1B02     		lsls	r3, r3, #8
+ 288 016c 9CB2     		uxth	r4, r3
+ 289 016e 9C20     		movs	r0, #156
+ 290 0170 FFF7FEFF 		bl	BME280_readRegister
+ 291 0174 0300     		movs	r3, r0
+ 292 0176 9BB2     		uxth	r3, r3
+ 293 0178 E318     		adds	r3, r4, r3
+ 294 017a 9BB2     		uxth	r3, r3
+ 295 017c 1AB2     		sxth	r2, r3
+ 296 017e 604B     		ldr	r3, .L5
+ 297 0180 DA83     		strh	r2, [r3, #30]
+  92:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	bme280.calibration.dig_P9 = ((int16_t)((BME280_readRegister(BME280_DIG_P9_MSB_REG) << 8) + BME280_
+ 298              		.loc 1 92 0
+ 299 0182 9F20     		movs	r0, #159
+ 300 0184 FFF7FEFF 		bl	BME280_readRegister
+ 301 0188 0300     		movs	r3, r0
+ 302 018a 9BB2     		uxth	r3, r3
+ 303 018c 1B02     		lsls	r3, r3, #8
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 8
+
+
+ 304 018e 9CB2     		uxth	r4, r3
+ 305 0190 9E20     		movs	r0, #158
+ 306 0192 FFF7FEFF 		bl	BME280_readRegister
+ 307 0196 0300     		movs	r3, r0
+ 308 0198 9BB2     		uxth	r3, r3
+ 309 019a E318     		adds	r3, r4, r3
+ 310 019c 9BB2     		uxth	r3, r3
+ 311 019e 1AB2     		sxth	r2, r3
+ 312 01a0 574B     		ldr	r3, .L5
+ 313 01a2 1A84     		strh	r2, [r3, #32]
+  93:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+  94:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	bme280.calibration.dig_H1 = ((uint8_t)(BME280_readRegister(BME280_DIG_H1_REG)));
+ 314              		.loc 1 94 0
+ 315 01a4 A120     		movs	r0, #161
+ 316 01a6 FFF7FEFF 		bl	BME280_readRegister
+ 317 01aa 0300     		movs	r3, r0
+ 318 01ac 1900     		movs	r1, r3
+ 319 01ae 544B     		ldr	r3, .L5
+ 320 01b0 2222     		movs	r2, #34
+ 321 01b2 9954     		strb	r1, [r3, r2]
+  95:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	bme280.calibration.dig_H2 = ((int16_t)((BME280_readRegister(BME280_DIG_H2_MSB_REG) << 8) + BME280_
+ 322              		.loc 1 95 0
+ 323 01b4 E220     		movs	r0, #226
+ 324 01b6 FFF7FEFF 		bl	BME280_readRegister
+ 325 01ba 0300     		movs	r3, r0
+ 326 01bc 9BB2     		uxth	r3, r3
+ 327 01be 1B02     		lsls	r3, r3, #8
+ 328 01c0 9CB2     		uxth	r4, r3
+ 329 01c2 E120     		movs	r0, #225
+ 330 01c4 FFF7FEFF 		bl	BME280_readRegister
+ 331 01c8 0300     		movs	r3, r0
+ 332 01ca 9BB2     		uxth	r3, r3
+ 333 01cc E318     		adds	r3, r4, r3
+ 334 01ce 9BB2     		uxth	r3, r3
+ 335 01d0 1AB2     		sxth	r2, r3
+ 336 01d2 4B4B     		ldr	r3, .L5
+ 337 01d4 9A84     		strh	r2, [r3, #36]
+  96:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	bme280.calibration.dig_H3 = ((uint8_t)(BME280_readRegister(BME280_DIG_H3_REG)));
+ 338              		.loc 1 96 0
+ 339 01d6 E320     		movs	r0, #227
+ 340 01d8 FFF7FEFF 		bl	BME280_readRegister
+ 341 01dc 0300     		movs	r3, r0
+ 342 01de 1900     		movs	r1, r3
+ 343 01e0 474B     		ldr	r3, .L5
+ 344 01e2 2622     		movs	r2, #38
+ 345 01e4 9954     		strb	r1, [r3, r2]
+  97:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	bme280.calibration.dig_H4 = ((int16_t)((BME280_readRegister(BME280_DIG_H4_MSB_REG) << 4) + (BME280
+ 346              		.loc 1 97 0
+ 347 01e6 E420     		movs	r0, #228
+ 348 01e8 FFF7FEFF 		bl	BME280_readRegister
+ 349 01ec 0300     		movs	r3, r0
+ 350 01ee 9BB2     		uxth	r3, r3
+ 351 01f0 1B01     		lsls	r3, r3, #4
+ 352 01f2 9CB2     		uxth	r4, r3
+ 353 01f4 E520     		movs	r0, #229
+ 354 01f6 FFF7FEFF 		bl	BME280_readRegister
+ 355 01fa 0300     		movs	r3, r0
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 9
+
+
+ 356 01fc 9BB2     		uxth	r3, r3
+ 357 01fe 0F22     		movs	r2, #15
+ 358 0200 1340     		ands	r3, r2
+ 359 0202 9BB2     		uxth	r3, r3
+ 360 0204 E318     		adds	r3, r4, r3
+ 361 0206 9BB2     		uxth	r3, r3
+ 362 0208 1AB2     		sxth	r2, r3
+ 363 020a 3D4B     		ldr	r3, .L5
+ 364 020c 1A85     		strh	r2, [r3, #40]
+  98:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	bme280.calibration.dig_H5 = ((int16_t)((BME280_readRegister(BME280_DIG_H5_MSB_REG) << 4) + ((BME28
+ 365              		.loc 1 98 0
+ 366 020e E620     		movs	r0, #230
+ 367 0210 FFF7FEFF 		bl	BME280_readRegister
+ 368 0214 0300     		movs	r3, r0
+ 369 0216 9BB2     		uxth	r3, r3
+ 370 0218 1B01     		lsls	r3, r3, #4
+ 371 021a 9CB2     		uxth	r4, r3
+ 372 021c E520     		movs	r0, #229
+ 373 021e FFF7FEFF 		bl	BME280_readRegister
+ 374 0222 0300     		movs	r3, r0
+ 375 0224 1B09     		lsrs	r3, r3, #4
+ 376 0226 DBB2     		uxtb	r3, r3
+ 377 0228 9BB2     		uxth	r3, r3
+ 378 022a 0F22     		movs	r2, #15
+ 379 022c 1340     		ands	r3, r2
+ 380 022e 9BB2     		uxth	r3, r3
+ 381 0230 E318     		adds	r3, r4, r3
+ 382 0232 9BB2     		uxth	r3, r3
+ 383 0234 1AB2     		sxth	r2, r3
+ 384 0236 324B     		ldr	r3, .L5
+ 385 0238 5A85     		strh	r2, [r3, #42]
+  99:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	bme280.calibration.dig_H6 = ((uint8_t)BME280_readRegister(BME280_DIG_H6_REG));
+ 386              		.loc 1 99 0
+ 387 023a E720     		movs	r0, #231
+ 388 023c FFF7FEFF 		bl	BME280_readRegister
+ 389 0240 0300     		movs	r3, r0
+ 390 0242 1900     		movs	r1, r3
+ 391 0244 2E4B     		ldr	r3, .L5
+ 392 0246 2C22     		movs	r2, #44
+ 393 0248 9954     		strb	r1, [r3, r2]
+ 100:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+ 101:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	//Set the oversampling control words.
+ 102:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	//config will only be writeable in sleep mode, so first insure that.
+ 103:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	BME280_writeRegister(BME280_CTRL_MEAS_REG, 0x00);
+ 394              		.loc 1 103 0
+ 395 024a 0021     		movs	r1, #0
+ 396 024c F420     		movs	r0, #244
+ 397 024e FFF7FEFF 		bl	BME280_writeRegister
+ 104:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	
+ 105:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	//Set the config word
+ 106:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	data_to_write = (bme280.settings.tStandby << 0x5) & 0xE0;
+ 398              		.loc 1 106 0
+ 399 0252 2B4B     		ldr	r3, .L5
+ 400 0254 1B79     		ldrb	r3, [r3, #4]
+ 401 0256 5A01     		lsls	r2, r3, #5
+ 402 0258 FB1D     		adds	r3, r7, #7
+ 403 025a 1A70     		strb	r2, [r3]
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 10
+
+
+ 107:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	data_to_write |= (bme280.settings.filter << 0x02) & 0x1C;
+ 404              		.loc 1 107 0
+ 405 025c 284B     		ldr	r3, .L5
+ 406 025e 5B79     		ldrb	r3, [r3, #5]
+ 407 0260 9B00     		lsls	r3, r3, #2
+ 408 0262 5BB2     		sxtb	r3, r3
+ 409 0264 1C22     		movs	r2, #28
+ 410 0266 1340     		ands	r3, r2
+ 411 0268 5AB2     		sxtb	r2, r3
+ 412 026a FB1D     		adds	r3, r7, #7
+ 413 026c 1B78     		ldrb	r3, [r3]
+ 414 026e 5BB2     		sxtb	r3, r3
+ 415 0270 1343     		orrs	r3, r2
+ 416 0272 5AB2     		sxtb	r2, r3
+ 417 0274 FB1D     		adds	r3, r7, #7
+ 418 0276 1A70     		strb	r2, [r3]
+ 108:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	BME280_writeRegister(BME280_CONFIG_REG, data_to_write);
+ 419              		.loc 1 108 0
+ 420 0278 FB1D     		adds	r3, r7, #7
+ 421 027a 1B78     		ldrb	r3, [r3]
+ 422 027c 1900     		movs	r1, r3
+ 423 027e F520     		movs	r0, #245
+ 424 0280 FFF7FEFF 		bl	BME280_writeRegister
+ 109:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	
+ 110:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	//Set ctrl_hum first, then ctrl_meas to activate ctrl_hum
+ 111:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	data_to_write = bme280.settings.humidOverSample & 0x07; //all other bits can be ignored
+ 425              		.loc 1 111 0
+ 426 0284 1E4B     		ldr	r3, .L5
+ 427 0286 1A7A     		ldrb	r2, [r3, #8]
+ 428 0288 FB1D     		adds	r3, r7, #7
+ 429 028a 0721     		movs	r1, #7
+ 430 028c 0A40     		ands	r2, r1
+ 431 028e 1A70     		strb	r2, [r3]
+ 112:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	BME280_writeRegister(BME280_CTRL_HUMIDITY_REG, data_to_write);
+ 432              		.loc 1 112 0
+ 433 0290 FB1D     		adds	r3, r7, #7
+ 434 0292 1B78     		ldrb	r3, [r3]
+ 435 0294 1900     		movs	r1, r3
+ 436 0296 F220     		movs	r0, #242
+ 437 0298 FFF7FEFF 		bl	BME280_writeRegister
+ 113:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	
+ 114:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	//set ctrl_meas
+ 115:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	//First, set temp oversampling
+ 116:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	data_to_write = (bme280.settings.tempOverSample << 0x05) & 0xE0;
+ 438              		.loc 1 116 0
+ 439 029c 184B     		ldr	r3, .L5
+ 440 029e 9B79     		ldrb	r3, [r3, #6]
+ 441 02a0 5A01     		lsls	r2, r3, #5
+ 442 02a2 FB1D     		adds	r3, r7, #7
+ 443 02a4 1A70     		strb	r2, [r3]
+ 117:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	//Next, pressure oversampling
+ 118:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	data_to_write |= (bme280.settings.pressOverSample << 0x02) & 0x1C;
+ 444              		.loc 1 118 0
+ 445 02a6 164B     		ldr	r3, .L5
+ 446 02a8 DB79     		ldrb	r3, [r3, #7]
+ 447 02aa 9B00     		lsls	r3, r3, #2
+ 448 02ac 5BB2     		sxtb	r3, r3
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 11
+
+
+ 449 02ae 1C22     		movs	r2, #28
+ 450 02b0 1340     		ands	r3, r2
+ 451 02b2 5AB2     		sxtb	r2, r3
+ 452 02b4 FB1D     		adds	r3, r7, #7
+ 453 02b6 1B78     		ldrb	r3, [r3]
+ 454 02b8 5BB2     		sxtb	r3, r3
+ 455 02ba 1343     		orrs	r3, r2
+ 456 02bc 5AB2     		sxtb	r2, r3
+ 457 02be FB1D     		adds	r3, r7, #7
+ 458 02c0 1A70     		strb	r2, [r3]
+ 119:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	//Last, set mode
+ 120:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	data_to_write |= (bme280.settings.runMode) & 0x03;
+ 459              		.loc 1 120 0
+ 460 02c2 0F4B     		ldr	r3, .L5
+ 461 02c4 DB78     		ldrb	r3, [r3, #3]
+ 462 02c6 5BB2     		sxtb	r3, r3
+ 463 02c8 0322     		movs	r2, #3
+ 464 02ca 1340     		ands	r3, r2
+ 465 02cc 5AB2     		sxtb	r2, r3
+ 466 02ce FB1D     		adds	r3, r7, #7
+ 467 02d0 1B78     		ldrb	r3, [r3]
+ 468 02d2 5BB2     		sxtb	r3, r3
+ 469 02d4 1343     		orrs	r3, r2
+ 470 02d6 5AB2     		sxtb	r2, r3
+ 471 02d8 FB1D     		adds	r3, r7, #7
+ 472 02da 1A70     		strb	r2, [r3]
+ 121:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	//Load the byte
+ 122:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	BME280_writeRegister(BME280_CTRL_MEAS_REG, data_to_write);
+ 473              		.loc 1 122 0
+ 474 02dc FB1D     		adds	r3, r7, #7
+ 475 02de 1B78     		ldrb	r3, [r3]
+ 476 02e0 1900     		movs	r1, r3
+ 477 02e2 F420     		movs	r0, #244
+ 478 02e4 FFF7FEFF 		bl	BME280_writeRegister
+ 123:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	
+ 124:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     // dataToWrite is a placeholder for the value we will return
+ 125:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	device_address = BME280_readRegister(0xD0);
+ 479              		.loc 1 125 0
+ 480 02e8 BC1D     		adds	r4, r7, #6
+ 481 02ea D020     		movs	r0, #208
+ 482 02ec FFF7FEFF 		bl	BME280_readRegister
+ 483 02f0 0300     		movs	r3, r0
+ 484 02f2 2370     		strb	r3, [r4]
+ 126:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     return device_address;
+ 485              		.loc 1 126 0
+ 486 02f4 BB1D     		adds	r3, r7, #6
+ 487 02f6 1B78     		ldrb	r3, [r3]
+ 127:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** }
+ 488              		.loc 1 127 0
+ 489 02f8 1800     		movs	r0, r3
+ 490 02fa BD46     		mov	sp, r7
+ 491 02fc 03B0     		add	sp, sp, #12
+ 492              		@ sp needed
+ 493 02fe 90BD     		pop	{r4, r7, pc}
+ 494              	.L6:
+ 495              		.align	2
+ 496              	.L5:
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 12
+
+
+ 497 0300 00000000 		.word	bme280
+ 498              		.cfi_endproc
+ 499              	.LFE37:
+ 500              		.size	BME280_init, .-BME280_init
+ 501              		.section	.text.BME280_reset,"ax",%progbits
+ 502              		.align	2
+ 503              		.global	BME280_reset
+ 504              		.code	16
+ 505              		.thumb_func
+ 506              		.type	BME280_reset, %function
+ 507              	BME280_reset:
+ 508              	.LFB38:
+ 128:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+ 129:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //Strictly resets.  Run BME280_init() afterwards
+ 130:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** void BME280_reset()
+ 131:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** {
+ 509              		.loc 1 131 0
+ 510              		.cfi_startproc
+ 511              		@ args = 0, pretend = 0, frame = 0
+ 512              		@ frame_needed = 1, uses_anonymous_args = 0
+ 513 0000 80B5     		push	{r7, lr}
+ 514              		.cfi_def_cfa_offset 8
+ 515              		.cfi_offset 7, -8
+ 516              		.cfi_offset 14, -4
+ 517 0002 00AF     		add	r7, sp, #0
+ 518              		.cfi_def_cfa_register 7
+ 132:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	BME280_writeRegister(BME280_RST_REG, 0xB6);
+ 519              		.loc 1 132 0
+ 520 0004 B621     		movs	r1, #182
+ 521 0006 E020     		movs	r0, #224
+ 522 0008 FFF7FEFF 		bl	BME280_writeRegister
+ 133:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	
+ 134:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** }
+ 523              		.loc 1 134 0
+ 524 000c C046     		nop
+ 525 000e BD46     		mov	sp, r7
+ 526              		@ sp needed
+ 527 0010 80BD     		pop	{r7, pc}
+ 528              		.cfi_endproc
+ 529              	.LFE38:
+ 530              		.size	BME280_reset, .-BME280_reset
+ 531              		.global	__aeabi_lmul
+ 532              		.global	__aeabi_ldivmod
+ 533              		.global	__aeabi_l2f
+ 534              		.global	__aeabi_fdiv
+ 535 0012 C046     		.section	.text.BME280_readFloatPressure,"ax",%progbits
+ 536              		.align	2
+ 537              		.global	BME280_readFloatPressure
+ 538              		.code	16
+ 539              		.thumb_func
+ 540              		.type	BME280_readFloatPressure, %function
+ 541              	BME280_readFloatPressure:
+ 542              	.LFB39:
+ 135:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+ 136:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //****************************************************************************//
+ 137:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //
+ 138:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //  Pressure Section
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 13
+
+
+ 139:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //
+ 140:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //****************************************************************************//
+ 141:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** float BME280_readFloatPressure( void )
+ 142:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** {
+ 543              		.loc 1 142 0
+ 544              		.cfi_startproc
+ 545              		@ args = 0, pretend = 0, frame = 176
+ 546              		@ frame_needed = 1, uses_anonymous_args = 0
+ 547 0000 F0B5     		push	{r4, r5, r6, r7, lr}
+ 548              		.cfi_def_cfa_offset 20
+ 549              		.cfi_offset 4, -20
+ 550              		.cfi_offset 5, -16
+ 551              		.cfi_offset 6, -12
+ 552              		.cfi_offset 7, -8
+ 553              		.cfi_offset 14, -4
+ 554 0002 ADB0     		sub	sp, sp, #180
+ 555              		.cfi_def_cfa_offset 200
+ 556 0004 00AF     		add	r7, sp, #0
+ 557              		.cfi_def_cfa_register 7
+ 143:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+ 144:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	// Returns pressure in Pa as unsigned 32 bit integer in Q24.8 format (24 integer bits and 8 fracti
+ 145:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	// Output value of “24674867” represents 24674867/256 = 96386.2 Pa = 963.862 hPa
+ 146:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	int32_t adc_P = ((uint32_t)BME280_readRegister(BME280_PRESSURE_MSB_REG) << 12) | ((uint32_t)BME280
+ 558              		.loc 1 146 0
+ 559 0006 F720     		movs	r0, #247
+ 560 0008 FFF7FEFF 		bl	BME280_readRegister
+ 561 000c 0300     		movs	r3, r0
+ 562 000e 1C03     		lsls	r4, r3, #12
+ 563 0010 F820     		movs	r0, #248
+ 564 0012 FFF7FEFF 		bl	BME280_readRegister
+ 565 0016 0300     		movs	r3, r0
+ 566 0018 1B01     		lsls	r3, r3, #4
+ 567 001a 1C43     		orrs	r4, r3
+ 568 001c F920     		movs	r0, #249
+ 569 001e FFF7FEFF 		bl	BME280_readRegister
+ 570 0022 0300     		movs	r3, r0
+ 571 0024 1B09     		lsrs	r3, r3, #4
+ 572 0026 DBB2     		uxtb	r3, r3
+ 573 0028 1A00     		movs	r2, r3
+ 574 002a 0F23     		movs	r3, #15
+ 575 002c 1340     		ands	r3, r2
+ 576 002e 2343     		orrs	r3, r4
+ 577 0030 AC22     		movs	r2, #172
+ 578 0032 BA18     		adds	r2, r7, r2
+ 579 0034 1360     		str	r3, [r2]
+ 147:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	
+ 148:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	int64_t var1, var2, p_acc;
+ 149:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	var1 = ((int64_t) bme280.t_fine) - 128000;
+ 580              		.loc 1 149 0
+ 581 0036 724B     		ldr	r3, .L11
+ 582 0038 1B6B     		ldr	r3, [r3, #48]
+ 583 003a 3B65     		str	r3, [r7, #80]
+ 584 003c DB17     		asrs	r3, r3, #31
+ 585 003e 7B65     		str	r3, [r7, #84]
+ 586 0040 704B     		ldr	r3, .L11+4
+ 587 0042 0124     		movs	r4, #1
+ 588 0044 6442     		rsbs	r4, r4, #0
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 14
+
+
+ 589 0046 396D     		ldr	r1, [r7, #80]
+ 590 0048 7A6D     		ldr	r2, [r7, #84]
+ 591 004a C918     		adds	r1, r1, r3
+ 592 004c 6241     		adcs	r2, r2, r4
+ 593 004e 0B00     		movs	r3, r1
+ 594 0050 1400     		movs	r4, r2
+ 595 0052 A022     		movs	r2, #160
+ 596 0054 BA18     		adds	r2, r7, r2
+ 597 0056 1360     		str	r3, [r2]
+ 598 0058 5460     		str	r4, [r2, #4]
+ 150:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	var2 = var1 * var1 * (int64_t) bme280.calibration.dig_P6;
+ 599              		.loc 1 150 0
+ 600 005a A023     		movs	r3, #160
+ 601 005c FB18     		adds	r3, r7, r3
+ 602 005e 1A68     		ldr	r2, [r3]
+ 603 0060 5B68     		ldr	r3, [r3, #4]
+ 604 0062 A021     		movs	r1, #160
+ 605 0064 7918     		adds	r1, r7, r1
+ 606 0066 0868     		ldr	r0, [r1]
+ 607 0068 4968     		ldr	r1, [r1, #4]
+ 608 006a FFF7FEFF 		bl	__aeabi_lmul
+ 609 006e 0300     		movs	r3, r0
+ 610 0070 0C00     		movs	r4, r1
+ 611 0072 1800     		movs	r0, r3
+ 612 0074 2100     		movs	r1, r4
+ 613 0076 624B     		ldr	r3, .L11
+ 614 0078 1A22     		movs	r2, #26
+ 615 007a 9B5E     		ldrsh	r3, [r3, r2]
+ 616 007c BB64     		str	r3, [r7, #72]
+ 617 007e DB17     		asrs	r3, r3, #31
+ 618 0080 FB64     		str	r3, [r7, #76]
+ 619 0082 BA6C     		ldr	r2, [r7, #72]
+ 620 0084 FB6C     		ldr	r3, [r7, #76]
+ 621 0086 FFF7FEFF 		bl	__aeabi_lmul
+ 622 008a 0300     		movs	r3, r0
+ 623 008c 0C00     		movs	r4, r1
+ 624 008e 9822     		movs	r2, #152
+ 625 0090 BA18     		adds	r2, r7, r2
+ 626 0092 1360     		str	r3, [r2]
+ 627 0094 5460     		str	r4, [r2, #4]
+ 151:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	var2 = var2 + ((var1 * (int64_t) bme280.calibration.dig_P5)<<17);
+ 628              		.loc 1 151 0
+ 629 0096 5A4B     		ldr	r3, .L11
+ 630 0098 1822     		movs	r2, #24
+ 631 009a 9B5E     		ldrsh	r3, [r3, r2]
+ 632 009c 3B64     		str	r3, [r7, #64]
+ 633 009e DB17     		asrs	r3, r3, #31
+ 634 00a0 7B64     		str	r3, [r7, #68]
+ 635 00a2 A023     		movs	r3, #160
+ 636 00a4 FB18     		adds	r3, r7, r3
+ 637 00a6 1A68     		ldr	r2, [r3]
+ 638 00a8 5B68     		ldr	r3, [r3, #4]
+ 639 00aa 386C     		ldr	r0, [r7, #64]
+ 640 00ac 796C     		ldr	r1, [r7, #68]
+ 641 00ae FFF7FEFF 		bl	__aeabi_lmul
+ 642 00b2 0300     		movs	r3, r0
+ 643 00b4 0C00     		movs	r4, r1
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 15
+
+
+ 644 00b6 DA0B     		lsrs	r2, r3, #15
+ 645 00b8 6604     		lsls	r6, r4, #17
+ 646 00ba 1643     		orrs	r6, r2
+ 647 00bc 5D04     		lsls	r5, r3, #17
+ 648 00be 9823     		movs	r3, #152
+ 649 00c0 FB18     		adds	r3, r7, r3
+ 650 00c2 5C68     		ldr	r4, [r3, #4]
+ 651 00c4 1B68     		ldr	r3, [r3]
+ 652 00c6 5B19     		adds	r3, r3, r5
+ 653 00c8 7441     		adcs	r4, r4, r6
+ 654 00ca 9822     		movs	r2, #152
+ 655 00cc BA18     		adds	r2, r7, r2
+ 656 00ce 1360     		str	r3, [r2]
+ 657 00d0 5460     		str	r4, [r2, #4]
+ 152:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	var2 = var2 + (((int64_t) bme280.calibration.dig_P4)<<35);
+ 658              		.loc 1 152 0
+ 659 00d2 4B4B     		ldr	r3, .L11
+ 660 00d4 1622     		movs	r2, #22
+ 661 00d6 9B5E     		ldrsh	r3, [r3, r2]
+ 662 00d8 BB63     		str	r3, [r7, #56]
+ 663 00da DB17     		asrs	r3, r3, #31
+ 664 00dc FB63     		str	r3, [r7, #60]
+ 665 00de BB6B     		ldr	r3, [r7, #56]
+ 666 00e0 DB00     		lsls	r3, r3, #3
+ 667 00e2 7B63     		str	r3, [r7, #52]
+ 668 00e4 0023     		movs	r3, #0
+ 669 00e6 3B63     		str	r3, [r7, #48]
+ 670 00e8 9823     		movs	r3, #152
+ 671 00ea FB18     		adds	r3, r7, r3
+ 672 00ec 5C68     		ldr	r4, [r3, #4]
+ 673 00ee 1B68     		ldr	r3, [r3]
+ 674 00f0 396B     		ldr	r1, [r7, #48]
+ 675 00f2 7A6B     		ldr	r2, [r7, #52]
+ 676 00f4 5B18     		adds	r3, r3, r1
+ 677 00f6 5441     		adcs	r4, r4, r2
+ 678 00f8 9822     		movs	r2, #152
+ 679 00fa BA18     		adds	r2, r7, r2
+ 680 00fc 1360     		str	r3, [r2]
+ 681 00fe 5460     		str	r4, [r2, #4]
+ 153:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	var1 = ((var1 * var1 * (int64_t) bme280.calibration.dig_P3)>>8) + ((var1 * (int64_t) bme280.calibr
+ 682              		.loc 1 153 0
+ 683 0100 A023     		movs	r3, #160
+ 684 0102 FB18     		adds	r3, r7, r3
+ 685 0104 1A68     		ldr	r2, [r3]
+ 686 0106 5B68     		ldr	r3, [r3, #4]
+ 687 0108 A021     		movs	r1, #160
+ 688 010a 7918     		adds	r1, r7, r1
+ 689 010c 0868     		ldr	r0, [r1]
+ 690 010e 4968     		ldr	r1, [r1, #4]
+ 691 0110 FFF7FEFF 		bl	__aeabi_lmul
+ 692 0114 0300     		movs	r3, r0
+ 693 0116 0C00     		movs	r4, r1
+ 694 0118 1800     		movs	r0, r3
+ 695 011a 2100     		movs	r1, r4
+ 696 011c 384B     		ldr	r3, .L11
+ 697 011e 1422     		movs	r2, #20
+ 698 0120 9B5E     		ldrsh	r3, [r3, r2]
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 16
+
+
+ 699 0122 BB62     		str	r3, [r7, #40]
+ 700 0124 DB17     		asrs	r3, r3, #31
+ 701 0126 FB62     		str	r3, [r7, #44]
+ 702 0128 BA6A     		ldr	r2, [r7, #40]
+ 703 012a FB6A     		ldr	r3, [r7, #44]
+ 704 012c FFF7FEFF 		bl	__aeabi_lmul
+ 705 0130 0300     		movs	r3, r0
+ 706 0132 0C00     		movs	r4, r1
+ 707 0134 2206     		lsls	r2, r4, #24
+ 708 0136 190A     		lsrs	r1, r3, #8
+ 709 0138 8820     		movs	r0, #136
+ 710 013a 3818     		adds	r0, r7, r0
+ 711 013c 0160     		str	r1, [r0]
+ 712 013e 8821     		movs	r1, #136
+ 713 0140 7918     		adds	r1, r7, r1
+ 714 0142 0968     		ldr	r1, [r1]
+ 715 0144 1143     		orrs	r1, r2
+ 716 0146 8822     		movs	r2, #136
+ 717 0148 BA18     		adds	r2, r7, r2
+ 718 014a 1160     		str	r1, [r2]
+ 719 014c 2312     		asrs	r3, r4, #8
+ 720 014e 8C22     		movs	r2, #140
+ 721 0150 BA18     		adds	r2, r7, r2
+ 722 0152 1360     		str	r3, [r2]
+ 723 0154 2A4B     		ldr	r3, .L11
+ 724 0156 1222     		movs	r2, #18
+ 725 0158 9B5E     		ldrsh	r3, [r3, r2]
+ 726 015a 3B62     		str	r3, [r7, #32]
+ 727 015c DB17     		asrs	r3, r3, #31
+ 728 015e 7B62     		str	r3, [r7, #36]
+ 729 0160 A023     		movs	r3, #160
+ 730 0162 FB18     		adds	r3, r7, r3
+ 731 0164 1A68     		ldr	r2, [r3]
+ 732 0166 5B68     		ldr	r3, [r3, #4]
+ 733 0168 386A     		ldr	r0, [r7, #32]
+ 734 016a 796A     		ldr	r1, [r7, #36]
+ 735 016c FFF7FEFF 		bl	__aeabi_lmul
+ 736 0170 0300     		movs	r3, r0
+ 737 0172 0C00     		movs	r4, r1
+ 738 0174 1A0D     		lsrs	r2, r3, #20
+ 739 0176 2103     		lsls	r1, r4, #12
+ 740 0178 8420     		movs	r0, #132
+ 741 017a 3818     		adds	r0, r7, r0
+ 742 017c 0160     		str	r1, [r0]
+ 743 017e 8421     		movs	r1, #132
+ 744 0180 7918     		adds	r1, r7, r1
+ 745 0182 0968     		ldr	r1, [r1]
+ 746 0184 1143     		orrs	r1, r2
+ 747 0186 8422     		movs	r2, #132
+ 748 0188 BA18     		adds	r2, r7, r2
+ 749 018a 1160     		str	r1, [r2]
+ 750 018c 1B03     		lsls	r3, r3, #12
+ 751 018e 8022     		movs	r2, #128
+ 752 0190 BA18     		adds	r2, r7, r2
+ 753 0192 1360     		str	r3, [r2]
+ 754 0194 8823     		movs	r3, #136
+ 755 0196 FB18     		adds	r3, r7, r3
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 17
+
+
+ 756 0198 5C68     		ldr	r4, [r3, #4]
+ 757 019a 1B68     		ldr	r3, [r3]
+ 758 019c 8022     		movs	r2, #128
+ 759 019e BA18     		adds	r2, r7, r2
+ 760 01a0 1168     		ldr	r1, [r2]
+ 761 01a2 5268     		ldr	r2, [r2, #4]
+ 762 01a4 5B18     		adds	r3, r3, r1
+ 763 01a6 5441     		adcs	r4, r4, r2
+ 764 01a8 A022     		movs	r2, #160
+ 765 01aa BA18     		adds	r2, r7, r2
+ 766 01ac 1360     		str	r3, [r2]
+ 767 01ae 5460     		str	r4, [r2, #4]
+ 154:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	var1 = (((((int64_t)1)<<47)+var1))*((int64_t) bme280.calibration.dig_P1)>>33;
+ 768              		.loc 1 154 0
+ 769 01b0 A023     		movs	r3, #160
+ 770 01b2 FB18     		adds	r3, r7, r3
+ 771 01b4 1968     		ldr	r1, [r3]
+ 772 01b6 5A68     		ldr	r2, [r3, #4]
+ 773 01b8 0023     		movs	r3, #0
+ 774 01ba 8024     		movs	r4, #128
+ 775 01bc 2402     		lsls	r4, r4, #8
+ 776 01be C918     		adds	r1, r1, r3
+ 777 01c0 6241     		adcs	r2, r2, r4
+ 778 01c2 0800     		movs	r0, r1
+ 779 01c4 1100     		movs	r1, r2
+ 780 01c6 0E4B     		ldr	r3, .L11
+ 781 01c8 1B8A     		ldrh	r3, [r3, #16]
+ 782 01ca BB61     		str	r3, [r7, #24]
+ 783 01cc 0023     		movs	r3, #0
+ 784 01ce FB61     		str	r3, [r7, #28]
+ 785 01d0 BA69     		ldr	r2, [r7, #24]
+ 786 01d2 FB69     		ldr	r3, [r7, #28]
+ 787 01d4 FFF7FEFF 		bl	__aeabi_lmul
+ 788 01d8 0300     		movs	r3, r0
+ 789 01da 0C00     		movs	r4, r1
+ 790 01dc 6210     		asrs	r2, r4, #1
+ 791 01de A021     		movs	r1, #160
+ 792 01e0 7918     		adds	r1, r7, r1
+ 793 01e2 0A60     		str	r2, [r1]
+ 794 01e4 E317     		asrs	r3, r4, #31
+ 795 01e6 A422     		movs	r2, #164
+ 796 01e8 BA18     		adds	r2, r7, r2
+ 797 01ea 1360     		str	r3, [r2]
+ 155:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	if (var1 == 0)
+ 798              		.loc 1 155 0
+ 799 01ec A023     		movs	r3, #160
+ 800 01ee FB18     		adds	r3, r7, r3
+ 801 01f0 1A68     		ldr	r2, [r3]
+ 802 01f2 A423     		movs	r3, #164
+ 803 01f4 FB18     		adds	r3, r7, r3
+ 804 01f6 1B68     		ldr	r3, [r3]
+ 805 01f8 1A43     		orrs	r2, r3
+ 806 01fa 05D1     		bne	.L9
+ 156:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	{
+ 157:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 		return 0; // avoid exception caused by division by zero
+ 807              		.loc 1 157 0
+ 808 01fc 0023     		movs	r3, #0
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 18
+
+
+ 809 01fe E0E0     		b	.L10
+ 810              	.L12:
+ 811              		.align	2
+ 812              	.L11:
+ 813 0200 00000000 		.word	bme280
+ 814 0204 000CFEFF 		.word	-128000
+ 815              	.L9:
+ 158:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	}
+ 159:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	p_acc = 1048576 - adc_P;
+ 816              		.loc 1 159 0
+ 817 0208 AC23     		movs	r3, #172
+ 818 020a FB18     		adds	r3, r7, r3
+ 819 020c 1A68     		ldr	r2, [r3]
+ 820 020e 8023     		movs	r3, #128
+ 821 0210 5B03     		lsls	r3, r3, #13
+ 822 0212 9B1A     		subs	r3, r3, r2
+ 823 0214 9022     		movs	r2, #144
+ 824 0216 BA18     		adds	r2, r7, r2
+ 825 0218 1360     		str	r3, [r2]
+ 826 021a DB17     		asrs	r3, r3, #31
+ 827 021c 9422     		movs	r2, #148
+ 828 021e BA18     		adds	r2, r7, r2
+ 829 0220 1360     		str	r3, [r2]
+ 160:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	p_acc = (((p_acc<<31) - var2)*3125)/var1;
+ 830              		.loc 1 160 0
+ 831 0222 9023     		movs	r3, #144
+ 832 0224 FB18     		adds	r3, r7, r3
+ 833 0226 1B68     		ldr	r3, [r3]
+ 834 0228 5A08     		lsrs	r2, r3, #1
+ 835 022a 9423     		movs	r3, #148
+ 836 022c FB18     		adds	r3, r7, r3
+ 837 022e 1B68     		ldr	r3, [r3]
+ 838 0230 DB07     		lsls	r3, r3, #31
+ 839 0232 FB67     		str	r3, [r7, #124]
+ 840 0234 FB6F     		ldr	r3, [r7, #124]
+ 841 0236 1343     		orrs	r3, r2
+ 842 0238 FB67     		str	r3, [r7, #124]
+ 843 023a 9023     		movs	r3, #144
+ 844 023c FB18     		adds	r3, r7, r3
+ 845 023e 1B68     		ldr	r3, [r3]
+ 846 0240 DB07     		lsls	r3, r3, #31
+ 847 0242 BB67     		str	r3, [r7, #120]
+ 848 0244 9823     		movs	r3, #152
+ 849 0246 FB18     		adds	r3, r7, r3
+ 850 0248 5C68     		ldr	r4, [r3, #4]
+ 851 024a 1B68     		ldr	r3, [r3]
+ 852 024c B86F     		ldr	r0, [r7, #120]
+ 853 024e F96F     		ldr	r1, [r7, #124]
+ 854 0250 C01A     		subs	r0, r0, r3
+ 855 0252 A141     		sbcs	r1, r1, r4
+ 856 0254 5D4A     		ldr	r2, .L13
+ 857 0256 0023     		movs	r3, #0
+ 858 0258 FFF7FEFF 		bl	__aeabi_lmul
+ 859 025c 0300     		movs	r3, r0
+ 860 025e 0C00     		movs	r4, r1
+ 861 0260 1800     		movs	r0, r3
+ 862 0262 2100     		movs	r1, r4
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 19
+
+
+ 863 0264 A023     		movs	r3, #160
+ 864 0266 FB18     		adds	r3, r7, r3
+ 865 0268 1A68     		ldr	r2, [r3]
+ 866 026a 5B68     		ldr	r3, [r3, #4]
+ 867 026c FFF7FEFF 		bl	__aeabi_ldivmod
+ 868 0270 0300     		movs	r3, r0
+ 869 0272 0C00     		movs	r4, r1
+ 870 0274 9022     		movs	r2, #144
+ 871 0276 BA18     		adds	r2, r7, r2
+ 872 0278 1360     		str	r3, [r2]
+ 873 027a 5460     		str	r4, [r2, #4]
+ 161:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	var1 = (((int64_t) bme280.calibration.dig_P9) * (p_acc>>13) * (p_acc>>13)) >> 25;
+ 874              		.loc 1 161 0
+ 875 027c 544B     		ldr	r3, .L13+4
+ 876 027e 2022     		movs	r2, #32
+ 877 0280 9B5E     		ldrsh	r3, [r3, r2]
+ 878 0282 3B61     		str	r3, [r7, #16]
+ 879 0284 DB17     		asrs	r3, r3, #31
+ 880 0286 7B61     		str	r3, [r7, #20]
+ 881 0288 9423     		movs	r3, #148
+ 882 028a FB18     		adds	r3, r7, r3
+ 883 028c 1B68     		ldr	r3, [r3]
+ 884 028e DA04     		lsls	r2, r3, #19
+ 885 0290 9023     		movs	r3, #144
+ 886 0292 FB18     		adds	r3, r7, r3
+ 887 0294 1B68     		ldr	r3, [r3]
+ 888 0296 5B0B     		lsrs	r3, r3, #13
+ 889 0298 3B67     		str	r3, [r7, #112]
+ 890 029a 3B6F     		ldr	r3, [r7, #112]
+ 891 029c 1343     		orrs	r3, r2
+ 892 029e 3B67     		str	r3, [r7, #112]
+ 893 02a0 9423     		movs	r3, #148
+ 894 02a2 FB18     		adds	r3, r7, r3
+ 895 02a4 1B68     		ldr	r3, [r3]
+ 896 02a6 5B13     		asrs	r3, r3, #13
+ 897 02a8 7B67     		str	r3, [r7, #116]
+ 898 02aa 3A6F     		ldr	r2, [r7, #112]
+ 899 02ac 7B6F     		ldr	r3, [r7, #116]
+ 900 02ae 3869     		ldr	r0, [r7, #16]
+ 901 02b0 7969     		ldr	r1, [r7, #20]
+ 902 02b2 FFF7FEFF 		bl	__aeabi_lmul
+ 903 02b6 0300     		movs	r3, r0
+ 904 02b8 0C00     		movs	r4, r1
+ 905 02ba 1800     		movs	r0, r3
+ 906 02bc 2100     		movs	r1, r4
+ 907 02be 9423     		movs	r3, #148
+ 908 02c0 FB18     		adds	r3, r7, r3
+ 909 02c2 1B68     		ldr	r3, [r3]
+ 910 02c4 DA04     		lsls	r2, r3, #19
+ 911 02c6 9023     		movs	r3, #144
+ 912 02c8 FB18     		adds	r3, r7, r3
+ 913 02ca 1B68     		ldr	r3, [r3]
+ 914 02cc 5B0B     		lsrs	r3, r3, #13
+ 915 02ce BB66     		str	r3, [r7, #104]
+ 916 02d0 BB6E     		ldr	r3, [r7, #104]
+ 917 02d2 1343     		orrs	r3, r2
+ 918 02d4 BB66     		str	r3, [r7, #104]
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 20
+
+
+ 919 02d6 9423     		movs	r3, #148
+ 920 02d8 FB18     		adds	r3, r7, r3
+ 921 02da 1B68     		ldr	r3, [r3]
+ 922 02dc 5B13     		asrs	r3, r3, #13
+ 923 02de FB66     		str	r3, [r7, #108]
+ 924 02e0 BA6E     		ldr	r2, [r7, #104]
+ 925 02e2 FB6E     		ldr	r3, [r7, #108]
+ 926 02e4 FFF7FEFF 		bl	__aeabi_lmul
+ 927 02e8 0300     		movs	r3, r0
+ 928 02ea 0C00     		movs	r4, r1
+ 929 02ec E201     		lsls	r2, r4, #7
+ 930 02ee 590E     		lsrs	r1, r3, #25
+ 931 02f0 0A43     		orrs	r2, r1
+ 932 02f2 A021     		movs	r1, #160
+ 933 02f4 7918     		adds	r1, r7, r1
+ 934 02f6 0A60     		str	r2, [r1]
+ 935 02f8 6316     		asrs	r3, r4, #25
+ 936 02fa A422     		movs	r2, #164
+ 937 02fc BA18     		adds	r2, r7, r2
+ 938 02fe 1360     		str	r3, [r2]
+ 162:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	var2 = (((int64_t) bme280.calibration.dig_P8) * p_acc) >> 19;
+ 939              		.loc 1 162 0
+ 940 0300 334B     		ldr	r3, .L13+4
+ 941 0302 1E22     		movs	r2, #30
+ 942 0304 9B5E     		ldrsh	r3, [r3, r2]
+ 943 0306 BB60     		str	r3, [r7, #8]
+ 944 0308 DB17     		asrs	r3, r3, #31
+ 945 030a FB60     		str	r3, [r7, #12]
+ 946 030c 9023     		movs	r3, #144
+ 947 030e FB18     		adds	r3, r7, r3
+ 948 0310 1A68     		ldr	r2, [r3]
+ 949 0312 5B68     		ldr	r3, [r3, #4]
+ 950 0314 B868     		ldr	r0, [r7, #8]
+ 951 0316 F968     		ldr	r1, [r7, #12]
+ 952 0318 FFF7FEFF 		bl	__aeabi_lmul
+ 953 031c 0300     		movs	r3, r0
+ 954 031e 0C00     		movs	r4, r1
+ 955 0320 6203     		lsls	r2, r4, #13
+ 956 0322 D90C     		lsrs	r1, r3, #19
+ 957 0324 0A43     		orrs	r2, r1
+ 958 0326 9821     		movs	r1, #152
+ 959 0328 7918     		adds	r1, r7, r1
+ 960 032a 0A60     		str	r2, [r1]
+ 961 032c E314     		asrs	r3, r4, #19
+ 962 032e 9C22     		movs	r2, #156
+ 963 0330 BA18     		adds	r2, r7, r2
+ 964 0332 1360     		str	r3, [r2]
+ 163:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	p_acc = ((p_acc + var1 + var2) >> 8) + (((int64_t) bme280.calibration.dig_P7)<<4);
+ 965              		.loc 1 163 0
+ 966 0334 9023     		movs	r3, #144
+ 967 0336 FB18     		adds	r3, r7, r3
+ 968 0338 1968     		ldr	r1, [r3]
+ 969 033a 5A68     		ldr	r2, [r3, #4]
+ 970 033c A023     		movs	r3, #160
+ 971 033e FB18     		adds	r3, r7, r3
+ 972 0340 5C68     		ldr	r4, [r3, #4]
+ 973 0342 1B68     		ldr	r3, [r3]
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 21
+
+
+ 974 0344 C918     		adds	r1, r1, r3
+ 975 0346 6241     		adcs	r2, r2, r4
+ 976 0348 9823     		movs	r3, #152
+ 977 034a FB18     		adds	r3, r7, r3
+ 978 034c 5C68     		ldr	r4, [r3, #4]
+ 979 034e 1B68     		ldr	r3, [r3]
+ 980 0350 5B18     		adds	r3, r3, r1
+ 981 0352 5441     		adcs	r4, r4, r2
+ 982 0354 2206     		lsls	r2, r4, #24
+ 983 0356 190A     		lsrs	r1, r3, #8
+ 984 0358 3966     		str	r1, [r7, #96]
+ 985 035a 396E     		ldr	r1, [r7, #96]
+ 986 035c 1143     		orrs	r1, r2
+ 987 035e 3966     		str	r1, [r7, #96]
+ 988 0360 2312     		asrs	r3, r4, #8
+ 989 0362 7B66     		str	r3, [r7, #100]
+ 990 0364 1A4B     		ldr	r3, .L13+4
+ 991 0366 1C22     		movs	r2, #28
+ 992 0368 9B5E     		ldrsh	r3, [r3, r2]
+ 993 036a 3B60     		str	r3, [r7]
+ 994 036c DB17     		asrs	r3, r3, #31
+ 995 036e 7B60     		str	r3, [r7, #4]
+ 996 0370 3968     		ldr	r1, [r7]
+ 997 0372 7A68     		ldr	r2, [r7, #4]
+ 998 0374 0B00     		movs	r3, r1
+ 999 0376 1B0F     		lsrs	r3, r3, #28
+ 1000 0378 1000     		movs	r0, r2
+ 1001 037a 0001     		lsls	r0, r0, #4
+ 1002 037c F865     		str	r0, [r7, #92]
+ 1003 037e F86D     		ldr	r0, [r7, #92]
+ 1004 0380 1843     		orrs	r0, r3
+ 1005 0382 F865     		str	r0, [r7, #92]
+ 1006 0384 0B00     		movs	r3, r1
+ 1007 0386 1B01     		lsls	r3, r3, #4
+ 1008 0388 BB65     		str	r3, [r7, #88]
+ 1009 038a 3B6E     		ldr	r3, [r7, #96]
+ 1010 038c 7C6E     		ldr	r4, [r7, #100]
+ 1011 038e B96D     		ldr	r1, [r7, #88]
+ 1012 0390 FA6D     		ldr	r2, [r7, #92]
+ 1013 0392 5B18     		adds	r3, r3, r1
+ 1014 0394 5441     		adcs	r4, r4, r2
+ 1015 0396 9022     		movs	r2, #144
+ 1016 0398 BA18     		adds	r2, r7, r2
+ 1017 039a 1360     		str	r3, [r2]
+ 1018 039c 5460     		str	r4, [r2, #4]
+ 164:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	
+ 165:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     bme280.press_Pa = (float)p_acc / 256.0;
+ 1019              		.loc 1 165 0
+ 1020 039e 9023     		movs	r3, #144
+ 1021 03a0 FB18     		adds	r3, r7, r3
+ 1022 03a2 1868     		ldr	r0, [r3]
+ 1023 03a4 5968     		ldr	r1, [r3, #4]
+ 1024 03a6 FFF7FEFF 		bl	__aeabi_l2f
+ 1025 03aa 031C     		adds	r3, r0, #0
+ 1026 03ac 8721     		movs	r1, #135
+ 1027 03ae C905     		lsls	r1, r1, #23
+ 1028 03b0 181C     		adds	r0, r3, #0
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 22
+
+
+ 1029 03b2 FFF7FEFF 		bl	__aeabi_fdiv
+ 1030 03b6 031C     		adds	r3, r0, #0
+ 1031 03b8 1A1C     		adds	r2, r3, #0
+ 1032 03ba 054B     		ldr	r3, .L13+4
+ 1033 03bc 9A63     		str	r2, [r3, #56]
+ 166:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     return bme280.press_Pa;
+ 1034              		.loc 1 166 0
+ 1035 03be 044B     		ldr	r3, .L13+4
+ 1036 03c0 9B6B     		ldr	r3, [r3, #56]
+ 1037              	.L10:
+ 167:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	
+ 168:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** }
+ 1038              		.loc 1 168 0
+ 1039 03c2 181C     		adds	r0, r3, #0
+ 1040 03c4 BD46     		mov	sp, r7
+ 1041 03c6 2DB0     		add	sp, sp, #180
+ 1042              		@ sp needed
+ 1043 03c8 F0BD     		pop	{r4, r5, r6, r7, pc}
+ 1044              	.L14:
+ 1045 03ca C046     		.align	2
+ 1046              	.L13:
+ 1047 03cc 350C0000 		.word	3125
+ 1048 03d0 00000000 		.word	bme280
+ 1049              		.cfi_endproc
+ 1050              	.LFE39:
+ 1051              		.size	BME280_readFloatPressure, .-BME280_readFloatPressure
+ 1052              		.global	__aeabi_f2d
+ 1053              		.global	__aeabi_dsub
+ 1054              		.global	__aeabi_dmul
+ 1055              		.global	__aeabi_d2f
+ 1056              		.section	.text.BME280_readFloatAltitudeMeters,"ax",%progbits
+ 1057              		.align	2
+ 1058              		.global	BME280_readFloatAltitudeMeters
+ 1059              		.code	16
+ 1060              		.thumb_func
+ 1061              		.type	BME280_readFloatAltitudeMeters, %function
+ 1062              	BME280_readFloatAltitudeMeters:
+ 1063              	.LFB40:
+ 169:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+ 170:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** float BME280_readFloatAltitudeMeters( void )
+ 171:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** {
+ 1064              		.loc 1 171 0
+ 1065              		.cfi_startproc
+ 1066              		@ args = 0, pretend = 0, frame = 8
+ 1067              		@ frame_needed = 1, uses_anonymous_args = 0
+ 1068 0000 90B5     		push	{r4, r7, lr}
+ 1069              		.cfi_def_cfa_offset 12
+ 1070              		.cfi_offset 4, -12
+ 1071              		.cfi_offset 7, -8
+ 1072              		.cfi_offset 14, -4
+ 1073 0002 83B0     		sub	sp, sp, #12
+ 1074              		.cfi_def_cfa_offset 24
+ 1075 0004 00AF     		add	r7, sp, #0
+ 1076              		.cfi_def_cfa_register 7
+ 172:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	float heightOutput = 0;
+ 1077              		.loc 1 172 0
+ 1078 0006 0023     		movs	r3, #0
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 23
+
+
+ 1079 0008 7B60     		str	r3, [r7, #4]
+ 173:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	
+ 174:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	heightOutput = ((float)-45846.2)*(pow(((float) BME280_readFloatPressure()/(float) P_SURFACE), 0.19
+ 1080              		.loc 1 174 0
+ 1081 000a FFF7FEFF 		bl	BME280_readFloatPressure
+ 1082 000e 031C     		adds	r3, r0, #0
+ 1083 0010 1349     		ldr	r1, .L17
+ 1084 0012 181C     		adds	r0, r3, #0
+ 1085 0014 FFF7FEFF 		bl	__aeabi_fdiv
+ 1086 0018 031C     		adds	r3, r0, #0
+ 1087 001a 181C     		adds	r0, r3, #0
+ 1088 001c FFF7FEFF 		bl	__aeabi_f2d
+ 1089 0020 104B     		ldr	r3, .L17+4
+ 1090 0022 114C     		ldr	r4, .L17+8
+ 1091 0024 1A00     		movs	r2, r3
+ 1092 0026 2300     		movs	r3, r4
+ 1093 0028 FFF7FEFF 		bl	pow
+ 1094 002c 0022     		movs	r2, #0
+ 1095 002e 0F4B     		ldr	r3, .L17+12
+ 1096 0030 FFF7FEFF 		bl	__aeabi_dsub
+ 1097 0034 0300     		movs	r3, r0
+ 1098 0036 0C00     		movs	r4, r1
+ 1099 0038 1800     		movs	r0, r3
+ 1100 003a 2100     		movs	r1, r4
+ 1101 003c C022     		movs	r2, #192
+ 1102 003e D205     		lsls	r2, r2, #23
+ 1103 0040 0B4B     		ldr	r3, .L17+16
+ 1104 0042 FFF7FEFF 		bl	__aeabi_dmul
+ 1105 0046 0300     		movs	r3, r0
+ 1106 0048 0C00     		movs	r4, r1
+ 1107 004a 1800     		movs	r0, r3
+ 1108 004c 2100     		movs	r1, r4
+ 1109 004e FFF7FEFF 		bl	__aeabi_d2f
+ 1110 0052 031C     		adds	r3, r0, #0
+ 1111 0054 7B60     		str	r3, [r7, #4]
+ 175:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	return heightOutput;
+ 1112              		.loc 1 175 0
+ 1113 0056 7B68     		ldr	r3, [r7, #4]
+ 176:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	
+ 177:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** }
+ 1114              		.loc 1 177 0
+ 1115 0058 181C     		adds	r0, r3, #0
+ 1116 005a BD46     		mov	sp, r7
+ 1117 005c 03B0     		add	sp, sp, #12
+ 1118              		@ sp needed
+ 1119 005e 90BD     		pop	{r4, r7, pc}
+ 1120              	.L18:
+ 1121              		.align	2
+ 1122              	.L17:
+ 1123 0060 80E6C547 		.word	1204151936
+ 1124 0064 C5C551B9 		.word	-1185823291
+ 1125 0068 895AC83F 		.word	1070094985
+ 1126 006c 0000F03F 		.word	1072693248
+ 1127 0070 C662E6C0 		.word	-1058643258
+ 1128              		.cfi_endproc
+ 1129              	.LFE40:
+ 1130              		.size	BME280_readFloatAltitudeMeters, .-BME280_readFloatAltitudeMeters
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 24
+
+
+ 1131              		.section	.text.BME280_readFloatAltitudeFeet,"ax",%progbits
+ 1132              		.align	2
+ 1133              		.global	BME280_readFloatAltitudeFeet
+ 1134              		.code	16
+ 1135              		.thumb_func
+ 1136              		.type	BME280_readFloatAltitudeFeet, %function
+ 1137              	BME280_readFloatAltitudeFeet:
+ 1138              	.LFB41:
+ 178:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+ 179:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** float BME280_readFloatAltitudeFeet( void )
+ 180:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** {
+ 1139              		.loc 1 180 0
+ 1140              		.cfi_startproc
+ 1141              		@ args = 0, pretend = 0, frame = 8
+ 1142              		@ frame_needed = 1, uses_anonymous_args = 0
+ 1143 0000 90B5     		push	{r4, r7, lr}
+ 1144              		.cfi_def_cfa_offset 12
+ 1145              		.cfi_offset 4, -12
+ 1146              		.cfi_offset 7, -8
+ 1147              		.cfi_offset 14, -4
+ 1148 0002 83B0     		sub	sp, sp, #12
+ 1149              		.cfi_def_cfa_offset 24
+ 1150 0004 00AF     		add	r7, sp, #0
+ 1151              		.cfi_def_cfa_register 7
+ 181:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	float heightOutput = 0;
+ 1152              		.loc 1 181 0
+ 1153 0006 0023     		movs	r3, #0
+ 1154 0008 7B60     		str	r3, [r7, #4]
+ 182:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	
+ 183:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	heightOutput = BME280_readFloatAltitudeMeters() * 3.28084;
+ 1155              		.loc 1 183 0
+ 1156 000a FFF7FEFF 		bl	BME280_readFloatAltitudeMeters
+ 1157 000e 031C     		adds	r3, r0, #0
+ 1158 0010 181C     		adds	r0, r3, #0
+ 1159 0012 FFF7FEFF 		bl	__aeabi_f2d
+ 1160 0016 084A     		ldr	r2, .L21
+ 1161 0018 084B     		ldr	r3, .L21+4
+ 1162 001a FFF7FEFF 		bl	__aeabi_dmul
+ 1163 001e 0300     		movs	r3, r0
+ 1164 0020 0C00     		movs	r4, r1
+ 1165 0022 1800     		movs	r0, r3
+ 1166 0024 2100     		movs	r1, r4
+ 1167 0026 FFF7FEFF 		bl	__aeabi_d2f
+ 1168 002a 031C     		adds	r3, r0, #0
+ 1169 002c 7B60     		str	r3, [r7, #4]
+ 184:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	return heightOutput;
+ 1170              		.loc 1 184 0
+ 1171 002e 7B68     		ldr	r3, [r7, #4]
+ 185:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	
+ 186:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** }
+ 1172              		.loc 1 186 0
+ 1173 0030 181C     		adds	r0, r3, #0
+ 1174 0032 BD46     		mov	sp, r7
+ 1175 0034 03B0     		add	sp, sp, #12
+ 1176              		@ sp needed
+ 1177 0036 90BD     		pop	{r4, r7, pc}
+ 1178              	.L22:
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 25
+
+
+ 1179              		.align	2
+ 1180              	.L21:
+ 1181 0038 E544BB0A 		.word	180045029
+ 1182 003c 293F0A40 		.word	1074413353
+ 1183              		.cfi_endproc
+ 1184              	.LFE41:
+ 1185              		.size	BME280_readFloatAltitudeFeet, .-BME280_readFloatAltitudeFeet
+ 1186              		.global	__aeabi_i2f
+ 1187              		.section	.text.BME280_readFloatHumidity,"ax",%progbits
+ 1188              		.align	2
+ 1189              		.global	BME280_readFloatHumidity
+ 1190              		.code	16
+ 1191              		.thumb_func
+ 1192              		.type	BME280_readFloatHumidity, %function
+ 1193              	BME280_readFloatHumidity:
+ 1194              	.LFB42:
+ 187:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+ 188:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //****************************************************************************//
+ 189:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //
+ 190:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //  Humidity Section
+ 191:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //
+ 192:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //****************************************************************************//
+ 193:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** float BME280_readFloatHumidity( void )
+ 194:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** {
+ 1195              		.loc 1 194 0
+ 1196              		.cfi_startproc
+ 1197              		@ args = 0, pretend = 0, frame = 8
+ 1198              		@ frame_needed = 1, uses_anonymous_args = 0
+ 1199 0000 90B5     		push	{r4, r7, lr}
+ 1200              		.cfi_def_cfa_offset 12
+ 1201              		.cfi_offset 4, -12
+ 1202              		.cfi_offset 7, -8
+ 1203              		.cfi_offset 14, -4
+ 1204 0002 83B0     		sub	sp, sp, #12
+ 1205              		.cfi_def_cfa_offset 24
+ 1206 0004 00AF     		add	r7, sp, #0
+ 1207              		.cfi_def_cfa_register 7
+ 195:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	
+ 196:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	// Returns humidity in %RH as unsigned 32 bit integer in Q22. 10 format (22 integer and 10 fractio
+ 197:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	// Output value of “47445” represents 47445/1024 = 46. 333 %RH
+ 198:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	int32_t adc_H = ((uint32_t) BME280_readRegister(BME280_HUMIDITY_MSB_REG) << 8) | ((uint32_t) BME28
+ 1208              		.loc 1 198 0
+ 1209 0006 FD20     		movs	r0, #253
+ 1210 0008 FFF7FEFF 		bl	BME280_readRegister
+ 1211 000c 0300     		movs	r3, r0
+ 1212 000e 1C02     		lsls	r4, r3, #8
+ 1213 0010 FE20     		movs	r0, #254
+ 1214 0012 FFF7FEFF 		bl	BME280_readRegister
+ 1215 0016 0300     		movs	r3, r0
+ 1216 0018 2343     		orrs	r3, r4
+ 1217 001a 7B60     		str	r3, [r7, #4]
+ 199:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	
+ 200:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	int32_t var1;
+ 201:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	var1 = (bme280.t_fine - ((int32_t)76800));
+ 1218              		.loc 1 201 0
+ 1219 001c 354B     		ldr	r3, .L27
+ 1220 001e 1B6B     		ldr	r3, [r3, #48]
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 26
+
+
+ 1221 0020 354A     		ldr	r2, .L27+4
+ 1222 0022 9446     		mov	ip, r2
+ 1223 0024 6344     		add	r3, r3, ip
+ 1224 0026 3B60     		str	r3, [r7]
+ 202:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	var1 = (((((adc_H << 14) - (((int32_t)bme280.calibration.dig_H4) << 20) - (((int32_t)bme280.calibr
+ 1225              		.loc 1 202 0
+ 1226 0028 7B68     		ldr	r3, [r7, #4]
+ 1227 002a 9A03     		lsls	r2, r3, #14
+ 1228 002c 314B     		ldr	r3, .L27
+ 1229 002e 2821     		movs	r1, #40
+ 1230 0030 5B5E     		ldrsh	r3, [r3, r1]
+ 1231 0032 1B05     		lsls	r3, r3, #20
+ 1232 0034 D21A     		subs	r2, r2, r3
+ 1233 0036 2F4B     		ldr	r3, .L27
+ 1234 0038 2A21     		movs	r1, #42
+ 1235 003a 5B5E     		ldrsh	r3, [r3, r1]
+ 1236 003c 1900     		movs	r1, r3
+ 1237 003e 3B68     		ldr	r3, [r7]
+ 1238 0040 4B43     		muls	r3, r1
+ 1239 0042 D31A     		subs	r3, r2, r3
+ 1240 0044 8022     		movs	r2, #128
+ 1241 0046 D201     		lsls	r2, r2, #7
+ 1242 0048 9446     		mov	ip, r2
+ 1243 004a 6344     		add	r3, r3, ip
+ 203:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	((int32_t)16384)) >> 15) * (((((((var1 * ((int32_t)bme280.calibration.dig_H6)) >> 10) * (((var1 * 
+ 1244              		.loc 1 203 0
+ 1245 004c DB13     		asrs	r3, r3, #15
+ 1246 004e 294A     		ldr	r2, .L27
+ 1247 0050 2C21     		movs	r1, #44
+ 1248 0052 525C     		ldrb	r2, [r2, r1]
+ 1249 0054 1100     		movs	r1, r2
+ 1250 0056 3A68     		ldr	r2, [r7]
+ 1251 0058 4A43     		muls	r2, r1
+ 1252 005a 9212     		asrs	r2, r2, #10
+ 1253 005c 2549     		ldr	r1, .L27
+ 1254 005e 2620     		movs	r0, #38
+ 1255 0060 095C     		ldrb	r1, [r1, r0]
+ 1256 0062 0800     		movs	r0, r1
+ 1257 0064 3968     		ldr	r1, [r7]
+ 1258 0066 4143     		muls	r1, r0
+ 1259 0068 C912     		asrs	r1, r1, #11
+ 1260 006a 8020     		movs	r0, #128
+ 1261 006c 0002     		lsls	r0, r0, #8
+ 1262 006e 8446     		mov	ip, r0
+ 1263 0070 6144     		add	r1, r1, ip
+ 1264 0072 4A43     		muls	r2, r1
+ 1265 0074 9212     		asrs	r2, r2, #10
+ 1266 0076 8021     		movs	r1, #128
+ 1267 0078 8903     		lsls	r1, r1, #14
+ 1268 007a 8C46     		mov	ip, r1
+ 1269 007c 6244     		add	r2, r2, ip
+ 204:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	((int32_t)bme280.calibration.dig_H2) + 8192) >> 14));
+ 1270              		.loc 1 204 0
+ 1271 007e 1D49     		ldr	r1, .L27
+ 1272 0080 2420     		movs	r0, #36
+ 1273 0082 095E     		ldrsh	r1, [r1, r0]
+ 203:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	((int32_t)16384)) >> 15) * (((((((var1 * ((int32_t)bme280.calibration.dig_H6)) >> 10) * (((var1 * 
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 27
+
+
+ 1274              		.loc 1 203 0
+ 1275 0084 4A43     		muls	r2, r1
+ 1276              		.loc 1 204 0
+ 1277 0086 8021     		movs	r1, #128
+ 1278 0088 8901     		lsls	r1, r1, #6
+ 1279 008a 8C46     		mov	ip, r1
+ 1280 008c 6244     		add	r2, r2, ip
+ 1281 008e 9213     		asrs	r2, r2, #14
+ 202:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	var1 = (((((adc_H << 14) - (((int32_t)bme280.calibration.dig_H4) << 20) - (((int32_t)bme280.calibr
+ 1282              		.loc 1 202 0
+ 1283 0090 5343     		muls	r3, r2
+ 1284 0092 3B60     		str	r3, [r7]
+ 205:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	var1 = (var1 - (((((var1 >> 15) * (var1 >> 15)) >> 7) * ((int32_t)bme280.calibration.dig_H1)) >> 4
+ 1285              		.loc 1 205 0
+ 1286 0094 3B68     		ldr	r3, [r7]
+ 1287 0096 DB13     		asrs	r3, r3, #15
+ 1288 0098 3A68     		ldr	r2, [r7]
+ 1289 009a D213     		asrs	r2, r2, #15
+ 1290 009c 5343     		muls	r3, r2
+ 1291 009e DB11     		asrs	r3, r3, #7
+ 1292 00a0 144A     		ldr	r2, .L27
+ 1293 00a2 2221     		movs	r1, #34
+ 1294 00a4 525C     		ldrb	r2, [r2, r1]
+ 1295 00a6 5343     		muls	r3, r2
+ 1296 00a8 1B11     		asrs	r3, r3, #4
+ 1297 00aa 3A68     		ldr	r2, [r7]
+ 1298 00ac D31A     		subs	r3, r2, r3
+ 1299 00ae 3B60     		str	r3, [r7]
+ 206:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	var1 = (var1 < 0 ? 0 : var1);
+ 1300              		.loc 1 206 0
+ 1301 00b0 3B68     		ldr	r3, [r7]
+ 1302 00b2 002B     		cmp	r3, #0
+ 1303 00b4 00DA     		bge	.L24
+ 1304 00b6 0023     		movs	r3, #0
+ 1305              	.L24:
+ 1306 00b8 3B60     		str	r3, [r7]
+ 207:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	var1 = (var1 > 419430400 ? 419430400 : var1);
+ 1307              		.loc 1 207 0
+ 1308 00ba 3B68     		ldr	r3, [r7]
+ 1309 00bc C822     		movs	r2, #200
+ 1310 00be 5205     		lsls	r2, r2, #21
+ 1311 00c0 9342     		cmp	r3, r2
+ 1312 00c2 01DD     		ble	.L25
+ 1313 00c4 C823     		movs	r3, #200
+ 1314 00c6 5B05     		lsls	r3, r3, #21
+ 1315              	.L25:
+ 1316 00c8 3B60     		str	r3, [r7]
+ 208:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+ 209:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     bme280.RH = (float) (var1>>12) / 1024.0;
+ 1317              		.loc 1 209 0
+ 1318 00ca 3B68     		ldr	r3, [r7]
+ 1319 00cc 1B13     		asrs	r3, r3, #12
+ 1320 00ce 1800     		movs	r0, r3
+ 1321 00d0 FFF7FEFF 		bl	__aeabi_i2f
+ 1322 00d4 031C     		adds	r3, r0, #0
+ 1323 00d6 8921     		movs	r1, #137
+ 1324 00d8 C905     		lsls	r1, r1, #23
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 28
+
+
+ 1325 00da 181C     		adds	r0, r3, #0
+ 1326 00dc FFF7FEFF 		bl	__aeabi_fdiv
+ 1327 00e0 031C     		adds	r3, r0, #0
+ 1328 00e2 1A1C     		adds	r2, r3, #0
+ 1329 00e4 034B     		ldr	r3, .L27
+ 1330 00e6 DA63     		str	r2, [r3, #60]
+ 210:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	return bme280.RH;
+ 1331              		.loc 1 210 0
+ 1332 00e8 024B     		ldr	r3, .L27
+ 1333 00ea DB6B     		ldr	r3, [r3, #60]
+ 211:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+ 212:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** }
+ 1334              		.loc 1 212 0
+ 1335 00ec 181C     		adds	r0, r3, #0
+ 1336 00ee BD46     		mov	sp, r7
+ 1337 00f0 03B0     		add	sp, sp, #12
+ 1338              		@ sp needed
+ 1339 00f2 90BD     		pop	{r4, r7, pc}
+ 1340              	.L28:
+ 1341              		.align	2
+ 1342              	.L27:
+ 1343 00f4 00000000 		.word	bme280
+ 1344 00f8 00D4FEFF 		.word	-76800
+ 1345              		.cfi_endproc
+ 1346              	.LFE42:
+ 1347              		.size	BME280_readFloatHumidity, .-BME280_readFloatHumidity
+ 1348              		.section	.text.BME280_readTempC,"ax",%progbits
+ 1349              		.align	2
+ 1350              		.global	BME280_readTempC
+ 1351              		.code	16
+ 1352              		.thumb_func
+ 1353              		.type	BME280_readTempC, %function
+ 1354              	BME280_readTempC:
+ 1355              	.LFB43:
+ 213:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+ 214:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+ 215:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+ 216:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //****************************************************************************//
+ 217:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //
+ 218:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //  Temperature Section
+ 219:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //
+ 220:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //****************************************************************************//
+ 221:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+ 222:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** float BME280_readTempC( void )
+ 223:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** {
+ 1356              		.loc 1 223 0
+ 1357              		.cfi_startproc
+ 1358              		@ args = 0, pretend = 0, frame = 32
+ 1359              		@ frame_needed = 1, uses_anonymous_args = 0
+ 1360 0000 90B5     		push	{r4, r7, lr}
+ 1361              		.cfi_def_cfa_offset 12
+ 1362              		.cfi_offset 4, -12
+ 1363              		.cfi_offset 7, -8
+ 1364              		.cfi_offset 14, -4
+ 1365 0002 89B0     		sub	sp, sp, #36
+ 1366              		.cfi_def_cfa_offset 48
+ 1367 0004 00AF     		add	r7, sp, #0
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 29
+
+
+ 1368              		.cfi_def_cfa_register 7
+ 224:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	// Returns temperature in DegC, resolution is 0.01 DegC. Output value of “5123” equals 51.23 D
+ 225:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	// t_fine carries fine temperature as global value
+ 226:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+ 227:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	//get the reading (adc_T);
+ 228:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	int32_t adc_T = ((uint32_t)BME280_readRegister(BME280_TEMPERATURE_MSB_REG) << 12) | ((uint32_t)BME
+ 1369              		.loc 1 228 0
+ 1370 0006 FA20     		movs	r0, #250
+ 1371 0008 FFF7FEFF 		bl	BME280_readRegister
+ 1372 000c 0300     		movs	r3, r0
+ 1373 000e 1C03     		lsls	r4, r3, #12
+ 1374 0010 FB20     		movs	r0, #251
+ 1375 0012 FFF7FEFF 		bl	BME280_readRegister
+ 1376 0016 0300     		movs	r3, r0
+ 1377 0018 1B01     		lsls	r3, r3, #4
+ 1378 001a 1C43     		orrs	r4, r3
+ 1379 001c FC20     		movs	r0, #252
+ 1380 001e FFF7FEFF 		bl	BME280_readRegister
+ 1381 0022 0300     		movs	r3, r0
+ 1382 0024 1B09     		lsrs	r3, r3, #4
+ 1383 0026 DBB2     		uxtb	r3, r3
+ 1384 0028 1A00     		movs	r2, r3
+ 1385 002a 0F23     		movs	r3, #15
+ 1386 002c 1340     		ands	r3, r2
+ 1387 002e 2343     		orrs	r3, r4
+ 1388 0030 FB61     		str	r3, [r7, #28]
+ 229:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+ 230:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	//By datasheet, calibrate
+ 231:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	int64_t var1, var2;
+ 232:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+ 233:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	var1 = ((((adc_T>>3) - ((int32_t)bme280.calibration.dig_T1<<1))) * ((int32_t)bme280.calibration.di
+ 1389              		.loc 1 233 0
+ 1390 0032 FB69     		ldr	r3, [r7, #28]
+ 1391 0034 DA10     		asrs	r2, r3, #3
+ 1392 0036 204B     		ldr	r3, .L31
+ 1393 0038 5B89     		ldrh	r3, [r3, #10]
+ 1394 003a 5B00     		lsls	r3, r3, #1
+ 1395 003c D31A     		subs	r3, r2, r3
+ 1396 003e 1E4A     		ldr	r2, .L31
+ 1397 0040 0C21     		movs	r1, #12
+ 1398 0042 525E     		ldrsh	r2, [r2, r1]
+ 1399 0044 5343     		muls	r3, r2
+ 1400 0046 DB12     		asrs	r3, r3, #11
+ 1401 0048 3B61     		str	r3, [r7, #16]
+ 1402 004a DB17     		asrs	r3, r3, #31
+ 1403 004c 7B61     		str	r3, [r7, #20]
+ 234:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	var2 = (((((adc_T>>4) - ((int32_t)bme280.calibration.dig_T1)) * ((adc_T>>4) - ((int32_t)bme280.cal
+ 1404              		.loc 1 234 0
+ 1405 004e FB69     		ldr	r3, [r7, #28]
+ 1406 0050 1B11     		asrs	r3, r3, #4
+ 1407 0052 194A     		ldr	r2, .L31
+ 1408 0054 5289     		ldrh	r2, [r2, #10]
+ 1409 0056 9B1A     		subs	r3, r3, r2
+ 1410 0058 FA69     		ldr	r2, [r7, #28]
+ 1411 005a 1211     		asrs	r2, r2, #4
+ 1412 005c 1649     		ldr	r1, .L31
+ 1413 005e 4989     		ldrh	r1, [r1, #10]
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 30
+
+
+ 1414 0060 521A     		subs	r2, r2, r1
+ 1415 0062 5343     		muls	r3, r2
+ 1416 0064 1B13     		asrs	r3, r3, #12
+ 1417 0066 144A     		ldr	r2, .L31
+ 1418 0068 0E21     		movs	r1, #14
+ 1419 006a 525E     		ldrsh	r2, [r2, r1]
+ 1420 006c 5343     		muls	r3, r2
+ 1421 006e 9B13     		asrs	r3, r3, #14
+ 1422 0070 BB60     		str	r3, [r7, #8]
+ 1423 0072 DB17     		asrs	r3, r3, #31
+ 1424 0074 FB60     		str	r3, [r7, #12]
+ 235:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	
+ 236:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     bme280.t_fine = var1 + var2;
+ 1425              		.loc 1 236 0
+ 1426 0076 3A69     		ldr	r2, [r7, #16]
+ 1427 0078 BB68     		ldr	r3, [r7, #8]
+ 1428 007a D318     		adds	r3, r2, r3
+ 1429 007c 1A00     		movs	r2, r3
+ 1430 007e 0E4B     		ldr	r3, .L31
+ 1431 0080 1A63     		str	r2, [r3, #48]
+ 237:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	float output = (bme280.t_fine * 5 + 128) >> 8;
+ 1432              		.loc 1 237 0
+ 1433 0082 0D4B     		ldr	r3, .L31
+ 1434 0084 1A6B     		ldr	r2, [r3, #48]
+ 1435 0086 1300     		movs	r3, r2
+ 1436 0088 9B00     		lsls	r3, r3, #2
+ 1437 008a 9B18     		adds	r3, r3, r2
+ 1438 008c 8033     		adds	r3, r3, #128
+ 1439 008e 1B12     		asrs	r3, r3, #8
+ 1440 0090 1800     		movs	r0, r3
+ 1441 0092 FFF7FEFF 		bl	__aeabi_i2f
+ 1442 0096 031C     		adds	r3, r0, #0
+ 1443 0098 7B60     		str	r3, [r7, #4]
+ 238:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+ 239:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	output = output / 100;
+ 1444              		.loc 1 239 0
+ 1445 009a 0849     		ldr	r1, .L31+4
+ 1446 009c 7868     		ldr	r0, [r7, #4]
+ 1447 009e FFF7FEFF 		bl	__aeabi_fdiv
+ 1448 00a2 031C     		adds	r3, r0, #0
+ 1449 00a4 7B60     		str	r3, [r7, #4]
+ 240:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	
+ 241:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     bme280.temp_C = output;
+ 1450              		.loc 1 241 0
+ 1451 00a6 044B     		ldr	r3, .L31
+ 1452 00a8 7A68     		ldr	r2, [r7, #4]
+ 1453 00aa 5A63     		str	r2, [r3, #52]
+ 242:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	return bme280.temp_C;
+ 1454              		.loc 1 242 0
+ 1455 00ac 024B     		ldr	r3, .L31
+ 1456 00ae 5B6B     		ldr	r3, [r3, #52]
+ 243:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** }
+ 1457              		.loc 1 243 0
+ 1458 00b0 181C     		adds	r0, r3, #0
+ 1459 00b2 BD46     		mov	sp, r7
+ 1460 00b4 09B0     		add	sp, sp, #36
+ 1461              		@ sp needed
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 31
+
+
+ 1462 00b6 90BD     		pop	{r4, r7, pc}
+ 1463              	.L32:
+ 1464              		.align	2
+ 1465              	.L31:
+ 1466 00b8 00000000 		.word	bme280
+ 1467 00bc 0000C842 		.word	1120403456
+ 1468              		.cfi_endproc
+ 1469              	.LFE43:
+ 1470              		.size	BME280_readTempC, .-BME280_readTempC
+ 1471              		.global	__aeabi_fmul
+ 1472              		.global	__aeabi_fadd
+ 1473              		.section	.text.BME280_readTempF,"ax",%progbits
+ 1474              		.align	2
+ 1475              		.global	BME280_readTempF
+ 1476              		.code	16
+ 1477              		.thumb_func
+ 1478              		.type	BME280_readTempF, %function
+ 1479              	BME280_readTempF:
+ 1480              	.LFB44:
+ 244:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+ 245:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** float BME280_readTempF( void )
+ 246:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** {
+ 1481              		.loc 1 246 0
+ 1482              		.cfi_startproc
+ 1483              		@ args = 0, pretend = 0, frame = 8
+ 1484              		@ frame_needed = 1, uses_anonymous_args = 0
+ 1485 0000 80B5     		push	{r7, lr}
+ 1486              		.cfi_def_cfa_offset 8
+ 1487              		.cfi_offset 7, -8
+ 1488              		.cfi_offset 14, -4
+ 1489 0002 82B0     		sub	sp, sp, #8
+ 1490              		.cfi_def_cfa_offset 16
+ 1491 0004 00AF     		add	r7, sp, #0
+ 1492              		.cfi_def_cfa_register 7
+ 247:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	float output = BME280_readTempC();
+ 1493              		.loc 1 247 0
+ 1494 0006 FFF7FEFF 		bl	BME280_readTempC
+ 1495 000a 031C     		adds	r3, r0, #0
+ 1496 000c 7B60     		str	r3, [r7, #4]
+ 248:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	output = (output * 9) / 5 + 32;
+ 1497              		.loc 1 248 0
+ 1498 000e 0B49     		ldr	r1, .L35
+ 1499 0010 7868     		ldr	r0, [r7, #4]
+ 1500 0012 FFF7FEFF 		bl	__aeabi_fmul
+ 1501 0016 031C     		adds	r3, r0, #0
+ 1502 0018 0949     		ldr	r1, .L35+4
+ 1503 001a 181C     		adds	r0, r3, #0
+ 1504 001c FFF7FEFF 		bl	__aeabi_fdiv
+ 1505 0020 031C     		adds	r3, r0, #0
+ 1506 0022 8421     		movs	r1, #132
+ 1507 0024 C905     		lsls	r1, r1, #23
+ 1508 0026 181C     		adds	r0, r3, #0
+ 1509 0028 FFF7FEFF 		bl	__aeabi_fadd
+ 1510 002c 031C     		adds	r3, r0, #0
+ 1511 002e 7B60     		str	r3, [r7, #4]
+ 249:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+ 250:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	return output;
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 32
+
+
+ 1512              		.loc 1 250 0
+ 1513 0030 7B68     		ldr	r3, [r7, #4]
+ 251:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** }
+ 1514              		.loc 1 251 0
+ 1515 0032 181C     		adds	r0, r3, #0
+ 1516 0034 BD46     		mov	sp, r7
+ 1517 0036 02B0     		add	sp, sp, #8
+ 1518              		@ sp needed
+ 1519 0038 80BD     		pop	{r7, pc}
+ 1520              	.L36:
+ 1521 003a C046     		.align	2
+ 1522              	.L35:
+ 1523 003c 00001041 		.word	1091567616
+ 1524 0040 0000A040 		.word	1084227584
+ 1525              		.cfi_endproc
+ 1526              	.LFE44:
+ 1527              		.size	BME280_readTempF, .-BME280_readTempF
+ 1528              		.section	.text.BME280_readRegister,"ax",%progbits
+ 1529              		.align	2
+ 1530              		.global	BME280_readRegister
+ 1531              		.code	16
+ 1532              		.thumb_func
+ 1533              		.type	BME280_readRegister, %function
+ 1534              	BME280_readRegister:
+ 1535              	.LFB45:
+ 252:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+ 253:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //****************************************************************************//
+ 254:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //
+ 255:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //  Utility
+ 256:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //
+ 257:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** //****************************************************************************//
+ 258:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** uint8_t BME280_readRegister(uint8_t offset)
+ 259:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** {
+ 1536              		.loc 1 259 0
+ 1537              		.cfi_startproc
+ 1538              		@ args = 0, pretend = 0, frame = 16
+ 1539              		@ frame_needed = 1, uses_anonymous_args = 0
+ 1540 0000 80B5     		push	{r7, lr}
+ 1541              		.cfi_def_cfa_offset 8
+ 1542              		.cfi_offset 7, -8
+ 1543              		.cfi_offset 14, -4
+ 1544 0002 84B0     		sub	sp, sp, #16
+ 1545              		.cfi_def_cfa_offset 24
+ 1546 0004 00AF     		add	r7, sp, #0
+ 1547              		.cfi_def_cfa_register 7
+ 1548 0006 0200     		movs	r2, r0
+ 1549 0008 FB1D     		adds	r3, r7, #7
+ 1550 000a 1A70     		strb	r2, [r3]
+ 260:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	//Return value
+ 261:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	uint8_t result;
+ 262:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	uint8_t numBytes = 1;
+ 1551              		.loc 1 262 0
+ 1552 000c 0D23     		movs	r3, #13
+ 1553 000e FB18     		adds	r3, r7, r3
+ 1554 0010 0122     		movs	r2, #1
+ 1555 0012 1A70     		strb	r2, [r3]
+ 263:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 33
+
+
+ 264:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     uint16  iter;
+ 265:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     
+ 266:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	switch (bme280.settings.commInterface) {
+ 1556              		.loc 1 266 0
+ 1557 0014 2D4B     		ldr	r3, .L55
+ 1558 0016 1B78     		ldrb	r3, [r3]
+ 1559 0018 002B     		cmp	r3, #0
+ 1560 001a 02D0     		beq	.L39
+ 1561 001c 012B     		cmp	r3, #1
+ 1562 001e 4CD0     		beq	.L52
+ 267:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+ 268:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     	case BME280_I2C_MODE:
+ 269:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             ///I2C_Wakeup();
+ 270:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             SCB_1_I2CMasterClearStatus(); /* Clear any previous status */
+ 271:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             
+ 272:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             // Write to register
+ 273:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             SCB_1_I2CMasterWriteBuf(bme280.settings.I2CAddress, (uint8 *) &offset, 1, SCB_1_I2C_MOD
+ 274:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             for(iter = 0; iter < BME280_MAX_ITER; iter++)
+ 275:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             {
+ 276:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****                 if(0u != (SCB_1_I2CMasterStatus() & SCB_1_I2C_MSTAT_WR_CMPLT))
+ 277:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****                 {
+ 278:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****                     /* Transfer complete. Check Master status to make sure that transfer
+ 279:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****                     completed without errors. */
+ 280:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****                     break;
+ 281:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****                 }
+ 282:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             }        
+ 283:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             
+ 284:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             // Read Buffer        
+ 285:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             SCB_1_I2CMasterReadBuf(bme280.settings.I2CAddress, &result, numBytes, SCB_1_I2C_MODE_CO
+ 286:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             
+ 287:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             for(iter = 0; iter < BME280_MAX_ITER; iter++){
+ 288:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****                 if(0u != (SCB_1_I2CMasterStatus() & SCB_1_I2C_MSTAT_RD_CMPLT))
+ 289:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****                 {
+ 290:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****                     /* Transfer complete. Check Master status to make sure that transfer
+ 291:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****                     completed without errors. */
+ 292:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****                     break;
+ 293:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****                 }
+ 294:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****                 
+ 295:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             }
+ 296:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             //I2C_Sleep();
+ 297:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+ 298:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     		break;
+ 299:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+ 300:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     	case BME280_SPI_MODE:
+ 301:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     		// TODO
+ 302:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     		break;
+ 303:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+ 304:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     	default:
+ 305:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     		break;
+ 1563              		.loc 1 305 0
+ 1564 0020 4CE0     		b	.L49
+ 1565              	.L39:
+ 270:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             
+ 1566              		.loc 1 270 0
+ 1567 0022 FFF7FEFF 		bl	SCB_1_I2CMasterClearStatus
+ 273:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             for(iter = 0; iter < BME280_MAX_ITER; iter++)
+ 1568              		.loc 1 273 0
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 34
+
+
+ 1569 0026 294B     		ldr	r3, .L55
+ 1570 0028 5B78     		ldrb	r3, [r3, #1]
+ 1571 002a 1800     		movs	r0, r3
+ 1572 002c F91D     		adds	r1, r7, #7
+ 1573 002e 0023     		movs	r3, #0
+ 1574 0030 0122     		movs	r2, #1
+ 1575 0032 FFF7FEFF 		bl	SCB_1_I2CMasterWriteBuf
+ 274:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             {
+ 1576              		.loc 1 274 0
+ 1577 0036 0E23     		movs	r3, #14
+ 1578 0038 FB18     		adds	r3, r7, r3
+ 1579 003a 0022     		movs	r2, #0
+ 1580 003c 1A80     		strh	r2, [r3]
+ 1581 003e 0CE0     		b	.L41
+ 1582              	.L44:
+ 276:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****                 {
+ 1583              		.loc 1 276 0
+ 1584 0040 FFF7FEFF 		bl	SCB_1_I2CMasterStatus
+ 1585 0044 0200     		movs	r2, r0
+ 1586 0046 0223     		movs	r3, #2
+ 1587 0048 1340     		ands	r3, r2
+ 1588 004a 0ED1     		bne	.L53
+ 274:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             {
+ 1589              		.loc 1 274 0 discriminator 2
+ 1590 004c 0E23     		movs	r3, #14
+ 1591 004e FB18     		adds	r3, r7, r3
+ 1592 0050 1A88     		ldrh	r2, [r3]
+ 1593 0052 0E23     		movs	r3, #14
+ 1594 0054 FB18     		adds	r3, r7, r3
+ 1595 0056 0132     		adds	r2, r2, #1
+ 1596 0058 1A80     		strh	r2, [r3]
+ 1597              	.L41:
+ 274:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             {
+ 1598              		.loc 1 274 0 is_stmt 0 discriminator 1
+ 1599 005a 0E23     		movs	r3, #14
+ 1600 005c FB18     		adds	r3, r7, r3
+ 1601 005e 1A88     		ldrh	r2, [r3]
+ 1602 0060 2C23     		movs	r3, #44
+ 1603 0062 FF33     		adds	r3, r3, #255
+ 1604 0064 9A42     		cmp	r2, r3
+ 1605 0066 EBD9     		bls	.L44
+ 1606 0068 00E0     		b	.L43
+ 1607              	.L53:
+ 280:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****                 }
+ 1608              		.loc 1 280 0 is_stmt 1
+ 1609 006a C046     		nop
+ 1610              	.L43:
+ 285:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             
+ 1611              		.loc 1 285 0
+ 1612 006c 174B     		ldr	r3, .L55
+ 1613 006e 5B78     		ldrb	r3, [r3, #1]
+ 1614 0070 1800     		movs	r0, r3
+ 1615 0072 0D23     		movs	r3, #13
+ 1616 0074 FB18     		adds	r3, r7, r3
+ 1617 0076 1A78     		ldrb	r2, [r3]
+ 1618 0078 0C23     		movs	r3, #12
+ 1619 007a F918     		adds	r1, r7, r3
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 35
+
+
+ 1620 007c 0023     		movs	r3, #0
+ 1621 007e FFF7FEFF 		bl	SCB_1_I2CMasterReadBuf
+ 287:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****                 if(0u != (SCB_1_I2CMasterStatus() & SCB_1_I2C_MSTAT_RD_CMPLT))
+ 1622              		.loc 1 287 0
+ 1623 0082 0E23     		movs	r3, #14
+ 1624 0084 FB18     		adds	r3, r7, r3
+ 1625 0086 0022     		movs	r2, #0
+ 1626 0088 1A80     		strh	r2, [r3]
+ 1627 008a 0CE0     		b	.L45
+ 1628              	.L48:
+ 288:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****                 {
+ 1629              		.loc 1 288 0
+ 1630 008c FFF7FEFF 		bl	SCB_1_I2CMasterStatus
+ 1631 0090 0200     		movs	r2, r0
+ 1632 0092 0123     		movs	r3, #1
+ 1633 0094 1340     		ands	r3, r2
+ 1634 0096 0ED1     		bne	.L54
+ 287:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****                 if(0u != (SCB_1_I2CMasterStatus() & SCB_1_I2C_MSTAT_RD_CMPLT))
+ 1635              		.loc 1 287 0 discriminator 2
+ 1636 0098 0E23     		movs	r3, #14
+ 1637 009a FB18     		adds	r3, r7, r3
+ 1638 009c 1A88     		ldrh	r2, [r3]
+ 1639 009e 0E23     		movs	r3, #14
+ 1640 00a0 FB18     		adds	r3, r7, r3
+ 1641 00a2 0132     		adds	r2, r2, #1
+ 1642 00a4 1A80     		strh	r2, [r3]
+ 1643              	.L45:
+ 287:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****                 if(0u != (SCB_1_I2CMasterStatus() & SCB_1_I2C_MSTAT_RD_CMPLT))
+ 1644              		.loc 1 287 0 is_stmt 0 discriminator 1
+ 1645 00a6 0E23     		movs	r3, #14
+ 1646 00a8 FB18     		adds	r3, r7, r3
+ 1647 00aa 1A88     		ldrh	r2, [r3]
+ 1648 00ac 2C23     		movs	r3, #44
+ 1649 00ae FF33     		adds	r3, r3, #255
+ 1650 00b0 9A42     		cmp	r2, r3
+ 1651 00b2 EBD9     		bls	.L48
+ 298:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+ 1652              		.loc 1 298 0 is_stmt 1
+ 1653 00b4 02E0     		b	.L49
+ 1654              	.L54:
+ 292:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****                 }
+ 1655              		.loc 1 292 0
+ 1656 00b6 C046     		nop
+ 298:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+ 1657              		.loc 1 298 0
+ 1658 00b8 00E0     		b	.L49
+ 1659              	.L52:
+ 302:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+ 1660              		.loc 1 302 0
+ 1661 00ba C046     		nop
+ 1662              	.L49:
+ 306:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	}
+ 307:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	return result;
+ 1663              		.loc 1 307 0
+ 1664 00bc 0C23     		movs	r3, #12
+ 1665 00be FB18     		adds	r3, r7, r3
+ 1666 00c0 1B78     		ldrb	r3, [r3]
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 36
+
+
+ 308:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** }
+ 1667              		.loc 1 308 0
+ 1668 00c2 1800     		movs	r0, r3
+ 1669 00c4 BD46     		mov	sp, r7
+ 1670 00c6 04B0     		add	sp, sp, #16
+ 1671              		@ sp needed
+ 1672 00c8 80BD     		pop	{r7, pc}
+ 1673              	.L56:
+ 1674 00ca C046     		.align	2
+ 1675              	.L55:
+ 1676 00cc 00000000 		.word	bme280
+ 1677              		.cfi_endproc
+ 1678              	.LFE45:
+ 1679              		.size	BME280_readRegister, .-BME280_readRegister
+ 1680              		.section	.text.BME280_writeRegister,"ax",%progbits
+ 1681              		.align	2
+ 1682              		.global	BME280_writeRegister
+ 1683              		.code	16
+ 1684              		.thumb_func
+ 1685              		.type	BME280_writeRegister, %function
+ 1686              	BME280_writeRegister:
+ 1687              	.LFB46:
+ 309:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+ 310:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+ 311:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** void BME280_writeRegister(uint8_t offset, uint8_t data)
+ 312:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** {
+ 1688              		.loc 1 312 0
+ 1689              		.cfi_startproc
+ 1690              		@ args = 0, pretend = 0, frame = 16
+ 1691              		@ frame_needed = 1, uses_anonymous_args = 0
+ 1692 0000 80B5     		push	{r7, lr}
+ 1693              		.cfi_def_cfa_offset 8
+ 1694              		.cfi_offset 7, -8
+ 1695              		.cfi_offset 14, -4
+ 1696 0002 84B0     		sub	sp, sp, #16
+ 1697              		.cfi_def_cfa_offset 24
+ 1698 0004 00AF     		add	r7, sp, #0
+ 1699              		.cfi_def_cfa_register 7
+ 1700 0006 0200     		movs	r2, r0
+ 1701 0008 FB1D     		adds	r3, r7, #7
+ 1702 000a 1A70     		strb	r2, [r3]
+ 1703 000c BB1D     		adds	r3, r7, #6
+ 1704 000e 0A1C     		adds	r2, r1, #0
+ 1705 0010 1A70     		strb	r2, [r3]
+ 313:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     uint8 packet[] = {offset, data};
+ 1706              		.loc 1 313 0
+ 1707 0012 0C23     		movs	r3, #12
+ 1708 0014 FB18     		adds	r3, r7, r3
+ 1709 0016 FA1D     		adds	r2, r7, #7
+ 1710 0018 1278     		ldrb	r2, [r2]
+ 1711 001a 1A70     		strb	r2, [r3]
+ 1712 001c 0C23     		movs	r3, #12
+ 1713 001e FB18     		adds	r3, r7, r3
+ 1714 0020 BA1D     		adds	r2, r7, #6
+ 1715 0022 1278     		ldrb	r2, [r2]
+ 1716 0024 5A70     		strb	r2, [r3, #1]
+ 314:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     uint16 iter;
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 37
+
+
+ 315:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     
+ 316:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	switch (bme280.settings.commInterface)
+ 1717              		.loc 1 316 0
+ 1718 0026 194B     		ldr	r3, .L69
+ 1719 0028 1B78     		ldrb	r3, [r3]
+ 1720 002a 002B     		cmp	r3, #0
+ 1721 002c 02D0     		beq	.L59
+ 1722 002e 012B     		cmp	r3, #1
+ 1723 0030 27D0     		beq	.L67
+ 317:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	{
+ 318:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     	case BME280_I2C_MODE:
+ 319:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     		//Write the byte
+ 320:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             //I2C_Wakeup();
+ 321:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             SCB_1_I2CMasterClearStatus(); /* Clear any previous status */
+ 322:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             
+ 323:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             // Write to register
+ 324:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             SCB_1_I2CMasterWriteBuf(bme280.settings.I2CAddress, (uint8 *) &packet, 2, SCB_1_I2C_MOD
+ 325:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             for(iter = 0; iter < BME280_MAX_ITER; iter++)
+ 326:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             {
+ 327:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****                 if(0u != (SCB_1_I2CMasterStatus() & SCB_1_I2C_MSTAT_WR_CMPLT))
+ 328:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****                 {
+ 329:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****                     // Transfer complete. Check Master status to make sure that transfer
+ 330:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****                     //completed without errors. 
+ 331:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****                     break;               
+ 332:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****                 }
+ 333:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             }          
+ 334:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             
+ 335:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             //I2C_Sleep();        
+ 336:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+ 337:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     		break;
+ 338:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+ 339:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     	case BME280_SPI_MODE:
+ 340:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     		//TODO
+ 341:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     		break;
+ 342:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+ 343:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     	default:
+ 344:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****     		break;
+ 1724              		.loc 1 344 0
+ 1725 0032 27E0     		b	.L65
+ 1726              	.L59:
+ 321:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             
+ 1727              		.loc 1 321 0
+ 1728 0034 FFF7FEFF 		bl	SCB_1_I2CMasterClearStatus
+ 324:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             for(iter = 0; iter < BME280_MAX_ITER; iter++)
+ 1729              		.loc 1 324 0
+ 1730 0038 144B     		ldr	r3, .L69
+ 1731 003a 5B78     		ldrb	r3, [r3, #1]
+ 1732 003c 1800     		movs	r0, r3
+ 1733 003e 0C23     		movs	r3, #12
+ 1734 0040 F918     		adds	r1, r7, r3
+ 1735 0042 0023     		movs	r3, #0
+ 1736 0044 0222     		movs	r2, #2
+ 1737 0046 FFF7FEFF 		bl	SCB_1_I2CMasterWriteBuf
+ 325:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             {
+ 1738              		.loc 1 325 0
+ 1739 004a 0E23     		movs	r3, #14
+ 1740 004c FB18     		adds	r3, r7, r3
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 38
+
+
+ 1741 004e 0022     		movs	r2, #0
+ 1742 0050 1A80     		strh	r2, [r3]
+ 1743 0052 0CE0     		b	.L61
+ 1744              	.L64:
+ 327:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****                 {
+ 1745              		.loc 1 327 0
+ 1746 0054 FFF7FEFF 		bl	SCB_1_I2CMasterStatus
+ 1747 0058 0200     		movs	r2, r0
+ 1748 005a 0223     		movs	r3, #2
+ 1749 005c 1340     		ands	r3, r2
+ 1750 005e 0ED1     		bne	.L68
+ 325:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             {
+ 1751              		.loc 1 325 0 discriminator 2
+ 1752 0060 0E23     		movs	r3, #14
+ 1753 0062 FB18     		adds	r3, r7, r3
+ 1754 0064 1A88     		ldrh	r2, [r3]
+ 1755 0066 0E23     		movs	r3, #14
+ 1756 0068 FB18     		adds	r3, r7, r3
+ 1757 006a 0132     		adds	r2, r2, #1
+ 1758 006c 1A80     		strh	r2, [r3]
+ 1759              	.L61:
+ 325:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****             {
+ 1760              		.loc 1 325 0 is_stmt 0 discriminator 1
+ 1761 006e 0E23     		movs	r3, #14
+ 1762 0070 FB18     		adds	r3, r7, r3
+ 1763 0072 1A88     		ldrh	r2, [r3]
+ 1764 0074 2C23     		movs	r3, #44
+ 1765 0076 FF33     		adds	r3, r3, #255
+ 1766 0078 9A42     		cmp	r2, r3
+ 1767 007a EBD9     		bls	.L64
+ 337:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+ 1768              		.loc 1 337 0 is_stmt 1
+ 1769 007c 02E0     		b	.L65
+ 1770              	.L68:
+ 331:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c ****                 }
+ 1771              		.loc 1 331 0
+ 1772 007e C046     		nop
+ 337:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+ 1773              		.loc 1 337 0
+ 1774 0080 00E0     		b	.L65
+ 1775              	.L67:
+ 341:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 
+ 1776              		.loc 1 341 0
+ 1777 0082 C046     		nop
+ 1778              	.L65:
+ 345:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** 	}
+ 346:..\..\ble-beacon_capsense+vl6180+bme280\Design01.cydsn/BME280.c **** }
+ 1779              		.loc 1 346 0 discriminator 2
+ 1780 0084 C046     		nop
+ 1781 0086 BD46     		mov	sp, r7
+ 1782 0088 04B0     		add	sp, sp, #16
+ 1783              		@ sp needed
+ 1784 008a 80BD     		pop	{r7, pc}
+ 1785              	.L70:
+ 1786              		.align	2
+ 1787              	.L69:
+ 1788 008c 00000000 		.word	bme280
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 39
+
+
+ 1789              		.cfi_endproc
+ 1790              	.LFE46:
+ 1791              		.size	BME280_writeRegister, .-BME280_writeRegister
+ 1792              		.text
+ 1793              	.Letext0:
+ 1794              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 1795              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 1796              		.file 4 "Generated_Source\\PSoC4/cytypes.h"
+ 1797              		.file 5 "..\\..\\ble-beacon_capsense+vl6180+bme280\\Design01.cydsn\\BME280.h"
+ 1798              		.file 6 "Generated_Source\\PSoC4/BLE_1_Stack.h"
+ 1799              		.section	.debug_info,"",%progbits
+ 1800              	.Ldebug_info0:
+ 1801 0000 32070000 		.4byte	0x732
+ 1802 0004 0400     		.2byte	0x4
+ 1803 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 1804 000a 04       		.byte	0x4
+ 1805 000b 01       		.uleb128 0x1
+ 1806 000c 45060000 		.4byte	.LASF163
+ 1807 0010 0C       		.byte	0xc
+ 1808 0011 9B0A0000 		.4byte	.LASF164
+ 1809 0015 75070000 		.4byte	.LASF165
+ 1810 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 1811 001d 00000000 		.4byte	0
+ 1812 0021 00000000 		.4byte	.Ldebug_line0
+ 1813 0025 02       		.uleb128 0x2
+ 1814 0026 01       		.byte	0x1
+ 1815 0027 06       		.byte	0x6
+ 1816 0028 8D020000 		.4byte	.LASF0
+ 1817 002c 03       		.uleb128 0x3
+ 1818 002d 34010000 		.4byte	.LASF2
+ 1819 0031 02       		.byte	0x2
+ 1820 0032 1D       		.byte	0x1d
+ 1821 0033 37000000 		.4byte	0x37
+ 1822 0037 02       		.uleb128 0x2
+ 1823 0038 01       		.byte	0x1
+ 1824 0039 08       		.byte	0x8
+ 1825 003a 5D090000 		.4byte	.LASF1
+ 1826 003e 03       		.uleb128 0x3
+ 1827 003f D5030000 		.4byte	.LASF3
+ 1828 0043 02       		.byte	0x2
+ 1829 0044 29       		.byte	0x29
+ 1830 0045 49000000 		.4byte	0x49
+ 1831 0049 02       		.uleb128 0x2
+ 1832 004a 02       		.byte	0x2
+ 1833 004b 05       		.byte	0x5
+ 1834 004c 8F090000 		.4byte	.LASF4
+ 1835 0050 03       		.uleb128 0x3
+ 1836 0051 570B0000 		.4byte	.LASF5
+ 1837 0055 02       		.byte	0x2
+ 1838 0056 2B       		.byte	0x2b
+ 1839 0057 5B000000 		.4byte	0x5b
+ 1840 005b 02       		.uleb128 0x2
+ 1841 005c 02       		.byte	0x2
+ 1842 005d 07       		.byte	0x7
+ 1843 005e 61050000 		.4byte	.LASF6
+ 1844 0062 03       		.uleb128 0x3
+ 1845 0063 970B0000 		.4byte	.LASF7
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 40
+
+
+ 1846 0067 02       		.byte	0x2
+ 1847 0068 3F       		.byte	0x3f
+ 1848 0069 6D000000 		.4byte	0x6d
+ 1849 006d 02       		.uleb128 0x2
+ 1850 006e 04       		.byte	0x4
+ 1851 006f 05       		.byte	0x5
+ 1852 0070 8D010000 		.4byte	.LASF8
+ 1853 0074 03       		.uleb128 0x3
+ 1854 0075 B5030000 		.4byte	.LASF9
+ 1855 0079 02       		.byte	0x2
+ 1856 007a 41       		.byte	0x41
+ 1857 007b 7F000000 		.4byte	0x7f
+ 1858 007f 02       		.uleb128 0x2
+ 1859 0080 04       		.byte	0x4
+ 1860 0081 07       		.byte	0x7
+ 1861 0082 F00A0000 		.4byte	.LASF10
+ 1862 0086 03       		.uleb128 0x3
+ 1863 0087 9F020000 		.4byte	.LASF11
+ 1864 008b 02       		.byte	0x2
+ 1865 008c 59       		.byte	0x59
+ 1866 008d 91000000 		.4byte	0x91
+ 1867 0091 02       		.uleb128 0x2
+ 1868 0092 08       		.byte	0x8
+ 1869 0093 05       		.byte	0x5
+ 1870 0094 7F020000 		.4byte	.LASF12
+ 1871 0098 02       		.uleb128 0x2
+ 1872 0099 08       		.byte	0x8
+ 1873 009a 07       		.byte	0x7
+ 1874 009b 96010000 		.4byte	.LASF13
+ 1875 009f 04       		.uleb128 0x4
+ 1876 00a0 04       		.byte	0x4
+ 1877 00a1 05       		.byte	0x5
+ 1878 00a2 696E7400 		.ascii	"int\000"
+ 1879 00a6 02       		.uleb128 0x2
+ 1880 00a7 04       		.byte	0x4
+ 1881 00a8 07       		.byte	0x7
+ 1882 00a9 58040000 		.4byte	.LASF14
+ 1883 00ad 03       		.uleb128 0x3
+ 1884 00ae B90C0000 		.4byte	.LASF15
+ 1885 00b2 03       		.byte	0x3
+ 1886 00b3 18       		.byte	0x18
+ 1887 00b4 2C000000 		.4byte	0x2c
+ 1888 00b8 03       		.uleb128 0x3
+ 1889 00b9 77020000 		.4byte	.LASF16
+ 1890 00bd 03       		.byte	0x3
+ 1891 00be 20       		.byte	0x20
+ 1892 00bf 3E000000 		.4byte	0x3e
+ 1893 00c3 03       		.uleb128 0x3
+ 1894 00c4 8D040000 		.4byte	.LASF17
+ 1895 00c8 03       		.byte	0x3
+ 1896 00c9 24       		.byte	0x24
+ 1897 00ca 50000000 		.4byte	0x50
+ 1898 00ce 03       		.uleb128 0x3
+ 1899 00cf 55090000 		.4byte	.LASF18
+ 1900 00d3 03       		.byte	0x3
+ 1901 00d4 2C       		.byte	0x2c
+ 1902 00d5 62000000 		.4byte	0x62
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 41
+
+
+ 1903 00d9 03       		.uleb128 0x3
+ 1904 00da 850C0000 		.4byte	.LASF19
+ 1905 00de 03       		.byte	0x3
+ 1906 00df 30       		.byte	0x30
+ 1907 00e0 74000000 		.4byte	0x74
+ 1908 00e4 03       		.uleb128 0x3
+ 1909 00e5 E0020000 		.4byte	.LASF20
+ 1910 00e9 03       		.byte	0x3
+ 1911 00ea 38       		.byte	0x38
+ 1912 00eb 86000000 		.4byte	0x86
+ 1913 00ef 05       		.uleb128 0x5
+ 1914 00f0 4B030000 		.4byte	.LASF21
+ 1915 00f4 04       		.byte	0x4
+ 1916 00f5 E601     		.2byte	0x1e6
+ 1917 00f7 37000000 		.4byte	0x37
+ 1918 00fb 05       		.uleb128 0x5
+ 1919 00fc 47000000 		.4byte	.LASF22
+ 1920 0100 04       		.byte	0x4
+ 1921 0101 E701     		.2byte	0x1e7
+ 1922 0103 5B000000 		.4byte	0x5b
+ 1923 0107 02       		.uleb128 0x2
+ 1924 0108 04       		.byte	0x4
+ 1925 0109 04       		.byte	0x4
+ 1926 010a 2D090000 		.4byte	.LASF23
+ 1927 010e 02       		.uleb128 0x2
+ 1928 010f 08       		.byte	0x8
+ 1929 0110 04       		.byte	0x4
+ 1930 0111 77030000 		.4byte	.LASF24
+ 1931 0115 02       		.uleb128 0x2
+ 1932 0116 01       		.byte	0x1
+ 1933 0117 08       		.byte	0x8
+ 1934 0118 210B0000 		.4byte	.LASF25
+ 1935 011c 02       		.uleb128 0x2
+ 1936 011d 08       		.byte	0x8
+ 1937 011e 04       		.byte	0x4
+ 1938 011f F8070000 		.4byte	.LASF26
+ 1939 0123 02       		.uleb128 0x2
+ 1940 0124 04       		.byte	0x4
+ 1941 0125 07       		.byte	0x7
+ 1942 0126 EF070000 		.4byte	.LASF27
+ 1943 012a 06       		.uleb128 0x6
+ 1944 012b 01       		.byte	0x1
+ 1945 012c 37000000 		.4byte	0x37
+ 1946 0130 06       		.byte	0x6
+ 1947 0131 3201     		.2byte	0x132
+ 1948 0133 E8020000 		.4byte	0x2e8
+ 1949 0137 07       		.uleb128 0x7
+ 1950 0138 74050000 		.4byte	.LASF28
+ 1951 013c 00       		.byte	0
+ 1952 013d 07       		.uleb128 0x7
+ 1953 013e 33090000 		.4byte	.LASF29
+ 1954 0142 01       		.byte	0x1
+ 1955 0143 07       		.uleb128 0x7
+ 1956 0144 7B010000 		.4byte	.LASF30
+ 1957 0148 02       		.byte	0x2
+ 1958 0149 07       		.uleb128 0x7
+ 1959 014a 160C0000 		.4byte	.LASF31
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 42
+
+
+ 1960 014e 03       		.byte	0x3
+ 1961 014f 07       		.uleb128 0x7
+ 1962 0150 AD010000 		.4byte	.LASF32
+ 1963 0154 04       		.byte	0x4
+ 1964 0155 07       		.uleb128 0x7
+ 1965 0156 23000000 		.4byte	.LASF33
+ 1966 015a 05       		.byte	0x5
+ 1967 015b 07       		.uleb128 0x7
+ 1968 015c A9050000 		.4byte	.LASF34
+ 1969 0160 06       		.byte	0x6
+ 1970 0161 07       		.uleb128 0x7
+ 1971 0162 0F070000 		.4byte	.LASF35
+ 1972 0166 20       		.byte	0x20
+ 1973 0167 07       		.uleb128 0x7
+ 1974 0168 AF020000 		.4byte	.LASF36
+ 1975 016c 21       		.byte	0x21
+ 1976 016d 07       		.uleb128 0x7
+ 1977 016e E1050000 		.4byte	.LASF37
+ 1978 0172 22       		.byte	0x22
+ 1979 0173 07       		.uleb128 0x7
+ 1980 0174 E90B0000 		.4byte	.LASF38
+ 1981 0178 23       		.byte	0x23
+ 1982 0179 07       		.uleb128 0x7
+ 1983 017a 7A080000 		.4byte	.LASF39
+ 1984 017e 24       		.byte	0x24
+ 1985 017f 07       		.uleb128 0x7
+ 1986 0180 04080000 		.4byte	.LASF40
+ 1987 0184 25       		.byte	0x25
+ 1988 0185 07       		.uleb128 0x7
+ 1989 0186 23030000 		.4byte	.LASF41
+ 1990 018a 26       		.byte	0x26
+ 1991 018b 07       		.uleb128 0x7
+ 1992 018c 05060000 		.4byte	.LASF42
+ 1993 0190 27       		.byte	0x27
+ 1994 0191 07       		.uleb128 0x7
+ 1995 0192 2F0C0000 		.4byte	.LASF43
+ 1996 0196 28       		.byte	0x28
+ 1997 0197 07       		.uleb128 0x7
+ 1998 0198 31020000 		.4byte	.LASF44
+ 1999 019c 29       		.byte	0x29
+ 2000 019d 07       		.uleb128 0x7
+ 2001 019e A2000000 		.4byte	.LASF45
+ 2002 01a2 2A       		.byte	0x2a
+ 2003 01a3 07       		.uleb128 0x7
+ 2004 01a4 C7010000 		.4byte	.LASF46
+ 2005 01a8 2B       		.byte	0x2b
+ 2006 01a9 07       		.uleb128 0x7
+ 2007 01aa 1C0D0000 		.4byte	.LASF47
+ 2008 01ae 2C       		.byte	0x2c
+ 2009 01af 07       		.uleb128 0x7
+ 2010 01b0 4E020000 		.4byte	.LASF48
+ 2011 01b4 2D       		.byte	0x2d
+ 2012 01b5 07       		.uleb128 0x7
+ 2013 01b6 6B090000 		.4byte	.LASF49
+ 2014 01ba 2E       		.byte	0x2e
+ 2015 01bb 07       		.uleb128 0x7
+ 2016 01bc EC000000 		.4byte	.LASF50
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 43
+
+
+ 2017 01c0 2F       		.byte	0x2f
+ 2018 01c1 07       		.uleb128 0x7
+ 2019 01c2 59080000 		.4byte	.LASF51
+ 2020 01c6 30       		.byte	0x30
+ 2021 01c7 07       		.uleb128 0x7
+ 2022 01c8 870D0000 		.4byte	.LASF52
+ 2023 01cc 31       		.byte	0x31
+ 2024 01cd 07       		.uleb128 0x7
+ 2025 01ce 38080000 		.4byte	.LASF53
+ 2026 01d2 32       		.byte	0x32
+ 2027 01d3 07       		.uleb128 0x7
+ 2028 01d4 740A0000 		.4byte	.LASF54
+ 2029 01d8 33       		.byte	0x33
+ 2030 01d9 07       		.uleb128 0x7
+ 2031 01da A7040000 		.4byte	.LASF55
+ 2032 01de 34       		.byte	0x34
+ 2033 01df 07       		.uleb128 0x7
+ 2034 01e0 19040000 		.4byte	.LASF56
+ 2035 01e4 35       		.byte	0x35
+ 2036 01e5 07       		.uleb128 0x7
+ 2037 01e6 24060000 		.4byte	.LASF57
+ 2038 01ea 36       		.byte	0x36
+ 2039 01eb 07       		.uleb128 0x7
+ 2040 01ec 33070000 		.4byte	.LASF58
+ 2041 01f0 37       		.byte	0x37
+ 2042 01f1 07       		.uleb128 0x7
+ 2043 01f2 5A0A0000 		.4byte	.LASF59
+ 2044 01f6 40       		.byte	0x40
+ 2045 01f7 07       		.uleb128 0x7
+ 2046 01f8 D3060000 		.4byte	.LASF60
+ 2047 01fc 41       		.byte	0x41
+ 2048 01fd 07       		.uleb128 0x7
+ 2049 01fe B20D0000 		.4byte	.LASF61
+ 2050 0202 42       		.byte	0x42
+ 2051 0203 07       		.uleb128 0x7
+ 2052 0204 8E0C0000 		.4byte	.LASF62
+ 2053 0208 43       		.byte	0x43
+ 2054 0209 07       		.uleb128 0x7
+ 2055 020a D9040000 		.4byte	.LASF63
+ 2056 020e 44       		.byte	0x44
+ 2057 020f 07       		.uleb128 0x7
+ 2058 0210 06090000 		.4byte	.LASF64
+ 2059 0214 45       		.byte	0x45
+ 2060 0215 07       		.uleb128 0x7
+ 2061 0216 CE070000 		.4byte	.LASF65
+ 2062 021a 46       		.byte	0x46
+ 2063 021b 07       		.uleb128 0x7
+ 2064 021c 8B050000 		.4byte	.LASF66
+ 2065 0220 47       		.byte	0x47
+ 2066 0221 07       		.uleb128 0x7
+ 2067 0222 F50C0000 		.4byte	.LASF67
+ 2068 0226 48       		.byte	0x48
+ 2069 0227 07       		.uleb128 0x7
+ 2070 0228 4E000000 		.4byte	.LASF68
+ 2071 022c 49       		.byte	0x49
+ 2072 022d 07       		.uleb128 0x7
+ 2073 022e C40B0000 		.4byte	.LASF69
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 44
+
+
+ 2074 0232 4A       		.byte	0x4a
+ 2075 0233 07       		.uleb128 0x7
+ 2076 0234 15010000 		.4byte	.LASF70
+ 2077 0238 4B       		.byte	0x4b
+ 2078 0239 07       		.uleb128 0x7
+ 2079 023a BF040000 		.4byte	.LASF71
+ 2080 023e 4C       		.byte	0x4c
+ 2081 023f 07       		.uleb128 0x7
+ 2082 0240 1E080000 		.4byte	.LASF72
+ 2083 0244 4D       		.byte	0x4d
+ 2084 0245 07       		.uleb128 0x7
+ 2085 0246 F3020000 		.4byte	.LASF73
+ 2086 024a 4E       		.byte	0x4e
+ 2087 024b 07       		.uleb128 0x7
+ 2088 024c E9090000 		.4byte	.LASF74
+ 2089 0250 4F       		.byte	0x4f
+ 2090 0251 07       		.uleb128 0x7
+ 2091 0252 C2050000 		.4byte	.LASF75
+ 2092 0256 50       		.byte	0x50
+ 2093 0257 07       		.uleb128 0x7
+ 2094 0258 58030000 		.4byte	.LASF76
+ 2095 025c 51       		.byte	0x51
+ 2096 025d 07       		.uleb128 0x7
+ 2097 025e AF080000 		.4byte	.LASF77
+ 2098 0262 52       		.byte	0x52
+ 2099 0263 07       		.uleb128 0x7
+ 2100 0264 99090000 		.4byte	.LASF78
+ 2101 0268 53       		.byte	0x53
+ 2102 0269 07       		.uleb128 0x7
+ 2103 026a 390A0000 		.4byte	.LASF79
+ 2104 026e 54       		.byte	0x54
+ 2105 026f 07       		.uleb128 0x7
+ 2106 0270 F7040000 		.4byte	.LASF80
+ 2107 0274 55       		.byte	0x55
+ 2108 0275 07       		.uleb128 0x7
+ 2109 0276 36040000 		.4byte	.LASF81
+ 2110 027a 56       		.byte	0x56
+ 2111 027b 07       		.uleb128 0x7
+ 2112 027c 620B0000 		.4byte	.LASF82
+ 2113 0280 57       		.byte	0x57
+ 2114 0281 07       		.uleb128 0x7
+ 2115 0282 29050000 		.4byte	.LASF83
+ 2116 0286 58       		.byte	0x58
+ 2117 0287 07       		.uleb128 0x7
+ 2118 0288 04020000 		.4byte	.LASF84
+ 2119 028c 70       		.byte	0x70
+ 2120 028d 07       		.uleb128 0x7
+ 2121 028e 610D0000 		.4byte	.LASF85
+ 2122 0292 71       		.byte	0x71
+ 2123 0293 07       		.uleb128 0x7
+ 2124 0294 F3060000 		.4byte	.LASF86
+ 2125 0298 72       		.byte	0x72
+ 2126 0299 07       		.uleb128 0x7
+ 2127 029a 4E010000 		.4byte	.LASF87
+ 2128 029e 73       		.byte	0x73
+ 2129 029f 07       		.uleb128 0x7
+ 2130 02a0 DF080000 		.4byte	.LASF88
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 45
+
+
+ 2131 02a4 74       		.byte	0x74
+ 2132 02a5 07       		.uleb128 0x7
+ 2133 02a6 400D0000 		.4byte	.LASF89
+ 2134 02aa 75       		.byte	0x75
+ 2135 02ab 07       		.uleb128 0x7
+ 2136 02ac CB000000 		.4byte	.LASF90
+ 2137 02b0 76       		.byte	0x76
+ 2138 02b1 07       		.uleb128 0x7
+ 2139 02b2 67000000 		.4byte	.LASF91
+ 2140 02b6 77       		.byte	0x77
+ 2141 02b7 07       		.uleb128 0x7
+ 2142 02b8 00000000 		.4byte	.LASF92
+ 2143 02bc 78       		.byte	0x78
+ 2144 02bd 07       		.uleb128 0x7
+ 2145 02be A10B0000 		.4byte	.LASF93
+ 2146 02c2 79       		.byte	0x79
+ 2147 02c3 07       		.uleb128 0x7
+ 2148 02c4 DF030000 		.4byte	.LASF94
+ 2149 02c8 7A       		.byte	0x7a
+ 2150 02c9 07       		.uleb128 0x7
+ 2151 02ca E6010000 		.4byte	.LASF95
+ 2152 02ce FA       		.byte	0xfa
+ 2153 02cf 07       		.uleb128 0x7
+ 2154 02d0 6E040000 		.4byte	.LASF96
+ 2155 02d4 FB       		.byte	0xfb
+ 2156 02d5 07       		.uleb128 0x7
+ 2157 02d6 D7090000 		.4byte	.LASF97
+ 2158 02da FC       		.byte	0xfc
+ 2159 02db 07       		.uleb128 0x7
+ 2160 02dc 020B0000 		.4byte	.LASF98
+ 2161 02e0 FD       		.byte	0xfd
+ 2162 02e1 07       		.uleb128 0x7
+ 2163 02e2 A7030000 		.4byte	.LASF99
+ 2164 02e6 FF       		.byte	0xff
+ 2165 02e7 00       		.byte	0
+ 2166 02e8 08       		.uleb128 0x8
+ 2167 02e9 09       		.byte	0x9
+ 2168 02ea 05       		.byte	0x5
+ 2169 02eb 5E       		.byte	0x5e
+ 2170 02ec 5D030000 		.4byte	0x35d
+ 2171 02f0 09       		.uleb128 0x9
+ 2172 02f1 580C0000 		.4byte	.LASF100
+ 2173 02f5 05       		.byte	0x5
+ 2174 02f6 60       		.byte	0x60
+ 2175 02f7 AD000000 		.4byte	0xad
+ 2176 02fb 00       		.byte	0
+ 2177 02fc 09       		.uleb128 0x9
+ 2178 02fd E8020000 		.4byte	.LASF101
+ 2179 0301 05       		.byte	0x5
+ 2180 0302 61       		.byte	0x61
+ 2181 0303 AD000000 		.4byte	0xad
+ 2182 0307 01       		.byte	0x1
+ 2183 0308 09       		.uleb128 0x9
+ 2184 0309 CE0C0000 		.4byte	.LASF102
+ 2185 030d 05       		.byte	0x5
+ 2186 030e 62       		.byte	0x62
+ 2187 030f AD000000 		.4byte	0xad
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 46
+
+
+ 2188 0313 02       		.byte	0x2
+ 2189 0314 09       		.uleb128 0x9
+ 2190 0315 3F000000 		.4byte	.LASF103
+ 2191 0319 05       		.byte	0x5
+ 2192 031a 64       		.byte	0x64
+ 2193 031b AD000000 		.4byte	0xad
+ 2194 031f 03       		.byte	0x3
+ 2195 0320 09       		.uleb128 0x9
+ 2196 0321 4C050000 		.4byte	.LASF104
+ 2197 0325 05       		.byte	0x5
+ 2198 0326 65       		.byte	0x65
+ 2199 0327 AD000000 		.4byte	0xad
+ 2200 032b 04       		.byte	0x4
+ 2201 032c 09       		.uleb128 0x9
+ 2202 032d 510C0000 		.4byte	.LASF105
+ 2203 0331 05       		.byte	0x5
+ 2204 0332 66       		.byte	0x66
+ 2205 0333 AD000000 		.4byte	0xad
+ 2206 0337 05       		.byte	0x5
+ 2207 0338 09       		.uleb128 0x9
+ 2208 0339 46090000 		.4byte	.LASF106
+ 2209 033d 05       		.byte	0x5
+ 2210 033e 67       		.byte	0x67
+ 2211 033f AD000000 		.4byte	0xad
+ 2212 0343 06       		.byte	0x6
+ 2213 0344 09       		.uleb128 0x9
+ 2214 0345 3E010000 		.4byte	.LASF107
+ 2215 0349 05       		.byte	0x5
+ 2216 034a 68       		.byte	0x68
+ 2217 034b AD000000 		.4byte	0xad
+ 2218 034f 07       		.byte	0x7
+ 2219 0350 09       		.uleb128 0x9
+ 2220 0351 92000000 		.4byte	.LASF108
+ 2221 0355 05       		.byte	0x5
+ 2222 0356 69       		.byte	0x69
+ 2223 0357 AD000000 		.4byte	0xad
+ 2224 035b 08       		.byte	0x8
+ 2225 035c 00       		.byte	0
+ 2226 035d 03       		.uleb128 0x3
+ 2227 035e 03040000 		.4byte	.LASF109
+ 2228 0362 05       		.byte	0x5
+ 2229 0363 6B       		.byte	0x6b
+ 2230 0364 E8020000 		.4byte	0x2e8
+ 2231 0368 08       		.uleb128 0x8
+ 2232 0369 24       		.byte	0x24
+ 2233 036a 05       		.byte	0x5
+ 2234 036b 6F       		.byte	0x6f
+ 2235 036c 49040000 		.4byte	0x449
+ 2236 0370 09       		.uleb128 0x9
+ 2237 0371 C0030000 		.4byte	.LASF110
+ 2238 0375 05       		.byte	0x5
+ 2239 0376 70       		.byte	0x70
+ 2240 0377 C3000000 		.4byte	0xc3
+ 2241 037b 00       		.byte	0
+ 2242 037c 09       		.uleb128 0x9
+ 2243 037d 12040000 		.4byte	.LASF111
+ 2244 0381 05       		.byte	0x5
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 47
+
+
+ 2245 0382 71       		.byte	0x71
+ 2246 0383 B8000000 		.4byte	0xb8
+ 2247 0387 02       		.byte	0x2
+ 2248 0388 09       		.uleb128 0x9
+ 2249 0389 CE030000 		.4byte	.LASF112
+ 2250 038d 05       		.byte	0x5
+ 2251 038e 72       		.byte	0x72
+ 2252 038f B8000000 		.4byte	0xb8
+ 2253 0393 04       		.byte	0x4
+ 2254 0394 09       		.uleb128 0x9
+ 2255 0395 1A0B0000 		.4byte	.LASF113
+ 2256 0399 05       		.byte	0x5
+ 2257 039a 74       		.byte	0x74
+ 2258 039b C3000000 		.4byte	0xc3
+ 2259 039f 06       		.byte	0x6
+ 2260 03a0 09       		.uleb128 0x9
+ 2261 03a1 7E030000 		.4byte	.LASF114
+ 2262 03a5 05       		.byte	0x5
+ 2263 03a6 75       		.byte	0x75
+ 2264 03a7 B8000000 		.4byte	0xb8
+ 2265 03ab 08       		.byte	0x8
+ 2266 03ac 09       		.uleb128 0x9
+ 2267 03ad 260B0000 		.4byte	.LASF115
+ 2268 03b1 05       		.byte	0x5
+ 2269 03b2 76       		.byte	0x76
+ 2270 03b3 B8000000 		.4byte	0xb8
+ 2271 03b7 0A       		.byte	0xa
+ 2272 03b8 09       		.uleb128 0x9
+ 2273 03b9 2D0B0000 		.4byte	.LASF116
+ 2274 03bd 05       		.byte	0x5
+ 2275 03be 77       		.byte	0x77
+ 2276 03bf B8000000 		.4byte	0xb8
+ 2277 03c3 0C       		.byte	0xc
+ 2278 03c4 09       		.uleb128 0x9
+ 2279 03c5 340B0000 		.4byte	.LASF117
+ 2280 03c9 05       		.byte	0x5
+ 2281 03ca 78       		.byte	0x78
+ 2282 03cb B8000000 		.4byte	0xb8
+ 2283 03cf 0E       		.byte	0xe
+ 2284 03d0 09       		.uleb128 0x9
+ 2285 03d1 3B0B0000 		.4byte	.LASF118
+ 2286 03d5 05       		.byte	0x5
+ 2287 03d6 79       		.byte	0x79
+ 2288 03d7 B8000000 		.4byte	0xb8
+ 2289 03db 10       		.byte	0x10
+ 2290 03dc 09       		.uleb128 0x9
+ 2291 03dd 420B0000 		.4byte	.LASF119
+ 2292 03e1 05       		.byte	0x5
+ 2293 03e2 7A       		.byte	0x7a
+ 2294 03e3 B8000000 		.4byte	0xb8
+ 2295 03e7 12       		.byte	0x12
+ 2296 03e8 09       		.uleb128 0x9
+ 2297 03e9 490B0000 		.4byte	.LASF120
+ 2298 03ed 05       		.byte	0x5
+ 2299 03ee 7B       		.byte	0x7b
+ 2300 03ef B8000000 		.4byte	0xb8
+ 2301 03f3 14       		.byte	0x14
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 48
+
+
+ 2302 03f4 09       		.uleb128 0x9
+ 2303 03f5 500B0000 		.4byte	.LASF121
+ 2304 03f9 05       		.byte	0x5
+ 2305 03fa 7C       		.byte	0x7c
+ 2306 03fb B8000000 		.4byte	0xb8
+ 2307 03ff 16       		.byte	0x16
+ 2308 0400 09       		.uleb128 0x9
+ 2309 0401 0F0A0000 		.4byte	.LASF122
+ 2310 0405 05       		.byte	0x5
+ 2311 0406 7E       		.byte	0x7e
+ 2312 0407 AD000000 		.4byte	0xad
+ 2313 040b 18       		.byte	0x18
+ 2314 040c 09       		.uleb128 0x9
+ 2315 040d 160A0000 		.4byte	.LASF123
+ 2316 0411 05       		.byte	0x5
+ 2317 0412 7F       		.byte	0x7f
+ 2318 0413 B8000000 		.4byte	0xb8
+ 2319 0417 1A       		.byte	0x1a
+ 2320 0418 09       		.uleb128 0x9
+ 2321 0419 1D0A0000 		.4byte	.LASF124
+ 2322 041d 05       		.byte	0x5
+ 2323 041e 80       		.byte	0x80
+ 2324 041f AD000000 		.4byte	0xad
+ 2325 0423 1C       		.byte	0x1c
+ 2326 0424 09       		.uleb128 0x9
+ 2327 0425 240A0000 		.4byte	.LASF125
+ 2328 0429 05       		.byte	0x5
+ 2329 042a 81       		.byte	0x81
+ 2330 042b B8000000 		.4byte	0xb8
+ 2331 042f 1E       		.byte	0x1e
+ 2332 0430 09       		.uleb128 0x9
+ 2333 0431 2B0A0000 		.4byte	.LASF126
+ 2334 0435 05       		.byte	0x5
+ 2335 0436 82       		.byte	0x82
+ 2336 0437 B8000000 		.4byte	0xb8
+ 2337 043b 20       		.byte	0x20
+ 2338 043c 09       		.uleb128 0x9
+ 2339 043d 320A0000 		.4byte	.LASF127
+ 2340 0441 05       		.byte	0x5
+ 2341 0442 83       		.byte	0x83
+ 2342 0443 AD000000 		.4byte	0xad
+ 2343 0447 22       		.byte	0x22
+ 2344 0448 00       		.byte	0
+ 2345 0449 03       		.uleb128 0x3
+ 2346 044a 11030000 		.4byte	.LASF128
+ 2347 044e 05       		.byte	0x5
+ 2348 044f 85       		.byte	0x85
+ 2349 0450 68030000 		.4byte	0x368
+ 2350 0454 08       		.uleb128 0x8
+ 2351 0455 40       		.byte	0x40
+ 2352 0456 05       		.byte	0x5
+ 2353 0457 89       		.byte	0x89
+ 2354 0458 A4040000 		.4byte	0x4a4
+ 2355 045c 09       		.uleb128 0x9
+ 2356 045d FD080000 		.4byte	.LASF129
+ 2357 0461 05       		.byte	0x5
+ 2358 0462 8B       		.byte	0x8b
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 49
+
+
+ 2359 0463 5D030000 		.4byte	0x35d
+ 2360 0467 00       		.byte	0
+ 2361 0468 09       		.uleb128 0x9
+ 2362 0469 86000000 		.4byte	.LASF130
+ 2363 046d 05       		.byte	0x5
+ 2364 046e 8C       		.byte	0x8c
+ 2365 046f 49040000 		.4byte	0x449
+ 2366 0473 0A       		.byte	0xa
+ 2367 0474 09       		.uleb128 0x9
+ 2368 0475 C7030000 		.4byte	.LASF131
+ 2369 0479 05       		.byte	0x5
+ 2370 047a 8D       		.byte	0x8d
+ 2371 047b CE000000 		.4byte	0xce
+ 2372 047f 30       		.byte	0x30
+ 2373 0480 09       		.uleb128 0x9
+ 2374 0481 2A020000 		.4byte	.LASF132
+ 2375 0485 05       		.byte	0x5
+ 2376 0486 8E       		.byte	0x8e
+ 2377 0487 07010000 		.4byte	0x107
+ 2378 048b 34       		.byte	0x34
+ 2379 048c 09       		.uleb128 0x9
+ 2380 048d 6C010000 		.4byte	.LASF133
+ 2381 0491 05       		.byte	0x5
+ 2382 0492 8F       		.byte	0x8f
+ 2383 0493 07010000 		.4byte	0x107
+ 2384 0497 38       		.byte	0x38
+ 2385 0498 0A       		.uleb128 0xa
+ 2386 0499 524800   		.ascii	"RH\000"
+ 2387 049c 05       		.byte	0x5
+ 2388 049d 90       		.byte	0x90
+ 2389 049e 07010000 		.4byte	0x107
+ 2390 04a2 3C       		.byte	0x3c
+ 2391 04a3 00       		.byte	0
+ 2392 04a4 03       		.uleb128 0x3
+ 2393 04a5 080A0000 		.4byte	.LASF134
+ 2394 04a9 05       		.byte	0x5
+ 2395 04aa 91       		.byte	0x91
+ 2396 04ab 54040000 		.4byte	0x454
+ 2397 04af 0B       		.uleb128 0xb
+ 2398 04b0 AC0C0000 		.4byte	.LASF135
+ 2399 04b4 01       		.byte	0x1
+ 2400 04b5 36       		.byte	0x36
+ 2401 04b6 00000000 		.4byte	.LFB35
+ 2402 04ba 0E000000 		.4byte	.LFE35-.LFB35
+ 2403 04be 01       		.uleb128 0x1
+ 2404 04bf 9C       		.byte	0x9c
+ 2405 04c0 0B       		.uleb128 0xb
+ 2406 04c1 55050000 		.4byte	.LASF136
+ 2407 04c5 01       		.byte	0x1
+ 2408 04c6 3B       		.byte	0x3b
+ 2409 04c7 00000000 		.4byte	.LFB36
+ 2410 04cb 0E000000 		.4byte	.LFE36-.LFB36
+ 2411 04cf 01       		.uleb128 0x1
+ 2412 04d0 9C       		.byte	0x9c
+ 2413 04d1 0C       		.uleb128 0xc
+ 2414 04d2 8B0B0000 		.4byte	.LASF158
+ 2415 04d6 01       		.byte	0x1
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 50
+
+
+ 2416 04d7 48       		.byte	0x48
+ 2417 04d8 AD000000 		.4byte	0xad
+ 2418 04dc 00000000 		.4byte	.LFB37
+ 2419 04e0 04030000 		.4byte	.LFE37-.LFB37
+ 2420 04e4 01       		.uleb128 0x1
+ 2421 04e5 9C       		.byte	0x9c
+ 2422 04e6 07050000 		.4byte	0x507
+ 2423 04ea 0D       		.uleb128 0xd
+ 2424 04eb 1B050000 		.4byte	.LASF137
+ 2425 04ef 01       		.byte	0x1
+ 2426 04f0 4B       		.byte	0x4b
+ 2427 04f1 AD000000 		.4byte	0xad
+ 2428 04f5 02       		.uleb128 0x2
+ 2429 04f6 91       		.byte	0x91
+ 2430 04f7 6F       		.sleb128 -17
+ 2431 04f8 0D       		.uleb128 0xd
+ 2432 04f9 D0080000 		.4byte	.LASF138
+ 2433 04fd 01       		.byte	0x1
+ 2434 04fe 4B       		.byte	0x4b
+ 2435 04ff AD000000 		.4byte	0xad
+ 2436 0503 02       		.uleb128 0x2
+ 2437 0504 91       		.byte	0x91
+ 2438 0505 6E       		.sleb128 -18
+ 2439 0506 00       		.byte	0
+ 2440 0507 0B       		.uleb128 0xb
+ 2441 0508 68070000 		.4byte	.LASF139
+ 2442 050c 01       		.byte	0x1
+ 2443 050d 82       		.byte	0x82
+ 2444 050e 00000000 		.4byte	.LFB38
+ 2445 0512 12000000 		.4byte	.LFE38-.LFB38
+ 2446 0516 01       		.uleb128 0x1
+ 2447 0517 9C       		.byte	0x9c
+ 2448 0518 0E       		.uleb128 0xe
+ 2449 0519 96080000 		.4byte	.LASF144
+ 2450 051d 01       		.byte	0x1
+ 2451 051e 8D       		.byte	0x8d
+ 2452 051f 07010000 		.4byte	0x107
+ 2453 0523 00000000 		.4byte	.LFB39
+ 2454 0527 D4030000 		.4byte	.LFE39-.LFB39
+ 2455 052b 01       		.uleb128 0x1
+ 2456 052c 9C       		.byte	0x9c
+ 2457 052d 6A050000 		.4byte	0x56a
+ 2458 0531 0D       		.uleb128 0xd
+ 2459 0532 A9020000 		.4byte	.LASF140
+ 2460 0536 01       		.byte	0x1
+ 2461 0537 92       		.byte	0x92
+ 2462 0538 CE000000 		.4byte	0xce
+ 2463 053c 02       		.uleb128 0x2
+ 2464 053d 91       		.byte	0x91
+ 2465 053e 64       		.sleb128 -28
+ 2466 053f 0D       		.uleb128 0xd
+ 2467 0540 96040000 		.4byte	.LASF141
+ 2468 0544 01       		.byte	0x1
+ 2469 0545 94       		.byte	0x94
+ 2470 0546 E4000000 		.4byte	0xe4
+ 2471 054a 02       		.uleb128 0x2
+ 2472 054b 91       		.byte	0x91
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 51
+
+
+ 2473 054c 58       		.sleb128 -40
+ 2474 054d 0D       		.uleb128 0xd
+ 2475 054e 9B040000 		.4byte	.LASF142
+ 2476 0552 01       		.byte	0x1
+ 2477 0553 94       		.byte	0x94
+ 2478 0554 E4000000 		.4byte	0xe4
+ 2479 0558 02       		.uleb128 0x2
+ 2480 0559 91       		.byte	0x91
+ 2481 055a 50       		.sleb128 -48
+ 2482 055b 0D       		.uleb128 0xd
+ 2483 055c 75010000 		.4byte	.LASF143
+ 2484 0560 01       		.byte	0x1
+ 2485 0561 94       		.byte	0x94
+ 2486 0562 E4000000 		.4byte	0xe4
+ 2487 0566 02       		.uleb128 0x2
+ 2488 0567 91       		.byte	0x91
+ 2489 0568 48       		.sleb128 -56
+ 2490 0569 00       		.byte	0
+ 2491 056a 0E       		.uleb128 0xe
+ 2492 056b 660C0000 		.4byte	.LASF145
+ 2493 056f 01       		.byte	0x1
+ 2494 0570 AA       		.byte	0xaa
+ 2495 0571 07010000 		.4byte	0x107
+ 2496 0575 00000000 		.4byte	.LFB40
+ 2497 0579 74000000 		.4byte	.LFE40-.LFB40
+ 2498 057d 01       		.uleb128 0x1
+ 2499 057e 9C       		.byte	0x9c
+ 2500 057f 92050000 		.4byte	0x592
+ 2501 0583 0D       		.uleb128 0xd
+ 2502 0584 C10C0000 		.4byte	.LASF146
+ 2503 0588 01       		.byte	0x1
+ 2504 0589 AC       		.byte	0xac
+ 2505 058a 07010000 		.4byte	0x107
+ 2506 058e 02       		.uleb128 0x2
+ 2507 058f 91       		.byte	0x91
+ 2508 0590 6C       		.sleb128 -20
+ 2509 0591 00       		.byte	0
+ 2510 0592 0E       		.uleb128 0xe
+ 2511 0593 BA090000 		.4byte	.LASF147
+ 2512 0597 01       		.byte	0x1
+ 2513 0598 B3       		.byte	0xb3
+ 2514 0599 07010000 		.4byte	0x107
+ 2515 059d 00000000 		.4byte	.LFB41
+ 2516 05a1 40000000 		.4byte	.LFE41-.LFB41
+ 2517 05a5 01       		.uleb128 0x1
+ 2518 05a6 9C       		.byte	0x9c
+ 2519 05a7 BA050000 		.4byte	0x5ba
+ 2520 05ab 0D       		.uleb128 0xd
+ 2521 05ac C10C0000 		.4byte	.LASF146
+ 2522 05b0 01       		.byte	0x1
+ 2523 05b1 B5       		.byte	0xb5
+ 2524 05b2 07010000 		.4byte	0x107
+ 2525 05b6 02       		.uleb128 0x2
+ 2526 05b7 91       		.byte	0x91
+ 2527 05b8 6C       		.sleb128 -20
+ 2528 05b9 00       		.byte	0
+ 2529 05ba 0E       		.uleb128 0xe
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 52
+
+
+ 2530 05bb DC0C0000 		.4byte	.LASF148
+ 2531 05bf 01       		.byte	0x1
+ 2532 05c0 C1       		.byte	0xc1
+ 2533 05c1 07010000 		.4byte	0x107
+ 2534 05c5 00000000 		.4byte	.LFB42
+ 2535 05c9 FC000000 		.4byte	.LFE42-.LFB42
+ 2536 05cd 01       		.uleb128 0x1
+ 2537 05ce 9C       		.byte	0x9c
+ 2538 05cf F0050000 		.4byte	0x5f0
+ 2539 05d3 0D       		.uleb128 0xd
+ 2540 05d4 99020000 		.4byte	.LASF149
+ 2541 05d8 01       		.byte	0x1
+ 2542 05d9 C6       		.byte	0xc6
+ 2543 05da CE000000 		.4byte	0xce
+ 2544 05de 02       		.uleb128 0x2
+ 2545 05df 91       		.byte	0x91
+ 2546 05e0 6C       		.sleb128 -20
+ 2547 05e1 0D       		.uleb128 0xd
+ 2548 05e2 96040000 		.4byte	.LASF141
+ 2549 05e6 01       		.byte	0x1
+ 2550 05e7 C8       		.byte	0xc8
+ 2551 05e8 CE000000 		.4byte	0xce
+ 2552 05ec 02       		.uleb128 0x2
+ 2553 05ed 91       		.byte	0x91
+ 2554 05ee 68       		.sleb128 -24
+ 2555 05ef 00       		.byte	0
+ 2556 05f0 0E       		.uleb128 0xe
+ 2557 05f1 85030000 		.4byte	.LASF150
+ 2558 05f5 01       		.byte	0x1
+ 2559 05f6 DE       		.byte	0xde
+ 2560 05f7 07010000 		.4byte	0x107
+ 2561 05fb 00000000 		.4byte	.LFB43
+ 2562 05ff C0000000 		.4byte	.LFE43-.LFB43
+ 2563 0603 01       		.uleb128 0x1
+ 2564 0604 9C       		.byte	0x9c
+ 2565 0605 42060000 		.4byte	0x642
+ 2566 0609 0D       		.uleb128 0xd
+ 2567 060a C6020000 		.4byte	.LASF151
+ 2568 060e 01       		.byte	0x1
+ 2569 060f E4       		.byte	0xe4
+ 2570 0610 CE000000 		.4byte	0xce
+ 2571 0614 02       		.uleb128 0x2
+ 2572 0615 91       		.byte	0x91
+ 2573 0616 6C       		.sleb128 -20
+ 2574 0617 0D       		.uleb128 0xd
+ 2575 0618 96040000 		.4byte	.LASF141
+ 2576 061c 01       		.byte	0x1
+ 2577 061d E7       		.byte	0xe7
+ 2578 061e E4000000 		.4byte	0xe4
+ 2579 0622 02       		.uleb128 0x2
+ 2580 0623 91       		.byte	0x91
+ 2581 0624 60       		.sleb128 -32
+ 2582 0625 0D       		.uleb128 0xd
+ 2583 0626 9B040000 		.4byte	.LASF142
+ 2584 062a 01       		.byte	0x1
+ 2585 062b E7       		.byte	0xe7
+ 2586 062c E4000000 		.4byte	0xe4
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 53
+
+
+ 2587 0630 02       		.uleb128 0x2
+ 2588 0631 91       		.byte	0x91
+ 2589 0632 58       		.sleb128 -40
+ 2590 0633 0D       		.uleb128 0xd
+ 2591 0634 A0040000 		.4byte	.LASF152
+ 2592 0638 01       		.byte	0x1
+ 2593 0639 ED       		.byte	0xed
+ 2594 063a 07010000 		.4byte	0x107
+ 2595 063e 02       		.uleb128 0x2
+ 2596 063f 91       		.byte	0x91
+ 2597 0640 54       		.sleb128 -44
+ 2598 0641 00       		.byte	0
+ 2599 0642 0E       		.uleb128 0xe
+ 2600 0643 96030000 		.4byte	.LASF153
+ 2601 0647 01       		.byte	0x1
+ 2602 0648 F5       		.byte	0xf5
+ 2603 0649 07010000 		.4byte	0x107
+ 2604 064d 00000000 		.4byte	.LFB44
+ 2605 0651 44000000 		.4byte	.LFE44-.LFB44
+ 2606 0655 01       		.uleb128 0x1
+ 2607 0656 9C       		.byte	0x9c
+ 2608 0657 6A060000 		.4byte	0x66a
+ 2609 065b 0D       		.uleb128 0xd
+ 2610 065c A0040000 		.4byte	.LASF152
+ 2611 0660 01       		.byte	0x1
+ 2612 0661 F7       		.byte	0xf7
+ 2613 0662 07010000 		.4byte	0x107
+ 2614 0666 02       		.uleb128 0x2
+ 2615 0667 91       		.byte	0x91
+ 2616 0668 74       		.sleb128 -12
+ 2617 0669 00       		.byte	0
+ 2618 066a 0F       		.uleb128 0xf
+ 2619 066b CC020000 		.4byte	.LASF154
+ 2620 066f 01       		.byte	0x1
+ 2621 0670 0201     		.2byte	0x102
+ 2622 0672 AD000000 		.4byte	0xad
+ 2623 0676 00000000 		.4byte	.LFB45
+ 2624 067a D0000000 		.4byte	.LFE45-.LFB45
+ 2625 067e 01       		.uleb128 0x1
+ 2626 067f 9C       		.byte	0x9c
+ 2627 0680 C1060000 		.4byte	0x6c1
+ 2628 0684 10       		.uleb128 0x10
+ 2629 0685 E20B0000 		.4byte	.LASF160
+ 2630 0689 01       		.byte	0x1
+ 2631 068a 0201     		.2byte	0x102
+ 2632 068c AD000000 		.4byte	0xad
+ 2633 0690 02       		.uleb128 0x2
+ 2634 0691 91       		.byte	0x91
+ 2635 0692 6F       		.sleb128 -17
+ 2636 0693 11       		.uleb128 0x11
+ 2637 0694 AB0D0000 		.4byte	.LASF155
+ 2638 0698 01       		.byte	0x1
+ 2639 0699 0501     		.2byte	0x105
+ 2640 069b AD000000 		.4byte	0xad
+ 2641 069f 02       		.uleb128 0x2
+ 2642 06a0 91       		.byte	0x91
+ 2643 06a1 74       		.sleb128 -12
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 54
+
+
+ 2644 06a2 11       		.uleb128 0x11
+ 2645 06a3 65040000 		.4byte	.LASF156
+ 2646 06a7 01       		.byte	0x1
+ 2647 06a8 0601     		.2byte	0x106
+ 2648 06aa AD000000 		.4byte	0xad
+ 2649 06ae 02       		.uleb128 0x2
+ 2650 06af 91       		.byte	0x91
+ 2651 06b0 75       		.sleb128 -11
+ 2652 06b1 11       		.uleb128 0x11
+ 2653 06b2 EE060000 		.4byte	.LASF157
+ 2654 06b6 01       		.byte	0x1
+ 2655 06b7 0801     		.2byte	0x108
+ 2656 06b9 FB000000 		.4byte	0xfb
+ 2657 06bd 02       		.uleb128 0x2
+ 2658 06be 91       		.byte	0x91
+ 2659 06bf 76       		.sleb128 -10
+ 2660 06c0 00       		.byte	0
+ 2661 06c1 12       		.uleb128 0x12
+ 2662 06c2 DB0A0000 		.4byte	.LASF159
+ 2663 06c6 01       		.byte	0x1
+ 2664 06c7 3701     		.2byte	0x137
+ 2665 06c9 00000000 		.4byte	.LFB46
+ 2666 06cd 90000000 		.4byte	.LFE46-.LFB46
+ 2667 06d1 01       		.uleb128 0x1
+ 2668 06d2 9C       		.byte	0x9c
+ 2669 06d3 14070000 		.4byte	0x714
+ 2670 06d7 10       		.uleb128 0x10
+ 2671 06d8 E20B0000 		.4byte	.LASF160
+ 2672 06dc 01       		.byte	0x1
+ 2673 06dd 3701     		.2byte	0x137
+ 2674 06df AD000000 		.4byte	0xad
+ 2675 06e3 02       		.uleb128 0x2
+ 2676 06e4 91       		.byte	0x91
+ 2677 06e5 6F       		.sleb128 -17
+ 2678 06e6 10       		.uleb128 0x10
+ 2679 06e7 C2010000 		.4byte	.LASF161
+ 2680 06eb 01       		.byte	0x1
+ 2681 06ec 3701     		.2byte	0x137
+ 2682 06ee AD000000 		.4byte	0xad
+ 2683 06f2 02       		.uleb128 0x2
+ 2684 06f3 91       		.byte	0x91
+ 2685 06f4 6E       		.sleb128 -18
+ 2686 06f5 11       		.uleb128 0x11
+ 2687 06f6 0F0C0000 		.4byte	.LASF162
+ 2688 06fa 01       		.byte	0x1
+ 2689 06fb 3901     		.2byte	0x139
+ 2690 06fd 14070000 		.4byte	0x714
+ 2691 0701 02       		.uleb128 0x2
+ 2692 0702 91       		.byte	0x91
+ 2693 0703 74       		.sleb128 -12
+ 2694 0704 11       		.uleb128 0x11
+ 2695 0705 EE060000 		.4byte	.LASF157
+ 2696 0709 01       		.byte	0x1
+ 2697 070a 3A01     		.2byte	0x13a
+ 2698 070c FB000000 		.4byte	0xfb
+ 2699 0710 02       		.uleb128 0x2
+ 2700 0711 91       		.byte	0x91
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 55
+
+
+ 2701 0712 76       		.sleb128 -10
+ 2702 0713 00       		.byte	0
+ 2703 0714 13       		.uleb128 0x13
+ 2704 0715 EF000000 		.4byte	0xef
+ 2705 0719 24070000 		.4byte	0x724
+ 2706 071d 14       		.uleb128 0x14
+ 2707 071e 23010000 		.4byte	0x123
+ 2708 0722 01       		.byte	0x1
+ 2709 0723 00       		.byte	0
+ 2710 0724 15       		.uleb128 0x15
+ 2711 0725 51030000 		.4byte	.LASF166
+ 2712 0729 01       		.byte	0x1
+ 2713 072a 22       		.byte	0x22
+ 2714 072b A4040000 		.4byte	0x4a4
+ 2715 072f 05       		.uleb128 0x5
+ 2716 0730 03       		.byte	0x3
+ 2717 0731 00000000 		.4byte	bme280
+ 2718 0735 00       		.byte	0
+ 2719              		.section	.debug_abbrev,"",%progbits
+ 2720              	.Ldebug_abbrev0:
+ 2721 0000 01       		.uleb128 0x1
+ 2722 0001 11       		.uleb128 0x11
+ 2723 0002 01       		.byte	0x1
+ 2724 0003 25       		.uleb128 0x25
+ 2725 0004 0E       		.uleb128 0xe
+ 2726 0005 13       		.uleb128 0x13
+ 2727 0006 0B       		.uleb128 0xb
+ 2728 0007 03       		.uleb128 0x3
+ 2729 0008 0E       		.uleb128 0xe
+ 2730 0009 1B       		.uleb128 0x1b
+ 2731 000a 0E       		.uleb128 0xe
+ 2732 000b 55       		.uleb128 0x55
+ 2733 000c 17       		.uleb128 0x17
+ 2734 000d 11       		.uleb128 0x11
+ 2735 000e 01       		.uleb128 0x1
+ 2736 000f 10       		.uleb128 0x10
+ 2737 0010 17       		.uleb128 0x17
+ 2738 0011 00       		.byte	0
+ 2739 0012 00       		.byte	0
+ 2740 0013 02       		.uleb128 0x2
+ 2741 0014 24       		.uleb128 0x24
+ 2742 0015 00       		.byte	0
+ 2743 0016 0B       		.uleb128 0xb
+ 2744 0017 0B       		.uleb128 0xb
+ 2745 0018 3E       		.uleb128 0x3e
+ 2746 0019 0B       		.uleb128 0xb
+ 2747 001a 03       		.uleb128 0x3
+ 2748 001b 0E       		.uleb128 0xe
+ 2749 001c 00       		.byte	0
+ 2750 001d 00       		.byte	0
+ 2751 001e 03       		.uleb128 0x3
+ 2752 001f 16       		.uleb128 0x16
+ 2753 0020 00       		.byte	0
+ 2754 0021 03       		.uleb128 0x3
+ 2755 0022 0E       		.uleb128 0xe
+ 2756 0023 3A       		.uleb128 0x3a
+ 2757 0024 0B       		.uleb128 0xb
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 56
+
+
+ 2758 0025 3B       		.uleb128 0x3b
+ 2759 0026 0B       		.uleb128 0xb
+ 2760 0027 49       		.uleb128 0x49
+ 2761 0028 13       		.uleb128 0x13
+ 2762 0029 00       		.byte	0
+ 2763 002a 00       		.byte	0
+ 2764 002b 04       		.uleb128 0x4
+ 2765 002c 24       		.uleb128 0x24
+ 2766 002d 00       		.byte	0
+ 2767 002e 0B       		.uleb128 0xb
+ 2768 002f 0B       		.uleb128 0xb
+ 2769 0030 3E       		.uleb128 0x3e
+ 2770 0031 0B       		.uleb128 0xb
+ 2771 0032 03       		.uleb128 0x3
+ 2772 0033 08       		.uleb128 0x8
+ 2773 0034 00       		.byte	0
+ 2774 0035 00       		.byte	0
+ 2775 0036 05       		.uleb128 0x5
+ 2776 0037 16       		.uleb128 0x16
+ 2777 0038 00       		.byte	0
+ 2778 0039 03       		.uleb128 0x3
+ 2779 003a 0E       		.uleb128 0xe
+ 2780 003b 3A       		.uleb128 0x3a
+ 2781 003c 0B       		.uleb128 0xb
+ 2782 003d 3B       		.uleb128 0x3b
+ 2783 003e 05       		.uleb128 0x5
+ 2784 003f 49       		.uleb128 0x49
+ 2785 0040 13       		.uleb128 0x13
+ 2786 0041 00       		.byte	0
+ 2787 0042 00       		.byte	0
+ 2788 0043 06       		.uleb128 0x6
+ 2789 0044 04       		.uleb128 0x4
+ 2790 0045 01       		.byte	0x1
+ 2791 0046 0B       		.uleb128 0xb
+ 2792 0047 0B       		.uleb128 0xb
+ 2793 0048 49       		.uleb128 0x49
+ 2794 0049 13       		.uleb128 0x13
+ 2795 004a 3A       		.uleb128 0x3a
+ 2796 004b 0B       		.uleb128 0xb
+ 2797 004c 3B       		.uleb128 0x3b
+ 2798 004d 05       		.uleb128 0x5
+ 2799 004e 01       		.uleb128 0x1
+ 2800 004f 13       		.uleb128 0x13
+ 2801 0050 00       		.byte	0
+ 2802 0051 00       		.byte	0
+ 2803 0052 07       		.uleb128 0x7
+ 2804 0053 28       		.uleb128 0x28
+ 2805 0054 00       		.byte	0
+ 2806 0055 03       		.uleb128 0x3
+ 2807 0056 0E       		.uleb128 0xe
+ 2808 0057 1C       		.uleb128 0x1c
+ 2809 0058 0B       		.uleb128 0xb
+ 2810 0059 00       		.byte	0
+ 2811 005a 00       		.byte	0
+ 2812 005b 08       		.uleb128 0x8
+ 2813 005c 13       		.uleb128 0x13
+ 2814 005d 01       		.byte	0x1
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 57
+
+
+ 2815 005e 0B       		.uleb128 0xb
+ 2816 005f 0B       		.uleb128 0xb
+ 2817 0060 3A       		.uleb128 0x3a
+ 2818 0061 0B       		.uleb128 0xb
+ 2819 0062 3B       		.uleb128 0x3b
+ 2820 0063 0B       		.uleb128 0xb
+ 2821 0064 01       		.uleb128 0x1
+ 2822 0065 13       		.uleb128 0x13
+ 2823 0066 00       		.byte	0
+ 2824 0067 00       		.byte	0
+ 2825 0068 09       		.uleb128 0x9
+ 2826 0069 0D       		.uleb128 0xd
+ 2827 006a 00       		.byte	0
+ 2828 006b 03       		.uleb128 0x3
+ 2829 006c 0E       		.uleb128 0xe
+ 2830 006d 3A       		.uleb128 0x3a
+ 2831 006e 0B       		.uleb128 0xb
+ 2832 006f 3B       		.uleb128 0x3b
+ 2833 0070 0B       		.uleb128 0xb
+ 2834 0071 49       		.uleb128 0x49
+ 2835 0072 13       		.uleb128 0x13
+ 2836 0073 38       		.uleb128 0x38
+ 2837 0074 0B       		.uleb128 0xb
+ 2838 0075 00       		.byte	0
+ 2839 0076 00       		.byte	0
+ 2840 0077 0A       		.uleb128 0xa
+ 2841 0078 0D       		.uleb128 0xd
+ 2842 0079 00       		.byte	0
+ 2843 007a 03       		.uleb128 0x3
+ 2844 007b 08       		.uleb128 0x8
+ 2845 007c 3A       		.uleb128 0x3a
+ 2846 007d 0B       		.uleb128 0xb
+ 2847 007e 3B       		.uleb128 0x3b
+ 2848 007f 0B       		.uleb128 0xb
+ 2849 0080 49       		.uleb128 0x49
+ 2850 0081 13       		.uleb128 0x13
+ 2851 0082 38       		.uleb128 0x38
+ 2852 0083 0B       		.uleb128 0xb
+ 2853 0084 00       		.byte	0
+ 2854 0085 00       		.byte	0
+ 2855 0086 0B       		.uleb128 0xb
+ 2856 0087 2E       		.uleb128 0x2e
+ 2857 0088 00       		.byte	0
+ 2858 0089 3F       		.uleb128 0x3f
+ 2859 008a 19       		.uleb128 0x19
+ 2860 008b 03       		.uleb128 0x3
+ 2861 008c 0E       		.uleb128 0xe
+ 2862 008d 3A       		.uleb128 0x3a
+ 2863 008e 0B       		.uleb128 0xb
+ 2864 008f 3B       		.uleb128 0x3b
+ 2865 0090 0B       		.uleb128 0xb
+ 2866 0091 11       		.uleb128 0x11
+ 2867 0092 01       		.uleb128 0x1
+ 2868 0093 12       		.uleb128 0x12
+ 2869 0094 06       		.uleb128 0x6
+ 2870 0095 40       		.uleb128 0x40
+ 2871 0096 18       		.uleb128 0x18
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 58
+
+
+ 2872 0097 9642     		.uleb128 0x2116
+ 2873 0099 19       		.uleb128 0x19
+ 2874 009a 00       		.byte	0
+ 2875 009b 00       		.byte	0
+ 2876 009c 0C       		.uleb128 0xc
+ 2877 009d 2E       		.uleb128 0x2e
+ 2878 009e 01       		.byte	0x1
+ 2879 009f 3F       		.uleb128 0x3f
+ 2880 00a0 19       		.uleb128 0x19
+ 2881 00a1 03       		.uleb128 0x3
+ 2882 00a2 0E       		.uleb128 0xe
+ 2883 00a3 3A       		.uleb128 0x3a
+ 2884 00a4 0B       		.uleb128 0xb
+ 2885 00a5 3B       		.uleb128 0x3b
+ 2886 00a6 0B       		.uleb128 0xb
+ 2887 00a7 49       		.uleb128 0x49
+ 2888 00a8 13       		.uleb128 0x13
+ 2889 00a9 11       		.uleb128 0x11
+ 2890 00aa 01       		.uleb128 0x1
+ 2891 00ab 12       		.uleb128 0x12
+ 2892 00ac 06       		.uleb128 0x6
+ 2893 00ad 40       		.uleb128 0x40
+ 2894 00ae 18       		.uleb128 0x18
+ 2895 00af 9642     		.uleb128 0x2116
+ 2896 00b1 19       		.uleb128 0x19
+ 2897 00b2 01       		.uleb128 0x1
+ 2898 00b3 13       		.uleb128 0x13
+ 2899 00b4 00       		.byte	0
+ 2900 00b5 00       		.byte	0
+ 2901 00b6 0D       		.uleb128 0xd
+ 2902 00b7 34       		.uleb128 0x34
+ 2903 00b8 00       		.byte	0
+ 2904 00b9 03       		.uleb128 0x3
+ 2905 00ba 0E       		.uleb128 0xe
+ 2906 00bb 3A       		.uleb128 0x3a
+ 2907 00bc 0B       		.uleb128 0xb
+ 2908 00bd 3B       		.uleb128 0x3b
+ 2909 00be 0B       		.uleb128 0xb
+ 2910 00bf 49       		.uleb128 0x49
+ 2911 00c0 13       		.uleb128 0x13
+ 2912 00c1 02       		.uleb128 0x2
+ 2913 00c2 18       		.uleb128 0x18
+ 2914 00c3 00       		.byte	0
+ 2915 00c4 00       		.byte	0
+ 2916 00c5 0E       		.uleb128 0xe
+ 2917 00c6 2E       		.uleb128 0x2e
+ 2918 00c7 01       		.byte	0x1
+ 2919 00c8 3F       		.uleb128 0x3f
+ 2920 00c9 19       		.uleb128 0x19
+ 2921 00ca 03       		.uleb128 0x3
+ 2922 00cb 0E       		.uleb128 0xe
+ 2923 00cc 3A       		.uleb128 0x3a
+ 2924 00cd 0B       		.uleb128 0xb
+ 2925 00ce 3B       		.uleb128 0x3b
+ 2926 00cf 0B       		.uleb128 0xb
+ 2927 00d0 27       		.uleb128 0x27
+ 2928 00d1 19       		.uleb128 0x19
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 59
+
+
+ 2929 00d2 49       		.uleb128 0x49
+ 2930 00d3 13       		.uleb128 0x13
+ 2931 00d4 11       		.uleb128 0x11
+ 2932 00d5 01       		.uleb128 0x1
+ 2933 00d6 12       		.uleb128 0x12
+ 2934 00d7 06       		.uleb128 0x6
+ 2935 00d8 40       		.uleb128 0x40
+ 2936 00d9 18       		.uleb128 0x18
+ 2937 00da 9642     		.uleb128 0x2116
+ 2938 00dc 19       		.uleb128 0x19
+ 2939 00dd 01       		.uleb128 0x1
+ 2940 00de 13       		.uleb128 0x13
+ 2941 00df 00       		.byte	0
+ 2942 00e0 00       		.byte	0
+ 2943 00e1 0F       		.uleb128 0xf
+ 2944 00e2 2E       		.uleb128 0x2e
+ 2945 00e3 01       		.byte	0x1
+ 2946 00e4 3F       		.uleb128 0x3f
+ 2947 00e5 19       		.uleb128 0x19
+ 2948 00e6 03       		.uleb128 0x3
+ 2949 00e7 0E       		.uleb128 0xe
+ 2950 00e8 3A       		.uleb128 0x3a
+ 2951 00e9 0B       		.uleb128 0xb
+ 2952 00ea 3B       		.uleb128 0x3b
+ 2953 00eb 05       		.uleb128 0x5
+ 2954 00ec 27       		.uleb128 0x27
+ 2955 00ed 19       		.uleb128 0x19
+ 2956 00ee 49       		.uleb128 0x49
+ 2957 00ef 13       		.uleb128 0x13
+ 2958 00f0 11       		.uleb128 0x11
+ 2959 00f1 01       		.uleb128 0x1
+ 2960 00f2 12       		.uleb128 0x12
+ 2961 00f3 06       		.uleb128 0x6
+ 2962 00f4 40       		.uleb128 0x40
+ 2963 00f5 18       		.uleb128 0x18
+ 2964 00f6 9642     		.uleb128 0x2116
+ 2965 00f8 19       		.uleb128 0x19
+ 2966 00f9 01       		.uleb128 0x1
+ 2967 00fa 13       		.uleb128 0x13
+ 2968 00fb 00       		.byte	0
+ 2969 00fc 00       		.byte	0
+ 2970 00fd 10       		.uleb128 0x10
+ 2971 00fe 05       		.uleb128 0x5
+ 2972 00ff 00       		.byte	0
+ 2973 0100 03       		.uleb128 0x3
+ 2974 0101 0E       		.uleb128 0xe
+ 2975 0102 3A       		.uleb128 0x3a
+ 2976 0103 0B       		.uleb128 0xb
+ 2977 0104 3B       		.uleb128 0x3b
+ 2978 0105 05       		.uleb128 0x5
+ 2979 0106 49       		.uleb128 0x49
+ 2980 0107 13       		.uleb128 0x13
+ 2981 0108 02       		.uleb128 0x2
+ 2982 0109 18       		.uleb128 0x18
+ 2983 010a 00       		.byte	0
+ 2984 010b 00       		.byte	0
+ 2985 010c 11       		.uleb128 0x11
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 60
+
+
+ 2986 010d 34       		.uleb128 0x34
+ 2987 010e 00       		.byte	0
+ 2988 010f 03       		.uleb128 0x3
+ 2989 0110 0E       		.uleb128 0xe
+ 2990 0111 3A       		.uleb128 0x3a
+ 2991 0112 0B       		.uleb128 0xb
+ 2992 0113 3B       		.uleb128 0x3b
+ 2993 0114 05       		.uleb128 0x5
+ 2994 0115 49       		.uleb128 0x49
+ 2995 0116 13       		.uleb128 0x13
+ 2996 0117 02       		.uleb128 0x2
+ 2997 0118 18       		.uleb128 0x18
+ 2998 0119 00       		.byte	0
+ 2999 011a 00       		.byte	0
+ 3000 011b 12       		.uleb128 0x12
+ 3001 011c 2E       		.uleb128 0x2e
+ 3002 011d 01       		.byte	0x1
+ 3003 011e 3F       		.uleb128 0x3f
+ 3004 011f 19       		.uleb128 0x19
+ 3005 0120 03       		.uleb128 0x3
+ 3006 0121 0E       		.uleb128 0xe
+ 3007 0122 3A       		.uleb128 0x3a
+ 3008 0123 0B       		.uleb128 0xb
+ 3009 0124 3B       		.uleb128 0x3b
+ 3010 0125 05       		.uleb128 0x5
+ 3011 0126 27       		.uleb128 0x27
+ 3012 0127 19       		.uleb128 0x19
+ 3013 0128 11       		.uleb128 0x11
+ 3014 0129 01       		.uleb128 0x1
+ 3015 012a 12       		.uleb128 0x12
+ 3016 012b 06       		.uleb128 0x6
+ 3017 012c 40       		.uleb128 0x40
+ 3018 012d 18       		.uleb128 0x18
+ 3019 012e 9642     		.uleb128 0x2116
+ 3020 0130 19       		.uleb128 0x19
+ 3021 0131 01       		.uleb128 0x1
+ 3022 0132 13       		.uleb128 0x13
+ 3023 0133 00       		.byte	0
+ 3024 0134 00       		.byte	0
+ 3025 0135 13       		.uleb128 0x13
+ 3026 0136 01       		.uleb128 0x1
+ 3027 0137 01       		.byte	0x1
+ 3028 0138 49       		.uleb128 0x49
+ 3029 0139 13       		.uleb128 0x13
+ 3030 013a 01       		.uleb128 0x1
+ 3031 013b 13       		.uleb128 0x13
+ 3032 013c 00       		.byte	0
+ 3033 013d 00       		.byte	0
+ 3034 013e 14       		.uleb128 0x14
+ 3035 013f 21       		.uleb128 0x21
+ 3036 0140 00       		.byte	0
+ 3037 0141 49       		.uleb128 0x49
+ 3038 0142 13       		.uleb128 0x13
+ 3039 0143 2F       		.uleb128 0x2f
+ 3040 0144 0B       		.uleb128 0xb
+ 3041 0145 00       		.byte	0
+ 3042 0146 00       		.byte	0
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 61
+
+
+ 3043 0147 15       		.uleb128 0x15
+ 3044 0148 34       		.uleb128 0x34
+ 3045 0149 00       		.byte	0
+ 3046 014a 03       		.uleb128 0x3
+ 3047 014b 0E       		.uleb128 0xe
+ 3048 014c 3A       		.uleb128 0x3a
+ 3049 014d 0B       		.uleb128 0xb
+ 3050 014e 3B       		.uleb128 0x3b
+ 3051 014f 0B       		.uleb128 0xb
+ 3052 0150 49       		.uleb128 0x49
+ 3053 0151 13       		.uleb128 0x13
+ 3054 0152 3F       		.uleb128 0x3f
+ 3055 0153 19       		.uleb128 0x19
+ 3056 0154 02       		.uleb128 0x2
+ 3057 0155 18       		.uleb128 0x18
+ 3058 0156 00       		.byte	0
+ 3059 0157 00       		.byte	0
+ 3060 0158 00       		.byte	0
+ 3061              		.section	.debug_aranges,"",%progbits
+ 3062 0000 74000000 		.4byte	0x74
+ 3063 0004 0200     		.2byte	0x2
+ 3064 0006 00000000 		.4byte	.Ldebug_info0
+ 3065 000a 04       		.byte	0x4
+ 3066 000b 00       		.byte	0
+ 3067 000c 0000     		.2byte	0
+ 3068 000e 0000     		.2byte	0
+ 3069 0010 00000000 		.4byte	.LFB35
+ 3070 0014 0E000000 		.4byte	.LFE35-.LFB35
+ 3071 0018 00000000 		.4byte	.LFB36
+ 3072 001c 0E000000 		.4byte	.LFE36-.LFB36
+ 3073 0020 00000000 		.4byte	.LFB37
+ 3074 0024 04030000 		.4byte	.LFE37-.LFB37
+ 3075 0028 00000000 		.4byte	.LFB38
+ 3076 002c 12000000 		.4byte	.LFE38-.LFB38
+ 3077 0030 00000000 		.4byte	.LFB39
+ 3078 0034 D4030000 		.4byte	.LFE39-.LFB39
+ 3079 0038 00000000 		.4byte	.LFB40
+ 3080 003c 74000000 		.4byte	.LFE40-.LFB40
+ 3081 0040 00000000 		.4byte	.LFB41
+ 3082 0044 40000000 		.4byte	.LFE41-.LFB41
+ 3083 0048 00000000 		.4byte	.LFB42
+ 3084 004c FC000000 		.4byte	.LFE42-.LFB42
+ 3085 0050 00000000 		.4byte	.LFB43
+ 3086 0054 C0000000 		.4byte	.LFE43-.LFB43
+ 3087 0058 00000000 		.4byte	.LFB44
+ 3088 005c 44000000 		.4byte	.LFE44-.LFB44
+ 3089 0060 00000000 		.4byte	.LFB45
+ 3090 0064 D0000000 		.4byte	.LFE45-.LFB45
+ 3091 0068 00000000 		.4byte	.LFB46
+ 3092 006c 90000000 		.4byte	.LFE46-.LFB46
+ 3093 0070 00000000 		.4byte	0
+ 3094 0074 00000000 		.4byte	0
+ 3095              		.section	.debug_ranges,"",%progbits
+ 3096              	.Ldebug_ranges0:
+ 3097 0000 00000000 		.4byte	.LFB35
+ 3098 0004 0E000000 		.4byte	.LFE35
+ 3099 0008 00000000 		.4byte	.LFB36
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 62
+
+
+ 3100 000c 0E000000 		.4byte	.LFE36
+ 3101 0010 00000000 		.4byte	.LFB37
+ 3102 0014 04030000 		.4byte	.LFE37
+ 3103 0018 00000000 		.4byte	.LFB38
+ 3104 001c 12000000 		.4byte	.LFE38
+ 3105 0020 00000000 		.4byte	.LFB39
+ 3106 0024 D4030000 		.4byte	.LFE39
+ 3107 0028 00000000 		.4byte	.LFB40
+ 3108 002c 74000000 		.4byte	.LFE40
+ 3109 0030 00000000 		.4byte	.LFB41
+ 3110 0034 40000000 		.4byte	.LFE41
+ 3111 0038 00000000 		.4byte	.LFB42
+ 3112 003c FC000000 		.4byte	.LFE42
+ 3113 0040 00000000 		.4byte	.LFB43
+ 3114 0044 C0000000 		.4byte	.LFE43
+ 3115 0048 00000000 		.4byte	.LFB44
+ 3116 004c 44000000 		.4byte	.LFE44
+ 3117 0050 00000000 		.4byte	.LFB45
+ 3118 0054 D0000000 		.4byte	.LFE45
+ 3119 0058 00000000 		.4byte	.LFB46
+ 3120 005c 90000000 		.4byte	.LFE46
+ 3121 0060 00000000 		.4byte	0
+ 3122 0064 00000000 		.4byte	0
+ 3123              		.section	.debug_line,"",%progbits
+ 3124              	.Ldebug_line0:
+ 3125 0000 2C030000 		.section	.debug_str,"MS",%progbits,1
+ 3125      02009401 
+ 3125      00000201 
+ 3125      FB0E0D00 
+ 3125      01010101 
+ 3126              	.LASF92:
+ 3127 0000 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_RX_CREDIT_IND\000"
+ 3127      455F4556 
+ 3127      545F4C32 
+ 3127      4341505F 
+ 3127      43424643 
+ 3128              	.LASF33:
+ 3129 0023 4359424C 		.ascii	"CYBLE_EVT_STACK_BUSY_STATUS\000"
+ 3129      455F4556 
+ 3129      545F5354 
+ 3129      41434B5F 
+ 3129      42555359 
+ 3130              	.LASF103:
+ 3131 003f 72756E4D 		.ascii	"runMode\000"
+ 3131      6F646500 
+ 3132              	.LASF22:
+ 3133 0047 75696E74 		.ascii	"uint16\000"
+ 3133      313600
+ 3134              	.LASF68:
+ 3135 004e 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_RSP\000"
+ 3135      455F4556 
+ 3135      545F4741 
+ 3135      5454435F 
+ 3135      52454144 
+ 3136              	.LASF91:
+ 3137 0067 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DATA_READ\000"
+ 3137      455F4556 
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 63
+
+
+ 3137      545F4C32 
+ 3137      4341505F 
+ 3137      43424643 
+ 3138              	.LASF130:
+ 3139 0086 63616C69 		.ascii	"calibration\000"
+ 3139      62726174 
+ 3139      696F6E00 
+ 3140              	.LASF108:
+ 3141 0092 68756D69 		.ascii	"humidOverSample\000"
+ 3141      644F7665 
+ 3141      7253616D 
+ 3141      706C6500 
+ 3142              	.LASF45:
+ 3143 00a2 4359424C 		.ascii	"CYBLE_EVT_GAP_CONNECTION_UPDATE_COMPLETE\000"
+ 3143      455F4556 
+ 3143      545F4741 
+ 3143      505F434F 
+ 3143      4E4E4543 
+ 3144              	.LASF90:
+ 3145 00cb 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DISCONN_CNF\000"
+ 3145      455F4556 
+ 3145      545F4C32 
+ 3145      4341505F 
+ 3145      43424643 
+ 3146              	.LASF50:
+ 3147 00ec 4359424C 		.ascii	"CYBLE_EVT_GAP_OOB_GENERATED_NOTIFICATION\000"
+ 3147      455F4556 
+ 3147      545F4741 
+ 3147      505F4F4F 
+ 3147      425F4745 
+ 3148              	.LASF70:
+ 3149 0115 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_MULTI_RSP\000"
+ 3149      455F4556 
+ 3149      545F4741 
+ 3149      5454435F 
+ 3149      52454144 
+ 3150              	.LASF2:
+ 3151 0134 5F5F7569 		.ascii	"__uint8_t\000"
+ 3151      6E74385F 
+ 3151      7400
+ 3152              	.LASF107:
+ 3153 013e 70726573 		.ascii	"pressOverSample\000"
+ 3153      734F7665 
+ 3153      7253616D 
+ 3153      706C6500 
+ 3154              	.LASF87:
+ 3155 014e 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_CONN_IND\000"
+ 3155      455F4556 
+ 3155      545F4C32 
+ 3155      4341505F 
+ 3155      43424643 
+ 3156              	.LASF133:
+ 3157 016c 70726573 		.ascii	"press_Pa\000"
+ 3157      735F5061 
+ 3157      00
+ 3158              	.LASF143:
+ 3159 0175 705F6163 		.ascii	"p_acc\000"
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 64
+
+
+ 3159      6300
+ 3160              	.LASF30:
+ 3161 017b 4359424C 		.ascii	"CYBLE_EVT_TIMEOUT\000"
+ 3161      455F4556 
+ 3161      545F5449 
+ 3161      4D454F55 
+ 3161      5400
+ 3162              	.LASF8:
+ 3163 018d 6C6F6E67 		.ascii	"long int\000"
+ 3163      20696E74 
+ 3163      00
+ 3164              	.LASF13:
+ 3165 0196 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 3165      206C6F6E 
+ 3165      6720756E 
+ 3165      7369676E 
+ 3165      65642069 
+ 3166              	.LASF32:
+ 3167 01ad 4359424C 		.ascii	"CYBLE_EVT_HCI_STATUS\000"
+ 3167      455F4556 
+ 3167      545F4843 
+ 3167      495F5354 
+ 3167      41545553 
+ 3168              	.LASF161:
+ 3169 01c2 64617461 		.ascii	"data\000"
+ 3169      00
+ 3170              	.LASF46:
+ 3171 01c7 4359424C 		.ascii	"CYBLE_EVT_GAPC_SCAN_START_STOP\000"
+ 3171      455F4556 
+ 3171      545F4741 
+ 3171      50435F53 
+ 3171      43414E5F 
+ 3172              	.LASF95:
+ 3173 01e6 4359424C 		.ascii	"CYBLE_EVT_PENDING_FLASH_WRITE\000"
+ 3173      455F4556 
+ 3173      545F5045 
+ 3173      4E44494E 
+ 3173      475F464C 
+ 3174              	.LASF84:
+ 3175 0204 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CONN_PARAM_UPDATE_REQ\000"
+ 3175      455F4556 
+ 3175      545F4C32 
+ 3175      4341505F 
+ 3175      434F4E4E 
+ 3176              	.LASF132:
+ 3177 022a 74656D70 		.ascii	"temp_C\000"
+ 3177      5F4300
+ 3178              	.LASF44:
+ 3179 0231 4359424C 		.ascii	"CYBLE_EVT_GAP_ENCRYPT_CHANGE\000"
+ 3179      455F4556 
+ 3179      545F4741 
+ 3179      505F454E 
+ 3179      43525950 
+ 3180              	.LASF48:
+ 3181 024e 4359424C 		.ascii	"CYBLE_EVT_GAP_NUMERIC_COMPARISON_REQUEST\000"
+ 3181      455F4556 
+ 3181      545F4741 
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 65
+
+
+ 3181      505F4E55 
+ 3181      4D455249 
+ 3182              	.LASF16:
+ 3183 0277 696E7431 		.ascii	"int16_t\000"
+ 3183      365F7400 
+ 3184              	.LASF12:
+ 3185 027f 6C6F6E67 		.ascii	"long long int\000"
+ 3185      206C6F6E 
+ 3185      6720696E 
+ 3185      7400
+ 3186              	.LASF0:
+ 3187 028d 7369676E 		.ascii	"signed char\000"
+ 3187      65642063 
+ 3187      68617200 
+ 3188              	.LASF149:
+ 3189 0299 6164635F 		.ascii	"adc_H\000"
+ 3189      4800
+ 3190              	.LASF11:
+ 3191 029f 5F5F696E 		.ascii	"__int64_t\000"
+ 3191      7436345F 
+ 3191      7400
+ 3192              	.LASF140:
+ 3193 02a9 6164635F 		.ascii	"adc_P\000"
+ 3193      5000
+ 3194              	.LASF36:
+ 3195 02af 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_REQ\000"
+ 3195      455F4556 
+ 3195      545F4741 
+ 3195      505F4155 
+ 3195      54485F52 
+ 3196              	.LASF151:
+ 3197 02c6 6164635F 		.ascii	"adc_T\000"
+ 3197      5400
+ 3198              	.LASF154:
+ 3199 02cc 424D4532 		.ascii	"BME280_readRegister\000"
+ 3199      38305F72 
+ 3199      65616452 
+ 3199      65676973 
+ 3199      74657200 
+ 3200              	.LASF20:
+ 3201 02e0 696E7436 		.ascii	"int64_t\000"
+ 3201      345F7400 
+ 3202              	.LASF101:
+ 3203 02e8 49324341 		.ascii	"I2CAddress\000"
+ 3203      64647265 
+ 3203      737300
+ 3204              	.LASF73:
+ 3205 02f3 4359424C 		.ascii	"CYBLE_EVT_GATTS_WRITE_CMD_REQ\000"
+ 3205      455F4556 
+ 3205      545F4741 
+ 3205      5454535F 
+ 3205      57524954 
+ 3206              	.LASF128:
+ 3207 0311 53656E73 		.ascii	"SensorCalibration\000"
+ 3207      6F724361 
+ 3207      6C696272 
+ 3207      6174696F 
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 66
+
+
+ 3207      6E00
+ 3208              	.LASF41:
+ 3209 0323 4359424C 		.ascii	"CYBLE_EVT_GAPP_ADVERTISEMENT_START_STOP\000"
+ 3209      455F4556 
+ 3209      545F4741 
+ 3209      50505F41 
+ 3209      44564552 
+ 3210              	.LASF21:
+ 3211 034b 75696E74 		.ascii	"uint8\000"
+ 3211      3800
+ 3212              	.LASF166:
+ 3213 0351 626D6532 		.ascii	"bme280\000"
+ 3213      383000
+ 3214              	.LASF76:
+ 3215 0358 4359424C 		.ascii	"CYBLE_EVT_GATTC_EXEC_WRITE_RSP\000"
+ 3215      455F4556 
+ 3215      545F4741 
+ 3215      5454435F 
+ 3215      45584543 
+ 3216              	.LASF24:
+ 3217 0377 646F7562 		.ascii	"double\000"
+ 3217      6C6500
+ 3218              	.LASF114:
+ 3219 037e 6469675F 		.ascii	"dig_P2\000"
+ 3219      503200
+ 3220              	.LASF150:
+ 3221 0385 424D4532 		.ascii	"BME280_readTempC\000"
+ 3221      38305F72 
+ 3221      65616454 
+ 3221      656D7043 
+ 3221      00
+ 3222              	.LASF153:
+ 3223 0396 424D4532 		.ascii	"BME280_readTempF\000"
+ 3223      38305F72 
+ 3223      65616454 
+ 3223      656D7046 
+ 3223      00
+ 3224              	.LASF99:
+ 3225 03a7 4359424C 		.ascii	"CYBLE_EVT_MAX\000"
+ 3225      455F4556 
+ 3225      545F4D41 
+ 3225      5800
+ 3226              	.LASF9:
+ 3227 03b5 5F5F7569 		.ascii	"__uint32_t\000"
+ 3227      6E743332 
+ 3227      5F7400
+ 3228              	.LASF110:
+ 3229 03c0 6469675F 		.ascii	"dig_T1\000"
+ 3229      543100
+ 3230              	.LASF131:
+ 3231 03c7 745F6669 		.ascii	"t_fine\000"
+ 3231      6E6500
+ 3232              	.LASF112:
+ 3233 03ce 6469675F 		.ascii	"dig_T3\000"
+ 3233      543300
+ 3234              	.LASF3:
+ 3235 03d5 5F5F696E 		.ascii	"__int16_t\000"
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 67
+
+
+ 3235      7431365F 
+ 3235      7400
+ 3236              	.LASF94:
+ 3237 03df 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DATA_WRITE_IND\000"
+ 3237      455F4556 
+ 3237      545F4C32 
+ 3237      4341505F 
+ 3237      43424643 
+ 3238              	.LASF109:
+ 3239 0403 53656E73 		.ascii	"SensorSettings\000"
+ 3239      6F725365 
+ 3239      7474696E 
+ 3239      677300
+ 3240              	.LASF111:
+ 3241 0412 6469675F 		.ascii	"dig_T2\000"
+ 3241      543200
+ 3242              	.LASF56:
+ 3243 0419 4359424C 		.ascii	"CYBLE_EVT_GAP_SCAN_REQ_RECVD\000"
+ 3243      455F4556 
+ 3243      545F4741 
+ 3243      505F5343 
+ 3243      414E5F52 
+ 3244              	.LASF81:
+ 3245 0436 4359424C 		.ascii	"CYBLE_EVT_GATTC_STOP_CMD_COMPLETE\000"
+ 3245      455F4556 
+ 3245      545F4741 
+ 3245      5454435F 
+ 3245      53544F50 
+ 3246              	.LASF14:
+ 3247 0458 756E7369 		.ascii	"unsigned int\000"
+ 3247      676E6564 
+ 3247      20696E74 
+ 3247      00
+ 3248              	.LASF156:
+ 3249 0465 6E756D42 		.ascii	"numBytes\000"
+ 3249      79746573 
+ 3249      00
+ 3250              	.LASF96:
+ 3251 046e 4359424C 		.ascii	"CYBLE_EVT_LE_PING_AUTH_TIMEOUT\000"
+ 3251      455F4556 
+ 3251      545F4C45 
+ 3251      5F50494E 
+ 3251      475F4155 
+ 3252              	.LASF17:
+ 3253 048d 75696E74 		.ascii	"uint16_t\000"
+ 3253      31365F74 
+ 3253      00
+ 3254              	.LASF141:
+ 3255 0496 76617231 		.ascii	"var1\000"
+ 3255      00
+ 3256              	.LASF142:
+ 3257 049b 76617232 		.ascii	"var2\000"
+ 3257      00
+ 3258              	.LASF152:
+ 3259 04a0 6F757470 		.ascii	"output\000"
+ 3259      757400
+ 3260              	.LASF55:
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 68
+
+
+ 3261 04a7 4359424C 		.ascii	"CYBLE_EVT_GAP_CONN_ESTB\000"
+ 3261      455F4556 
+ 3261      545F4741 
+ 3261      505F434F 
+ 3261      4E4E5F45 
+ 3262              	.LASF71:
+ 3263 04bf 4359424C 		.ascii	"CYBLE_EVT_GATTS_WRITE_REQ\000"
+ 3263      455F4556 
+ 3263      545F4741 
+ 3263      5454535F 
+ 3263      57524954 
+ 3264              	.LASF63:
+ 3265 04d9 4359424C 		.ascii	"CYBLE_EVT_GATTC_XCHNG_MTU_RSP\000"
+ 3265      455F4556 
+ 3265      545F4741 
+ 3265      5454435F 
+ 3265      5843484E 
+ 3266              	.LASF80:
+ 3267 04f7 4359424C 		.ascii	"CYBLE_EVT_GATTS_DATA_SIGNED_CMD_REQ\000"
+ 3267      455F4556 
+ 3267      545F4741 
+ 3267      5454535F 
+ 3267      44415441 
+ 3268              	.LASF137:
+ 3269 051b 64617461 		.ascii	"data_to_write\000"
+ 3269      5F746F5F 
+ 3269      77726974 
+ 3269      6500
+ 3270              	.LASF83:
+ 3271 0529 4359424C 		.ascii	"CYBLE_EVT_GATTC_LONG_PROCEDURE_END\000"
+ 3271      455F4556 
+ 3271      545F4741 
+ 3271      5454435F 
+ 3271      4C4F4E47 
+ 3272              	.LASF104:
+ 3273 054c 74537461 		.ascii	"tStandby\000"
+ 3273      6E646279 
+ 3273      00
+ 3274              	.LASF136:
+ 3275 0555 424D4532 		.ascii	"BME280_stop\000"
+ 3275      38305F73 
+ 3275      746F7000 
+ 3276              	.LASF6:
+ 3277 0561 73686F72 		.ascii	"short unsigned int\000"
+ 3277      7420756E 
+ 3277      7369676E 
+ 3277      65642069 
+ 3277      6E7400
+ 3278              	.LASF28:
+ 3279 0574 4359424C 		.ascii	"CYBLE_EVT_HOST_INVALID\000"
+ 3279      455F4556 
+ 3279      545F484F 
+ 3279      53545F49 
+ 3279      4E56414C 
+ 3280              	.LASF66:
+ 3281 058b 4359424C 		.ascii	"CYBLE_EVT_GATTC_FIND_INFO_RSP\000"
+ 3281      455F4556 
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 69
+
+
+ 3281      545F4741 
+ 3281      5454435F 
+ 3281      46494E44 
+ 3282              	.LASF34:
+ 3283 05a9 4359424C 		.ascii	"CYBLE_EVT_MEMORY_REQUEST\000"
+ 3283      455F4556 
+ 3283      545F4D45 
+ 3283      4D4F5259 
+ 3283      5F524551 
+ 3284              	.LASF75:
+ 3285 05c2 4359424C 		.ascii	"CYBLE_EVT_GATTS_EXEC_WRITE_REQ\000"
+ 3285      455F4556 
+ 3285      545F4741 
+ 3285      5454535F 
+ 3285      45584543 
+ 3286              	.LASF37:
+ 3287 05e1 4359424C 		.ascii	"CYBLE_EVT_GAP_PASSKEY_ENTRY_REQUEST\000"
+ 3287      455F4556 
+ 3287      545F4741 
+ 3287      505F5041 
+ 3287      53534B45 
+ 3288              	.LASF42:
+ 3289 0605 4359424C 		.ascii	"CYBLE_EVT_GAP_DEVICE_CONNECTED\000"
+ 3289      455F4556 
+ 3289      545F4741 
+ 3289      505F4445 
+ 3289      56494345 
+ 3290              	.LASF57:
+ 3291 0624 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_REQ_REPLY_ERR\000"
+ 3291      455F4556 
+ 3291      545F4741 
+ 3291      505F4155 
+ 3291      54485F52 
+ 3292              	.LASF163:
+ 3293 0645 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 3293      43313120 
+ 3293      352E342E 
+ 3293      31203230 
+ 3293      31363036 
+ 3294 0678 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 3294      20726576 
+ 3294      6973696F 
+ 3294      6E203233 
+ 3294      37373135 
+ 3295 06ab 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 3295      66756E63 
+ 3295      74696F6E 
+ 3295      2D736563 
+ 3295      74696F6E 
+ 3296              	.LASF60:
+ 3297 06d3 4359424C 		.ascii	"CYBLE_EVT_GATT_CONNECT_IND\000"
+ 3297      455F4556 
+ 3297      545F4741 
+ 3297      54545F43 
+ 3297      4F4E4E45 
+ 3298              	.LASF157:
+ 3299 06ee 69746572 		.ascii	"iter\000"
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 70
+
+
+ 3299      00
+ 3300              	.LASF86:
+ 3301 06f3 4359424C 		.ascii	"CYBLE_EVT_L2CAP_COMMAND_REJ\000"
+ 3301      455F4556 
+ 3301      545F4C32 
+ 3301      4341505F 
+ 3301      434F4D4D 
+ 3302              	.LASF35:
+ 3303 070f 4359424C 		.ascii	"CYBLE_EVT_GAPC_SCAN_PROGRESS_RESULT\000"
+ 3303      455F4556 
+ 3303      545F4741 
+ 3303      50435F53 
+ 3303      43414E5F 
+ 3304              	.LASF58:
+ 3305 0733 4359424C 		.ascii	"CYBLE_EVT_GAP_SMP_LOC_P256_KEYS_GEN_AND_SET_COMPLET"
+ 3305      455F4556 
+ 3305      545F4741 
+ 3305      505F534D 
+ 3305      505F4C4F 
+ 3306 0766 4500     		.ascii	"E\000"
+ 3307              	.LASF139:
+ 3308 0768 424D4532 		.ascii	"BME280_reset\000"
+ 3308      38305F72 
+ 3308      65736574 
+ 3308      00
+ 3309              	.LASF165:
+ 3310 0775 433A5C55 		.ascii	"C:\\Users\\d4hhm\\Documents\\PSoC Creator\\ble-beac"
+ 3310      73657273 
+ 3310      5C643468 
+ 3310      686D5C44 
+ 3310      6F63756D 
+ 3311 07a3 6F6E5F63 		.ascii	"on_capsense+vl6180+bme280_2\\Design01.cydsn\000"
+ 3311      61707365 
+ 3311      6E73652B 
+ 3311      766C3631 
+ 3311      38302B62 
+ 3312              	.LASF65:
+ 3313 07ce 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BY_TYPE_RSP\000"
+ 3313      455F4556 
+ 3313      545F4741 
+ 3313      5454435F 
+ 3313      52454144 
+ 3314              	.LASF27:
+ 3315 07ef 73697A65 		.ascii	"sizetype\000"
+ 3315      74797065 
+ 3315      00
+ 3316              	.LASF26:
+ 3317 07f8 6C6F6E67 		.ascii	"long double\000"
+ 3317      20646F75 
+ 3317      626C6500 
+ 3318              	.LASF40:
+ 3319 0804 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_FAILED\000"
+ 3319      455F4556 
+ 3319      545F4741 
+ 3319      505F4155 
+ 3319      54485F46 
+ 3320              	.LASF72:
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 71
+
+
+ 3321 081e 4359424C 		.ascii	"CYBLE_EVT_GATTC_WRITE_RSP\000"
+ 3321      455F4556 
+ 3321      545F4741 
+ 3321      5454435F 
+ 3321      57524954 
+ 3322              	.LASF53:
+ 3323 0838 4359424C 		.ascii	"CYBLE_EVT_GAPC_DIRECT_ADV_REPORT\000"
+ 3323      455F4556 
+ 3323      545F4741 
+ 3323      50435F44 
+ 3323      49524543 
+ 3324              	.LASF51:
+ 3325 0859 4359424C 		.ascii	"CYBLE_EVT_GAP_DATA_LENGTH_CHANGE\000"
+ 3325      455F4556 
+ 3325      545F4741 
+ 3325      505F4441 
+ 3325      54415F4C 
+ 3326              	.LASF39:
+ 3327 087a 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_COMPLETE\000"
+ 3327      455F4556 
+ 3327      545F4741 
+ 3327      505F4155 
+ 3327      54485F43 
+ 3328              	.LASF144:
+ 3329 0896 424D4532 		.ascii	"BME280_readFloatPressure\000"
+ 3329      38305F72 
+ 3329      65616446 
+ 3329      6C6F6174 
+ 3329      50726573 
+ 3330              	.LASF77:
+ 3331 08af 4359424C 		.ascii	"CYBLE_EVT_GATTC_HANDLE_VALUE_NTF\000"
+ 3331      455F4556 
+ 3331      545F4741 
+ 3331      5454435F 
+ 3331      48414E44 
+ 3332              	.LASF138:
+ 3333 08d0 64657669 		.ascii	"device_address\000"
+ 3333      63655F61 
+ 3333      64647265 
+ 3333      737300
+ 3334              	.LASF88:
+ 3335 08df 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_CONN_CNF\000"
+ 3335      455F4556 
+ 3335      545F4C32 
+ 3335      4341505F 
+ 3335      43424643 
+ 3336              	.LASF129:
+ 3337 08fd 73657474 		.ascii	"settings\000"
+ 3337      696E6773 
+ 3337      00
+ 3338              	.LASF64:
+ 3339 0906 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BY_GROUP_TYPE_RSP\000"
+ 3339      455F4556 
+ 3339      545F4741 
+ 3339      5454435F 
+ 3339      52454144 
+ 3340              	.LASF23:
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 72
+
+
+ 3341 092d 666C6F61 		.ascii	"float\000"
+ 3341      7400
+ 3342              	.LASF29:
+ 3343 0933 4359424C 		.ascii	"CYBLE_EVT_STACK_ON\000"
+ 3343      455F4556 
+ 3343      545F5354 
+ 3343      41434B5F 
+ 3343      4F4E00
+ 3344              	.LASF106:
+ 3345 0946 74656D70 		.ascii	"tempOverSample\000"
+ 3345      4F766572 
+ 3345      53616D70 
+ 3345      6C6500
+ 3346              	.LASF18:
+ 3347 0955 696E7433 		.ascii	"int32_t\000"
+ 3347      325F7400 
+ 3348              	.LASF1:
+ 3349 095d 756E7369 		.ascii	"unsigned char\000"
+ 3349      676E6564 
+ 3349      20636861 
+ 3349      7200
+ 3350              	.LASF49:
+ 3351 096b 4359424C 		.ascii	"CYBLE_EVT_GAP_KEYPRESS_NOTIFICATION\000"
+ 3351      455F4556 
+ 3351      545F4741 
+ 3351      505F4B45 
+ 3351      59505245 
+ 3352              	.LASF4:
+ 3353 098f 73686F72 		.ascii	"short int\000"
+ 3353      7420696E 
+ 3353      7400
+ 3354              	.LASF78:
+ 3355 0999 4359424C 		.ascii	"CYBLE_EVT_GATTC_HANDLE_VALUE_IND\000"
+ 3355      455F4556 
+ 3355      545F4741 
+ 3355      5454435F 
+ 3355      48414E44 
+ 3356              	.LASF147:
+ 3357 09ba 424D4532 		.ascii	"BME280_readFloatAltitudeFeet\000"
+ 3357      38305F72 
+ 3357      65616446 
+ 3357      6C6F6174 
+ 3357      416C7469 
+ 3358              	.LASF97:
+ 3359 09d7 4359424C 		.ascii	"CYBLE_EVT_HCI_PKT\000"
+ 3359      455F4556 
+ 3359      545F4843 
+ 3359      495F504B 
+ 3359      5400
+ 3360              	.LASF74:
+ 3361 09e9 4359424C 		.ascii	"CYBLE_EVT_GATTS_PREP_WRITE_REQ\000"
+ 3361      455F4556 
+ 3361      545F4741 
+ 3361      5454535F 
+ 3361      50524550 
+ 3362              	.LASF134:
+ 3363 0a08 424D4532 		.ascii	"BME280\000"
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 73
+
+
+ 3363      383000
+ 3364              	.LASF122:
+ 3365 0a0f 6469675F 		.ascii	"dig_H1\000"
+ 3365      483100
+ 3366              	.LASF123:
+ 3367 0a16 6469675F 		.ascii	"dig_H2\000"
+ 3367      483200
+ 3368              	.LASF124:
+ 3369 0a1d 6469675F 		.ascii	"dig_H3\000"
+ 3369      483300
+ 3370              	.LASF125:
+ 3371 0a24 6469675F 		.ascii	"dig_H4\000"
+ 3371      483400
+ 3372              	.LASF126:
+ 3373 0a2b 6469675F 		.ascii	"dig_H5\000"
+ 3373      483500
+ 3374              	.LASF127:
+ 3375 0a32 6469675F 		.ascii	"dig_H6\000"
+ 3375      483600
+ 3376              	.LASF79:
+ 3377 0a39 4359424C 		.ascii	"CYBLE_EVT_GATTS_HANDLE_VALUE_CNF\000"
+ 3377      455F4556 
+ 3377      545F4741 
+ 3377      5454535F 
+ 3377      48414E44 
+ 3378              	.LASF59:
+ 3379 0a5a 4359424C 		.ascii	"CYBLE_EVT_GATTC_ERROR_RSP\000"
+ 3379      455F4556 
+ 3379      545F4741 
+ 3379      5454435F 
+ 3379      4552524F 
+ 3380              	.LASF54:
+ 3381 0a74 4359424C 		.ascii	"CYBLE_EVT_GAP_SMP_NEGOTIATED_AUTH_INFO\000"
+ 3381      455F4556 
+ 3381      545F4741 
+ 3381      505F534D 
+ 3381      505F4E45 
+ 3382              	.LASF164:
+ 3383 0a9b 2E2E5C2E 		.ascii	"..\\..\\ble-beacon_capsense+vl6180+bme280\\Design01"
+ 3383      2E5C626C 
+ 3383      652D6265 
+ 3383      61636F6E 
+ 3383      5F636170 
+ 3384 0acb 2E637964 		.ascii	".cydsn\\BME280.c\000"
+ 3384      736E5C42 
+ 3384      4D453238 
+ 3384      302E6300 
+ 3385              	.LASF159:
+ 3386 0adb 424D4532 		.ascii	"BME280_writeRegister\000"
+ 3386      38305F77 
+ 3386      72697465 
+ 3386      52656769 
+ 3386      73746572 
+ 3387              	.LASF10:
+ 3388 0af0 6C6F6E67 		.ascii	"long unsigned int\000"
+ 3388      20756E73 
+ 3388      69676E65 
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 74
+
+
+ 3388      6420696E 
+ 3388      7400
+ 3389              	.LASF98:
+ 3390 0b02 4359424C 		.ascii	"CYBLE_EVT_FLASH_CORRUPT\000"
+ 3390      455F4556 
+ 3390      545F464C 
+ 3390      4153485F 
+ 3390      434F5252 
+ 3391              	.LASF113:
+ 3392 0b1a 6469675F 		.ascii	"dig_P1\000"
+ 3392      503100
+ 3393              	.LASF25:
+ 3394 0b21 63686172 		.ascii	"char\000"
+ 3394      00
+ 3395              	.LASF115:
+ 3396 0b26 6469675F 		.ascii	"dig_P3\000"
+ 3396      503300
+ 3397              	.LASF116:
+ 3398 0b2d 6469675F 		.ascii	"dig_P4\000"
+ 3398      503400
+ 3399              	.LASF117:
+ 3400 0b34 6469675F 		.ascii	"dig_P5\000"
+ 3400      503500
+ 3401              	.LASF118:
+ 3402 0b3b 6469675F 		.ascii	"dig_P6\000"
+ 3402      503600
+ 3403              	.LASF119:
+ 3404 0b42 6469675F 		.ascii	"dig_P7\000"
+ 3404      503700
+ 3405              	.LASF120:
+ 3406 0b49 6469675F 		.ascii	"dig_P8\000"
+ 3406      503800
+ 3407              	.LASF121:
+ 3408 0b50 6469675F 		.ascii	"dig_P9\000"
+ 3408      503900
+ 3409              	.LASF5:
+ 3410 0b57 5F5F7569 		.ascii	"__uint16_t\000"
+ 3410      6E743136 
+ 3410      5F7400
+ 3411              	.LASF82:
+ 3412 0b62 4359424C 		.ascii	"CYBLE_EVT_GATTS_READ_CHAR_VAL_ACCESS_REQ\000"
+ 3412      455F4556 
+ 3412      545F4741 
+ 3412      5454535F 
+ 3412      52454144 
+ 3413              	.LASF158:
+ 3414 0b8b 424D4532 		.ascii	"BME280_init\000"
+ 3414      38305F69 
+ 3414      6E697400 
+ 3415              	.LASF7:
+ 3416 0b97 5F5F696E 		.ascii	"__int32_t\000"
+ 3416      7433325F 
+ 3416      7400
+ 3417              	.LASF93:
+ 3418 0ba1 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_TX_CREDIT_IND\000"
+ 3418      455F4556 
+ 3418      545F4C32 
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 75
+
+
+ 3418      4341505F 
+ 3418      43424643 
+ 3419              	.LASF69:
+ 3420 0bc4 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BLOB_RSP\000"
+ 3420      455F4556 
+ 3420      545F4741 
+ 3420      5454435F 
+ 3420      52454144 
+ 3421              	.LASF160:
+ 3422 0be2 6F666673 		.ascii	"offset\000"
+ 3422      657400
+ 3423              	.LASF38:
+ 3424 0be9 4359424C 		.ascii	"CYBLE_EVT_GAP_PASSKEY_DISPLAY_REQUEST\000"
+ 3424      455F4556 
+ 3424      545F4741 
+ 3424      505F5041 
+ 3424      53534B45 
+ 3425              	.LASF162:
+ 3426 0c0f 7061636B 		.ascii	"packet\000"
+ 3426      657400
+ 3427              	.LASF31:
+ 3428 0c16 4359424C 		.ascii	"CYBLE_EVT_HARDWARE_ERROR\000"
+ 3428      455F4556 
+ 3428      545F4841 
+ 3428      52445741 
+ 3428      52455F45 
+ 3429              	.LASF43:
+ 3430 0c2f 4359424C 		.ascii	"CYBLE_EVT_GAP_DEVICE_DISCONNECTED\000"
+ 3430      455F4556 
+ 3430      545F4741 
+ 3430      505F4445 
+ 3430      56494345 
+ 3431              	.LASF105:
+ 3432 0c51 66696C74 		.ascii	"filter\000"
+ 3432      657200
+ 3433              	.LASF100:
+ 3434 0c58 636F6D6D 		.ascii	"commInterface\000"
+ 3434      496E7465 
+ 3434      72666163 
+ 3434      6500
+ 3435              	.LASF145:
+ 3436 0c66 424D4532 		.ascii	"BME280_readFloatAltitudeMeters\000"
+ 3436      38305F72 
+ 3436      65616446 
+ 3436      6C6F6174 
+ 3436      416C7469 
+ 3437              	.LASF19:
+ 3438 0c85 75696E74 		.ascii	"uint32_t\000"
+ 3438      33325F74 
+ 3438      00
+ 3439              	.LASF62:
+ 3440 0c8e 4359424C 		.ascii	"CYBLE_EVT_GATTS_XCNHG_MTU_REQ\000"
+ 3440      455F4556 
+ 3440      545F4741 
+ 3440      5454535F 
+ 3440      58434E48 
+ 3441              	.LASF135:
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 76
+
+
+ 3442 0cac 424D4532 		.ascii	"BME280_start\000"
+ 3442      38305F73 
+ 3442      74617274 
+ 3442      00
+ 3443              	.LASF15:
+ 3444 0cb9 75696E74 		.ascii	"uint8_t\000"
+ 3444      385F7400 
+ 3445              	.LASF146:
+ 3446 0cc1 68656967 		.ascii	"heightOutput\000"
+ 3446      68744F75 
+ 3446      74707574 
+ 3446      00
+ 3447              	.LASF102:
+ 3448 0cce 63686970 		.ascii	"chipSelectPin\000"
+ 3448      53656C65 
+ 3448      63745069 
+ 3448      6E00
+ 3449              	.LASF148:
+ 3450 0cdc 424D4532 		.ascii	"BME280_readFloatHumidity\000"
+ 3450      38305F72 
+ 3450      65616446 
+ 3450      6C6F6174 
+ 3450      48756D69 
+ 3451              	.LASF67:
+ 3452 0cf5 4359424C 		.ascii	"CYBLE_EVT_GATTC_FIND_BY_TYPE_VALUE_RSP\000"
+ 3452      455F4556 
+ 3452      545F4741 
+ 3452      5454435F 
+ 3452      46494E44 
+ 3453              	.LASF47:
+ 3454 0d1c 4359424C 		.ascii	"CYBLE_EVT_GAP_KEYINFO_EXCHNGE_CMPLT\000"
+ 3454      455F4556 
+ 3454      545F4741 
+ 3454      505F4B45 
+ 3454      59494E46 
+ 3455              	.LASF89:
+ 3456 0d40 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DISCONN_IND\000"
+ 3456      455F4556 
+ 3456      545F4C32 
+ 3456      4341505F 
+ 3456      43424643 
+ 3457              	.LASF85:
+ 3458 0d61 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CONN_PARAM_UPDATE_RSP\000"
+ 3458      455F4556 
+ 3458      545F4C32 
+ 3458      4341505F 
+ 3458      434F4E4E 
+ 3459              	.LASF52:
+ 3460 0d87 4359424C 		.ascii	"CYBLE_EVT_GAP_ENHANCE_CONN_COMPLETE\000"
+ 3460      455F4556 
+ 3460      545F4741 
+ 3460      505F454E 
+ 3460      48414E43 
+ 3461              	.LASF155:
+ 3462 0dab 72657375 		.ascii	"result\000"
+ 3462      6C7400
+ 3463              	.LASF61:
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccCDokDf.s 			page 77
+
+
+ 3464 0db2 4359424C 		.ascii	"CYBLE_EVT_GATT_DISCONNECT_IND\000"
+ 3464      455F4556 
+ 3464      545F4741 
+ 3464      54545F44 
+ 3464      4953434F 
+ 3465              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

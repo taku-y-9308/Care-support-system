@@ -1,0 +1,28 @@
+--------------- Rebuild Started: 12/18/2020 15:33:39 Project: main.c, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/main.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c main.c -o .\CortexM0\ARM_GCC_541\Debug\main.o
+main.c: In function 'WriteByte':
+main.c:49:10: warning: unused variable 'out' [-Wunused-variable]
+     char out[10];
+          ^
+main.c:45:11: warning: unused variable 'SlaveAddress' [-Wunused-variable]
+     uint8 SlaveAddress = addr;
+           ^
+main.c: In function 'ReadByte':
+main.c:96:10: warning: unused variable 'out' [-Wunused-variable]
+     char out[10];
+          ^
+main.c:95:13: warning: unused variable 'result' [-Wunused-variable]
+     uint8_t result;
+             ^
+main.c: In function 'VL6180_Init':
+main.c:147:6: warning: unused variable 'out' [-Wunused-variable]
+ char out[10];
+      ^
+main.c:146:7: warning: unused variable 'reset_16' [-Wunused-variable]
+ uint8 reset_16;
+       ^
+main.c: In function 'VL6180_Poll_Range':
+main.c:251:10: warning: unused variable 'out' [-Wunused-variable]
+     char out[10];
+          ^
+--------------- Rebuild Succeeded: 12/18/2020 15:33:40 ---------------
