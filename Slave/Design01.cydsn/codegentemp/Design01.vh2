@@ -2,7 +2,7 @@
 --	Conversion of Design01.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Thu Jan 21 14:41:06 2021
+--	Fri Jan 22 16:42:27 2021
 --
 
 USE cypress.cypress.all;

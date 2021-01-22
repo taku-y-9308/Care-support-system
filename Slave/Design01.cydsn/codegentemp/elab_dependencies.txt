@@ -1,4 +1,4 @@
-C:\Users\d4hhm\Documents\PSoC Creator\ble-beacon_capsense+vl6180+bme280_2\Design01.cydsn\TopDesign\TopDesign.cysch
+C:\Users\d4hhm\Documents\Care-support-system\Slave\Design01.cydsn\TopDesign\TopDesign.cysch
 C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\BLE_v3_50\BLE_v3_50.cysym
 C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\BLE_v3_50\BLE_v3_50.chm
 C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\BLE_v3_50\BLE_v3_50.dll
@@ -336,7 +336,7 @@ C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrim
 C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\Custom\custom.cs
 C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_m0s8_scb_v2_0\cy_m0s8_scb_v2_0.cysym
 C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_m0s8_scb_v2_0\PSoC4\cy_m0s8_scb_v2_0.cyprimitive
-C:\Users\d4hhm\Documents\PSoC Creator\ble-beacon_capsense+vl6180+bme280_2\Design01.cydsn\Design01.cydwr
+C:\Users\d4hhm\Documents\Care-support-system\Slave\Design01.cydsn\Design01.cydwr
 C:\Users\d4hhm\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Em_EEPROM_Dynamic_v2_20\API\cy_em_eeprom.c
 C:\Users\d4hhm\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Em_EEPROM_Dynamic_v2_20\API\cy_em_eeprom.h
 C:\Users\d4hhm\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_81\PSoC4\API\cm0gcc.ld

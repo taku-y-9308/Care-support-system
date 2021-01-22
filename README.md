@@ -9,13 +9,13 @@ Care-support-system uses the Apple provided iBeacon.
 
 Care-support-systemは、Appleの提供するiBeaconを使用しています。
 
-* Peripheral : 気管切開チューブに取り付けたPSoC
+* Peripheral : タッチセンサ、近接センサ、環境センサを取り付けたPSoC
 * Central : サーバーの役割のラズパイ
 
 ## Development Environment
 Slave:PSoC4BLE(CYBLE-022001-00)  
 Master:Raspberry Pi3  
-OS:Raspberry Pi OS Lite  
+Description:Raspian GNU/Linux 10 (buster)  
 Grafana v6.5.2  
 InfluxDB v1.6.4-1  
 
