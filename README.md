@@ -26,9 +26,6 @@ Environmental sensor:BME280 https://www.switch-science.com/catalog/2236/
 ## System Overview
 ![Care-support-system system-overview](https://user-images.githubusercontent.com/66234583/105314958-f7f9d480-5c01-11eb-85c2-d883a3017011.png)
 
-However, as for OpenWeather, we are stopping it now because the process becomes too heavy.  
-We plan to introduce it by sending requests less frequently.
-
 ## Responsibility
 name: Takumi Yamanaka (山中拓己)  
 mail: y.takumi4@gmail.com
