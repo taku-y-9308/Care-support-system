@@ -3,9 +3,9 @@
 #include <math.h>
 
 //****************************************************************************//
-//BME280は書き込みにより複雑なコードが必要かつ、ライブラリが存在しているため、そちらを使う
+//WriteByteとReadByteに関しては、BME280は書き込みにより複雑なコードが必要かつ、
+//ライブラリが存在しているため別々の関数で動かしている
 //***************************************************************************//
-
 
 void VL6180x_WriteByte(uint16 reg,uint8 data) {
     
@@ -69,7 +69,7 @@ reset = ReadByte(0x016);
  
 if (reset==0x01){  // check to see has it be Initialised already
        
-        /*各レジスタの初期化*/
+        //各レジスタの初期化***********************************//
         WriteByte(0x207, 0x01);
         WriteByte(0x208, 0x01);
         WriteByte(0x096, 0x00);
@@ -121,8 +121,10 @@ if (reset==0x01){  // check to see has it be Initialised already
         WriteByte(0x014,0x24);
         WriteByte(0x01C,0x31);
         WriteByte(0x2A3,0);
-        
-        WriteByte(0x016, 0); //change fresh out of set status to 0
+        //***************************************************//
+
+        /*statusを変更*/
+        WriteByte(0x016, 0);
         
     }
     return 0; 
@@ -149,7 +151,7 @@ int VL6180_Poll_Range() {
     status = ReadByte(0x04f); 
     range_status = status & 0x07;
     
-    // wait for new measurement ready status 
+    // 測定準備が完了するまでを待つ
     while (range_status != 0x04) {
         status = ReadByte(0x04f); 
         range_status = status & 0x07; 

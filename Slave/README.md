@@ -1,5 +1,9 @@
 # Slave
 
+## Data sheets for the sensors used  
+VL6180x(for IRsensor):https://www.pololu.com/file/0J961/VL6180X.pdf  
+BME280(for Environmental sensor):https://akizukidenshi.com/download/ds/bosch/BST-BME280_DS001-10.pdf  
+
 ## Packet allocation
 The information is sent to the server using iBeacon provided by Apple.  
 
