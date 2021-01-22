@@ -13,11 +13,11 @@ Care-support-systemは、Appleの提供するiBeaconを使用しています。
 * Central : サーバーの役割のラズパイ
 
 ## Development Environment
-Slave:PSoC4BLE(CYBLE-022001-00)  
-Master:Raspberry Pi3  
-Description:Raspian GNU/Linux 10 (buster)  
-Grafana v6.5.2  
-InfluxDB v1.6.4-1  
+* Peripheral:PSoC4BLE(CYBLE-022001-00)  
+* Central:Raspberry Pi3  
+* Description:Raspian GNU/Linux 10 (buster)  
+* Grafana v6.5.2  
+* InfluxDB v1.6.4-1  
 
 ### Used sensor
 IRsensor:VL6180x https://www.switch-science.com/catalog/2518/  
