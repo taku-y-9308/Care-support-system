@@ -2,7 +2,7 @@
 
 Care-support-system uses the Apple provided iBeacon.
 
-* Peripheral : A PSoC attached to a tracheostomy tube
+* Peripheral : PSoC with touch sensor, proximity sensor, and environmental sensor attached
 * Central: A Raspberrypi in the role of a server
 
 ----------------------------------------------------------------
