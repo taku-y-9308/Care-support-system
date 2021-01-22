@@ -9,7 +9,7 @@ Care-support-system uses the Apple provided iBeacon.
 
 Care-support-systemは、Appleの提供するiBeaconを使用しています。
 
-* Peripheral : 気管切開チューブに取り付けたPSoC
+* Peripheral : タッチセンサ、近接センサ、環境センサを取り付けたPSoC
 * Central : サーバーの役割のラズパイ
 
 ## Development Environment
