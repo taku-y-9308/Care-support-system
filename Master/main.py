@@ -31,11 +31,10 @@ def callback(bt_addr, rssi, packet, additional_info):
 	data['RSSI']=rssi
 
 	#value from API
-	#30分ごとに天気情報を取得する
-	if time.time()-start>1800:
-		data['weather_info']=get_weather_info.weather_info()
-		start=time.time()#現在のUNIX時間を代入して1800sのカウントをリセットする
-
+	
+	
+	data['weather_info']=get_weather_info.weather_info()
+		
 	dt_now=datetime.datetime.utcnow()
 	print(dt_now,data)
 	write_to_influxdb(data)
@@ -49,7 +48,6 @@ def write_to_influxdb(data):
     db.write_points(json_body)
 
 if __name__ == "__main__":
-	start=time.time()#現在のUNIX時間を代入する
 
 	try:
 		
