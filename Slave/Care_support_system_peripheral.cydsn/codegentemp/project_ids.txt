@@ -1,6 +1,6 @@
-C:\Users\d4hhm\Documents\Care-support-system\Slave\Design01.cydsn\Design01.cyprj|0f0959bf-1c3d-406b-8fd0-f3434fc8e79f
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|0884f2e2-a7fc-4168-931d-ba83ec7e4cc5
-C:\Users\d4hhm\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|7f369fda-a679-4b25-9c22-9e99245d1df2
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|d9cedec9-7dfe-4e96-9313-68e9cfd2984b
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|9061c637-e9f9-439a-8c8a-07a709e7254f
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|822be998-afa9-4c09-9bc8-f718a84cbfff
+C:\Users\d4hhm\Documents\Care-support-system\Slave\Care_support_system_peripheral.cydsn\Care_support_system_peripheral.cyprj|e152bfff-12bf-4b80-903a-6c4d777f1b21
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|7d5a2f18-c5a5-4105-b03f-5062a5b9a2ca
+C:\Users\d4hhm\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|99786bd9-899c-4d01-896f-4deb9ffcc43a
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|04a513ef-19b4-4237-a3ff-e6160ca441ee
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|91d55cc1-6d63-4496-b185-ab38a19cc33f
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|54b1ec04-5c55-4f0f-b5e8-0feec3907aea

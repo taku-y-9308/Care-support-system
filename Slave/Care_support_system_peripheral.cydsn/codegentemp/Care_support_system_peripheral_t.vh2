@@ -1,8 +1,8 @@
--- Project:   Design01
--- Generated: 01/22/2021 16:42:28
+-- Project:   C:\Users\d4hhm\Documents\Care-support-system\Slave\Care_support_system_peripheral.cydsn\Care_support_system_peripheral.cyprj
+-- Generated: 01/22/2021 19:05:17
 -- PSoC Creator  4.2
 
-ENTITY Design01 IS
+ENTITY Care_support_system_peripheral IS
     PORT(
         SCL_1(0)_PAD : INOUT std_ulogic;
         SDA_1(0)_PAD : INOUT std_ulogic);
@@ -17,9 +17,9 @@ ENTITY Design01 IS
     ATTRIBUTE voltage_VDDR_LF OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDR_HF OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDR_SYN OF __DEFAULT__ : ENTITY IS 3.3e0;
-END Design01;
+END Care_support_system_peripheral;
 
-ARCHITECTURE __DEFAULT__ OF Design01 IS
+ARCHITECTURE __DEFAULT__ OF Care_support_system_peripheral IS
     SIGNAL ClockBlock_ECO : bit;
     SIGNAL ClockBlock_ExtClk : bit;
     SIGNAL ClockBlock_HFClk : bit;

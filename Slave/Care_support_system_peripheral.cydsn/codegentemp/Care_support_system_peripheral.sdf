@@ -1,14 +1,14 @@
 (DELAYFILE
  (SDFVERSION "IEEE 1497 4.0")
- (DATE "2021-01-22T07:42:28Z")
- (DESIGN "Design01")
+ (DATE "2021-01-22T10:05:17Z")
+ (DESIGN "Care_support_system_peripheral")
  (VENDOR "Cypress Semiconductor")
  (PROGRAM "PSoC Creator")
  (VERSION " 4.2")
  (DIVIDER .)
  (TIMESCALE 1 ns)
  (CELL
-  (CELLTYPE "Design01")
+  (CELLTYPE "Care_support_system_peripheral")
   (INSTANCE *)
   (DELAY
    (ABSOLUTE

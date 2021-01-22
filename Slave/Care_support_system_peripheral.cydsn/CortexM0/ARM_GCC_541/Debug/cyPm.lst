@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
   29:Generated_Source\PSoC4/cyPm.h **** \brief PSoC 4 devices support the following power modes (in order of high to low power consumption)
   30:Generated_Source\PSoC4/cyPm.h **** Deep Sleep, Hibernate, and Stop. Active, Sleep and Deep-Sleep are standard ARM defined power modes,
   31:Generated_Source\PSoC4/cyPm.h **** ARM CPUs. Hibernate/Stop are even lower power modes that are entered from firmware just like Deep-S
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 2
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 2
 
 
   32:Generated_Source\PSoC4/cyPm.h **** the CPU (and all peripherals) goes through a full reset.
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
   86:Generated_Source\PSoC4/cyPm.h **** void CySysPmSleep(void);
   87:Generated_Source\PSoC4/cyPm.h **** void CySysPmDeepSleep(void);
   88:Generated_Source\PSoC4/cyPm.h **** 
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 3
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 3
 
 
   89:Generated_Source\PSoC4/cyPm.h **** #if(CY_IP_SRSSV2)
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  143:Generated_Source\PSoC4/cyPm.h ****     #define CY_PM_CPU_SCR_REG                   (*(reg32 *) CYREG_CM0P_SCR)
  144:Generated_Source\PSoC4/cyPm.h ****     #define CY_PM_CPU_SCR_PTR                   ( (reg32 *) CYREG_CM0P_SCR)
  145:Generated_Source\PSoC4/cyPm.h **** #endif /* (CY_IP_CPUSS_CM0) */
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 4
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 4
 
 
  146:Generated_Source\PSoC4/cyPm.h **** 
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  200:Generated_Source\PSoC4/cyPm.h **** #else
  201:Generated_Source\PSoC4/cyPm.h ****     #define CY_PM_PWR_KEY_DELAY_REG_DEFAULT     ((uint32) 248u)
  202:Generated_Source\PSoC4/cyPm.h ****     #define CY_PM_PWR_KEY_DELAY_FREQ_DEFAULT    (48u)
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 5
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 5
 
 
  203:Generated_Source\PSoC4/cyPm.h **** #endif /* (CY_IP_SRSSV2) */
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
   49 0018 9208     		lsrs	r2, r2, #2
   50 001a 1A60     		str	r2, [r3]
  235:Generated_Source\PSoC4/cyPm.h ****             #endif /* CYREG_GPIO_PRT1_PC */
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 6
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 6
 
 
  236:Generated_Source\PSoC4/cyPm.h **** 
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  255:Generated_Source\PSoC4/cyPm.h ****             #endif /* CYREG_GPIO_PRT6_PC */
  256:Generated_Source\PSoC4/cyPm.h **** 
  257:Generated_Source\PSoC4/cyPm.h ****             #ifdef CYREG_GPIO_PRT7_PC
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 7
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 7
 
 
  258:Generated_Source\PSoC4/cyPm.h ****                 CY_CLEAR_REG32_FIELD( CYREG_GPIO_PRT7_PC, CYFLD_GPIO_PRT_PORT_IB_MODE_SEL);
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  105              		.align	2
  106              		.global	CySysPmSleep
  107              		.code	16
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 8
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 8
 
 
  108              		.thumb_func
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
   37:Generated_Source\PSoC4/cyPm.c ****     interruptState = CyEnterCriticalSection();
  126              		.loc 2 37 0
  127 0006 FC1D     		adds	r4, r7, #7
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 9
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 9
 
 
  128 0008 FFF7FEFF 		bl	CyEnterCriticalSection
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
   48:Generated_Source\PSoC4/cyPm.c **** 
   49:Generated_Source\PSoC4/cyPm.c **** /*******************************************************************************
   50:Generated_Source\PSoC4/cyPm.c **** * Function Name: CySysPmDeepSleep
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 10
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 10
 
 
   51:Generated_Source\PSoC4/cyPm.c **** ****************************************************************************//**
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
   87:Generated_Source\PSoC4/cyPm.c ****             CY_SYS_CLK_SELECT_REG &= (uint32)(~CY_SYS_CLK_SELECT_DIRECT_SEL_MASK);
   88:Generated_Source\PSoC4/cyPm.c ****         }
   89:Generated_Source\PSoC4/cyPm.c ****     #endif /* (CY_IP_ECO_SRSSLT) */
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 11
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 11
 
 
   90:Generated_Source\PSoC4/cyPm.c **** 
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  213 0036 3B60     		str	r3, [r7]
  121:Generated_Source\PSoC4/cyPm.c ****         CySysClkWriteSysclkDiv(CY_SYS_CLK_SYSCLK_DIV4);
  214              		.loc 2 121 0
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 12
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 12
 
 
  215 0038 0220     		movs	r0, #2
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  236 0052 BD46     		mov	sp, r7
  237 0054 03B0     		add	sp, sp, #12
  238              		@ sp needed
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 13
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 13
 
 
  239 0056 90BD     		pop	{r4, r7, pc}
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  262              		@ frame_needed = 1, uses_anonymous_args = 0
  263 0000 90B5     		push	{r4, r7, lr}
  264              		.cfi_def_cfa_offset 12
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 14
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 14
 
 
  265              		.cfi_offset 4, -12
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  205:Generated_Source\PSoC4/cyPm.c ****          * thus could be used by CySysPmGetResetReason() to differentiate
  206:Generated_Source\PSoC4/cyPm.c ****          * WAKEUP from a general RESET event.
  207:Generated_Source\PSoC4/cyPm.c ****          */
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 15
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 15
 
 
  208:Generated_Source\PSoC4/cyPm.c ****         CY_PM_PWR_STOP_REG = (CY_PM_PWR_STOP_REG & (uint32)(~CY_PM_PWR_STOP_TOKEN_MASK)) | CY_PM_PW
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  343              		.thumb_func
  344              		.type	CySysPmStop, %function
  345              	CySysPmStop:
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 16
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 16
 
 
  346              	.LFB6:
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  250:Generated_Source\PSoC4/cyPm.c ****         /* Freeze IO-Cells to save IO-Cell state */
  251:Generated_Source\PSoC4/cyPm.c ****         CySysPmFreezeIo();
  369              		.loc 2 251 0
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 17
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 17
 
 
  370 001a FFF7FEFF 		bl	CySysPmFreezeIo
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  404              	.L14:
  405 0038 2C000B40 		.word	1074462764
  406              		.cfi_endproc
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 18
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 18
 
 
  407              	.LFE6:
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  438 0014 0C4A     		ldr	r2, .L19
  295:Generated_Source\PSoC4/cyPm.c ****                             (CY_PM_PWR_STOP_REG | CY_PM_PWR_STOP_POLARITY) :
  439              		.loc 2 295 0
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 19
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 19
 
 
  440 0016 7B68     		ldr	r3, [r7, #4]
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  300:Generated_Source\PSoC4/cyPm.c **** 
  301:Generated_Source\PSoC4/cyPm.c **** 
  302:Generated_Source\PSoC4/cyPm.c ****     /*******************************************************************************
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 20
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 20
 
 
  303:Generated_Source\PSoC4/cyPm.c ****     * Function Name: CySysPmGetResetReason
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  331:Generated_Source\PSoC4/cyPm.c **** 
  332:Generated_Source\PSoC4/cyPm.c ****         /* Wakeup from Stop (through WAKEUP pin assert) */
  333:Generated_Source\PSoC4/cyPm.c ****         case CY_PM_PWR_STOP_TOKEN_STOP:
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 21
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 21
 
 
  334:Generated_Source\PSoC4/cyPm.c ****             reason = CY_PM_RESET_REASON_WAKEUP_STOP;
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  552              		.global	CySysPmFreezeIo
  553              		.code	16
  554              		.thumb_func
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 22
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 22
 
 
  555              		.type	CySysPmFreezeIo, %function
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  582 001a 0FD1     		bne	.L31
  371:Generated_Source\PSoC4/cyPm.c ****         {
  372:Generated_Source\PSoC4/cyPm.c ****             /* Preserve last reset reason and disable overrides the next freeze command by peripher
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 23
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 23
 
 
  373:Generated_Source\PSoC4/cyPm.c ****             CY_PM_PWR_STOP_REG = CY_PM_PWR_STOP_STOP | CY_PM_PWR_STOP_FREEZE | CY_PM_PWR_STOP_UNLOC
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  621 0054 FF000100 		.word	65791
  622 0058 003A0280 		.word	-2147337728
  623              		.cfi_endproc
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 24
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 24
 
 
  624              	.LFE9:
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  414:Generated_Source\PSoC4/cyPm.c ****          */
  415:Generated_Source\PSoC4/cyPm.c ****         CY_PM_PWR_STOP_REG = CY_PM_PWR_STOP_UNLOCK |
  652              		.loc 2 415 0
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 25
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 25
 
 
  653 0010 0D4B     		ldr	r3, .L35
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  693              		.cfi_endproc
  694              	.LFE10:
  695              		.size	CySysPmUnfreezeIo, .-CySysPmUnfreezeIo
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 26
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 26
 
 
  696              		.text
@@ -1511,25 +1511,25 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  703 0006 00000000 		.4byte	.Ldebug_abbrev0
  704 000a 04       		.byte	0x4
  705 000b 01       		.uleb128 0x1
- 706 000c AF000000 		.4byte	.LASF27
+ 706 000c 07010000 		.4byte	.LASF27
  707 0010 0C       		.byte	0xc
- 708 0011 60020000 		.4byte	.LASF28
- 709 0015 7D010000 		.4byte	.LASF29
+ 708 0011 5F020000 		.4byte	.LASF28
+ 709 0015 45000000 		.4byte	.LASF29
  710 0019 00000000 		.4byte	.Ldebug_ranges0+0
  711 001d 00000000 		.4byte	0
  712 0021 00000000 		.4byte	.Ldebug_line0
  713 0025 02       		.uleb128 0x2
  714 0026 01       		.byte	0x1
  715 0027 06       		.byte	0x6
- 716 0028 8A020000 		.4byte	.LASF0
+ 716 0028 89020000 		.4byte	.LASF0
  717 002c 02       		.uleb128 0x2
  718 002d 01       		.byte	0x1
  719 002e 08       		.byte	0x8
- 720 002f 7A000000 		.4byte	.LASF1
+ 720 002f D2000000 		.4byte	.LASF1
  721 0033 02       		.uleb128 0x2
  722 0034 02       		.byte	0x2
  723 0035 05       		.byte	0x5
- 724 0036 3C020000 		.4byte	.LASF2
+ 724 0036 3B020000 		.4byte	.LASF2
  725 003a 02       		.uleb128 0x2
  726 003b 02       		.byte	0x2
  727 003c 07       		.byte	0x7
@@ -1537,19 +1537,19 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  729 0041 02       		.uleb128 0x2
  730 0042 04       		.byte	0x4
  731 0043 05       		.byte	0x5
- 732 0044 57020000 		.4byte	.LASF4
+ 732 0044 56020000 		.4byte	.LASF4
  733 0048 02       		.uleb128 0x2
  734 0049 04       		.byte	0x4
  735 004a 07       		.byte	0x7
- 736 004b 97000000 		.4byte	.LASF5
+ 736 004b EF000000 		.4byte	.LASF5
  737 004f 02       		.uleb128 0x2
  738 0050 08       		.byte	0x8
  739 0051 05       		.byte	0x5
- 740 0052 1C020000 		.4byte	.LASF6
+ 740 0052 1B020000 		.4byte	.LASF6
  741 0056 02       		.uleb128 0x2
  742 0057 08       		.byte	0x8
  743 0058 07       		.byte	0x7
- 744 0059 D6010000 		.4byte	.LASF7
+ 744 0059 D5010000 		.4byte	.LASF7
  745 005d 03       		.uleb128 0x3
  746 005e 04       		.byte	0x4
  747 005f 05       		.byte	0x5
@@ -1557,37 +1557,37 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  749 0064 02       		.uleb128 0x2
  750 0065 04       		.byte	0x4
  751 0066 07       		.byte	0x7
- 752 0067 70010000 		.4byte	.LASF8
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 27
+ 752 0067 C8010000 		.4byte	.LASF8
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 27
 
 
  753 006b 04       		.uleb128 0x4
- 754 006c A9000000 		.4byte	.LASF9
+ 754 006c 01010000 		.4byte	.LASF9
  755 0070 03       		.byte	0x3
  756 0071 E601     		.2byte	0x1e6
  757 0073 2C000000 		.4byte	0x2c
  758 0077 04       		.uleb128 0x4
- 759 0078 62010000 		.4byte	.LASF10
+ 759 0078 BA010000 		.4byte	.LASF10
  760 007c 03       		.byte	0x3
  761 007d E701     		.2byte	0x1e7
  762 007f 3A000000 		.4byte	0x3a
  763 0083 04       		.uleb128 0x4
- 764 0084 69010000 		.4byte	.LASF11
+ 764 0084 C1010000 		.4byte	.LASF11
  765 0088 03       		.byte	0x3
  766 0089 E801     		.2byte	0x1e8
  767 008b 48000000 		.4byte	0x48
  768 008f 02       		.uleb128 0x2
  769 0090 04       		.byte	0x4
  770 0091 04       		.byte	0x4
- 771 0092 74000000 		.4byte	.LASF12
+ 771 0092 CC000000 		.4byte	.LASF12
  772 0096 02       		.uleb128 0x2
  773 0097 08       		.byte	0x8
  774 0098 04       		.byte	0x4
- 775 0099 49010000 		.4byte	.LASF13
+ 775 0099 A1010000 		.4byte	.LASF13
  776 009d 02       		.uleb128 0x2
  777 009e 01       		.byte	0x1
  778 009f 08       		.byte	0x8
- 779 00a0 2A020000 		.4byte	.LASF14
+ 779 00a0 29020000 		.4byte	.LASF14
  780 00a4 04       		.uleb128 0x4
  781 00a5 00000000 		.4byte	.LASF15
  782 00a9 03       		.byte	0x3
@@ -1605,20 +1605,20 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  794 00c6 02       		.uleb128 0x2
  795 00c7 08       		.byte	0x8
  796 00c8 04       		.byte	0x4
- 797 00c9 7E020000 		.4byte	.LASF17
+ 797 00c9 7D020000 		.4byte	.LASF17
  798 00cd 02       		.uleb128 0x2
  799 00ce 04       		.byte	0x4
  800 00cf 07       		.byte	0x7
- 801 00d0 13020000 		.4byte	.LASF18
+ 801 00d0 12020000 		.4byte	.LASF18
  802 00d4 06       		.uleb128 0x6
- 803 00d5 56000000 		.4byte	.LASF30
+ 803 00d5 AE000000 		.4byte	.LASF30
  804 00d9 01       		.byte	0x1
  805 00da E3       		.byte	0xe3
  806 00db 00000000 		.4byte	.LFB0
  807 00df 7C000000 		.4byte	.LFE0-.LFB0
  808 00e3 01       		.uleb128 0x1
  809 00e4 9C       		.byte	0x9c
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 28
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 28
 
 
  810 00e5 07       		.uleb128 0x7
@@ -1631,7 +1631,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  817 00f5 9C       		.byte	0x9c
  818 00f6 09010000 		.4byte	0x109
  819 00fa 08       		.uleb128 0x8
- 820 00fb 88000000 		.4byte	.LASF21
+ 820 00fb E0000000 		.4byte	.LASF21
  821 00ff 02       		.byte	0x2
  822 0100 23       		.byte	0x23
  823 0101 6B000000 		.4byte	0x6b
@@ -1640,7 +1640,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  826 0107 6F       		.sleb128 -17
  827 0108 00       		.byte	0
  828 0109 07       		.uleb128 0x7
- 829 010a 46020000 		.4byte	.LASF20
+ 829 010a 45020000 		.4byte	.LASF20
  830 010e 02       		.byte	0x2
  831 010f 40       		.byte	0x40
  832 0110 00000000 		.4byte	.LFB4
@@ -1649,7 +1649,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  835 0119 9C       		.byte	0x9c
  836 011a 3B010000 		.4byte	0x13b
  837 011e 08       		.uleb128 0x8
- 838 011f 88000000 		.4byte	.LASF21
+ 838 011f E0000000 		.4byte	.LASF21
  839 0123 02       		.byte	0x2
  840 0124 42       		.byte	0x42
  841 0125 6B000000 		.4byte	0x6b
@@ -1657,7 +1657,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  843 012a 91       		.byte	0x91
  844 012b 6F       		.sleb128 -17
  845 012c 08       		.uleb128 0x8
- 846 012d 2F020000 		.4byte	.LASF22
+ 846 012d 2E020000 		.4byte	.LASF22
  847 0131 02       		.byte	0x2
  848 0132 44       		.byte	0x44
  849 0133 C1000000 		.4byte	0xc1
@@ -1666,7 +1666,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  852 0139 68       		.sleb128 -24
  853 013a 00       		.byte	0
  854 013b 07       		.uleb128 0x7
- 855 013c 45000000 		.4byte	.LASF23
+ 855 013c 9D000000 		.4byte	.LASF23
  856 0140 02       		.byte	0x2
  857 0141 B8       		.byte	0xb8
  858 0142 00000000 		.4byte	.LFB5
@@ -1675,10 +1675,10 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  861 014b 9C       		.byte	0x9c
  862 014c 5F010000 		.4byte	0x15f
  863 0150 08       		.uleb128 0x8
- 864 0151 88000000 		.4byte	.LASF21
+ 864 0151 E0000000 		.4byte	.LASF21
  865 0155 02       		.byte	0x2
  866 0156 BA       		.byte	0xba
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 29
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 29
 
 
  867 0157 6B000000 		.4byte	0x6b
@@ -1687,7 +1687,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  870 015d 6F       		.sleb128 -17
  871 015e 00       		.byte	0
  872 015f 09       		.uleb128 0x9
- 873 0160 3D010000 		.4byte	.LASF31
+ 873 0160 95010000 		.4byte	.LASF31
  874 0164 02       		.byte	0x2
  875 0165 F3       		.byte	0xf3
  876 0166 00000000 		.4byte	.LFB6
@@ -1704,7 +1704,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  887 0181 9C       		.byte	0x9c
  888 0182 A5010000 		.4byte	0x1a5
  889 0186 0B       		.uleb128 0xb
- 890 0187 F4010000 		.4byte	.LASF32
+ 890 0187 F3010000 		.4byte	.LASF32
  891 018b 02       		.byte	0x2
  892 018c 2001     		.2byte	0x120
  893 018e 83000000 		.4byte	0x83
@@ -1712,7 +1712,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  895 0193 91       		.byte	0x91
  896 0194 64       		.sleb128 -28
  897 0195 0C       		.uleb128 0xc
- 898 0196 88000000 		.4byte	.LASF21
+ 898 0196 E0000000 		.4byte	.LASF21
  899 019a 02       		.byte	0x2
  900 019b 2201     		.2byte	0x122
  901 019d 6B000000 		.4byte	0x6b
@@ -1721,7 +1721,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  904 01a3 6F       		.sleb128 -17
  905 01a4 00       		.byte	0
  906 01a5 0D       		.uleb128 0xd
- 907 01a6 FD010000 		.4byte	.LASF33
+ 907 01a6 FC010000 		.4byte	.LASF33
  908 01aa 02       		.byte	0x2
  909 01ab 3C01     		.2byte	0x13c
  910 01ad 83000000 		.4byte	0x83
@@ -1731,19 +1731,19 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  914 01ba 9C       		.byte	0x9c
  915 01bb CF010000 		.4byte	0x1cf
  916 01bf 0C       		.uleb128 0xc
- 917 01c0 ED010000 		.4byte	.LASF25
+ 917 01c0 EC010000 		.4byte	.LASF25
  918 01c4 02       		.byte	0x2
  919 01c5 3E01     		.2byte	0x13e
  920 01c7 83000000 		.4byte	0x83
  921 01cb 02       		.uleb128 0x2
  922 01cc 91       		.byte	0x91
  923 01cd 74       		.sleb128 -12
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 30
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 30
 
 
  924 01ce 00       		.byte	0
  925 01cf 0A       		.uleb128 0xa
- 926 01d0 96020000 		.4byte	.LASF26
+ 926 01d0 95020000 		.4byte	.LASF26
  927 01d4 02       		.byte	0x2
  928 01d5 6601     		.2byte	0x166
  929 01d7 00000000 		.4byte	.LFB9
@@ -1752,7 +1752,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  932 01e0 9C       		.byte	0x9c
  933 01e1 F5010000 		.4byte	0x1f5
  934 01e5 0C       		.uleb128 0xc
- 935 01e6 88000000 		.4byte	.LASF21
+ 935 01e6 E0000000 		.4byte	.LASF21
  936 01ea 02       		.byte	0x2
  937 01eb 6801     		.2byte	0x168
  938 01ed 6B000000 		.4byte	0x6b
@@ -1761,7 +1761,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  941 01f3 6F       		.sleb128 -17
  942 01f4 00       		.byte	0
  943 01f5 0E       		.uleb128 0xe
- 944 01f6 50010000 		.4byte	.LASF34
+ 944 01f6 A8010000 		.4byte	.LASF34
  945 01fa 02       		.byte	0x2
  946 01fb 9601     		.2byte	0x196
  947 01fd 00000000 		.4byte	.LFB10
@@ -1769,7 +1769,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  949 0205 01       		.uleb128 0x1
  950 0206 9C       		.byte	0x9c
  951 0207 0C       		.uleb128 0xc
- 952 0208 88000000 		.4byte	.LASF21
+ 952 0208 E0000000 		.4byte	.LASF21
  953 020c 02       		.byte	0x2
  954 020d 9801     		.2byte	0x198
  955 020f 6B000000 		.4byte	0x6b
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  978 000f 10       		.uleb128 0x10
  979 0010 17       		.uleb128 0x17
  980 0011 00       		.byte	0
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 31
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 31
 
 
  981 0012 00       		.byte	0
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  1035 0048 11       		.uleb128 0x11
  1036 0049 01       		.uleb128 0x1
  1037 004a 12       		.uleb128 0x12
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 32
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 32
 
 
  1038 004b 06       		.uleb128 0x6
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  1092 0083 3A       		.uleb128 0x3a
  1093 0084 0B       		.uleb128 0xb
  1094 0085 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 33
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 33
 
 
  1095 0086 0B       		.uleb128 0xb
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  1149 00be 34       		.uleb128 0x34
  1150 00bf 00       		.byte	0
  1151 00c0 03       		.uleb128 0x3
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 34
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 34
 
 
  1152 00c1 0E       		.uleb128 0xe
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  1206 00f8 06       		.uleb128 0x6
  1207 00f9 40       		.uleb128 0x40
  1208 00fa 18       		.uleb128 0x18
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 35
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 35
 
 
  1209 00fb 9642     		.uleb128 0x2116
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  1263 004c 00000000 		.4byte	0
  1264              		.section	.debug_line,"",%progbits
  1265              	.Ldebug_line0:
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 36
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 36
 
 
  1266 0000 5B010000 		.section	.debug_str,"MS",%progbits,1
@@ -2129,166 +2129,166 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 1
  1276      7369676E 
  1276      65642069 
  1276      6E7400
- 1277              	.LASF23:
- 1278 0045 43795379 		.ascii	"CySysPmHibernate\000"
- 1278      73506D48 
- 1278      69626572 
- 1278      6E617465 
- 1278      00
- 1279              	.LASF30:
- 1280 0056 43795379 		.ascii	"CySysPmHibPinsDisableInputBuf\000"
- 1280      73506D48 
- 1280      69625069 
- 1280      6E734469 
- 1280      7361626C 
- 1281              	.LASF12:
- 1282 0074 666C6F61 		.ascii	"float\000"
- 1282      7400
- 1283              	.LASF1:
- 1284 007a 756E7369 		.ascii	"unsigned char\000"
- 1284      676E6564 
- 1284      20636861 
- 1284      7200
- 1285              	.LASF21:
- 1286 0088 696E7465 		.ascii	"interruptState\000"
- 1286      72727570 
- 1286      74537461 
- 1286      746500
- 1287              	.LASF5:
- 1288 0097 6C6F6E67 		.ascii	"long unsigned int\000"
- 1288      20756E73 
- 1288      69676E65 
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 37
+ 1277              	.LASF29:
+ 1278 0045 433A5C55 		.ascii	"C:\\Users\\d4hhm\\Documents\\Care-support-system\\S"
+ 1278      73657273 
+ 1278      5C643468 
+ 1278      686D5C44 
+ 1278      6F63756D 
+ 1279 0073 6C617665 		.ascii	"lave\\Care_support_system_peripheral.cydsn\000"
+ 1279      5C436172 
+ 1279      655F7375 
+ 1279      70706F72 
+ 1279      745F7379 
+ 1280              	.LASF23:
+ 1281 009d 43795379 		.ascii	"CySysPmHibernate\000"
+ 1281      73506D48 
+ 1281      69626572 
+ 1281      6E617465 
+ 1281      00
+ 1282              	.LASF30:
+ 1283 00ae 43795379 		.ascii	"CySysPmHibPinsDisableInputBuf\000"
+ 1283      73506D48 
+ 1283      69625069 
+ 1283      6E734469 
+ 1283      7361626C 
+ 1284              	.LASF12:
+ 1285 00cc 666C6F61 		.ascii	"float\000"
+ 1285      7400
+ 1286              	.LASF1:
+ 1287 00d2 756E7369 		.ascii	"unsigned char\000"
+ 1287      676E6564 
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 37
 
 
- 1288      6420696E 
- 1288      7400
- 1289              	.LASF9:
- 1290 00a9 75696E74 		.ascii	"uint8\000"
- 1290      3800
- 1291              	.LASF27:
- 1292 00af 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 1292      43313120 
- 1292      352E342E 
- 1292      31203230 
- 1292      31363036 
- 1293 00e2 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
- 1293      20726576 
- 1293      6973696F 
- 1293      6E203233 
- 1293      37373135 
- 1294 0115 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
- 1294      66756E63 
- 1294      74696F6E 
- 1294      2D736563 
- 1294      74696F6E 
- 1295              	.LASF31:
- 1296 013d 43795379 		.ascii	"CySysPmStop\000"
- 1296      73506D53 
- 1296      746F7000 
- 1297              	.LASF13:
- 1298 0149 646F7562 		.ascii	"double\000"
- 1298      6C6500
- 1299              	.LASF34:
- 1300 0150 43795379 		.ascii	"CySysPmUnfreezeIo\000"
- 1300      73506D55 
- 1300      6E667265 
- 1300      657A6549 
- 1300      6F00
- 1301              	.LASF10:
- 1302 0162 75696E74 		.ascii	"uint16\000"
- 1302      313600
- 1303              	.LASF11:
- 1304 0169 75696E74 		.ascii	"uint32\000"
- 1304      333200
- 1305              	.LASF8:
- 1306 0170 756E7369 		.ascii	"unsigned int\000"
- 1306      676E6564 
- 1306      20696E74 
- 1306      00
- 1307              	.LASF29:
- 1308 017d 433A5C55 		.ascii	"C:\\Users\\d4hhm\\Documents\\PSoC Creator\\ble-beac"
- 1308      73657273 
- 1308      5C643468 
- 1308      686D5C44 
- 1308      6F63756D 
- 1309 01ab 6F6E5F63 		.ascii	"on_capsense+vl6180+bme280_2\\Design01.cydsn\000"
- 1309      61707365 
- 1309      6E73652B 
- 1309      766C3631 
- 1309      38302B62 
+ 1287      20636861 
+ 1287      7200
+ 1288              	.LASF21:
+ 1289 00e0 696E7465 		.ascii	"interruptState\000"
+ 1289      72727570 
+ 1289      74537461 
+ 1289      746500
+ 1290              	.LASF5:
+ 1291 00ef 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1291      20756E73 
+ 1291      69676E65 
+ 1291      6420696E 
+ 1291      7400
+ 1292              	.LASF9:
+ 1293 0101 75696E74 		.ascii	"uint8\000"
+ 1293      3800
+ 1294              	.LASF27:
+ 1295 0107 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1295      43313120 
+ 1295      352E342E 
+ 1295      31203230 
+ 1295      31363036 
+ 1296 013a 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 1296      20726576 
+ 1296      6973696F 
+ 1296      6E203233 
+ 1296      37373135 
+ 1297 016d 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 1297      66756E63 
+ 1297      74696F6E 
+ 1297      2D736563 
+ 1297      74696F6E 
+ 1298              	.LASF31:
+ 1299 0195 43795379 		.ascii	"CySysPmStop\000"
+ 1299      73506D53 
+ 1299      746F7000 
+ 1300              	.LASF13:
+ 1301 01a1 646F7562 		.ascii	"double\000"
+ 1301      6C6500
+ 1302              	.LASF34:
+ 1303 01a8 43795379 		.ascii	"CySysPmUnfreezeIo\000"
+ 1303      73506D55 
+ 1303      6E667265 
+ 1303      657A6549 
+ 1303      6F00
+ 1304              	.LASF10:
+ 1305 01ba 75696E74 		.ascii	"uint16\000"
+ 1305      313600
+ 1306              	.LASF11:
+ 1307 01c1 75696E74 		.ascii	"uint32\000"
+ 1307      333200
+ 1308              	.LASF8:
+ 1309 01c8 756E7369 		.ascii	"unsigned int\000"
+ 1309      676E6564 
+ 1309      20696E74 
+ 1309      00
  1310              	.LASF7:
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 38
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 38
 
 
- 1311 01d6 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1311 01d5 6C6F6E67 		.ascii	"long long unsigned int\000"
  1311      206C6F6E 
  1311      6720756E 
  1311      7369676E 
  1311      65642069 
  1312              	.LASF25:
- 1313 01ed 72656173 		.ascii	"reason\000"
+ 1313 01ec 72656173 		.ascii	"reason\000"
  1313      6F6E00
  1314              	.LASF32:
- 1315 01f4 706F6C61 		.ascii	"polarity\000"
+ 1315 01f3 706F6C61 		.ascii	"polarity\000"
  1315      72697479 
  1315      00
  1316              	.LASF33:
- 1317 01fd 43795379 		.ascii	"CySysPmGetResetReason\000"
+ 1317 01fc 43795379 		.ascii	"CySysPmGetResetReason\000"
  1317      73506D47 
  1317      65745265 
  1317      73657452 
  1317      6561736F 
  1318              	.LASF18:
- 1319 0213 73697A65 		.ascii	"sizetype\000"
+ 1319 0212 73697A65 		.ascii	"sizetype\000"
  1319      74797065 
  1319      00
  1320              	.LASF6:
- 1321 021c 6C6F6E67 		.ascii	"long long int\000"
+ 1321 021b 6C6F6E67 		.ascii	"long long int\000"
  1321      206C6F6E 
  1321      6720696E 
  1321      7400
  1322              	.LASF14:
- 1323 022a 63686172 		.ascii	"char\000"
+ 1323 0229 63686172 		.ascii	"char\000"
  1323      00
  1324              	.LASF22:
- 1325 022f 636C6B53 		.ascii	"clkSelectReg\000"
+ 1325 022e 636C6B53 		.ascii	"clkSelectReg\000"
  1325      656C6563 
  1325      74526567 
  1325      00
  1326              	.LASF2:
- 1327 023c 73686F72 		.ascii	"short int\000"
+ 1327 023b 73686F72 		.ascii	"short int\000"
  1327      7420696E 
  1327      7400
  1328              	.LASF20:
- 1329 0246 43795379 		.ascii	"CySysPmDeepSleep\000"
+ 1329 0245 43795379 		.ascii	"CySysPmDeepSleep\000"
  1329      73506D44 
  1329      65657053 
  1329      6C656570 
  1329      00
  1330              	.LASF4:
- 1331 0257 6C6F6E67 		.ascii	"long int\000"
+ 1331 0256 6C6F6E67 		.ascii	"long int\000"
  1331      20696E74 
  1331      00
  1332              	.LASF28:
- 1333 0260 47656E65 		.ascii	"Generated_Source\\PSoC4\\cyPm.c\000"
+ 1333 025f 47656E65 		.ascii	"Generated_Source\\PSoC4\\cyPm.c\000"
  1333      72617465 
  1333      645F536F 
  1333      75726365 
  1333      5C50536F 
  1334              	.LASF17:
- 1335 027e 6C6F6E67 		.ascii	"long double\000"
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccMZGfIp.s 			page 39
+ 1335 027d 6C6F6E67 		.ascii	"long double\000"
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccLAOavf.s 			page 39
 
 
  1335      20646F75 
  1335      626C6500 
  1336              	.LASF0:
- 1337 028a 7369676E 		.ascii	"signed char\000"
+ 1337 0289 7369676E 		.ascii	"signed char\000"
  1337      65642063 
  1337      68617200 
  1338              	.LASF26:
- 1339 0296 43795379 		.ascii	"CySysPmFreezeIo\000"
+ 1339 0295 43795379 		.ascii	"CySysPmFreezeIo\000"
  1339      73506D46 
  1339      7265657A 
  1339      65496F00 

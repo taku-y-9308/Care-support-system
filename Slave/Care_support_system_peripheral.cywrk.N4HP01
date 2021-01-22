@@ -143,40 +143,6 @@
 <VisibleNodeIds>
 <v>Care_support_system_peripheral</v>
 <v>Care_support_system_peripheral\Care_support_system_peripheral</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1.lst</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1_bless_isr.lst</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1_eventHandler.lst</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1_gatt.lst</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1_HAL_INT.lst</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1_HAL_PVT.lst</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\BME280.lst</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1.lst</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1_CSHL.lst</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1_INT.lst</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1_PM.lst</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1_SampleClk.lst</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1_SenseClk.lst</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1_Sns.lst</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1_Sns_PM.lst</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1_TunerHelper.lst</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\main.lst</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1.lst</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_BOOT.lst</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_I2C.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>

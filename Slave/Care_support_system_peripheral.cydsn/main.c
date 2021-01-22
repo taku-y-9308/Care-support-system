@@ -128,8 +128,6 @@ int main() {
    
     /*I2CをStart,VL6180xとBME280を初期化--------------------------------------*/
     SCB_1_Start();
-    //BME280_start();
-    CyDelay(10u);//必要か？
     VL6180_Init();
     BME280_init();
 

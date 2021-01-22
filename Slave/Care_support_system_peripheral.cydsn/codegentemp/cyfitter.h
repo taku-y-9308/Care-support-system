@@ -766,7 +766,7 @@
 #define CapSense_1_Sns__SHIFT 7u
 
 /* Miscellaneous */
-#define CY_PROJECT_NAME "Design01"
+#define CY_PROJECT_NAME "Care_support_system_peripheral"
 #define CY_VERSION "PSoC Creator  4.2"
 #define CYDEV_BANDGAP_VOLTAGE 1.024
 #define CYDEV_BCLK__HFCLK__HZ 24000000U

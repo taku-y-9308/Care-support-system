@@ -6,7 +6,7 @@
 
 #Build Date:         Dec  5 2017 15:35:27
 
-#File Generated:     Jan 22 2021 16:42:27
+#File Generated:     Jan 22 2021 19:05:16
 
 #Purpose:            
 
@@ -14,7 +14,7 @@
 
 #***************************************************************************
 
-Executing : C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\bin/sjplacer.exe --proj-name Design01 --netlist-vh2 Design01_p.vh2 --arch p4_udb2x2 --arch-file C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\dev\arch/udbdsi_2x2_04.cydata --ip-file C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\dev\psoc4/3/128k/ip_blocks.cydata --rrg-file C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\dev\psoc4/3/128k/route_arch-rrg.cydata --irq-file C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\dev\psoc4/3/irqconn.cydata --dsi-conn-file C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\dev\psoc4/3/dsiconn.cydata --pins-file pins_21-SMT.xml --lib-file Design01_p.lib --sdc-file Design01.sdc --io-pcf Design01.pci --outdir .
+Executing : C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\bin/sjplacer.exe --proj-name Care_support_system_peripheral --netlist-vh2 Care_support_system_peripheral_p.vh2 --arch p4_udb2x2 --arch-file C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\dev\arch/udbdsi_2x2_04.cydata --ip-file C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\dev\psoc4/3/128k/ip_blocks.cydata --rrg-file C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\dev\psoc4/3/128k/route_arch-rrg.cydata --irq-file C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\dev\psoc4/3/irqconn.cydata --dsi-conn-file C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\dev\psoc4/3/dsiconn.cydata --pins-file pins_21-SMT.xml --lib-file Care_support_system_peripheral_p.lib --sdc-file Care_support_system_peripheral.sdc --io-pcf Care_support_system_peripheral.pci --outdir .
 
 		Softjin Techologies Placer, Version 1.1
 
@@ -22,18 +22,18 @@ Build Date : Dec  5 2017	15:33:41
 
 D2004: Option and Settings Summary
 =============================================================
-Netlist vh2 file          - Design01_p.vh2
+Netlist vh2 file          - Care_support_system_peripheral_p.vh2
 Architecture file         - C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\dev\arch/udbdsi_2x2_04.cydata
 Package                   - 
 Defparam file             - 
-SDC file                  - Design01.sdc
+SDC file                  - Care_support_system_peripheral.sdc
 Output directory          - .
-Timing library            - Design01_p.lib
-IO Placement file         - Design01.pci
+Timing library            - Care_support_system_peripheral_p.lib
+IO Placement file         - Care_support_system_peripheral.pci
 
 D2050: Starting reading inputs for placer
 =============================================================
-D2065: Reading netlist file : "Design01_p.vh2"
+D2065: Reading netlist file : "Care_support_system_peripheral_p.vh2"
 D2065: Reading arch file : "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\dev\arch/udbdsi_2x2_04.cydata"
 D2051: Reading of inputs for placer completed successfully
 
@@ -111,5 +111,5 @@ D2088: Phase 8, elapsed time : 0.0 (sec)
 
 D2054: Placement of the design completed successfully
 
-I2076: Total run-time: 0.3 sec.
+I2076: Total run-time: 0.2 sec.
 

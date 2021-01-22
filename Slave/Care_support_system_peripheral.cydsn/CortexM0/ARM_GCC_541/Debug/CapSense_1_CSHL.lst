@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
   55              		.size	CapSense_1_enableRawFilters, 1
   56              	CapSense_1_enableRawFilters:
   57 0001 01       		.byte	1
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 2
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 2
 
 
   58              		.global	CapSense_1_fingerThreshold
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
    4:Generated_Source\PSoC4/CapSense_1_CSHL.c **** *
    5:Generated_Source\PSoC4/CapSense_1_CSHL.c **** * Description:
    6:Generated_Source\PSoC4/CapSense_1_CSHL.c **** *  This file provides the source code to the High Level APIs for the CapSesne
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 3
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 3
 
 
    7:Generated_Source\PSoC4/CapSense_1_CSHL.c **** *  CSD component.
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
   61:Generated_Source\PSoC4/CapSense_1_CSHL.c **** 
   62:Generated_Source\PSoC4/CapSense_1_CSHL.c **** 
   63:Generated_Source\PSoC4/CapSense_1_CSHL.c **** 
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 4
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 4
 
 
   64:Generated_Source\PSoC4/CapSense_1_CSHL.c **** #if (CapSense_1_TUNING_METHOD == CapSense_1__TUNING_AUTO)
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  118:Generated_Source\PSoC4/CapSense_1_CSHL.c **** *  sensor:  Sensor number.
  119:Generated_Source\PSoC4/CapSense_1_CSHL.c **** *
  120:Generated_Source\PSoC4/CapSense_1_CSHL.c **** * Return:
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 5
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 5
 
 
  121:Generated_Source\PSoC4/CapSense_1_CSHL.c **** *  None
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  154:Generated_Source\PSoC4/CapSense_1_CSHL.c **** 
  155:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     /* Initialize Baseline */
  156:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     CapSense_1_sensorBaseline[sensor] = CapSense_1_sensorRaw[sensor];
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 6
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 6
 
 
  130              		.loc 1 156 0
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  165 0052 5200     		lsls	r2, r2, #1
  166 0054 D152     		strh	r1, [r2, r3]
  176:Generated_Source\PSoC4/CapSense_1_CSHL.c **** 
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 7
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 7
 
 
  177:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     #else
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  204:Generated_Source\PSoC4/CapSense_1_CSHL.c **** * Return:
  205:Generated_Source\PSoC4/CapSense_1_CSHL.c **** *  None
  206:Generated_Source\PSoC4/CapSense_1_CSHL.c **** *
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 8
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 8
 
 
  207:Generated_Source\PSoC4/CapSense_1_CSHL.c **** * Global Variables:
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  229              	.LFE35:
  230              		.size	CapSense_1_InitializeSensorBaseline, .-CapSense_1_InitializeSensorBaseline
  231 002a C046     		.section	.text.CapSense_1_InitializeAllBaselines,"ax",%progbits
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 9
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 9
 
 
  232              		.align	2
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  256:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     {
  257:Generated_Source\PSoC4/CapSense_1_CSHL.c ****         CapSense_1_InitializeSensorBaseline(i);
  256              		.loc 1 257 0 discriminator 3
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 10
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 10
 
 
  257 000c 7B68     		ldr	r3, [r7, #4]
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  281:Generated_Source\PSoC4/CapSense_1_CSHL.c **** *
  282:Generated_Source\PSoC4/CapSense_1_CSHL.c **** * Side Effects:
  283:Generated_Source\PSoC4/CapSense_1_CSHL.c **** *  None
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 11
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 11
 
 
  284:Generated_Source\PSoC4/CapSense_1_CSHL.c **** *
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  321 002a 3B68     		ldr	r3, [r7]
  322 002c 002B     		cmp	r3, #0
  323 002e 03D0     		beq	.L12
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 12
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 12
 
 
  303:Generated_Source\PSoC4/CapSense_1_CSHL.c ****         {
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  320:Generated_Source\PSoC4/CapSense_1_CSHL.c **** *  If the auto reset option is enabled, the baseline updated regards the noise threshold.
  321:Generated_Source\PSoC4/CapSense_1_CSHL.c **** *  If the auto reset option is disabled, the baseline stops updating; baseline is loaded
  322:Generated_Source\PSoC4/CapSense_1_CSHL.c **** *  with a raw count value if a signal is greater than zero and if signal is less
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 13
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 13
 
 
  323:Generated_Source\PSoC4/CapSense_1_CSHL.c **** *  than noise threshold.
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  378 0010 8A18     		adds	r2, r1, r2
  379 0012 1278     		ldrb	r2, [r2]
  380 0014 1A70     		strb	r2, [r3]
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 14
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 14
 
 
  358:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     uint16 noiseThreshold;
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  401 0036 7A68     		ldr	r2, [r7, #4]
  402 0038 5200     		lsls	r2, r2, #1
  403 003a D25A     		ldrh	r2, [r2, r3]
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 15
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 15
 
 
  404 003c 1023     		movs	r3, #16
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  431 006e 9A42     		cmp	r2, r3
  432 0070 12D3     		bcc	.L18
  419:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     {
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 16
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 16
 
 
  420:Generated_Source\PSoC4/CapSense_1_CSHL.c ****         CapSense_1_lowBaselineResetCnt[sensor] = 0u;
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  473 00b2 7B69     		ldr	r3, [r7, #20]
  474 00b4 002B     		cmp	r3, #0
  475 00b6 24D1     		bne	.L20
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 17
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 17
 
 
  476              		.loc 1 433 0 is_stmt 0 discriminator 1
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  518              		.loc 1 436 0
  519 0100 3EE0     		b	.L23
  520              	.L20:
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 18
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 18
 
 
  444:Generated_Source\PSoC4/CapSense_1_CSHL.c ****         }
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  553 0136 1A00     		movs	r2, r3
  554 0138 BB68     		ldr	r3, [r7, #8]
  555 013a 1343     		orrs	r3, r2
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 19
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 19
 
 
  556 013c BB60     		str	r3, [r7, #8]
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  480:Generated_Source\PSoC4/CapSense_1_CSHL.c ****         #endif /* (CapSense_1_AUTO_RESET == CapSense_1_AUTO_RESET_DISABLE) */
  481:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     }
  482:Generated_Source\PSoC4/CapSense_1_CSHL.c **** 
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 20
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 20
 
 
  483:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     /* Calculate Signal if positive difference > noiseThreshold */
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  507:Generated_Source\PSoC4/CapSense_1_CSHL.c ****         /* Exclude generic widget */
  508:Generated_Source\PSoC4/CapSense_1_CSHL.c ****         }
  509:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     #endif  /* CapSense_1_TOTAL_GENERICS_COUNT */
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 21
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 21
 
 
  510:Generated_Source\PSoC4/CapSense_1_CSHL.c **** }
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  535:Generated_Source\PSoC4/CapSense_1_CSHL.c **** *
  536:Generated_Source\PSoC4/CapSense_1_CSHL.c **** * Global Variables:
  537:Generated_Source\PSoC4/CapSense_1_CSHL.c **** *  CapSense_1_widgetNumber[]  - stores widget numbers.
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 22
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 22
 
 
  538:Generated_Source\PSoC4/CapSense_1_CSHL.c **** *
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  681              		.section	.text.CapSense_1_UpdateEnabledBaselines,"ax",%progbits
  682              		.align	2
  683              		.global	CapSense_1_UpdateEnabledBaselines
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 23
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 23
 
 
  684              		.code	16
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  701              		.loc 1 602 0
  702 0006 0023     		movs	r3, #0
  703 0008 7B60     		str	r3, [r7, #4]
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 24
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 24
 
 
  704 000a 11E0     		b	.L31
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  747              		.global	CapSense_1_UpdateWidgetBaseline
  748              		.code	16
  749              		.thumb_func
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 25
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 25
 
 
  750              		.type	CapSense_1_UpdateWidgetBaseline, %function
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  650:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     /* Get number of sensors in widget */
  651:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     sensorsPerWidget = CapSense_1_numberOfSensors[widget];
  766              		.loc 1 651 0
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 26
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 26
 
 
  767 0008 0123     		movs	r3, #1
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  805              		.loc 1 659 0 is_stmt 0 discriminator 1
  806 0044 FA69     		ldr	r2, [r7, #28]
  807 0046 3B69     		ldr	r3, [r7, #16]
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 27
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 27
 
 
  808 0048 9A42     		cmp	r2, r3
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  835 0000 80B5     		push	{r7, lr}
  836              		.cfi_def_cfa_offset 8
  837              		.cfi_offset 7, -8
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 28
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 28
 
 
  838              		.cfi_offset 14, -4
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  715:Generated_Source\PSoC4/CapSense_1_CSHL.c **** *  None
  716:Generated_Source\PSoC4/CapSense_1_CSHL.c **** *
  717:Generated_Source\PSoC4/CapSense_1_CSHL.c **** *******************************************************************************/
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 29
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 29
 
 
  718:Generated_Source\PSoC4/CapSense_1_CSHL.c **** void CapSense_1_SetBaselineData(uint32 sensor, uint16 data)
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  728:Generated_Source\PSoC4/CapSense_1_CSHL.c **** * Summary:
  729:Generated_Source\PSoC4/CapSense_1_CSHL.c **** *  This function returns the Sensor Signal from the component.
  730:Generated_Source\PSoC4/CapSense_1_CSHL.c **** *
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 30
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 30
 
 
  731:Generated_Source\PSoC4/CapSense_1_CSHL.c **** * Parameters:
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  950              		.type	CapSense_1_SetDiffCountData, %function
  951              	CapSense_1_SetDiffCountData:
  952              	.LFB45:
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 31
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 31
 
 
  749:Generated_Source\PSoC4/CapSense_1_CSHL.c **** 
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  980              		@ sp needed
  981 0020 80BD     		pop	{r7, pc}
  982              	.L55:
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 32
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 32
 
 
  983 0022 C046     		.align	2
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  1011 0008 6423     		movs	r3, #100
  802:Generated_Source\PSoC4/CapSense_1_CSHL.c **** }
  1012              		.loc 1 802 0
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 33
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 33
 
 
  1013 000a 1800     		movs	r0, r3
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  828:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     return (CapSense_1_noiseThreshold[widget]);
  1042              		.loc 1 828 0
  1043 0008 1423     		movs	r3, #20
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 34
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 34
 
 
  829:Generated_Source\PSoC4/CapSense_1_CSHL.c **** }
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  1071 0004 00AF     		add	r7, sp, #0
  1072              		.cfi_def_cfa_register 7
  1073 0006 7860     		str	r0, [r7, #4]
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 35
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 35
 
 
  856:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     return(CapSense_1_hysteresis[widget]);
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  1100              		.cfi_offset 14, -4
  1101 0002 82B0     		sub	sp, sp, #8
  1102              		.cfi_def_cfa_offset 16
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 36
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 36
 
 
  1103 0004 00AF     		add	r7, sp, #0
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  916:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     {
  917:Generated_Source\PSoC4/CapSense_1_CSHL.c ****         CapSense_1_fingerThreshold[widget] = value;
  918:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     }
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 37
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 37
 
 
  919:Generated_Source\PSoC4/CapSense_1_CSHL.c **** 
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  973:Generated_Source\PSoC4/CapSense_1_CSHL.c ****         CapSense_1_hysteresis[widget] = value;
  974:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     }
  975:Generated_Source\PSoC4/CapSense_1_CSHL.c **** 
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 38
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 38
 
 
  976:Generated_Source\PSoC4/CapSense_1_CSHL.c **** 
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
 1030:Generated_Source\PSoC4/CapSense_1_CSHL.c ****         CapSense_1_debounce[widget] = value;
 1031:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     }
 1032:Generated_Source\PSoC4/CapSense_1_CSHL.c **** 
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 39
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 39
 
 
 1033:Generated_Source\PSoC4/CapSense_1_CSHL.c **** 
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
 1087:Generated_Source\PSoC4/CapSense_1_CSHL.c **** *  counter of the sensor. the widget which have this parameter are buttons, matrix
 1088:Generated_Source\PSoC4/CapSense_1_CSHL.c **** *  buttons, proximity, and guard. All other widgets don't have the  debounce parameter
 1089:Generated_Source\PSoC4/CapSense_1_CSHL.c **** *  and use the last element of this array with value 0 (it means no debounce).
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 40
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 40
 
 
 1090:Generated_Source\PSoC4/CapSense_1_CSHL.c **** *  CapSense_1_sensorOnMask[] - used to store the sensors on/off state.
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  1152 001e 0A23     		movs	r3, #10
  1153 0020 FB18     		adds	r3, r7, r3
  1154 0022 0A22     		movs	r2, #10
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 41
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 41
 
 
  1155 0024 1A80     		strh	r2, [r3]
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
 1129:Generated_Source\PSoC4/CapSense_1_CSHL.c ****             /* Sensor inactive - reset Debounce counter */
 1130:Generated_Source\PSoC4/CapSense_1_CSHL.c ****             CapSense_1_debounceCounter[debounceIndex] = debounce;
  1197              		.loc 1 1130 0
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 42
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 42
 
 
  1198 0072 0823     		movs	r3, #8
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
 1142:Generated_Source\PSoC4/CapSense_1_CSHL.c ****                 CapSense_1_SetBitValue(CapSense_1_sensorOnMask, sensor, 1u);
  1241              		.loc 1 1142 0
  1242 00c0 7968     		ldr	r1, [r7, #4]
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 43
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 43
 
 
  1243 00c2 0F4B     		ldr	r3, .L73+4
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  1286 0108 10000000 		.word	CapSense_1_debounceCounter
  1287              		.cfi_endproc
  1288              	.LFE50:
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 44
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 44
 
 
  1289              		.size	CapSense_1_CheckIsSensorActive, .-CapSense_1_CheckIsSensorActive
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
 1186:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     uint32 rawIndex = (uint32)CapSense_1_rawDataIndex[widget];
  1311              		.loc 1 1186 0
  1312 0008 0023     		movs	r3, #0
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 45
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 45
 
 
  1313 000a 7B61     		str	r3, [r7, #20]
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  1349              		@ sp needed
  1350 0040 80BD     		pop	{r7, pc}
  1351              		.cfi_endproc
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 46
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 46
 
 
  1352              	.LFE51:
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  1376 0008 3B60     		str	r3, [r7]
 1235:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     
 1236:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     for(i = 0u; i < CapSense_1_TOTAL_WIDGET_COUNT; i++)
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 47
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 47
 
 
  1377              		.loc 1 1236 0
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  1418              	CapSense_1_EnableWidget:
  1419              	.LFB53:
 1248:Generated_Source\PSoC4/CapSense_1_CSHL.c **** 
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 48
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 48
 
 
 1249:Generated_Source\PSoC4/CapSense_1_CSHL.c **** 
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  1441 0014 FB18     		adds	r3, r7, r3
  1442 0016 0F22     		movs	r2, #15
  1443 0018 BA18     		adds	r2, r7, r2
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 49
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 49
 
 
  1444 001a 1278     		ldrb	r2, [r2]
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  1489              		.code	16
  1490              		.thumb_func
  1491              		.type	CapSense_1_DisableWidget, %function
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 50
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 50
 
 
  1492              	CapSense_1_DisableWidget:
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  1513 0010 0121     		movs	r1, #1
  1514 0012 0E23     		movs	r3, #14
  1515 0014 FB18     		adds	r3, r7, r3
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 51
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 51
 
 
  1516 0016 0F22     		movs	r2, #15
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  1560              		.section	.text.CapSense_1_IIR4Filter,"ax",%progbits
  1561              		.align	2
  1562              		.global	CapSense_1_IIR4Filter
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 52
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 52
 
 
  1563              		.code	16
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
 1383:Generated_Source\PSoC4/CapSense_1_CSHL.c ****         uint8 maximum = CapSense_1_MAXIMUM_CENTROID;
 1384:Generated_Source\PSoC4/CapSense_1_CSHL.c **** 
 1385:Generated_Source\PSoC4/CapSense_1_CSHL.c ****         uint16 temp = 0u;
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 53
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 53
 
 
 1386:Generated_Source\PSoC4/CapSense_1_CSHL.c ****         uint16 *startOfSlider = &CapSense_1_sensorSignal[offset];
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
 1440:Generated_Source\PSoC4/CapSense_1_CSHL.c ****                     biggestCtrdStartPos = curCtrdStartPos;
 1441:Generated_Source\PSoC4/CapSense_1_CSHL.c ****                 }
 1442:Generated_Source\PSoC4/CapSense_1_CSHL.c ****             }
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 54
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 54
 
 
 1443:Generated_Source\PSoC4/CapSense_1_CSHL.c ****             else
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
 1497:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     }
 1498:Generated_Source\PSoC4/CapSense_1_CSHL.c **** 
 1499:Generated_Source\PSoC4/CapSense_1_CSHL.c **** 
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 55
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 55
 
 
 1500:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     /*******************************************************************************
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
 1554:Generated_Source\PSoC4/CapSense_1_CSHL.c ****             posPrev = 0u;
 1555:Generated_Source\PSoC4/CapSense_1_CSHL.c ****         #endif /* ((CapSense_1_TOTAL_LINEAR_SLIDERS_COUNT>0u) || (CapSense_1_TOTAL_TOUCH_PADS_BASIC
 1556:Generated_Source\PSoC4/CapSense_1_CSHL.c **** 
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 56
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 56
 
 
 1557:Generated_Source\PSoC4/CapSense_1_CSHL.c ****         #if (CapSense_1_ADD_SLIDER_TYPE)
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
 1611:Generated_Source\PSoC4/CapSense_1_CSHL.c ****                     count <<= 1u;
 1612:Generated_Source\PSoC4/CapSense_1_CSHL.c ****                 #else
 1613:Generated_Source\PSoC4/CapSense_1_CSHL.c ****                     /* Calculate next and previous near to maximum */
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 57
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 57
 
 
 1614:Generated_Source\PSoC4/CapSense_1_CSHL.c ****                     if (maximum >= 1u)
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
 1668:Generated_Source\PSoC4/CapSense_1_CSHL.c ****         else
 1669:Generated_Source\PSoC4/CapSense_1_CSHL.c ****         {
 1670:Generated_Source\PSoC4/CapSense_1_CSHL.c ****             CapSense_1_centroid[CapSense_1_POS_NEXT] = 0u;
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 58
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 58
 
 
 1671:Generated_Source\PSoC4/CapSense_1_CSHL.c ****         }
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
 1725:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     *
 1726:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     * Side Effects:
 1727:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     *  If any sensor within the slider widget is active, the function returns values
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 59
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 59
 
 
 1728:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     *  from zero to the API resolution value set in the CapSense customizer. If no
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
 1782:Generated_Source\PSoC4/CapSense_1_CSHL.c **** 
 1783:Generated_Source\PSoC4/CapSense_1_CSHL.c ****         if (maximum != 0xFFu)
 1784:Generated_Source\PSoC4/CapSense_1_CSHL.c ****         {
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 60
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 60
 
 
 1785:Generated_Source\PSoC4/CapSense_1_CSHL.c ****             /* Calculate centroid */
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
 1839:Generated_Source\PSoC4/CapSense_1_CSHL.c ****                                 tempPos = (uint8) position;
 1840:Generated_Source\PSoC4/CapSense_1_CSHL.c ****                                 position = CapSense_1_AveragingFilter(position,
 1841:Generated_Source\PSoC4/CapSense_1_CSHL.c ****                                                                 (uint16)CapSense_1_posFiltersData[p
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 61
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 61
 
 
 1842:Generated_Source\PSoC4/CapSense_1_CSHL.c ****                                                                 (uint16)CapSense_1_posFiltersData[p
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
 1896:Generated_Source\PSoC4/CapSense_1_CSHL.c ****                     CapSense_1_posFiltersData[firstTimeIndex] = 0u;
 1897:Generated_Source\PSoC4/CapSense_1_CSHL.c ****                 }
 1898:Generated_Source\PSoC4/CapSense_1_CSHL.c ****             #endif /* (0u != CapSense_1_LINEAR_SLIDERS_POS_FILTERS_MASK) */
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 62
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 62
 
 
 1899:Generated_Source\PSoC4/CapSense_1_CSHL.c ****         }
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
 1953:Generated_Source\PSoC4/CapSense_1_CSHL.c ****             uint8 tempPos;
 1954:Generated_Source\PSoC4/CapSense_1_CSHL.c ****         #endif /* ((0u != (CapSense_1_MEDIAN_FILTER & CapSense_1_RADIAL_SLIDERS_POS_FILTERS_MASK)) 
 1955:Generated_Source\PSoC4/CapSense_1_CSHL.c ****                *   (0u != (CapSense_1_AVERAGING_FILTER & CapSense_1_RADIAL_SLIDERS_POS_FILTERS_MASK
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 63
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 63
 
 
 1956:Generated_Source\PSoC4/CapSense_1_CSHL.c ****                */
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
 2010:Generated_Source\PSoC4/CapSense_1_CSHL.c ****                             {
 2011:Generated_Source\PSoC4/CapSense_1_CSHL.c ****                                 tempPos = (uint8) position;
 2012:Generated_Source\PSoC4/CapSense_1_CSHL.c ****                                 position = CapSense_1_MedianFilter(position,
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 64
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 64
 
 
 2013:Generated_Source\PSoC4/CapSense_1_CSHL.c ****                                                                         CapSense_1_posFiltersData[p
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
 2067:Generated_Source\PSoC4/CapSense_1_CSHL.c ****                         #endif /* (0u != (CapSense_1_JITTER_FILTER &
 2068:Generated_Source\PSoC4/CapSense_1_CSHL.c ****                                *           CapSense_1_RADIAL_SLIDERS_POS_FILTERS_MASK))
 2069:Generated_Source\PSoC4/CapSense_1_CSHL.c ****                                */
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 65
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 65
 
 
 2070:Generated_Source\PSoC4/CapSense_1_CSHL.c ****                     }
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
 2124:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     * Side Effects:
 2125:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     *   There are no checks of the widget type argument provided to this function.
 2126:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     *   The unproper widget type provided will cause unexpected position
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 66
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 66
 
 
 2127:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     *   calculations.
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
 2181:Generated_Source\PSoC4/CapSense_1_CSHL.c **** 
 2182:Generated_Source\PSoC4/CapSense_1_CSHL.c ****                 /* Calculate X centroid */
 2183:Generated_Source\PSoC4/CapSense_1_CSHL.c ****                 offset = CapSense_1_rawDataIndex[widget];
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 67
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 67
 
 
 2184:Generated_Source\PSoC4/CapSense_1_CSHL.c ****                 count = CapSense_1_numberOfSensors[widget];
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
 2238:Generated_Source\PSoC4/CapSense_1_CSHL.c ****                                                                        CapSense_1_posFiltersData[po
 2239:Generated_Source\PSoC4/CapSense_1_CSHL.c ****                                                                        CapSense_1_posFiltersData[po
 2240:Generated_Source\PSoC4/CapSense_1_CSHL.c ****                                     CapSense_1_posFiltersData[posYIndex + 1u] =
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 68
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 68
 
 
 2241:Generated_Source\PSoC4/CapSense_1_CSHL.c ****                                                                              CapSense_1_posFiltersD
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
 2295:Generated_Source\PSoC4/CapSense_1_CSHL.c **** 
 2296:Generated_Source\PSoC4/CapSense_1_CSHL.c ****                                     posY = (uint8) CapSense_1_IIR4Filter((uint16)posY,
 2297:Generated_Source\PSoC4/CapSense_1_CSHL.c ****                                                                     (uint16)CapSense_1_posFiltersDa
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 69
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 69
 
 
 2298:Generated_Source\PSoC4/CapSense_1_CSHL.c ****                                     CapSense_1_posFiltersData[posYIndex] = posY;
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
 2352:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     * Summary:
 2353:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     *  This is the Median filter function.
 2354:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     *  The median filter looks at the three most recent samples and reports the
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 70
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 70
 
 
 2355:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     *  median value.
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
 2409:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     *  x3:  Before previous value.
 2410:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     *
 2411:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     * Return:
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 71
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 71
 
 
 2412:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     *  Returns filtered value.
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
 2466:Generated_Source\PSoC4/CapSense_1_CSHL.c ****        */
 2467:Generated_Source\PSoC4/CapSense_1_CSHL.c **** 
 2468:Generated_Source\PSoC4/CapSense_1_CSHL.c **** 
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 72
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 72
 
 
 2469:Generated_Source\PSoC4/CapSense_1_CSHL.c **** #if ( (0u != (CapSense_1_RAW_FILTER_MASK & CapSense_1_IIR4_FILTER)) || \
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
 2498:Generated_Source\PSoC4/CapSense_1_CSHL.c ****         tmp += ((uint32)x2 << 1u);
  1593              		.loc 1 2498 0
  1594 001e 3B1D     		adds	r3, r7, #4
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 73
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 73
 
 
  1595 0020 1B88     		ldrh	r3, [r3]
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
 2524:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     *
 2525:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     * Global Variables:
 2526:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     *  None.
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 74
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 74
 
 
 2527:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     *
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
 2581:Generated_Source\PSoC4/CapSense_1_CSHL.c ****         /* IIR = 1/8 Current Value + 7/8 Previous Value */
 2582:Generated_Source\PSoC4/CapSense_1_CSHL.c ****         tmp = (uint32)x1;
 2583:Generated_Source\PSoC4/CapSense_1_CSHL.c ****         tmp += (((uint32)x2 << 3u) - ((uint32)x2));
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 75
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 75
 
 
 2584:Generated_Source\PSoC4/CapSense_1_CSHL.c ****         tmp >>= 3u;
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
 2638:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     * Parameters:
 2639:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     *  widget:  widget number;
 2640:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     *  pos:     pointer to an array of two uint8, where touch position will be
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 76
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 76
 
 
 2641:Generated_Source\PSoC4/CapSense_1_CSHL.c ****     *           stored:
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
 2695:Generated_Source\PSoC4/CapSense_1_CSHL.c ****                 pos[1u] = row_ind - CapSense_1_rawDataIndex[widget+1u];
 2696:Generated_Source\PSoC4/CapSense_1_CSHL.c ****                 retVal = 1u;
 2697:Generated_Source\PSoC4/CapSense_1_CSHL.c ****             }
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 77
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 77
 
 
 2698:Generated_Source\PSoC4/CapSense_1_CSHL.c ****         }
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  1647 0016 80BD     		pop	{r7, pc}
  1648              	.L97:
  1649              		.align	2
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 78
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 78
 
 
  1650              	.L96:
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  1679 000c D318     		adds	r3, r2, r3
  1680 000e 1B78     		ldrb	r3, [r3]
 2754:Generated_Source\PSoC4/CapSense_1_CSHL.c **** }
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 79
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 79
 
 
  1681              		.loc 1 2754 0
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  1711              		.cfi_def_cfa_offset 16
  1712 0004 00AF     		add	r7, sp, #0
  1713              		.cfi_def_cfa_register 7
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 80
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 80
 
 
  1714 0006 7860     		str	r0, [r7, #4]
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  1742 0002 00AF     		add	r7, sp, #0
  1743              		.cfi_def_cfa_register 7
 2805:Generated_Source\PSoC4/CapSense_1_CSHL.c ****         CapSense_1_enableRawFilters = CapSense_1_RAW_FILTERS_ENABLED;
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 81
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 81
 
 
  1744              		.loc 1 2805 0
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  1774              		.cfi_offset 7, -8
  1775              		.cfi_offset 14, -4
  1776 0002 00AF     		add	r7, sp, #0
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 82
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 82
 
 
  1777              		.cfi_def_cfa_register 7
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  1829 0043 05       		.byte	0x5
  1830 0044 A4040000 		.4byte	.LASF4
  1831 0048 02       		.uleb128 0x2
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 83
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 83
 
 
  1832 0049 04       		.byte	0x4
@@ -4951,7 +4951,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  1859 007d E701     		.2byte	0x1e7
  1860 007f 3A000000 		.4byte	0x3a
  1861 0083 04       		.uleb128 0x4
- 1862 0084 0C060000 		.4byte	.LASF11
+ 1862 0084 0B060000 		.4byte	.LASF11
  1863 0088 02       		.byte	0x2
  1864 0089 E801     		.2byte	0x1e8
  1865 008b 48000000 		.4byte	0x48
@@ -4962,7 +4962,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  1870 0096 02       		.uleb128 0x2
  1871 0097 08       		.byte	0x8
  1872 0098 04       		.byte	0x4
- 1873 0099 19070000 		.4byte	.LASF13
+ 1873 0099 18070000 		.4byte	.LASF13
  1874 009d 02       		.uleb128 0x2
  1875 009e 01       		.byte	0x1
  1876 009f 08       		.byte	0x8
@@ -4970,7 +4970,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  1878 00a4 02       		.uleb128 0x2
  1879 00a5 04       		.byte	0x4
  1880 00a6 07       		.byte	0x7
- 1881 00a7 EE060000 		.4byte	.LASF15
+ 1881 00a7 ED060000 		.4byte	.LASF15
  1882 00ab 02       		.uleb128 0x2
  1883 00ac 08       		.byte	0x8
  1884 00ad 04       		.byte	0x4
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  1886 00b2 05       		.uleb128 0x5
  1887 00b3 6B000000 		.4byte	0x6b
  1888 00b7 06       		.uleb128 0x6
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 84
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 84
 
 
  1889 00b8 CF040000 		.4byte	.LASF17
@@ -5025,7 +5025,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  1930 010b 74       		.sleb128 -12
  1931 010c 00       		.byte	0
  1932 010d 09       		.uleb128 0x9
- 1933 010e 5A050000 		.4byte	.LASF20
+ 1933 010e 59050000 		.4byte	.LASF20
  1934 0112 01       		.byte	0x1
  1935 0113 FB       		.byte	0xfb
  1936 0114 00000000 		.4byte	.LFB36
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  1943 0125 01       		.byte	0x1
  1944 0126 FD       		.byte	0xfd
  1945 0127 83000000 		.4byte	0x83
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 85
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 85
 
 
  1946 012b 02       		.uleb128 0x2
@@ -5046,7 +5046,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  1948 012d 74       		.sleb128 -12
  1949 012e 00       		.byte	0
  1950 012f 0B       		.uleb128 0xb
- 1951 0130 92060000 		.4byte	.LASF22
+ 1951 0130 91060000 		.4byte	.LASF22
  1952 0134 01       		.byte	0x1
  1953 0135 1E01     		.2byte	0x11e
  1954 0137 00000000 		.4byte	.LFB37
@@ -5072,7 +5072,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  1974 0160 70       		.sleb128 -16
  1975 0161 00       		.byte	0
  1976 0162 0B       		.uleb128 0xb
- 1977 0163 75070000 		.4byte	.LASF24
+ 1977 0163 74070000 		.4byte	.LASF24
  1978 0167 01       		.byte	0x1
  1979 0168 5F01     		.2byte	0x15f
  1980 016a 00000000 		.4byte	.LFB38
@@ -5097,8 +5097,8 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  1999 0194 91       		.byte	0x91
  2000 0195 60       		.sleb128 -32
  2001 0196 0D       		.uleb128 0xd
- 2002 0197 31060000 		.4byte	.LASF26
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 86
+ 2002 0197 30060000 		.4byte	.LASF26
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 86
 
 
  2003 019b 01       		.byte	0x1
@@ -5158,11 +5158,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  2057 0205 91       		.byte	0x91
  2058 0206 74       		.sleb128 -12
  2059 0207 00       		.byte	0
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 87
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 87
 
 
  2060 0208 0B       		.uleb128 0xb
- 2061 0209 70060000 		.4byte	.LASF31
+ 2061 0209 6F060000 		.4byte	.LASF31
  2062 020d 01       		.byte	0x1
  2063 020e 5502     		.2byte	0x255
  2064 0210 00000000 		.4byte	.LFB40
@@ -5188,7 +5188,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  2084 0239 70       		.sleb128 -16
  2085 023a 00       		.byte	0
  2086 023b 0B       		.uleb128 0xb
- 2087 023c EC050000 		.4byte	.LASF32
+ 2087 023c EB050000 		.4byte	.LASF32
  2088 0240 01       		.byte	0x1
  2089 0241 8202     		.2byte	0x282
  2090 0243 00000000 		.4byte	.LFB41
@@ -5205,7 +5205,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  2101 025e 91       		.byte	0x91
  2102 025f 5C       		.sleb128 -36
  2103 0260 0D       		.uleb128 0xd
- 2104 0261 20070000 		.4byte	.LASF33
+ 2104 0261 1F070000 		.4byte	.LASF33
  2105 0265 01       		.byte	0x1
  2106 0266 8402     		.2byte	0x284
  2107 0268 83000000 		.4byte	0x83
@@ -5218,13 +5218,13 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  2114 0275 8502     		.2byte	0x285
  2115 0277 83000000 		.4byte	0x83
  2116 027b 02       		.uleb128 0x2
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 88
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 88
 
 
  2117 027c 91       		.byte	0x91
  2118 027d 6C       		.sleb128 -20
  2119 027e 0D       		.uleb128 0xd
- 2120 027f 4F050000 		.4byte	.LASF35
+ 2120 027f 4E050000 		.4byte	.LASF35
  2121 0283 01       		.byte	0x1
  2122 0284 8602     		.2byte	0x286
  2123 0286 83000000 		.4byte	0x83
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  2171 02e6 09030000 		.4byte	0x309
  2172 02ea 0E       		.uleb128 0xe
  2173 02eb 4F010000 		.4byte	.LASF19
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 89
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 89
 
 
  2174 02ef 01       		.byte	0x1
@@ -5288,7 +5288,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  2178 02f7 91       		.byte	0x91
  2179 02f8 74       		.sleb128 -12
  2180 02f9 0E       		.uleb128 0xe
- 2181 02fa 7C050000 		.4byte	.LASF37
+ 2181 02fa 7B050000 		.4byte	.LASF37
  2182 02fe 01       		.byte	0x1
  2183 02ff CE02     		.2byte	0x2ce
  2184 0301 77000000 		.4byte	0x77
@@ -5297,7 +5297,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  2187 0307 72       		.sleb128 -14
  2188 0308 00       		.byte	0
  2189 0309 0F       		.uleb128 0xf
- 2190 030a D2060000 		.4byte	.LASF39
+ 2190 030a D1060000 		.4byte	.LASF39
  2191 030e 01       		.byte	0x1
  2192 030f E902     		.2byte	0x2e9
  2193 0311 77000000 		.4byte	0x77
@@ -5316,7 +5316,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  2206 0331 74       		.sleb128 -12
  2207 0332 00       		.byte	0
  2208 0333 10       		.uleb128 0x10
- 2209 0334 31070000 		.4byte	.LASF40
+ 2209 0334 30070000 		.4byte	.LASF40
  2210 0338 01       		.byte	0x1
  2211 0339 0403     		.2byte	0x304
  2212 033b 00000000 		.4byte	.LFB45
@@ -5338,14 +5338,14 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  2228 035e 0403     		.2byte	0x304
  2229 0360 77000000 		.4byte	0x77
  2230 0364 02       		.uleb128 0x2
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 90
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 90
 
 
  2231 0365 91       		.byte	0x91
  2232 0366 72       		.sleb128 -14
  2233 0367 00       		.byte	0
  2234 0368 0F       		.uleb128 0xf
- 2235 0369 13060000 		.4byte	.LASF42
+ 2235 0369 12060000 		.4byte	.LASF42
  2236 036d 01       		.byte	0x1
  2237 036e 1F03     		.2byte	0x31f
  2238 0370 77000000 		.4byte	0x77
@@ -5383,7 +5383,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  2270 03ba 74       		.sleb128 -12
  2271 03bb 00       		.byte	0
  2272 03bc 0F       		.uleb128 0xf
- 2273 03bd 51060000 		.4byte	.LASF44
+ 2273 03bd 50060000 		.4byte	.LASF44
  2274 03c1 01       		.byte	0x1
  2275 03c2 5603     		.2byte	0x356
  2276 03c4 77000000 		.4byte	0x77
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  2285 03dc 5603     		.2byte	0x356
  2286 03de 83000000 		.4byte	0x83
  2287 03e2 02       		.uleb128 0x2
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 91
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 91
 
 
  2288 03e3 91       		.byte	0x91
@@ -5458,10 +5458,10 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  2342 0455 91       		.byte	0x91
  2343 0456 71       		.sleb128 -15
  2344 0457 0D       		.uleb128 0xd
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 92
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 92
 
 
- 2345 0458 0B070000 		.4byte	.LASF48
+ 2345 0458 0A070000 		.4byte	.LASF48
  2346 045c 01       		.byte	0x1
  2347 045d 5204     		.2byte	0x452
  2348 045f 6B000000 		.4byte	0x6b
@@ -5469,7 +5469,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  2350 0464 91       		.byte	0x91
  2351 0465 70       		.sleb128 -16
  2352 0466 0D       		.uleb128 0xd
- 2353 0467 65070000 		.4byte	.LASF49
+ 2353 0467 64070000 		.4byte	.LASF49
  2354 046b 01       		.byte	0x1
  2355 046c 5404     		.2byte	0x454
  2356 046e 77000000 		.4byte	0x77
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  2399 04c5 83000000 		.4byte	0x83
  2400 04c9 02       		.uleb128 0x2
  2401 04ca 91       		.byte	0x91
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 93
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 93
 
 
  2402 04cb 6C       		.sleb128 -20
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  2456 0538 0D       		.uleb128 0xd
  2457 0539 7E000000 		.4byte	.LASF52
  2458 053d 01       		.byte	0x1
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 94
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 94
 
 
  2459 053e 0005     		.2byte	0x500
@@ -5596,7 +5596,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  2471 0555 76       		.sleb128 -10
  2472 0556 00       		.byte	0
  2473 0557 0B       		.uleb128 0xb
- 2474 0558 9E050000 		.4byte	.LASF57
+ 2474 0558 9D050000 		.4byte	.LASF57
  2475 055c 01       		.byte	0x1
  2476 055d 2805     		.2byte	0x528
  2477 055f 00000000 		.4byte	.LFB54
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  2513 05ab 3C000000 		.4byte	.LFE55-.LFB55
  2514 05af 01       		.uleb128 0x1
  2515 05b0 9C       		.byte	0x9c
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 95
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 95
 
 
  2516 05b1 E1050000 		.4byte	0x5e1
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  2570 0621 35060000 		.4byte	0x635
  2571 0625 0E       		.uleb128 0xe
  2572 0626 4F010000 		.4byte	.LASF19
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 96
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 96
 
 
  2573 062a 01       		.byte	0x1
@@ -5751,14 +5751,14 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  2620 0691 01       		.byte	0x1
  2621 0692 00       		.byte	0
  2622 0693 08       		.uleb128 0x8
- 2623 0694 36060000 		.4byte	.LASF64
+ 2623 0694 35060000 		.4byte	.LASF64
  2624 0698 01       		.byte	0x1
  2625 0699 59       		.byte	0x59
  2626 069a 83060000 		.4byte	0x683
  2627 069e 05       		.uleb128 0x5
  2628 069f 03       		.byte	0x3
  2629 06a0 10000000 		.4byte	CapSense_1_debounceCounter
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 97
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 97
 
 
  2630 06a4 14       		.uleb128 0x14
@@ -5793,14 +5793,14 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  2659 06e8 00       		.byte	0
  2660 06e9 00       		.byte	0
  2661 06ea 16       		.uleb128 0x16
- 2662 06eb 4D070000 		.4byte	.LASF67
+ 2662 06eb 4C070000 		.4byte	.LASF67
  2663 06ef 01       		.byte	0x1
  2664 06f0 2E       		.byte	0x2e
  2665 06f1 F5060000 		.4byte	0x6f5
  2666 06f5 05       		.uleb128 0x5
  2667 06f6 DA060000 		.4byte	0x6da
  2668 06fa 17       		.uleb128 0x17
- 2669 06fb B7050000 		.4byte	.LASF68
+ 2669 06fb B6050000 		.4byte	.LASF68
  2670 06ff 01       		.byte	0x1
  2671 0700 34       		.byte	0x34
  2672 0701 A4060000 		.4byte	0x6a4
@@ -5808,7 +5808,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  2674 0706 03       		.byte	0x3
  2675 0707 00000000 		.4byte	CapSense_1_sensorBaseline
  2676 070b 17       		.uleb128 0x17
- 2677 070c 81050000 		.4byte	.LASF69
+ 2677 070c 80050000 		.4byte	.LASF69
  2678 0710 01       		.byte	0x1
  2679 0711 35       		.byte	0x35
  2680 0712 BF060000 		.4byte	0x6bf
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  2684 071c 17       		.uleb128 0x17
  2685 071d 37010000 		.4byte	.LASF70
  2686 0721 01       		.byte	0x1
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 98
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 98
 
 
  2687 0722 36       		.byte	0x36
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  2741 0797 03       		.byte	0x3
  2742 0798 00000000 		.4byte	CapSense_1_noiseThreshold
  2743 079c 05       		.uleb128 0x5
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 99
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 99
 
 
  2744 079d 60070000 		.4byte	0x760
@@ -5893,7 +5893,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  2753 07b2 05       		.uleb128 0x5
  2754 07b3 60070000 		.4byte	0x760
  2755 07b7 17       		.uleb128 0x17
- 2756 07b8 F7060000 		.4byte	.LASF77
+ 2756 07b8 F6060000 		.4byte	.LASF77
  2757 07bc 01       		.byte	0x1
  2758 07bd 55       		.byte	0x55
  2759 07be C8070000 		.4byte	0x7c8
@@ -5913,7 +5913,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  2773 07de 05       		.uleb128 0x5
  2774 07df DA060000 		.4byte	0x6da
  2775 07e3 17       		.uleb128 0x17
- 2776 07e4 D1050000 		.4byte	.LASF79
+ 2776 07e4 D0050000 		.4byte	.LASF79
  2777 07e8 01       		.byte	0x1
  2778 07e9 61       		.byte	0x61
  2779 07ea F4070000 		.4byte	0x7f4
@@ -5923,7 +5923,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  2783 07f4 05       		.uleb128 0x5
  2784 07f5 DA060000 		.4byte	0x6da
  2785 07f9 17       		.uleb128 0x17
- 2786 07fa B8060000 		.4byte	.LASF80
+ 2786 07fa B7060000 		.4byte	.LASF80
  2787 07fe 01       		.byte	0x1
  2788 07ff 27       		.byte	0x27
  2789 0800 A4060000 		.4byte	0x6a4
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  2798 0815 05       		.uleb128 0x5
  2799 0816 03       		.byte	0x3
  2800 0817 00000000 		.4byte	CapSense_1_enableRawFilters
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 100
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 100
 
 
  2801 081b 00       		.byte	0
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  2855 0033 13       		.uleb128 0x13
  2856 0034 00       		.byte	0
  2857 0035 00       		.byte	0
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 101
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 101
 
 
  2858 0036 05       		.uleb128 0x5
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  2912 006d 3B       		.uleb128 0x3b
  2913 006e 0B       		.uleb128 0xb
  2914 006f 49       		.uleb128 0x49
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 102
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 102
 
 
  2915 0070 13       		.uleb128 0x13
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  2969 00a7 3B       		.uleb128 0x3b
  2970 00a8 05       		.uleb128 0x5
  2971 00a9 27       		.uleb128 0x27
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 103
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 103
 
 
  2972 00aa 19       		.uleb128 0x19
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  3026 00e1 02       		.uleb128 0x2
  3027 00e2 18       		.uleb128 0x18
  3028 00e3 00       		.byte	0
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 104
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 104
 
 
  3029 00e4 00       		.byte	0
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  3083 011c 2E       		.uleb128 0x2e
  3084 011d 01       		.byte	0x1
  3085 011e 3F       		.uleb128 0x3f
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 105
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 105
 
 
  3086 011f 19       		.uleb128 0x19
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  3140 0156 06       		.uleb128 0x6
  3141 0157 40       		.uleb128 0x40
  3142 0158 18       		.uleb128 0x18
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 106
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 106
 
 
  3143 0159 9742     		.uleb128 0x2117
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  3197 0190 00       		.byte	0
  3198 0191 00       		.byte	0
  3199 0192 00       		.byte	0
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 107
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 107
 
 
  3200              		.section	.debug_aranges,"",%progbits
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  3254 00c8 00000000 		.4byte	.LFB57
  3255 00cc 1C000000 		.4byte	.LFE57-.LFB57
  3256 00d0 00000000 		.4byte	.LFB58
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 108
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 108
 
 
  3257 00d4 12000000 		.4byte	.LFE58-.LFB58
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  3311 00b4 1C000000 		.4byte	.LFE56
  3312 00b8 00000000 		.4byte	.LFB57
  3313 00bc 1C000000 		.4byte	.LFE57
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 109
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 109
 
 
  3314 00c0 00000000 		.4byte	.LFB58
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  3340      656E7365 
  3340      5F315F47 
  3340      65744E65 
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 110
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 110
 
 
  3340      67617469 
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  3364      5F315F68 
  3364      79737465 
  3364      72657369 
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 111
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 111
 
 
  3365              	.LASF66:
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  3386      6E61626C 
  3386      65526177 
  3387              	.LASF46:
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 112
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 112
 
 
  3388 0261 43617053 		.ascii	"CapSense_1_CheckIsSensorActive\000"
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  3406      656E7365 
  3406      5F315F47 
  3406      65744E6F 
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 113
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 113
 
 
  3406      69736554 
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  3428      6E697469 
  3428      616C697A 
  3429              	.LASF59:
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 114
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 114
 
 
  3430 0474 43617053 		.ascii	"CapSense_1_GetWidgetNumber\000"
@@ -6817,159 +6817,159 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 1
  3442      65642069 
  3442      6E7400
  3443              	.LASF84:
- 3444 04f6 433A5C55 		.ascii	"C:\\Users\\d4hhm\\Documents\\PSoC Creator\\ble-beac"
+ 3444 04f6 433A5C55 		.ascii	"C:\\Users\\d4hhm\\Documents\\Care-support-system\\S"
  3444      73657273 
  3444      5C643468 
  3444      686D5C44 
  3444      6F63756D 
- 3445 0524 6F6E5F63 		.ascii	"on_capsense+vl6180+bme280_2\\Design01.cydsn\000"
- 3445      61707365 
- 3445      6E73652B 
- 3445      766C3631 
- 3445      38302B62 
+ 3445 0524 6C617665 		.ascii	"lave\\Care_support_system_peripheral.cydsn\000"
+ 3445      5C436172 
+ 3445      655F7375 
+ 3445      70706F72 
+ 3445      745F7379 
  3446              	.LASF35:
- 3447 054f 6C617374 		.ascii	"lastSensor\000"
+ 3447 054e 6C617374 		.ascii	"lastSensor\000"
  3447      53656E73 
  3447      6F7200
  3448              	.LASF20:
- 3449 055a 43617053 		.ascii	"CapSense_1_InitializeAllBaselines\000"
+ 3449 0559 43617053 		.ascii	"CapSense_1_InitializeAllBaselines\000"
  3449      656E7365 
  3449      5F315F49 
  3449      6E697469 
  3449      616C697A 
  3450              	.LASF37:
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 115
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 115
 
 
- 3451 057c 64617461 		.ascii	"data\000"
+ 3451 057b 64617461 		.ascii	"data\000"
  3451      00
  3452              	.LASF69:
- 3453 0581 43617053 		.ascii	"CapSense_1_sensorBaselineLow\000"
+ 3453 0580 43617053 		.ascii	"CapSense_1_sensorBaselineLow\000"
  3453      656E7365 
  3453      5F315F73 
  3453      656E736F 
  3453      72426173 
  3454              	.LASF57:
- 3455 059e 43617053 		.ascii	"CapSense_1_DisableWidget\000"
+ 3455 059d 43617053 		.ascii	"CapSense_1_DisableWidget\000"
  3455      656E7365 
  3455      5F315F44 
  3455      69736162 
  3455      6C655769 
  3456              	.LASF68:
- 3457 05b7 43617053 		.ascii	"CapSense_1_sensorBaseline\000"
+ 3457 05b6 43617053 		.ascii	"CapSense_1_sensorBaseline\000"
  3457      656E7365 
  3457      5F315F73 
  3457      656E736F 
  3457      72426173 
  3458              	.LASF79:
- 3459 05d1 43617053 		.ascii	"CapSense_1_numberOfSensors\000"
+ 3459 05d0 43617053 		.ascii	"CapSense_1_numberOfSensors\000"
  3459      656E7365 
  3459      5F315F6E 
  3459      756D6265 
  3459      724F6653 
  3460              	.LASF32:
- 3461 05ec 43617053 		.ascii	"CapSense_1_UpdateWidgetBaseline\000"
+ 3461 05eb 43617053 		.ascii	"CapSense_1_UpdateWidgetBaseline\000"
  3461      656E7365 
  3461      5F315F55 
  3461      70646174 
  3461      65576964 
  3462              	.LASF11:
- 3463 060c 75696E74 		.ascii	"uint32\000"
+ 3463 060b 75696E74 		.ascii	"uint32\000"
  3463      333200
  3464              	.LASF42:
- 3465 0613 43617053 		.ascii	"CapSense_1_GetFingerThreshold\000"
+ 3465 0612 43617053 		.ascii	"CapSense_1_GetFingerThreshold\000"
  3465      656E7365 
  3465      5F315F47 
  3465      65744669 
  3465      6E676572 
  3466              	.LASF26:
- 3467 0631 7369676E 		.ascii	"sign\000"
+ 3467 0630 7369676E 		.ascii	"sign\000"
  3467      00
  3468              	.LASF64:
- 3469 0636 43617053 		.ascii	"CapSense_1_debounceCounter\000"
+ 3469 0635 43617053 		.ascii	"CapSense_1_debounceCounter\000"
  3469      656E7365 
  3469      5F315F64 
  3469      65626F75 
  3469      6E636543 
  3470              	.LASF44:
- 3471 0651 43617053 		.ascii	"CapSense_1_GetFingerHysteresis\000"
+ 3471 0650 43617053 		.ascii	"CapSense_1_GetFingerHysteresis\000"
  3471      656E7365 
  3471      5F315F47 
  3471      65744669 
  3471      6E676572 
  3472              	.LASF31:
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 116
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 116
 
 
- 3473 0670 43617053 		.ascii	"CapSense_1_UpdateEnabledBaselines\000"
+ 3473 066f 43617053 		.ascii	"CapSense_1_UpdateEnabledBaselines\000"
  3473      656E7365 
  3473      5F315F55 
  3473      70646174 
  3473      65456E61 
  3474              	.LASF22:
- 3475 0692 43617053 		.ascii	"CapSense_1_InitializeEnabledBaselines\000"
+ 3475 0691 43617053 		.ascii	"CapSense_1_InitializeEnabledBaselines\000"
  3475      656E7365 
  3475      5F315F49 
  3475      6E697469 
  3475      616C697A 
  3476              	.LASF80:
- 3477 06b8 43617053 		.ascii	"CapSense_1_rawFilterData1\000"
+ 3477 06b7 43617053 		.ascii	"CapSense_1_rawFilterData1\000"
  3477      656E7365 
  3477      5F315F72 
  3477      61774669 
  3477      6C746572 
  3478              	.LASF39:
- 3479 06d2 43617053 		.ascii	"CapSense_1_GetDiffCountData\000"
+ 3479 06d1 43617053 		.ascii	"CapSense_1_GetDiffCountData\000"
  3479      656E7365 
  3479      5F315F47 
  3479      65744469 
  3479      6666436F 
  3480              	.LASF15:
- 3481 06ee 73697A65 		.ascii	"sizetype\000"
+ 3481 06ed 73697A65 		.ascii	"sizetype\000"
  3481      74797065 
  3481      00
  3482              	.LASF77:
- 3483 06f7 43617053 		.ascii	"CapSense_1_debounce\000"
+ 3483 06f6 43617053 		.ascii	"CapSense_1_debounce\000"
  3483      656E7365 
  3483      5F315F64 
  3483      65626F75 
  3483      6E636500 
  3484              	.LASF48:
- 3485 070b 6465626F 		.ascii	"debounceIndex\000"
+ 3485 070a 6465626F 		.ascii	"debounceIndex\000"
  3485      756E6365 
  3485      496E6465 
  3485      7800
  3486              	.LASF13:
- 3487 0719 646F7562 		.ascii	"double\000"
+ 3487 0718 646F7562 		.ascii	"double\000"
  3487      6C6500
  3488              	.LASF33:
- 3489 0720 73656E73 		.ascii	"sensorsPerWidget\000"
+ 3489 071f 73656E73 		.ascii	"sensorsPerWidget\000"
  3489      6F727350 
  3489      65725769 
  3489      64676574 
  3489      00
  3490              	.LASF40:
- 3491 0731 43617053 		.ascii	"CapSense_1_SetDiffCountData\000"
+ 3491 0730 43617053 		.ascii	"CapSense_1_SetDiffCountData\000"
  3491      656E7365 
  3491      5F315F53 
  3491      65744469 
  3491      6666436F 
  3492              	.LASF67:
- 3493 074d 43617053 		.ascii	"CapSense_1_widgetNumber\000"
+ 3493 074c 43617053 		.ascii	"CapSense_1_widgetNumber\000"
  3493      656E7365 
  3493      5F315F77 
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cctZ446a.s 			page 117
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccHM53E1.s 			page 117
 
 
  3493      69646765 
  3493      744E756D 
  3494              	.LASF49:
- 3495 0765 66696E67 		.ascii	"fingerThreshold\000"
+ 3495 0764 66696E67 		.ascii	"fingerThreshold\000"
  3495      65725468 
  3495      72657368 
  3495      6F6C6400 
  3496              	.LASF24:
- 3497 0775 43617053 		.ascii	"CapSense_1_UpdateBaselineNoThreshold\000"
+ 3497 0774 43617053 		.ascii	"CapSense_1_UpdateBaselineNoThreshold\000"
  3497      656E7365 
  3497      5F315F55 
  3497      70646174 
