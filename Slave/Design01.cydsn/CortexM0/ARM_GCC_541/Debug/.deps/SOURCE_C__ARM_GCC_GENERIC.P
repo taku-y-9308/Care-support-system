@@ -1,40 +1,110 @@
-C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/CortexM0/ARM_GCC_541/Debug/CapSense_1.o : C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/CapSense_1.c C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/CapSense_1.h C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/CapSense_1_CSHL.h C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/CapSense_1_IP.h C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/CapSense_1_PVT.h C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/CapSense_1_SampleClk.h C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/CapSense_1_SenseClk.h C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/cmsis_armcc.h C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/cmsis_compiler.h C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/cmsis_gcc.h C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/core_cm0.h C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/core_cm0_psoc4.h C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/cyapicallbacks.h 
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/CortexM0/ARM_GCC_541/Debug/VL6180x.o : C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/BLE_1.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/BLE_1_HAL_PVT.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/BLE_1_STACK_PVT.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/BLE_1_Stack.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/BLE_1_StackGap.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/BLE_1_StackGatt.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/BLE_1_StackGattClient.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/BLE_1_StackGattDb.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/BLE_1_StackGattServer.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/BLE_1_StackHostMain.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/BLE_1_StackL2cap.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/BLE_1_bless_isr.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/BLE_1_eventHandler.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/BLE_1_gatt.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/CapSense_1.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/CapSense_1_CSHL.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/CapSense_1_IP.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/CapSense_1_PVT.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/CapSense_1_SampleClk.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/CapSense_1_SenseClk.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/CapSense_1_Sns.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/CapSense_1_Sns_aliases.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/CapSense_1_TunerHelper.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/CyFlash.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/SCB_1.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/SCB_1_BOOT.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/SCB_1_I2C.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/SCB_1_I2C_PVT.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/SCB_1_PINS.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/SCB_1_PVT.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/SCB_1_SCBCLK.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/SCB_1_SCB_IRQ.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/SCL_1.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/SCL_1_aliases.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/SDA_1.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/SDA_1_aliases.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/cmsis_armcc.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/cmsis_compiler.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/cmsis_gcc.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/core_cm0.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/core_cm0_psoc4.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/cyPm.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/cy_em_eeprom.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/cydisabledsheets.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/project.h C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/VL6180x.c C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/VL6180x.h 
 
-C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/CapSense_1.c : 
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/BLE_1.h : 
 
-C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/CapSense_1.h : 
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/BLE_1_HAL_PVT.h : 
 
-C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/CapSense_1_CSHL.h : 
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/BLE_1_STACK_PVT.h : 
 
-C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/CapSense_1_IP.h : 
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/BLE_1_Stack.h : 
 
-C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/CapSense_1_PVT.h : 
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/BLE_1_StackGap.h : 
 
-C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/CapSense_1_SampleClk.h : 
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/BLE_1_StackGatt.h : 
 
-C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/CapSense_1_SenseClk.h : 
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/BLE_1_StackGattClient.h : 
 
-C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/CyLFClk.h : 
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/BLE_1_StackGattDb.h : 
 
-C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/CyLib.h : 
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/BLE_1_StackGattServer.h : 
 
-C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/cmsis_armcc.h : 
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/BLE_1_StackHostMain.h : 
 
-C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/cmsis_compiler.h : 
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/BLE_1_StackL2cap.h : 
 
-C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/cmsis_gcc.h : 
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/BLE_1_bless_isr.h : 
 
-C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/core_cm0.h : 
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/BLE_1_eventHandler.h : 
 
-C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/core_cm0_psoc4.h : 
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/BLE_1_gatt.h : 
 
-C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/cydevice_trm.h : 
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/CapSense_1.h : 
 
-C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/cyfitter.h : 
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/CapSense_1_CSHL.h : 
 
-C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/cypins.h : 
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/CapSense_1_IP.h : 
 
-C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/Generated_Source/PSoC4/cytypes.h : 
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/CapSense_1_PVT.h : 
 
-C:/Users/d4hhm/Documents/PSoC\ Creator/ble-beacon_capsense+vl6180+bme280_2/Design01.cydsn/cyapicallbacks.h : 
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/CapSense_1_SampleClk.h : 
+
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/CapSense_1_SenseClk.h : 
+
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/CapSense_1_Sns.h : 
+
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/CapSense_1_Sns_aliases.h : 
+
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/CapSense_1_TunerHelper.h : 
+
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/CyFlash.h : 
+
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/CyLFClk.h : 
+
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/CyLib.h : 
+
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/SCB_1.h : 
+
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/SCB_1_BOOT.h : 
+
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/SCB_1_I2C.h : 
+
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/SCB_1_I2C_PVT.h : 
+
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/SCB_1_PINS.h : 
+
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/SCB_1_PVT.h : 
+
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/SCB_1_SCBCLK.h : 
+
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/SCB_1_SCB_IRQ.h : 
+
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/SCL_1.h : 
+
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/SCL_1_aliases.h : 
+
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/SDA_1.h : 
+
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/SDA_1_aliases.h : 
+
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/cmsis_armcc.h : 
+
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/cmsis_compiler.h : 
+
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/cmsis_gcc.h : 
+
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/core_cm0.h : 
+
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/core_cm0_psoc4.h : 
+
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/cyPm.h : 
+
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/cy_em_eeprom.h : 
+
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/cydevice_trm.h : 
+
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/cydisabledsheets.h : 
+
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/cyfitter.h : 
+
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h : 
+
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/cypins.h : 
+
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/cytypes.h : 
+
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/Generated_Source/PSoC4/project.h : 
+
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/VL6180x.c : 
+
+C:/Users/d4hhm/Documents/Care-support-system/Slave/Design01.cydsn/VL6180x.h : 
 

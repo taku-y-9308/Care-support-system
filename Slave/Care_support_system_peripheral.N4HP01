@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="ble-beacon_capsense+vl6180x-2\Design01\Header Files\BME280.h">
 <ExpandedNodeIds>
 <v>ble-beacon_capsense+vl6180x-2</v>
 <v>ble-beacon_capsense+vl6180x-2\Design01</v>
@@ -29,58 +29,21 @@
 <v>ble-beacon_capsense+vl6180x-2\Design01\Header Files</v>
 <v>ble-beacon_capsense+vl6180x-2\Design01\Header Files\BME280.h</v>
 <v>ble-beacon_capsense+vl6180x-2\Design01\Header Files\cyapicallbacks.h</v>
+<v>ble-beacon_capsense+vl6180x-2\Design01\Header Files\VL6180x.h</v>
 <v>ble-beacon_capsense+vl6180x-2\Design01\Source Files</v>
 <v>ble-beacon_capsense+vl6180x-2\Design01\Source Files\BME280.c</v>
 <v>ble-beacon_capsense+vl6180x-2\Design01\Source Files\main.c</v>
+<v>ble-beacon_capsense+vl6180x-2\Design01\Source Files\VL6180x.c</v>
 <v>ble-beacon_capsense+vl6180x-2\Design01\Generated_Source</v>
 <v>ble-beacon_capsense+vl6180x-2\Design01\Generated_Source\PSoC4</v>
 </ExpandedNodeIds>
-<VisibleNodeIds>
-<v>ble-beacon_capsense+vl6180x-2</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\TopDesign</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\Design01.cydwr</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\Design01.cydwr\Pins</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\Design01.cydwr\Analog</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\Design01.cydwr\Clocks</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\Design01.cydwr\Interrupts</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\Design01.cydwr\System</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\Design01.cydwr\Directives</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\Design01.cydwr\Flash Security</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\Header Files</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\Header Files\BME280.h</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\Header Files\cyapicallbacks.h</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\Source Files</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\Source Files\BME280.c</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\Source Files\main.c</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\Generated_Source</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\Generated_Source\PSoC4</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\Generated_Source\PSoC4\BLE_1</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\Generated_Source\PSoC4\BLE_1_bless_isr</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\Generated_Source\PSoC4\CapSense_1</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\Generated_Source\PSoC4\CapSense_1_SampleClk</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\Generated_Source\PSoC4\CapSense_1_SenseClk</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\Generated_Source\PSoC4\CapSense_1_Sns</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\Generated_Source\PSoC4\cy_boot</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\Generated_Source\PSoC4\cy_lfclk</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\Generated_Source\PSoC4\Em_EEPROM_Dynamic</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\Generated_Source\PSoC4\SCB_1</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\Generated_Source\PSoC4\SCB_1_SCB_IRQ</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\Generated_Source\PSoC4\SCB_1_SCBCLK</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\Generated_Source\PSoC4\SCL_1</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\Generated_Source\PSoC4\SDA_1</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\Generated_Source\PSoC4\cycodeshareexport.ld</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\Generated_Source\PSoC4\cycodeshareimport.ld</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\Generated_Source\PSoC4\cycodeshareimport.scat</v>
-</VisibleNodeIds>
+<VisibleNodeIds />
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
 <ExpandedNodeIds>
 <v>ble-beacon_capsense+vl6180x-2</v>
 </ExpandedNodeIds>
-<VisibleNodeIds>
-<v>ble-beacon_capsense+vl6180x-2</v>
-</VisibleNodeIds>
+<VisibleNodeIds />
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
 <ExpandedNodeIds>
@@ -130,6 +93,7 @@
 <v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Listing Files\SCL_1_PM.lst</v>
 <v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Listing Files\SDA_1.lst</v>
 <v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Listing Files\SDA_1_PM.lst</v>
+<v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Listing Files\VL6180x.lst</v>
 <v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Design01.elf</v>
 <v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Design01.hex</v>
 <v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Design01.map</v>
@@ -137,44 +101,7 @@
 <v>ble-beacon_capsense+vl6180x-2\Design01\Design01.rpt</v>
 <v>ble-beacon_capsense+vl6180x-2\Design01\Design01_timing.html</v>
 </ExpandedNodeIds>
-<VisibleNodeIds>
-<v>ble-beacon_capsense+vl6180x-2</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1.lst</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1_bless_isr.lst</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1_eventHandler.lst</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1_gatt.lst</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1_HAL_INT.lst</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1_HAL_PVT.lst</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Listing Files\BME280.lst</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1.lst</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1_CSHL.lst</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1_INT.lst</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1_PM.lst</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1_SampleClk.lst</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1_SenseClk.lst</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1_Sns.lst</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1_Sns_PM.lst</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1_TunerHelper.lst</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Listing Files\main.lst</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1.lst</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_BOOT.lst</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_I2C.lst</v>
-</VisibleNodeIds>
+<VisibleNodeIds />
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
 <TreeKeysV2>
@@ -196,20 +123,7 @@
 <v>ble-beacon_capsense+vl6180x-2\Design01\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>ble-beacon_capsense+vl6180x-2\Design01\SCB_P4_v4_0.pdf</v>
 </ExpandedNodeIds>
-<VisibleNodeIds>
-<v>ble-beacon_capsense+vl6180x-2</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\PSoC 4 Architecture TRM</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\PRoC BLE Family Datasheet</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\System Reference Guides</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\System Reference Guides\cy_boot_v5_81</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\System Reference Guides\cy_lfclk_v1_20</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\BLE_v3_50.pdf</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\CapSense_CSD_P4_v2_60.pdf</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\cy_pins_v2_20</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>ble-beacon_capsense+vl6180x-2\Design01\SCB_P4_v4_0.pdf</v>
-</VisibleNodeIds>
+<VisibleNodeIds />
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
 </CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
@@ -219,6 +133,10 @@
 <Unloaded />
 <OpenDocs>
 <name v=".\Design01.cydsn\main.c" />
+<name v=".\Design01.cydsn\BME280.c" />
+<name v=".\Design01.cydsn\VL6180x.h" />
+<name v=".\Design01.cydsn\BME280.h" />
+<name v=".\Design01.cydsn\VL6180x.c" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -226,7 +144,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1272, 462" SelectedTabbedMdiWindow="9cbff85c-c58e-4b11-b16c-dd430ae13a08"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="e40f7d82-85d3-42a4-a347-326b227ac534" /><DocumentWindow Key="C:\Users\d4hhm\Documents\Care-support-system\Slave\Design01.cydsn\main.c" Guid="9cbff85c-c58e-4b11-b16c-dd430ae13a08" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1272, 388" SelectedTabbedMdiWindow="66e5cec0-962c-40dd-acfe-27f83817bab3"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="e40f7d82-85d3-42a4-a347-326b227ac534" /><DocumentWindow Key="C:\Users\d4hhm\Documents\Care-support-system\Slave\Design01.cydsn\main.c" Guid="9cbff85c-c58e-4b11-b16c-dd430ae13a08" /><DocumentWindow Key="C:\Users\d4hhm\Documents\Care-support-system\Slave\Design01.cydsn\BME280.c" Guid="fe372956-384a-4f81-9122-e8f3a6ba0487" /><DocumentWindow Key="C:\Users\d4hhm\Documents\Care-support-system\Slave\Design01.cydsn\VL6180x.h" Guid="f04b6e62-cef2-45a9-89db-ce313c5020e7" /><DocumentWindow Key="C:\Users\d4hhm\Documents\Care-support-system\Slave\Design01.cydsn\BME280.h" Guid="6947cab5-ff47-47b6-9744-7fb1aca80ca9" /><DocumentWindow Key="C:\Users\d4hhm\Documents\Care-support-system\Slave\Design01.cydsn\VL6180x.c" Guid="66e5cec0-962c-40dd-acfe-27f83817bab3" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
