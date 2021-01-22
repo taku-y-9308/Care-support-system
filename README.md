@@ -29,9 +29,6 @@ Environmental sensor:BME280 https://www.switch-science.com/catalog/2236/
 However, as for OpenWeather, we are stopping it now because the process becomes too heavy.  
 We plan to introduce it by sending requests less frequently.
 
-ただ、OpenWeatherに関しては、処理が重くなってしまうので、ただいま停止中です。  
-リクエストを送る頻度を落として導入予定です。
-
 ## Responsibility
 name: Takumi Yamanaka (山中拓己)  
 mail: y.takumi4@gmail.com
