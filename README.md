@@ -15,7 +15,7 @@ Care-support-systemは、Appleの提供するiBeaconを使用しています。
 ## Development Environment
 Slave:PSoC4BLE(CYBLE-022001-00)  
 Master:Raspberry Pi3  
-Description:Raspian GNU/Linux 10 (buster)
+Description:Raspian GNU/Linux 10 (buster)  
 Grafana v6.5.2  
 InfluxDB v1.6.4-1  
 
