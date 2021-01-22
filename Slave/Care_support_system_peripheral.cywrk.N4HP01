@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Care_support_system_peripheral\Care_support_system_peripheral\Source Files\main.c">
+<ExpandedNodeIds>
+<v>Care_support_system_peripheral</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\TopDesign</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Care_support_system_peripheral.cydwr</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Care_support_system_peripheral.cydwr\Pins</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Care_support_system_peripheral.cydwr\Analog</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Care_support_system_peripheral.cydwr\Clocks</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Care_support_system_peripheral.cydwr\Interrupts</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Care_support_system_peripheral.cydwr\System</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Care_support_system_peripheral.cydwr\Directives</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Care_support_system_peripheral.cydwr\Flash Security</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Header Files</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Header Files\BME280.h</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Header Files\cyapicallbacks.h</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Header Files\VL6180x.h</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Source Files</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Source Files\BME280.c</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Source Files\main.c</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Source Files\VL6180x.c</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Generated_Source</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Generated_Source\PSoC4</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Care_support_system_peripheral</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\TopDesign</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Care_support_system_peripheral.cydwr</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Care_support_system_peripheral.cydwr\Pins</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Care_support_system_peripheral.cydwr\Analog</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Care_support_system_peripheral.cydwr\Clocks</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Care_support_system_peripheral.cydwr\Interrupts</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Care_support_system_peripheral.cydwr\System</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Care_support_system_peripheral.cydwr\Directives</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Care_support_system_peripheral.cydwr\Flash Security</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Header Files</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Header Files\BME280.h</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Header Files\cyapicallbacks.h</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Header Files\VL6180x.h</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Source Files</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Source Files\BME280.c</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Source Files\main.c</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Source Files\VL6180x.c</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Generated_Source</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Generated_Source\PSoC4</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Generated_Source\PSoC4\BLE_1</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Generated_Source\PSoC4\BLE_1_bless_isr</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Generated_Source\PSoC4\CapSense_1</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Generated_Source\PSoC4\CapSense_1_SampleClk</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Generated_Source\PSoC4\CapSense_1_SenseClk</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Generated_Source\PSoC4\CapSense_1_Sns</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Generated_Source\PSoC4\cy_boot</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Generated_Source\PSoC4\cy_lfclk</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Generated_Source\PSoC4\Em_EEPROM_Dynamic</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Generated_Source\PSoC4\SCB_1</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Generated_Source\PSoC4\SCB_1_SCB_IRQ</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Generated_Source\PSoC4\SCB_1_SCBCLK</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Generated_Source\PSoC4\SCL_1</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Generated_Source\PSoC4\SDA_1</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Generated_Source\PSoC4\cycodeshareexport.ld</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Care_support_system_peripheral</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Care_support_system_peripheral</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Care_support_system_peripheral</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1_bless_isr.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1_eventHandler.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1_gatt.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1_HAL_INT.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1_HAL_PVT.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\BME280.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1_CSHL.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1_INT.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1_PM.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1_SampleClk.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1_SenseClk.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1_Sns.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1_Sns_PM.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1_TunerHelper.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_BOOT.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_I2C.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_I2C_BOOT.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_I2C_INT.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_I2C_MASTER.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_PM.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_SCB_IRQ.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_SCBCLK.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\SCL_1.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\SCL_1_PM.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\SDA_1.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\SDA_1_PM.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\VL6180x.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.elf</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.hex</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.map</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Care_support_system_peripheral.gpdsc</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Care_support_system_peripheral.rpt</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\Care_support_system_peripheral_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Care_support_system_peripheral</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1_bless_isr.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1_eventHandler.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1_gatt.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1_HAL_INT.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1_HAL_PVT.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\BME280.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1_CSHL.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1_INT.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1_PM.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1_SampleClk.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1_SenseClk.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1_Sns.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1_Sns_PM.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_1_TunerHelper.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_BOOT.lst</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_I2C.lst</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Care_support_system_peripheral</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\PSoC 4 Architecture TRM</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\PRoC BLE Family Datasheet</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\System Reference Guides</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\System Reference Guides\cy_boot_v5_81</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\System Reference Guides\cy_lfclk_v1_20</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\BLE_v3_50.pdf</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CapSense_CSD_P4_v2_60.pdf</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\cy_pins_v2_20</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\SCB_P4_v4_0.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Care_support_system_peripheral</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\PSoC 4 Architecture TRM</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\PRoC BLE Family Datasheet</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\System Reference Guides</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\System Reference Guides\cy_boot_v5_81</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\System Reference Guides\cy_lfclk_v1_20</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\BLE_v3_50.pdf</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\CapSense_CSD_P4_v2_60.pdf</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\cy_pins_v2_20</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>Care_support_system_peripheral\Care_support_system_peripheral\SCB_P4_v4_0.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+<dataGuid v="5f2be1a5-0687-4501-bb8c-cf21cb8211bf">
+<CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf type_name="CyDesigner.Common.ProjMgmt.GUI.CyBookmarkData" version="1">
+<indicators />
+</CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\Care_support_system_peripheral.cydsn\Care_support_system_peripheral.cydwr" />
+<name v=".\Care_support_system_peripheral.cydsn\main.c" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1272, 388" SelectedTabbedMdiWindow="b841b3ee-2098-4d26-a0c4-6dc92e806428"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="e40f7d82-85d3-42a4-a347-326b227ac534" /><DocumentWindow Key="C:\Users\d4hhm\Documents\Care-support-system\Slave\Care_support_system_peripheral.cydsn\Care_support_system_peripheral.cydwr" Guid="c737df4a-c3b8-492e-81de-d9c5bce7f716" /><DocumentWindow Key="C:\Users\d4hhm\Documents\Care-support-system\Slave\Care_support_system_peripheral.cydsn\main.c" Guid="b841b3ee-2098-4d26-a0c4-6dc92e806428" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>
