@@ -32,11 +32,13 @@ def callback(bt_addr, rssi, packet, additional_info):
 	data['pressure']=press
 	data['current_consumption']=current_consumption
 	data['RSSI']=rssi
+	data['weather_info']=weather_info
 
 	#Get weather information every 30 minutes
 	if time.time()-start>1800:
 		data['weather_info']=get_weather_info.weather_info()
-		start=time.time()#Reset the 1800s count by substituting the current UNIX time
+		#Reset the 1800s count by substituting the current UNIX time
+		start=time.time()
 
 	dt_now=datetime.datetime.utcnow()
 	print(dt_now,data)
