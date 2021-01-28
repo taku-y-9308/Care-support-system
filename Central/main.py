@@ -41,7 +41,6 @@ def callback(bt_addr, rssi, packet, additional_info):
 	dt_now=datetime.datetime.utcnow()
 	print(dt_now,data)
 	write_to_influxdb(data)
-	data['weather_info']=0
 
 def write_to_influxdb(data):
     json_body = [{
