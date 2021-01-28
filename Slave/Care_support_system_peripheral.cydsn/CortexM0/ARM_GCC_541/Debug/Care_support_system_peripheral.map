@@ -10873,57 +10873,57 @@ i.CyBle_BleSSInterruptHandler
  .debug_frame   0x0001cda0       0x28 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memcpy-stub.o)
  .debug_frame   0x0001cdc8       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
 
-.debug_str      0x00000000     0x808d
+.debug_str      0x00000000     0x80e5
  *(.debug_str)
- .debug_str     0x00000000      0xf46 .\CortexM0\ARM_GCC_541\Debug\main.o
-                                0xfb2 (size before relaxing)
- .debug_str     0x00000f46      0x2ef .\CortexM0\ARM_GCC_541\Debug\BME280.o
-                                0xd9d (size before relaxing)
- .debug_str     0x00001235      0x138 .\CortexM0\ARM_GCC_541\Debug\VL6180x.o
+ .debug_str     0x00000000      0xf41 .\CortexM0\ARM_GCC_541\Debug\main.o
+                                0xfad (size before relaxing)
+ .debug_str     0x00000f41      0x2ef .\CortexM0\ARM_GCC_541\Debug\BME280.o
+                                0xd98 (size before relaxing)
+ .debug_str     0x00001230      0x195 .\CortexM0\ARM_GCC_541\Debug\VL6180x.o
                                 0x306 (size before relaxing)
- .debug_str     0x0000136d      0x150 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_str     0x000013c5      0x150 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
                                 0x32a (size before relaxing)
- .debug_str     0x000014bd       0x59 .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+ .debug_str     0x00001515       0x59 .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
                                 0x1e3 (size before relaxing)
- .debug_str     0x00001516      0x114 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .debug_str     0x0000156e      0x114 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
                                 0x2e9 (size before relaxing)
- .debug_str     0x0000162a      0x7df .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(BLE_1.o)
+ .debug_str     0x00001682      0x7df .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(BLE_1.o)
                                0x170f (size before relaxing)
- .debug_str     0x00001e09     0x2e00 .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(BLE_1_gatt.o)
+ .debug_str     0x00001e61     0x2e00 .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(BLE_1_gatt.o)
                                0x3f24 (size before relaxing)
- .debug_str     0x00004c09      0xc95 .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(BLE_1_eventHandler.o)
+ .debug_str     0x00004c61      0xc95 .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(BLE_1_eventHandler.o)
                                0x204d (size before relaxing)
- .debug_str     0x0000589e      0x53a .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(CyLib.o)
+ .debug_str     0x000058f6      0x53a .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(CyLib.o)
                                 0x71b (size before relaxing)
- .debug_str     0x00005dd8      0x713 .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(CyLFClk.o)
+ .debug_str     0x00005e30      0x713 .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(CyLFClk.o)
                                 0x915 (size before relaxing)
- .debug_str     0x000064eb      0x68b .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(CapSense_1.o)
+ .debug_str     0x00006543      0x68b .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(CapSense_1.o)
                                 0x868 (size before relaxing)
- .debug_str     0x00006b76      0x50a .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(CapSense_1_CSHL.o)
+ .debug_str     0x00006bce      0x50a .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(CapSense_1_CSHL.o)
                                 0x79e (size before relaxing)
- .debug_str     0x00007080       0x4e .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(CapSense_1_INT.o)
+ .debug_str     0x000070d8       0x4e .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(CapSense_1_INT.o)
                                 0x264 (size before relaxing)
- .debug_str     0x000070ce      0x125 .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(CapSense_1_SampleClk.o)
+ .debug_str     0x00007126      0x125 .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(CapSense_1_SampleClk.o)
                                 0x2c0 (size before relaxing)
- .debug_str     0x000071f3       0xeb .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(CapSense_1_SenseClk.o)
+ .debug_str     0x0000724b       0xeb .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(CapSense_1_SenseClk.o)
                                 0x2ba (size before relaxing)
- .debug_str     0x000072de      0x11d .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(SCB_1.o)
+ .debug_str     0x00007336      0x11d .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(SCB_1.o)
                                 0x2c6 (size before relaxing)
- .debug_str     0x000073fb       0x9c .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(SCB_1_I2C.o)
+ .debug_str     0x00007453       0x9c .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(SCB_1_I2C.o)
                                 0x24c (size before relaxing)
- .debug_str     0x00007497      0x2cd .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(SCB_1_I2C_MASTER.o)
+ .debug_str     0x000074ef      0x2cd .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(SCB_1_I2C_MASTER.o)
                                 0x4d0 (size before relaxing)
- .debug_str     0x00007764       0x4b .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(SCB_1_I2C_INT.o)
+ .debug_str     0x000077bc       0x4b .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(SCB_1_I2C_INT.o)
                                 0x2df (size before relaxing)
- .debug_str     0x000077af      0x507 .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(BLE_1_HAL_PVT.o)
+ .debug_str     0x00007807      0x507 .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(BLE_1_HAL_PVT.o)
                                 0xb0a (size before relaxing)
- .debug_str     0x00007cb6      0x181 .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(BLE_1_bless_isr.o)
+ .debug_str     0x00007d0e      0x181 .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(BLE_1_bless_isr.o)
                                 0x364 (size before relaxing)
- .debug_str     0x00007e37      0x135 .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(CyFlash.o)
+ .debug_str     0x00007e8f      0x135 .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(CyFlash.o)
                                 0x30d (size before relaxing)
- .debug_str     0x00007f6c       0xe4 .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(cyPm.o)
+ .debug_str     0x00007fc4       0xe4 .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(cyPm.o)
                                 0x2aa (size before relaxing)
- .debug_str     0x00008050       0x3d .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(BLE_1_HAL_INT.o)
+ .debug_str     0x000080a8       0x3d .\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.a(BLE_1_HAL_INT.o)
                                 0x1d3 (size before relaxing)
 
 .debug_loc
@@ -11653,4 +11653,4 @@ i.CyBle_BleSSInterruptHandler
 
 /DISCARD/
  *(.note.GNU-stack)
-OUTPUT(C:\Users\d4hhm\Documents\Care-support-system\Peripheral\Care_support_system_peripheral.cydsn\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.elf elf32-littlearm)
+OUTPUT(C:\Users\d4hhm\Documents\Care-support-system\Slave\Care_support_system_peripheral.cydsn\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.elf elf32-littlearm)

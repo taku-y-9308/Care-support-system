@@ -1,6 +1,6 @@
-C:\Users\d4hhm\Documents\Care-support-system\Peripheral\Care_support_system_peripheral.cydsn\Care_support_system_peripheral.cyprj|79ef502a-a3a8-4292-85a4-ae4b5166b5db
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|d8488936-4254-4fd9-b8b6-9708e8dd782c
-C:\Users\d4hhm\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|7402a23d-efd3-4a17-9608-18c411dae7bb
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|c8cca64f-a450-4536-b070-36e0ee0e6ed3
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|d8ea417b-f34e-4388-a7ca-a7a1fbafb5bf
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|369347ac-6d14-403c-8c47-b0fb0bf6646d
+C:\Users\d4hhm\Documents\Care-support-system\Slave\Care_support_system_peripheral.cydsn\Care_support_system_peripheral.cyprj|43c5fba9-dfeb-4af1-a36e-2893075dbb33
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|53e9a227-4e0a-46b8-b7a3-e326046cf297
+C:\Users\d4hhm\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|408b7bc2-ff14-463c-895c-e14debe35681
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|85d2385c-a049-42e3-bda0-50e4910c5698
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|eb754424-7ce8-4f03-91e4-5aafc9fd6c74
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|85ad4846-e7c1-44c6-aa1e-826a4ab90ede
