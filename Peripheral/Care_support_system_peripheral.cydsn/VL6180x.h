@@ -4,6 +4,12 @@
 
 #include <project.h>
 #define addr 0x29u // I2C address of VL6180x
+#define Q1 41.6//Pre-calibration
+#define Q2 22//Ranging
+#define Q3 25//Readout averaging
+
+#define RESULT__RANGE_RETURN_CONV_TIME 0x07C
+#define READOUT__AVERAGING_SAMPLE_PERIOD 0x10A
 
 //センサの各レジスタを初期化する
 int VL6180_Init();
@@ -26,6 +32,8 @@ void VL6180x_WriteByte(uint16, uint8);
 
 /*VL6180xに読み込む*/
 uint8 VL6180x_ReadByte(uint8_t);
+
+float VL6180_Current_Consumption();
 
 
 #endif  // End of VL6180X_H definition check
