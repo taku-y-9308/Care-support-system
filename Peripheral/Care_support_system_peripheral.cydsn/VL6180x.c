@@ -181,13 +181,13 @@ int VL6180_Clear_Interrupts() {
     return 0; 
 }
 
-int VL6180_Current_Consumption(){
+float VL6180_Current_Consumption(){
     int result_range_return_conv_time;
     float readout_averasing_sample_period;
 
     result_range_return_conv_time=VL6180x_ReadByte(RESULT__RANGE_RETURN_CONV_TIME);
     readout_averasing_sample_period=VL6180x_ReadByte(READOUT__AVERAGING_SAMPLE_PERIOD);
 
-    int Current_consumption= 10 * (Q1 + (Q2 * result_range_return_conv_time) + Q3 * (1.3 + (readout_averasing_sample_period * 0.0645 ms)));
-    return Current_consumption;
+    float current_consumption= 10 * (Q1 + (Q2 * result_range_return_conv_time) + Q3 * (1.3 + (readout_averasing_sample_period * 0.0645)));
+    return current_consumption;
 }
