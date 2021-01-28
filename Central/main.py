@@ -51,8 +51,10 @@ def write_to_influxdb(data):
     db.write_points(json_body)
 
 if __name__ == "__main__":
-	start=time.time()#Get the current UNIX time
+	#Get the current UNIX time
+	start=time.time()
 
+	weather_info=get_weather_info.weather_info()
 	try:
 
 		while True:
