@@ -17,7 +17,7 @@ IRsensor:VL6180x https://www.switch-science.com/catalog/2518/
 Environmental sensor:BME280 https://www.switch-science.com/catalog/2236/  
 
 ## システム全体図
-![Care-support-system system-overview](https://user-images.githubusercontent.com/66234583/105314958-f7f9d480-5c01-11eb-85c2-d883a3017011.png)
+![Care-support-system 全体図](https://user-images.githubusercontent.com/66234583/106092996-ce492c00-6172-11eb-829f-86b1e01e5755.jpg)  
 
 ## 文責
 name: Takumi Yamanaka (山中拓己)  
