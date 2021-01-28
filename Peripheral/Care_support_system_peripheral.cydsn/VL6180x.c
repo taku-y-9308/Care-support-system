@@ -2,6 +2,7 @@
 #include "VL6180x.h"
 #include <math.h>
 
+
 //****************************************************************************//
 //WriteByteとReadByteに関しては、BME280は書き込みにより複雑なコードが必要かつ、
 //ライブラリが存在しているため別々の関数で動かしている
@@ -178,4 +179,15 @@ int VL6180_Read_Range() {
 int VL6180_Clear_Interrupts() {
     VL6180x_WriteByte(0x015,0x07);
     return 0; 
+}
+
+int VL6180_Current_Consumption(){
+    int result_range_return_conv_time;
+    float readout_averasing_sample_period;
+
+    result_range_return_conv_time=VL6180x_ReadByte(RESULT__RANGE_RETURN_CONV_TIME);
+    readout_averasing_sample_period=VL6180x_ReadByte(READOUT__AVERAGING_SAMPLE_PERIOD);
+
+    int Current_consumption= 10 * (Q1 + (Q2 * result_range_return_conv_time) + Q3 * (1.3 + (readout_averasing_sample_period * 0.0645 ms)));
+    return Current_consumption;
 }

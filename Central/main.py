@@ -17,9 +17,11 @@ def callback(bt_addr, rssi, packet, additional_info):
 	IR=(int(additional_info['minor'])>>8)&0xFF
 	Capsense=(additional_info['minor'])&0xFF
 	temp_humi=(int(additional_info['major'])>>8)&0xFF
+	press_cons=(int(additional_info['major'])&0xFF)
 	temp=((temp_humi>>3)&0xFF)+10
 	humi=(((temp_humi)&0x07)*2)+20
-	press=((additional_info['major'])&0xFF)+900
+	press=(press_cons>>4)&0xF+900
+	current_consumption=(press_cons)&0xF+1000
 	#POST data
 	data={}
 	#value from sensors
@@ -28,6 +30,7 @@ def callback(bt_addr, rssi, packet, additional_info):
 	data['temp']=temp
 	data['humi']=humi
 	data['pressure']=press
+	data['current_consumption']=current_consumption
 	data['RSSI']=rssi
 	data['weather_info']=weather_info
 	#Get weather information every 30 minutes
