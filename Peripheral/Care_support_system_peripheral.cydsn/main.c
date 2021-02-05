@@ -31,7 +31,7 @@ uint8   tick = 0;
 int range_value=0,TempC = 0,Humidity = 0,Current_Consumption=0;
 float Pressure=0;
 /*それぞれ”温度・湿度”、”気圧・消費電流”を合わせて8bitに変換したものが格納されている*/
-int temp_humi=0,press_cons=0;
+int temp_humi=0,consumption=0;
 //最終的なcapsenseの値が格納される
 uint16 capsense_value;
 
@@ -79,11 +79,10 @@ void Wdt_Callback(void) {
         
             /*２つの値を合わせて8bitにする------*/
             temp_humi=((TempC-10)<<3)|((Humidity-20)/2);
-            press_cons=(((Pressure_int-900)/2)<<4)|((Current_Consumption-1000)/2);
-            
-             /*Major フィールドに代入する-----------------*/
+            consumption=((Current_Consumption-1000)/12.5);//12.5ずつの256段階で表示
+                         /*Major フィールドに代入する-----------------*/
             cyBle_discoveryData.advData[MAJOR_OFFSET_Temp_Humi]=temp_humi;
-            cyBle_discoveryData.advData[MAJOR_OFFSET_Press] = press_cons;
+            cyBle_discoveryData.advData[MAJOR_OFFSET_Press] = consumption;
 
             
             /* Minor フィールドの設定--------------------------------------------*/
