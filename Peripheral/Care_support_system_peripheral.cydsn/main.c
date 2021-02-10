@@ -28,10 +28,10 @@ uint8   tick = 0;
 /*グローバル変数で宣言された値をcallback関数で使うことでInitializeの前にread_rangeされるのを防ぐ*/
 
 //最終的なrangeの値
-int range_value=0;
-int TempC = 0,Humidity = 0;
+int range_value=0,TempC = 0,Humidity = 0,Current_Consumption=0;
 float Pressure=0;
-int temp_humi=0;
+/*それぞれ”温度・湿度”、”気圧・消費電流”を合わせて8bitに変換したものが格納されている*/
+int temp_humi=0,press_cons=0;
 //最終的なcapsenseの値が格納される
 uint16 capsense_value;
 
@@ -47,8 +47,7 @@ void Wdt_Callback(void) {
             capsense_value = CapSense_1_ReadSensorRaw(0);//main関数内で実行するとうまく動かない
             
             /* Major フィールドの設定--------------------------------------------*/
-            Pressure_int=(Pressure/100)-900;
-            cyBle_discoveryData.advData[MAJOR_OFFSET_Press] = Pressure_int;
+            
             /*TempとHumiの値が範囲内に収まるように調整----*/
             //Tempの値を調整
             if(TempC<10){
@@ -62,13 +61,31 @@ void Wdt_Callback(void) {
             }else if(Humidity>84){
                 Humidity=84;  
             }
-            /*---------------------------------------*/
-            temp_humi=((TempC-10)<<3)|((Humidity-20)/2);//２つの値を合わせて8bitにする
-            cyBle_discoveryData.advData[MAJOR_OFFSET_Temp_Humi]=temp_humi;
 
-            /* ---------------------------------------------------------------*/
+            //Pressureの値を調整
+            Pressure_int=(Pressure/100);
+            if(Pressure_int<900){
+                Pressure_int=900;
+            }else if(Pressure_int>1156){
+                Pressure_int=1156;
+            }
+
+            //Current_Consumption（現在の消費電力）の値の調整
+            if(Current_Consumption<1000){
+                Current_Consumption=1000;
+            }else if(Current_Consumption>4200){
+                Current_Consumption=4200;
+            }
+        
+            /*２つの値を合わせて8bitにする------*/
+            temp_humi=((TempC-10)<<3)|((Humidity-20)/2);
+            press_cons=(((Pressure_int-900)/2)<<4)|((Current_Consumption-1000)/2);
             
+             /*Major フィールドに代入する-----------------*/
+            cyBle_discoveryData.advData[MAJOR_OFFSET_Temp_Humi]=temp_humi;
+            cyBle_discoveryData.advData[MAJOR_OFFSET_Press] = press_cons;
 
+            
             /* Minor フィールドの設定--------------------------------------------*/
             
             cyBle_discoveryData.advData[MINOR_OFFSET_Capsense] = capsense_value;
@@ -146,7 +163,7 @@ int main() {
 
         /*VL6180xからの値を読み込む----------------------------------------------*/
         range_value = VL6180_Read_Range();
-
+        Current_Consumption=VL6180_Current_Consumption();
         /*--------------------------------------------------------------------*/
         
         VL6180_Clear_Interrupts();
