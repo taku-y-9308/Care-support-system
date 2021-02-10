@@ -191,13 +191,6 @@
 <v>Care_support_system_peripheral\Care_support_system_peripheral\PSoC 4 Architecture TRM</v>
 <v>Care_support_system_peripheral\Care_support_system_peripheral\PRoC BLE Family Datasheet</v>
 <v>Care_support_system_peripheral\Care_support_system_peripheral\System Reference Guides</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\System Reference Guides\cy_boot_v5_81</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\System Reference Guides\cy_lfclk_v1_20</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\BLE_v3_50.pdf</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CapSense_CSD_P4_v2_60.pdf</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\cy_pins_v2_20</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\SCB_P4_v4_0.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>Care_support_system_peripheral</v>
@@ -205,13 +198,6 @@
 <v>Care_support_system_peripheral\Care_support_system_peripheral\PSoC 4 Architecture TRM</v>
 <v>Care_support_system_peripheral\Care_support_system_peripheral\PRoC BLE Family Datasheet</v>
 <v>Care_support_system_peripheral\Care_support_system_peripheral\System Reference Guides</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\System Reference Guides\cy_boot_v5_81</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\System Reference Guides\cy_lfclk_v1_20</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\BLE_v3_50.pdf</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\CapSense_CSD_P4_v2_60.pdf</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\cy_pins_v2_20</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>Care_support_system_peripheral\Care_support_system_peripheral\SCB_P4_v4_0.pdf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
@@ -227,6 +213,7 @@
 <Unloaded />
 <OpenDocs>
 <name v=".\Care_support_system_peripheral.cydsn\main.c" />
+<name v=".\Care_support_system_peripheral.cydsn\Care_support_system_peripheral.cydwr" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -234,7 +221,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1272, 388" SelectedTabbedMdiWindow="a36ffcbc-9af1-4f7a-888c-cac780e21f25"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="e40f7d82-85d3-42a4-a347-326b227ac534" /><DocumentWindow Key="C:\Users\d4hhm\Documents\Care-support-system\Peripheral\Care_support_system_peripheral.cydsn\main.c" Guid="a36ffcbc-9af1-4f7a-888c-cac780e21f25" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1295, 390" SelectedTabbedMdiWindow="43d68d70-24b7-4558-bf36-fecd330fded2"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="e40f7d82-85d3-42a4-a347-326b227ac534" /><DocumentWindow Key="C:\Users\d4hhm\Documents\Care-support-system\Peripheral\Care_support_system_peripheral.cydsn\main.c" Guid="a36ffcbc-9af1-4f7a-888c-cac780e21f25" /><DocumentWindow Key="C:\Users\d4hhm\Documents\Care-support-system\Peripheral\Care_support_system_peripheral.cydsn\Care_support_system_peripheral.cydwr" Guid="43d68d70-24b7-4558-bf36-fecd330fded2" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
