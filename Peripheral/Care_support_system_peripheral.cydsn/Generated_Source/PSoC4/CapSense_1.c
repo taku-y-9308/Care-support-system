@@ -85,7 +85,7 @@ const uint8 CapSense_1_modulationIDAC[CapSense_1_TOTAL_SENSOR_COUNT] = {
     10u, 
 };
 const uint8 CapSense_1_compensationIDAC[CapSense_1_TOTAL_SENSOR_COUNT] = {
-    80u, 
+    35u, 
 };
 
 const uint32 CapSense_1_widgetResolution[CapSense_1_RESOLUTIONS_TBL_SIZE] = {

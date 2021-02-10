@@ -1,5 +1,5 @@
--- Project:   C:\Users\d4hhm\Documents\Care-support-system\Slave\Care_support_system_peripheral.cydsn\Care_support_system_peripheral.cyprj
--- Generated: 01/22/2021 19:05:17
+-- Project:   C:\Users\d4hhm\Documents\Care-support-system\Peripheral\Care_support_system_peripheral.cydsn\Care_support_system_peripheral.cyprj
+-- Generated: 02/10/2021 18:50:15
 -- PSoC Creator  4.2
 
 ENTITY Care_support_system_peripheral IS
