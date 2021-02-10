@@ -10875,11 +10875,11 @@ i.CyBle_BleSSInterruptHandler
 
 .debug_str      0x00000000     0x80e5
  *(.debug_str)
- .debug_str     0x00000000      0xf41 .\CortexM0\ARM_GCC_541\Debug\main.o
-                                0xfad (size before relaxing)
- .debug_str     0x00000f41      0x2ef .\CortexM0\ARM_GCC_541\Debug\BME280.o
+ .debug_str     0x00000000      0xf46 .\CortexM0\ARM_GCC_541\Debug\main.o
+                                0xfb2 (size before relaxing)
+ .debug_str     0x00000f46      0x347 .\CortexM0\ARM_GCC_541\Debug\BME280.o
                                 0xd98 (size before relaxing)
- .debug_str     0x00001230      0x195 .\CortexM0\ARM_GCC_541\Debug\VL6180x.o
+ .debug_str     0x0000128d      0x138 .\CortexM0\ARM_GCC_541\Debug\VL6180x.o
                                 0x306 (size before relaxing)
  .debug_str     0x000013c5      0x150 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
                                 0x32a (size before relaxing)
@@ -11653,4 +11653,4 @@ i.CyBle_BleSSInterruptHandler
 
 /DISCARD/
  *(.note.GNU-stack)
-OUTPUT(C:\Users\d4hhm\Documents\Care-support-system\Slave\Care_support_system_peripheral.cydsn\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.elf elf32-littlearm)
+OUTPUT(C:\Users\d4hhm\Documents\Care-support-system\Peripheral\Care_support_system_peripheral.cydsn\CortexM0\ARM_GCC_541\Debug\Care_support_system_peripheral.elf elf32-littlearm)

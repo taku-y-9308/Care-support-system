@@ -1,6 +1,6 @@
-C:\Users\d4hhm\Documents\Care-support-system\Slave\Care_support_system_peripheral.cydsn\Care_support_system_peripheral.cyprj|43c5fba9-dfeb-4af1-a36e-2893075dbb33
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|53e9a227-4e0a-46b8-b7a3-e326046cf297
-C:\Users\d4hhm\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|408b7bc2-ff14-463c-895c-e14debe35681
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|85d2385c-a049-42e3-bda0-50e4910c5698
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|eb754424-7ce8-4f03-91e4-5aafc9fd6c74
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|85ad4846-e7c1-44c6-aa1e-826a4ab90ede
+C:\Users\d4hhm\Documents\Care-support-system\Peripheral\Care_support_system_peripheral.cydsn\Care_support_system_peripheral.cyprj|fd6303d9-bf8d-46b4-babf-65a7d73e2248
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|13eac5ac-234a-4717-a63a-d0362a2d83eb
+C:\Users\d4hhm\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|98aebc44-7f9f-4319-a7e4-991affad41ac
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|c5b12ffa-6f2c-48ce-abc1-d03050776e96
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|f8b87bbe-7bcb-45fc-9e00-f0cec9e91717
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|c6ab5653-4d01-4264-b8c8-53c55ff5c115
