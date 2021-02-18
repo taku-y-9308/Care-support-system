@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 1
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cc1iQbCe.s 			page 1
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
    1              		.syntax unified
@@ -58,7 +62,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 1
   27:Generated_Source\PSoC4/SCB_1_I2C.c **** volatile uint8 SCB_1_state;  /* Current state of I2C FSM */
   28:Generated_Source\PSoC4/SCB_1_I2C.c **** 
   29:Generated_Source\PSoC4/SCB_1_I2C.c **** #if(SCB_1_SCB_MODE_UNCONFIG_CONST_CFG)
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 2
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cc1iQbCe.s 			page 2
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
   30:Generated_Source\PSoC4/SCB_1_I2C.c **** 
@@ -118,7 +126,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 1
   84:Generated_Source\PSoC4/SCB_1_I2C.c ****             SCB_1_SetPins(SCB_1_SCB_MODE_I2C, SCB_1_DUMMY_PARAM,
   85:Generated_Source\PSoC4/SCB_1_I2C.c ****                                      SCB_1_DUMMY_PARAM);
   86:Generated_Source\PSoC4/SCB_1_I2C.c **** 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 3
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cc1iQbCe.s 			page 3
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
   87:Generated_Source\PSoC4/SCB_1_I2C.c ****             /* Store internal configuration */
@@ -178,7 +190,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 1
  141:Generated_Source\PSoC4/SCB_1_I2C.c ****                                                 (SCB_1_CLEAR_REG));
  142:Generated_Source\PSoC4/SCB_1_I2C.c **** 
  143:Generated_Source\PSoC4/SCB_1_I2C.c **** 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 4
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cc1iQbCe.s 			page 4
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  144:Generated_Source\PSoC4/SCB_1_I2C.c ****             /* Configure TX direction */
@@ -238,7 +254,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 1
   32              		@ frame_needed = 1, uses_anonymous_args = 0
   33 0000 80B5     		push	{r7, lr}
   34              		.cfi_def_cfa_offset 8
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 5
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cc1iQbCe.s 			page 5
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
   35              		.cfi_offset 7, -8
@@ -298,7 +318,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 1
  217:Generated_Source\PSoC4/SCB_1_I2C.c **** 
  218:Generated_Source\PSoC4/SCB_1_I2C.c ****         /* Configure interrupt with I2C handler but do not enable it */
  219:Generated_Source\PSoC4/SCB_1_I2C.c ****         CyIntDisable    (SCB_1_ISR_NUMBER);
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 6
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cc1iQbCe.s 			page 6
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
   67              		.loc 1 219 0
@@ -358,7 +382,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 1
  103              		.loc 1 237 0
  104 006a 174B     		ldr	r3, .L2+64
  105 006c 1022     		movs	r2, #16
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 7
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cc1iQbCe.s 			page 7
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  106 006e 1A70     		strb	r2, [r3]
@@ -418,7 +446,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 1
  144 00cc 00000000 		.word	SCB_1_mstrStatus
  145 00d0 00000000 		.word	SCB_1_mstrRdBufIndex
  146 00d4 00000000 		.word	SCB_1_mstrWrBufIndex
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 8
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cc1iQbCe.s 			page 8
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  147              		.cfi_endproc
@@ -478,7 +510,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 1
  183              		@ sp needed
  184 001a 80BD     		pop	{r7, pc}
  185              	.L6:
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 9
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cc1iQbCe.s 			page 9
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  186              		.align	2
@@ -538,7 +574,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 1
  223              		.loc 1 288 0
  224 0016 104B     		ldr	r3, .L8+8
  225 0018 0022     		movs	r2, #0
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 10
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cc1iQbCe.s 			page 10
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  226 001a 1A60     		str	r2, [r3]
@@ -598,7 +638,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 1
  261              	.L8:
  262 0050 00002440 		.word	1076101120
  263 0054 68002440 		.word	1076101224
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 11
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cc1iQbCe.s 			page 11
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  264 0058 6C002440 		.word	1076101228
@@ -658,7 +702,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 1
  318 0052 00000000 		.4byte	.LASF6
  319 0056 02       		.uleb128 0x2
  320 0057 08       		.byte	0x8
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 12
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cc1iQbCe.s 			page 12
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  321 0058 07       		.byte	0x7
@@ -718,7 +766,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 1
  375 00c8 07       		.byte	0x7
  376 00c9 5D010000 		.4byte	.LASF17
  377 00cd 06       		.uleb128 0x6
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 13
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cc1iQbCe.s 			page 13
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  378 00ce 1C010000 		.4byte	.LASF18
@@ -778,7 +830,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 1
  432 0005 13       		.uleb128 0x13
  433 0006 0B       		.uleb128 0xb
  434 0007 03       		.uleb128 0x3
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 14
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cc1iQbCe.s 			page 14
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  435 0008 0E       		.uleb128 0xe
@@ -838,7 +894,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 1
  489 003e 2E       		.uleb128 0x2e
  490 003f 00       		.byte	0
  491 0040 3F       		.uleb128 0x3f
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 15
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cc1iQbCe.s 			page 15
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  492 0041 19       		.uleb128 0x19
@@ -898,7 +958,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 1
  546 0079 19       		.uleb128 0x19
  547 007a 02       		.uleb128 0x2
  548 007b 18       		.uleb128 0x18
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 16
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cc1iQbCe.s 			page 16
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  549 007c 00       		.byte	0
@@ -958,7 +1022,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 1
  599 0000 6C6F6E67 		.ascii	"long long int\000"
  599      206C6F6E 
  599      6720696E 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 17
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cc1iQbCe.s 			page 17
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  599      7400
@@ -1018,7 +1086,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 1
  620              	.LASF14:
  621 0109 63686172 		.ascii	"char\000"
  621      00
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 18
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cc1iQbCe.s 			page 18
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  622              	.LASF1:
@@ -1078,7 +1150,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 1
  646              	.LASF27:
  647 01b4 433A5C55 		.ascii	"C:\\Users\\d4hhm\\Documents\\Care-support-system\\P"
  647      73657273 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cczm1eRg.s 			page 19
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\cc1iQbCe.s 			page 19
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  647      5C643468 

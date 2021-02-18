@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccck23xB.s 			page 1
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccKHdJxB.s 			page 1
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
    1              		.syntax unified
@@ -58,7 +62,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccck23xB.s 			page 1
   55 0043 1B000000 		.4byte	.LASF5
   56 0047 02       		.uleb128 0x2
   57 0048 08       		.byte	0x8
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccck23xB.s 			page 2
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccKHdJxB.s 			page 2
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
   58 0049 05       		.byte	0x5
@@ -118,7 +126,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccck23xB.s 			page 1
  112 0011 00       		.byte	0
  113 0012 0B       		.uleb128 0xb
  114 0013 0B       		.uleb128 0xb
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccck23xB.s 			page 3
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccKHdJxB.s 			page 3
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  115 0014 3E       		.uleb128 0x3e
@@ -178,7 +190,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccck23xB.s 			page 1
  153      6720756E 
  153      7369676E 
  153      65642069 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccck23xB.s 			page 4
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccKHdJxB.s 			page 4
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  154              	.LASF9:
@@ -238,7 +254,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccck23xB.s 			page 1
  177      20726576 
  177      6973696F 
  177      6E203233 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccck23xB.s 			page 5
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccKHdJxB.s 			page 5
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  177      37373135 

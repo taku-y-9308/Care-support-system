@@ -1,6 +1,10 @@
 (DELAYFILE
  (SDFVERSION "IEEE 1497 4.0")
+<<<<<<< HEAD
  (DATE "2021-02-14T06:45:14Z")
+=======
+ (DATE "2021-02-10T09:50:15Z")
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
  (DESIGN "Care_support_system_peripheral")
  (VENDOR "Cypress Semiconductor")
  (PROGRAM "PSoC Creator")

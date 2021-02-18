@@ -1,3 +1,7 @@
 I2659: No Constrained paths were found. The placer will run in non-timing driven mode.
+<<<<<<< HEAD
 I2076: Total run-time: 0.3 sec.
+=======
+I2076: Total run-time: 0.6 sec.
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 

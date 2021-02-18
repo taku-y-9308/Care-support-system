@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 C:\Users\d4hhm\Documents\Care-support-system\Peripheral\Care_support_system_peripheral.cydsn\Care_support_system_peripheral.cyprj|0dd80032-dfb9-44cb-b6ac-508e9dae33ed
 C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|3e3f1aa9-91ff-44eb-8ff4-280dabad8d2e
 C:\Users\d4hhm\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|08e0e38a-6256-4602-888d-a4678ad4475b
 C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|ded5599b-cd5f-49da-8b26-b7463a76d835
 C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|fda34549-6836-4063-b8aa-fd64afd9b751
 C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|41b9e04b-fae2-4b59-8e90-04f9661c6c63
+=======
+C:\Users\d4hhm\Documents\Care-support-system\Peripheral\Care_support_system_peripheral.cydsn\Care_support_system_peripheral.cyprj|fd6303d9-bf8d-46b4-babf-65a7d73e2248
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|13eac5ac-234a-4717-a63a-d0362a2d83eb
+C:\Users\d4hhm\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|98aebc44-7f9f-4319-a7e4-991affad41ac
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|c5b12ffa-6f2c-48ce-abc1-d03050776e96
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|f8b87bbe-7bcb-45fc-9e00-f0cec9e91717
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|c6ab5653-4d01-4264-b8c8-53c55ff5c115
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761

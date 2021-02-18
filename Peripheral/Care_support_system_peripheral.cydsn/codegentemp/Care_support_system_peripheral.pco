@@ -1,5 +1,9 @@
 # Care_support_system_peripheral
+<<<<<<< HEAD
 # 2021-02-14 06:45:13Z
+=======
+# 2021-02-10 09:50:14Z
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 # IO_6@[IOP=(0)][IoId=(6)] is reserved: SWDDebugEnabled
 dont_use_io iocell 0 6

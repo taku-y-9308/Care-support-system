@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccIC2t8w.s 			page 1
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccWtFmFt.s 			page 1
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
    1              		.syntax unified
@@ -58,7 +62,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccIC2t8w.s 			page 1
   21:Generated_Source\PSoC4/SCB_1_PM.c **** 
   22:Generated_Source\PSoC4/SCB_1_PM.c **** #if(SCB_1_SCB_MODE_I2C_INC)
   23:Generated_Source\PSoC4/SCB_1_PM.c ****     #include "SCB_1_I2C_PVT.h"
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccIC2t8w.s 			page 2
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccWtFmFt.s 			page 2
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
   24:Generated_Source\PSoC4/SCB_1_PM.c **** #endif /* (SCB_1_SCB_MODE_I2C_INC) */
@@ -118,7 +126,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccIC2t8w.s 			page 1
   38              		@ frame_needed = 1, uses_anonymous_args = 0
   39 0000 80B5     		push	{r7, lr}
   40              		.cfi_def_cfa_offset 8
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccIC2t8w.s 			page 3
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccWtFmFt.s 			page 3
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
   41              		.cfi_offset 7, -8
@@ -178,7 +190,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccIC2t8w.s 			page 1
  125:Generated_Source\PSoC4/SCB_1_PM.c **** 
  126:Generated_Source\PSoC4/SCB_1_PM.c ****     #else
  127:Generated_Source\PSoC4/SCB_1_PM.c **** 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccIC2t8w.s 			page 4
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccWtFmFt.s 			page 4
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  128:Generated_Source\PSoC4/SCB_1_PM.c ****         SCB_1_backup.enableState = (uint8) SCB_1_GET_CTRL_ENABLED;
@@ -238,7 +254,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccIC2t8w.s 			page 1
  145:Generated_Source\PSoC4/SCB_1_PM.c **** *  Prepares the SCB_1 component for Active mode operation after 
  146:Generated_Source\PSoC4/SCB_1_PM.c **** *  Deep Sleep.
  147:Generated_Source\PSoC4/SCB_1_PM.c **** *  The “Enable wakeup from Deep Sleep Mode” selection has influence on this 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccIC2t8w.s 			page 5
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccWtFmFt.s 			page 5
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  148:Generated_Source\PSoC4/SCB_1_PM.c **** *  function implementation:
@@ -298,7 +318,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccIC2t8w.s 			page 1
  192:Generated_Source\PSoC4/SCB_1_PM.c ****             SCB_1_Enable();
  193:Generated_Source\PSoC4/SCB_1_PM.c ****         }
  194:Generated_Source\PSoC4/SCB_1_PM.c ****     }
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccIC2t8w.s 			page 6
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccWtFmFt.s 			page 6
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  195:Generated_Source\PSoC4/SCB_1_PM.c **** 
@@ -358,7 +382,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccIC2t8w.s 			page 1
  120 0006 00000000 		.4byte	.Ldebug_abbrev0
  121 000a 04       		.byte	0x4
  122 000b 01       		.uleb128 0x1
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccIC2t8w.s 			page 7
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccWtFmFt.s 			page 7
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  123 000c 58010000 		.4byte	.LASF20
@@ -418,7 +446,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccIC2t8w.s 			page 1
  177 007c 02       		.byte	0x2
  178 007d E801     		.2byte	0x1e8
  179 007f 48000000 		.4byte	0x48
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccIC2t8w.s 			page 8
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccWtFmFt.s 			page 8
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  180 0083 02       		.uleb128 0x2
@@ -478,7 +510,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccIC2t8w.s 			page 1
  234 00ed 01       		.byte	0x1
  235 00ee 9F       		.byte	0x9f
  236 00ef 00000000 		.4byte	.LFB3
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccIC2t8w.s 			page 9
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccWtFmFt.s 			page 9
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  237 00f3 1C000000 		.4byte	.LFE3-.LFB3
@@ -538,7 +574,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccIC2t8w.s 			page 1
  291 0028 00       		.byte	0
  292 0029 04       		.uleb128 0x4
  293 002a 16       		.uleb128 0x16
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccIC2t8w.s 			page 10
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccWtFmFt.s 			page 10
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  294 002b 00       		.byte	0
@@ -598,7 +638,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccIC2t8w.s 			page 1
  348 0061 0B       		.uleb128 0xb
  349 0062 49       		.uleb128 0x49
  350 0063 13       		.uleb128 0x13
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccIC2t8w.s 			page 11
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccWtFmFt.s 			page 11
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  351 0064 00       		.byte	0
@@ -658,7 +702,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccIC2t8w.s 			page 1
  405 001c 1C000000 		.4byte	.LFE3-.LFB3
  406 0020 00000000 		.4byte	0
  407 0024 00000000 		.4byte	0
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccIC2t8w.s 			page 12
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccWtFmFt.s 			page 12
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  408              		.section	.debug_ranges,"",%progbits
@@ -718,7 +766,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccIC2t8w.s 			page 1
  436      315F4241 
  436      434B5550 
  436      5F535452 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccIC2t8w.s 			page 13
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccWtFmFt.s 			page 13
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  436      55435400 
@@ -778,7 +830,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccIC2t8w.s 			page 1
  461 0146 6C6F6E67 		.ascii	"long double\000"
  461      20646F75 
  461      626C6500 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccIC2t8w.s 			page 14
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccWtFmFt.s 			page 14
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  462              	.LASF11:

@@ -228,8 +228,11 @@
 <OpenDocs>
 <name v=".\Care_support_system_peripheral.cydsn\Care_support_system_peripheral.cydwr" />
 <name v=".\Care_support_system_peripheral.cydsn\TopDesign\TopDesign.cysch" />
+<<<<<<< HEAD
 <name v=".\Care_support_system_peripheral.cydsn\main.c" />
 <name v=".\Care_support_system_peripheral.cydsn\Generated_Source\PSoC4\CapSense_1.h" />
+=======
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -237,7 +240,11 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
+<<<<<<< HEAD
 --><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1231, 390" SelectedTabbedMdiWindow="0ccff07c-9838-416a-acee-91b40c67b32c"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="e40f7d82-85d3-42a4-a347-326b227ac534" /><DocumentWindow Key="C:\Users\d4hhm\Documents\Care-support-system\Peripheral\Care_support_system_peripheral.cydsn\Care_support_system_peripheral.cydwr" Guid="b568c2f5-c62b-402b-a81a-5825b5ba6887" /><DocumentWindow Key="C:\Users\d4hhm\Documents\Care-support-system\Peripheral\Care_support_system_peripheral.cydsn\TopDesign\TopDesign.cysch" Guid="0ccff07c-9838-416a-acee-91b40c67b32c" /><DocumentWindow Key="C:\Users\d4hhm\Documents\Care-support-system\Peripheral\Care_support_system_peripheral.cydsn\main.c" Guid="a2d4d140-e9d2-4361-b62e-140cdc5e3ef7" /><DocumentWindow Key="C:\Users\d4hhm\Documents\Care-support-system\Peripheral\Care_support_system_peripheral.cydsn\Generated_Source\PSoC4\CapSense_1.h" Guid="cb577f0f-b2bb-4dc0-af4b-17bd4e5617bc" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+=======
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1231, 390" SelectedTabbedMdiWindow="92787bfb-450c-444a-8b17-120a8a0e5c25"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="e40f7d82-85d3-42a4-a347-326b227ac534" /><DocumentWindow Key="C:\Users\d4hhm\Documents\Care-support-system\Peripheral\Care_support_system_peripheral.cydsn\Care_support_system_peripheral.cydwr" Guid="b568c2f5-c62b-402b-a81a-5825b5ba6887" /><DocumentWindow Key="C:\Users\d4hhm\Documents\Care-support-system\Peripheral\Care_support_system_peripheral.cydsn\TopDesign\TopDesign.cysch" Guid="92787bfb-450c-444a-8b17-120a8a0e5c25" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

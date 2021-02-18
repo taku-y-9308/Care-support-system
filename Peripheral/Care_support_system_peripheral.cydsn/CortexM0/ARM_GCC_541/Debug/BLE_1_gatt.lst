@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 1
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
    1              		.syntax unified
@@ -58,7 +62,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
   55 001d 00       		.byte	0
   56 001e 00       		.byte	0
   57 001f 00       		.byte	0
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 2
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 2
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
   58 0020 00       		.byte	0
@@ -118,7 +126,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  112 0056 00       		.byte	0
  113 0057 00       		.byte	0
  114 0058 00       		.byte	0
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 3
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 3
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  115 0059 00       		.byte	0
@@ -178,7 +190,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  169 008f 00       		.byte	0
  170 0090 00       		.byte	0
  171 0091 00       		.byte	0
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 4
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 4
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  172 0092 00       		.byte	0
@@ -238,7 +254,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  226 00c8 00       		.byte	0
  227 00c9 00       		.byte	0
  228 00ca 00       		.byte	0
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 5
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 5
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  229 00cb 00       		.byte	0
@@ -298,7 +318,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  283 0101 00       		.byte	0
  284 0102 00       		.byte	0
  285 0103 00       		.byte	0
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 6
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 6
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  286 0104 00       		.byte	0
@@ -358,7 +382,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  340 013a 00       		.byte	0
  341 013b 00       		.byte	0
  342 013c 00       		.byte	0
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 7
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 7
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  343 013d 00       		.byte	0
@@ -418,7 +446,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  397 0173 00       		.byte	0
  398 0174 00       		.byte	0
  399 0175 00       		.byte	0
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 8
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 8
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  400 0176 00       		.byte	0
@@ -478,7 +510,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  454 01ac 00       		.byte	0
  455 01ad 00       		.byte	0
  456 01ae 00       		.byte	0
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 9
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 9
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  457 01af 00       		.byte	0
@@ -538,7 +574,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  511 01e5 00       		.byte	0
  512 01e6 00       		.byte	0
  513 01e7 00       		.byte	0
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 10
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 10
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  514 01e8 00       		.byte	0
@@ -598,7 +638,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  568 021e 00       		.byte	0
  569 021f 00       		.byte	0
  570 0220 00       		.byte	0
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 11
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 11
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  571 0221 00       		.byte	0
@@ -658,7 +702,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  625 0257 00       		.byte	0
  626 0258 00       		.byte	0
  627 0259 00       		.byte	0
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 12
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 12
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  628 025a 00       		.byte	0
@@ -718,7 +766,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  682 0290 00       		.byte	0
  683 0291 00       		.byte	0
  684 0292 00       		.byte	0
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 13
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 13
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  685 0293 00       		.byte	0
@@ -778,7 +830,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  739              	cyBle_attValuesLen:
  740 0020 0B00     		.short	11
  741 0022 0000     		.space	2
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 14
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 14
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  742 0024 00000000 		.word	cyBle_attValues
@@ -838,7 +894,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  796 0024 0300     		.short	3
  797 0026 0000     		.space	2
  798 0028 002A     		.short	10752
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 15
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 15
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  799 002a 0000     		.space	2
@@ -898,7 +958,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  853 00b2 0000     		.space	2
  854 00b4 0100     		.short	1
  855 00b6 0000     		.space	2
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 16
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 16
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  856 00b8 18000000 		.word	cyBle_attValuesLen+24
@@ -958,7 +1022,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  910 0140 0200     		.short	2
  911 0142 0000     		.space	2
  912 0144 30000000 		.word	cyBle_attValuesLen+48
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 17
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 17
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  913 0148 1100     		.short	17
@@ -1018,7 +1086,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  967 01ce 0000     		.space	2
  968 01d0 50000000 		.word	cyBle_attValuesLen+80
  969 01d4 1800     		.short	24
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 18
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 18
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  970 01d6 0229     		.short	10498
@@ -1078,7 +1150,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
   23:Generated_Source\PSoC4/BLE_1_gatt.c **** 
   24:Generated_Source\PSoC4/BLE_1_gatt.c **** CYBLE_STATE_T cyBle_state;
   25:Generated_Source\PSoC4/BLE_1_gatt.c **** 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 19
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 19
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
   26:Generated_Source\PSoC4/BLE_1_gatt.c **** #if ((CYBLE_MODE_PROFILE) && (CYBLE_BONDING_REQUIREMENT == CYBLE_BONDING_YES))
@@ -1138,7 +1214,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
   80:Generated_Source\PSoC4/BLE_1_gatt.c ****         {{
   81:Generated_Source\PSoC4/BLE_1_gatt.c ****             0x00u, 0x00u,
   82:Generated_Source\PSoC4/BLE_1_gatt.c ****             0x00u, 0x00u,
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 20
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 20
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
   83:Generated_Source\PSoC4/BLE_1_gatt.c ****             0x00u, 0x00u,
@@ -1198,7 +1278,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  137:Generated_Source\PSoC4/BLE_1_gatt.c **** 
  138:Generated_Source\PSoC4/BLE_1_gatt.c ****     /* Supported New Alert Category */
  139:Generated_Source\PSoC4/BLE_1_gatt.c ****     0x00u, 0x00u,
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 21
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 21
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  140:Generated_Source\PSoC4/BLE_1_gatt.c **** 
@@ -1258,7 +1342,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  194:Generated_Source\PSoC4/BLE_1_gatt.c ****     { 0x0014u, 0x2803u /* Characteristic                      */, 0x00020001u /* rd    */, 0x0015u,
  195:Generated_Source\PSoC4/BLE_1_gatt.c ****     { 0x0015u, 0x2A48u /* Supported Unread Alert Category     */, 0x01020001u /* rd    */, 0x0015u,
  196:Generated_Source\PSoC4/BLE_1_gatt.c ****     { 0x0016u, 0x2803u /* Characteristic                      */, 0x00100001u /* ntf   */, 0x0018u,
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 22
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 22
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  197:Generated_Source\PSoC4/BLE_1_gatt.c ****     { 0x0017u, 0x2A45u /* Unread Alert Status                 */, 0x01100000u /* ntf   */, 0x0018u,
@@ -1318,7 +1406,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  238:Generated_Source\PSoC4/BLE_1_gatt.c ****     if(CyBle_GetState() == CYBLE_STATE_DISCONNECTED)
  1015              		.loc 1 238 0
  1016 0006 0C4B     		ldr	r3, .L5
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 23
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 23
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  1017 0008 1B78     		ldrb	r3, [r3]
@@ -1378,7 +1470,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  1061              	.LFB3:
  249:Generated_Source\PSoC4/BLE_1_gatt.c **** 
  250:Generated_Source\PSoC4/BLE_1_gatt.c **** 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 24
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 24
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  251:Generated_Source\PSoC4/BLE_1_gatt.c **** /****************************************************************************** 
@@ -1438,7 +1534,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  1090 001e 7A68     		ldr	r2, [r7, #4]
  1091 0020 0F23     		movs	r3, #15
  1092 0022 FC18     		adds	r4, r7, r3
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 25
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 25
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  1093 0024 4023     		movs	r3, #64
@@ -1498,7 +1598,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  289:Generated_Source\PSoC4/BLE_1_gatt.c ****         }
  290:Generated_Source\PSoC4/BLE_1_gatt.c ****         cyBle_eventHandlerFlag &= (uint8)~CYBLE_CALLBACK;
  1135              		.loc 1 290 0
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 26
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 26
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  1136 0070 084B     		ldr	r3, .L12+4
@@ -1558,7 +1662,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  1187 0025 02       		.uleb128 0x2
  1188 0026 01       		.byte	0x1
  1189 0027 06       		.byte	0x6
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 27
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 27
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  1190 0028 A00D0000 		.4byte	.LASF0
@@ -1618,7 +1726,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  1244 0091 04       		.byte	0x4
  1245 0092 01230000 		.4byte	.LASF12
  1246 0096 02       		.uleb128 0x2
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 28
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 28
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  1247 0097 08       		.byte	0x8
@@ -1678,7 +1790,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  1301 0101 AE290000 		.4byte	.LASF23
  1302 0105 06       		.byte	0x6
  1303 0106 0B       		.uleb128 0xb
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 29
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 29
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  1304 0107 92350000 		.4byte	.LASF24
@@ -1738,7 +1854,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  1358 0173 05120000 		.4byte	.LASF42
  1359 0177 32       		.byte	0x32
  1360 0178 0B       		.uleb128 0xb
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 30
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 30
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  1361 0179 730F0000 		.4byte	.LASF43
@@ -1798,7 +1918,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  1415 01e5 9A310000 		.4byte	.LASF61
  1416 01e9 4D       		.byte	0x4d
  1417 01ea 0B       		.uleb128 0xb
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 31
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 31
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  1418 01eb 260A0000 		.4byte	.LASF62
@@ -1858,7 +1982,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  1472 0257 8F2D0000 		.4byte	.LASF80
  1473 025b 77       		.byte	0x77
  1474 025c 0B       		.uleb128 0xb
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 32
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 32
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  1475 025d FA050000 		.4byte	.LASF81
@@ -1918,7 +2046,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  1529 02ca 0B       		.uleb128 0xb
  1530 02cb A6220000 		.4byte	.LASF97
  1531 02cf 08       		.byte	0x8
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 33
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 33
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  1532 02d0 0B       		.uleb128 0xb
@@ -1978,7 +2110,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  1586 033c 0B       		.uleb128 0xb
  1587 033d ED140000 		.4byte	.LASF116
  1588 0341 FE       		.byte	0xfe
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 34
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 34
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  1589 0342 0B       		.uleb128 0xb
@@ -2038,7 +2174,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  1643 03b7 04       		.byte	0x4
  1644 03b8 0B       		.uleb128 0xb
  1645 03b9 D2240000 		.4byte	.LASF129
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 35
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 35
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  1646 03bd 05       		.byte	0x5
@@ -2098,7 +2238,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  1700 0429 80       		.byte	0x80
  1701 042a 0B       		.uleb128 0xb
  1702 042b 0F1B0000 		.4byte	.LASF148
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 36
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 36
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  1703 042f 80       		.byte	0x80
@@ -2158,7 +2302,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  1757 049d 10       		.uleb128 0x10
  1758 049e 02       		.byte	0x2
  1759 049f 04       		.byte	0x4
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 37
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 37
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  1760 04a0 9301     		.2byte	0x193
@@ -2218,7 +2366,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  1814 0513 11       		.uleb128 0x11
  1815 0514 C22D0000 		.4byte	.LASF170
  1816 0518 04       		.byte	0x4
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 38
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 38
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  1817 0519 D301     		.2byte	0x1d3
@@ -2278,7 +2430,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  1871 0585 04       		.byte	0x4
  1872 0586 00       		.byte	0
  1873 0587 15       		.uleb128 0x15
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 39
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 39
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  1874 0588 B8280000 		.4byte	.LASF178
@@ -2338,7 +2494,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  1928 05f1 F7       		.byte	0xf7
  1929 05f2 37060000 		.4byte	0x637
  1930 05f6 14       		.uleb128 0x14
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 40
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 40
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  1931 05f7 B20F0000 		.4byte	.LASF185
@@ -2398,7 +2558,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  1985 0669 88       		.byte	0x88
  1986 066a 91040000 		.4byte	0x491
  1987 066e 02       		.byte	0x2
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 41
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 41
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  1988 066f 14       		.uleb128 0x14
@@ -2458,7 +2622,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  2042 06e3 04       		.byte	0x4
  2043 06e4 0E       		.uleb128 0xe
  2044 06e5 B0000000 		.4byte	0xb0
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 42
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 42
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  2045 06e9 05       		.byte	0x5
@@ -2518,7 +2686,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  2099 0762 0D01     		.2byte	0x10d
  2100 0764 0C       		.uleb128 0xc
  2101 0765 0B040000 		.4byte	.LASF215
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 43
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 43
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  2102 0769 0E01     		.2byte	0x10e
@@ -2578,7 +2750,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  2156 07e7 2001     		.2byte	0x120
  2157 07e9 0C       		.uleb128 0xc
  2158 07ea 8A100000 		.4byte	.LASF234
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 44
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 44
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  2159 07ee 2101     		.2byte	0x121
@@ -2638,7 +2814,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  2213 086c 3301     		.2byte	0x133
  2214 086e 0C       		.uleb128 0xc
  2215 086f 0A370000 		.4byte	.LASF253
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 45
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 45
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  2216 0873 3401     		.2byte	0x134
@@ -2698,7 +2878,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  2270 08f1 4601     		.2byte	0x146
  2271 08f3 0C       		.uleb128 0xc
  2272 08f4 E42D0000 		.4byte	.LASF272
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 46
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 46
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  2273 08f8 4701     		.2byte	0x147
@@ -2758,7 +2942,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  2327 0976 5901     		.2byte	0x159
  2328 0978 0C       		.uleb128 0xc
  2329 0979 E0090000 		.4byte	.LASF291
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 47
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 47
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  2330 097d 5A01     		.2byte	0x15a
@@ -2818,7 +3006,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  2384 09fb 6C01     		.2byte	0x16c
  2385 09fd 0C       		.uleb128 0xc
  2386 09fe F0070000 		.4byte	.LASF310
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 48
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 48
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  2387 0a02 6D01     		.2byte	0x16d
@@ -2878,7 +3070,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  2441 0a80 7F01     		.2byte	0x17f
  2442 0a82 0C       		.uleb128 0xc
  2443 0a83 B3250000 		.4byte	.LASF329
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 49
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 49
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  2444 0a87 8001     		.2byte	0x180
@@ -2938,7 +3134,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  2498 0b05 9201     		.2byte	0x192
  2499 0b07 0C       		.uleb128 0xc
  2500 0b08 26120000 		.4byte	.LASF348
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 50
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 50
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  2501 0b0c 9301     		.2byte	0x193
@@ -2998,7 +3198,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  2555 0b8a A501     		.2byte	0x1a5
  2556 0b8c 0C       		.uleb128 0xc
  2557 0b8d B6350000 		.4byte	.LASF367
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 51
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 51
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  2558 0b91 A601     		.2byte	0x1a6
@@ -3058,7 +3262,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  2612 0c0f B801     		.2byte	0x1b8
  2613 0c11 0C       		.uleb128 0xc
  2614 0c12 22330000 		.4byte	.LASF386
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 52
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 52
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  2615 0c16 B901     		.2byte	0x1b9
@@ -3118,7 +3326,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  2669 0c94 CB01     		.2byte	0x1cb
  2670 0c96 0C       		.uleb128 0xc
  2671 0c97 020A0000 		.4byte	.LASF405
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 53
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 53
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  2672 0c9b CC01     		.2byte	0x1cc
@@ -3178,7 +3390,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  2726 0d19 DE01     		.2byte	0x1de
  2727 0d1b 0C       		.uleb128 0xc
  2728 0d1c 431C0000 		.4byte	.LASF424
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 54
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 54
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  2729 0d20 DF01     		.2byte	0x1df
@@ -3238,7 +3454,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  2783 0d9e F101     		.2byte	0x1f1
  2784 0da0 0C       		.uleb128 0xc
  2785 0da1 C21E0000 		.4byte	.LASF443
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 55
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 55
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  2786 0da5 F201     		.2byte	0x1f2
@@ -3298,7 +3518,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  2840 0e23 0402     		.2byte	0x204
  2841 0e25 0C       		.uleb128 0xc
  2842 0e26 89130000 		.4byte	.LASF462
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 56
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 56
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  2843 0e2a 0502     		.2byte	0x205
@@ -3358,7 +3582,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  2897 0ea8 1702     		.2byte	0x217
  2898 0eaa 0C       		.uleb128 0xc
  2899 0eab 74010000 		.4byte	.LASF481
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 57
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 57
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  2900 0eaf 1802     		.2byte	0x218
@@ -3418,7 +3646,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  2954 0f27 213B0000 		.4byte	.LASF497
  2955 0f2b 02       		.byte	0x2
  2956 0f2c 0B       		.uleb128 0xb
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 58
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 58
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  2957 0f2d 84080000 		.4byte	.LASF498
@@ -3478,7 +3710,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  3011 0fa3 91       		.byte	0x91
  3012 0fa4 6F       		.sleb128 -17
  3013 0fa5 00       		.byte	0
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 59
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 59
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  3014 0fa6 07       		.uleb128 0x7
@@ -3538,7 +3774,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  3068 101d 00000000 		.4byte	cyBle_gattDB
  3069 1021 22       		.uleb128 0x22
  3070 1022 FB0F0000 		.4byte	0xffb
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 60
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 60
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  3071 1026 21       		.uleb128 0x21
@@ -3598,7 +3838,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  3125 000a 0E       		.uleb128 0xe
  3126 000b 55       		.uleb128 0x55
  3127 000c 17       		.uleb128 0x17
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 61
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 61
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  3128 000d 11       		.uleb128 0x11
@@ -3658,7 +3902,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  3182 0043 00       		.byte	0
  3183 0044 07       		.uleb128 0x7
  3184 0045 0F       		.uleb128 0xf
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 62
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 62
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  3185 0046 00       		.byte	0
@@ -3718,7 +3966,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  3239 007c 00       		.byte	0
  3240 007d 00       		.byte	0
  3241 007e 0D       		.uleb128 0xd
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 63
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 63
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  3242 007f 01       		.uleb128 0x1
@@ -3778,7 +4030,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  3296 00b5 49       		.uleb128 0x49
  3297 00b6 13       		.uleb128 0x13
  3298 00b7 38       		.uleb128 0x38
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 64
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 64
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  3299 00b8 0B       		.uleb128 0xb
@@ -3838,7 +4094,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  3353 00ee 0B       		.uleb128 0xb
  3354 00ef 49       		.uleb128 0x49
  3355 00f0 13       		.uleb128 0x13
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 65
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 65
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  3356 00f1 00       		.byte	0
@@ -3898,7 +4158,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  3410 0127 00       		.byte	0
  3411 0128 00       		.byte	0
  3412 0129 1A       		.uleb128 0x1a
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 66
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 66
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  3413 012a 21       		.uleb128 0x21
@@ -3958,7 +4222,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  3467 0161 19       		.uleb128 0x19
  3468 0162 03       		.uleb128 0x3
  3469 0163 0E       		.uleb128 0xe
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 67
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 67
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  3470 0164 3A       		.uleb128 0x3a
@@ -4018,7 +4286,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  3524 019b 0E       		.uleb128 0xe
  3525 019c 3A       		.uleb128 0x3a
  3526 019d 0B       		.uleb128 0xb
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 68
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 68
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  3527 019e 3B       		.uleb128 0x3b
@@ -4078,7 +4350,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  3581 000c 98000000 		.4byte	.LFE3
  3582 0010 00000000 		.4byte	0
  3583 0014 00000000 		.4byte	0
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 69
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 69
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  3584              		.section	.debug_line,"",%progbits
@@ -4138,7 +4414,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  3604 00e8 4359424C 		.ascii	"CYBLE_EVT_CPSC_READ_DESCR_RESPONSE\000"
  3604      455F4556 
  3604      545F4350 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 70
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 70
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  3604      53435F52 
@@ -4198,7 +4478,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  3622      4353435F 
  3622      52454144 
  3623              	.LASF288:
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 71
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 71
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  3624 023e 4359424C 		.ascii	"CYBLE_EVT_CGMSC_WRITE_DESCR_RESPONSE\000"
@@ -4258,7 +4542,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  3643              	.LASF446:
  3644 0363 4359424C 		.ascii	"CYBLE_EVT_RSCSC_WRITE_DESCR_RESPONSE\000"
  3644      455F4556 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 72
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 72
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  3644      545F5253 
@@ -4318,7 +4606,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  3662      545F4849 
  3662      4453435F 
  3662      57524954 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 73
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 73
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  3663              	.LASF455:
@@ -4378,7 +4670,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  3681              	.LASF81:
  3682 05fa 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_RX_CREDIT_IND\000"
  3682      455F4556 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 74
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 74
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  3682      545F4C32 
@@ -4438,7 +4734,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  3701      434B5F54 
  3701      00
  3702              	.LASF311:
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 75
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 75
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  3703 071e 4359424C 		.ascii	"CYBLE_EVT_CSCSC_INDICATION\000"
@@ -4498,7 +4798,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  3721 0827 4359424C 		.ascii	"CYBLE_EVT_IPSS_WRITE_CHAR\000"
  3721      455F4556 
  3721      545F4950 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 76
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 76
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  3721      53535F57 
@@ -4558,7 +4862,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  3740 0976 4359424C 		.ascii	"CYBLE_GATT_ERR_ANCS_INVALID_COMMAND\000"
  3740      455F4741 
  3740      54545F45 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 77
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 77
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  3740      52525F41 
@@ -4618,7 +4926,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  3759              	.LASF307:
  3760 0ab9 4359424C 		.ascii	"CYBLE_EVT_CSCSS_INDICATION_DISABLED\000"
  3760      455F4556 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 78
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 78
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  3760      545F4353 
@@ -4678,7 +4990,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  3778      616E646C 
  3778      6500
  3779              	.LASF378:
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 79
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 79
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  3780 0bf5 4359424C 		.ascii	"CYBLE_EVT_HTSS_NOTIFICATION_ENABLED\000"
@@ -4738,7 +5054,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  3798      4341505F 
  3798      434F4D4D 
  3799              	.LASF220:
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 80
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 80
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  3800 0d16 4359424C 		.ascii	"CYBLE_EVT_AIOSS_NOTIFICATION_ENABLED\000"
@@ -4798,7 +5118,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  3818      524F525F 
  3818      4F4B00
  3819              	.LASF53:
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 81
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 81
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  3820 0e3e 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BY_GROUP_TYPE_RSP\000"
@@ -4858,7 +5182,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  3838      455F4556 
  3838      545F5750 
  3838      5453535F 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 82
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 82
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  3838      494E4449 
@@ -4918,7 +5246,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  3858 108a 4359424C 		.ascii	"CYBLE_EVT_ANCSS_NOTIFICATION_ENABLED\000"
  3858      455F4556 
  3858      545F414E 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 83
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 83
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  3858      4353535F 
@@ -4978,7 +5310,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  3878      455F4556 
  3878      545F4149 
  3878      4F53435F 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 84
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 84
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  3878      494E4449 
@@ -5038,7 +5374,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  3896      45584543 
  3897              	.LASF143:
  3898 12e9 4359424C 		.ascii	"CYBLE_GATT_ERR_HEART_RATE_CONTROL_POINT_NOT_SUPPORT"
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 85
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 85
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  3898      455F4741 
@@ -5098,7 +5438,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  3917 142f 4359424C 		.ascii	"CYBLE_EVT_ESSS_NOTIFICATION_DISABLED\000"
  3917      455F4556 
  3917      545F4553 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 86
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 86
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  3917      53535F4E 
@@ -5158,7 +5502,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  3935      53435F49 
  3935      4E444943 
  3936              	.LASF240:
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 87
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 87
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  3937 1562 4359424C 		.ascii	"CYBLE_EVT_ANCSC_WRITE_DESCR_RESPONSE\000"
@@ -5218,7 +5566,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  3955      455F4556 
  3955      545F4C4C 
  3955      53535F57 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 88
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 88
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  3955      52495445 
@@ -5278,7 +5630,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  3973      43434344 
  3974              	.LASF484:
  3975 17cc 4359424C 		.ascii	"CYBLE_EVT_WPTSC_READ_CHAR_RESPONSE\000"
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 89
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 89
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  3975      455F4556 
@@ -5338,7 +5694,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  3992              	.LASF467:
  3993 191b 4359424C 		.ascii	"CYBLE_EVT_UDSS_WRITE_CHAR\000"
  3993      455F4556 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 90
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 90
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  3993      545F5544 
@@ -5398,7 +5758,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  4011      545F4741 
  4011      505F4155 
  4011      54485F46 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 91
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 91
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  4012              	.LASF355:
@@ -5458,7 +5822,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  4030              	.LASF390:
  4031 1b8d 4359424C 		.ascii	"CYBLE_EVT_IASS_WRITE_CHAR_CMD\000"
  4031      455F4556 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 92
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 92
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  4031      545F4941 
@@ -5518,7 +5886,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  4049      55756964 
  4049      00
  4050              	.LASF156:
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 93
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 93
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  4051 1cdb 4359424C 		.ascii	"CYBLE_GATT_ERR_ANCS_UNKNOWN_COMMAND\000"
@@ -5578,7 +5950,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  4069 1e0d 6379426C 		.ascii	"cyBle_attValuesLen\000"
  4069      655F6174 
  4069      7456616C 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 94
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 94
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  4069      7565734C 
@@ -5638,7 +6014,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  4088              	.LASF294:
  4089 1f1e 4359424C 		.ascii	"CYBLE_EVT_CPSS_BROADCAST_ENABLED\000"
  4089      455F4556 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 95
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 95
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  4089      545F4350 
@@ -5698,7 +6078,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  4107      53535F4E 
  4107      4F544946 
  4108              	.LASF133:
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 96
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 96
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  4109 204e 4359424C 		.ascii	"CYBLE_GATT_ERR_PREPARE_WRITE_QUEUE_FULL\000"
@@ -5758,7 +6142,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  4127      52525F49 
  4127      4E535546 
  4128              	.LASF475:
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 97
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 97
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  4129 2191 4359424C 		.ascii	"CYBLE_EVT_WPTSS_NOTIFICATION_ENABLED\000"
@@ -5818,7 +6206,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  4147      455F4556 
  4147      545F4553 
  4147      53535F44 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 98
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 98
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  4147      45534352 
@@ -5878,7 +6270,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  4167      655F6761 
  4167      74747300 
  4168              	.LASF132:
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 99
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 99
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  4169 2406 4359424C 		.ascii	"CYBLE_GATT_ERR_INSUFFICIENT_AUTHORIZATION\000"
@@ -5938,7 +6334,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  4187      52495445 
  4188              	.LASF317:
  4189 2520 4359424C 		.ascii	"CYBLE_EVT_CTSS_NOTIFICATION_DISABLED\000"
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 100
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 100
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  4189      455F4556 
@@ -5998,7 +6398,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  4207      455F4556 
  4207      545F424C 
  4207      53535F4E 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 101
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 101
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  4207      4F544946 
@@ -6058,7 +6462,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  4226              	.LASF482:
  4227 27b4 4359424C 		.ascii	"CYBLE_EVT_WPTSC_INDICATION\000"
  4227      455F4556 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 102
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 102
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  4227      545F5750 
@@ -6118,7 +6526,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  4245      5454535F 
  4245      4154545F 
  4245      47454E5F 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 103
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 103
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  4246              	.LASF388:
@@ -6178,7 +6590,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  4265      455F4556 
  4265      545F4149 
  4265      4F53435F 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 104
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 104
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  4265      52454144 
@@ -6238,7 +6654,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  4283      74476174 
  4284              	.LASF51:
  4285 2b13 4359424C 		.ascii	"CYBLE_EVT_GATTS_XCNHG_MTU_REQ\000"
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 105
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 105
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  4285      455F4556 
@@ -6298,7 +6718,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  4304 2c62 4359424C 		.ascii	"CYBLE_STATE_T\000"
  4304      455F5354 
  4304      4154455F 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 106
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 106
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  4304      5400
@@ -6358,7 +6782,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  4322      4E4C494B 
  4323              	.LASF222:
  4324 2d6c 4359424C 		.ascii	"CYBLE_EVT_AIOSS_INDICATION_ENABLED\000"
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 107
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 107
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  4324      455F4556 
@@ -6418,7 +6846,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  4344 2e5c 4359424C 		.ascii	"CYBLE_ERROR_FLASH_WRITE\000"
  4344      455F4552 
  4344      524F525F 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 108
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 108
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  4344      464C4153 
@@ -6478,7 +6910,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  4364 2f6c 4359424C 		.ascii	"CYBLE_EVT_PLXSS_WRITE_CHAR\000"
  4364      455F4556 
  4364      545F504C 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 109
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 109
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  4364      5853535F 
@@ -6538,7 +6974,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  4382      4552525F 
  4382      4F504552 
  4383              	.LASF503:
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 110
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 110
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  4384 30b9 61706952 		.ascii	"apiResult\000"
@@ -6598,7 +7038,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  4402      4F544946 
  4403              	.LASF499:
  4404 31d8 4359424C 		.ascii	"CYBLE_STATE_DISCONNECTED\000"
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 111
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 111
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  4404      455F5354 
@@ -6658,7 +7102,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  4422      545F504C 
  4422      5853435F 
  4422      54494D45 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 112
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 112
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  4423              	.LASF286:
@@ -6718,7 +7166,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  4444 33df 4359424C 		.ascii	"CYBLE_EVT_AIOSC_WRITE_CHAR_RESPONSE\000"
  4444      455F4556 
  4444      545F4149 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 113
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 113
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  4444      4F53435F 
@@ -6778,7 +7230,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  4463      545F474C 
  4463      53535F49 
  4463      4E444943 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 114
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 114
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  4464              	.LASF244:
@@ -6838,7 +7294,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  4482              	.LASF198:
  4483 3647 63636364 		.ascii	"cccdCount\000"
  4483      436F756E 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 115
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 115
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  4483      7400
@@ -6898,7 +7358,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  4501      4E535F43 
  4502              	.LASF451:
  4503 3771 4359424C 		.ascii	"CYBLE_EVT_SCPSS_SCAN_INT_WIN_CHAR_WRITE\000"
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 116
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 116
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  4503      455F4556 
@@ -6958,7 +7422,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  4521      455F4556 
  4521      545F4741 
  4521      5454435F 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 117
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 117
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  4521      44495343 
@@ -7018,7 +7486,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  4539      52495445 
  4540              	.LASF36:
  4541 39bb 4359424C 		.ascii	"CYBLE_EVT_GAP_KEYINFO_EXCHNGE_CMPLT\000"
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 118
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 118
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  4541      455F4556 
@@ -7078,7 +7550,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  4559      52495445 
  4560              	.LASF412:
  4561 3afe 4359424C 		.ascii	"CYBLE_EVT_LNSC_READ_DESCR_RESPONSE\000"
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 119
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 119
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  4561      455F4556 
@@ -7138,7 +7614,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  4581      545F4843 
  4581      495F5354 
  4581      41545553 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 120
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 120
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  4582              	.LASF50:
@@ -7198,7 +7678,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  4600              	.LASF352:
  4601 3d32 4359424C 		.ascii	"CYBLE_EVT_HIDSS_BOOT_MODE_ENTER\000"
  4601      455F4556 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 121
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 121
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  4601      545F4849 
@@ -7258,7 +7742,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 1
  4620              	.LASF350:
  4621 3e6b 4359424C 		.ascii	"CYBLE_EVT_HIDSS_NOTIFICATION_ENABLED\000"
  4621      455F4556 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccXfbDjE.s 			page 122
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccxGhP1y.s 			page 122
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  4621      545F4849 

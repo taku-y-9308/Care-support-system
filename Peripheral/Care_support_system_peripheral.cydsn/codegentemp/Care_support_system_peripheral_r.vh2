@@ -1,5 +1,9 @@
 -- Project:   Care_support_system_peripheral
+<<<<<<< HEAD
 -- Generated: 02/14/2021 15:45:13
+=======
+-- Generated: 02/10/2021 18:50:14
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 -- PSoC Creator  4.2
 
 ENTITY Care_support_system_peripheral IS

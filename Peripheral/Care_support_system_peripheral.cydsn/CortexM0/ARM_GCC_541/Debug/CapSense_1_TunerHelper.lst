@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccYif5nY.s 			page 1
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccl9fhGt.s 			page 1
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
    1              		.syntax unified
@@ -58,7 +62,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccYif5nY.s 			page 1
   28:Generated_Source\PSoC4/CapSense_1_TunerHelper.c **** 
   29:Generated_Source\PSoC4/CapSense_1_TunerHelper.c **** /* `#END` */
   30:Generated_Source\PSoC4/CapSense_1_TunerHelper.c **** 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccYif5nY.s 			page 2
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccl9fhGt.s 			page 2
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
   31:Generated_Source\PSoC4/CapSense_1_TunerHelper.c **** /*******************************************************************************
@@ -118,7 +126,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccYif5nY.s 			page 1
   75:Generated_Source\PSoC4/CapSense_1_TunerHelper.c **** 
   76:Generated_Source\PSoC4/CapSense_1_TunerHelper.c ****     #endif  /* (0u != CapSense_1_TUNER_API_GENERATE) */
   77:Generated_Source\PSoC4/CapSense_1_TunerHelper.c **** }
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccYif5nY.s 			page 3
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccl9fhGt.s 			page 3
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
   38              		.loc 1 77 0
@@ -178,7 +190,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccYif5nY.s 			page 1
  106:Generated_Source\PSoC4/CapSense_1_TunerHelper.c ****             /* Apply new settings */
  107:Generated_Source\PSoC4/CapSense_1_TunerHelper.c ****             #if((CapSense_1_TUNING_METHOD != CapSense_1__TUNING_NONE) &&\
  108:Generated_Source\PSoC4/CapSense_1_TunerHelper.c ****                 (0u != CapSense_1_TOTAL_TRACKPAD_GESTURES_COUNT) ||\
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccYif5nY.s 			page 4
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccl9fhGt.s 			page 4
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  109:Generated_Source\PSoC4/CapSense_1_TunerHelper.c ****                 (CapSense_1_TUNING_METHOD == CapSense_1__TUNING_MANUAL))
@@ -238,7 +254,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccYif5nY.s 			page 1
   88 0025 02       		.uleb128 0x2
   89 0026 01       		.byte	0x1
   90 0027 06       		.byte	0x6
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccYif5nY.s 			page 5
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccl9fhGt.s 			page 5
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
   91 0028 39010000 		.4byte	.LASF0
@@ -298,7 +318,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccYif5nY.s 			page 1
  145 0088 08       		.byte	0x8
  146 0089 04       		.byte	0x4
  147 008a A2010000 		.4byte	.LASF13
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccYif5nY.s 			page 6
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccl9fhGt.s 			page 6
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  148 008e 04       		.uleb128 0x4
@@ -358,7 +382,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccYif5nY.s 			page 1
  202 0023 3E       		.uleb128 0x3e
  203 0024 0B       		.uleb128 0xb
  204 0025 03       		.uleb128 0x3
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccYif5nY.s 			page 7
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccl9fhGt.s 			page 7
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  205 0026 08       		.uleb128 0x8
@@ -418,7 +446,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccYif5nY.s 			page 1
  256      FB0E0D00 
  256      01010101 
  257              	.LASF6:
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccYif5nY.s 			page 8
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccl9fhGt.s 			page 8
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  258 0000 6C6F6E67 		.ascii	"long long int\000"
@@ -478,7 +510,11 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccYif5nY.s 			page 1
  277              	.LASF4:
  278 0101 6C6F6E67 		.ascii	"long int\000"
  278      20696E74 
+<<<<<<< HEAD
 ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccYif5nY.s 			page 9
+=======
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccl9fhGt.s 			page 9
+>>>>>>> 2658f980b69a35fd185f906d78a6324476f1a761
 
 
  278      00
