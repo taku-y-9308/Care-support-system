@@ -589,13 +589,13 @@
 #define CapSense_1_Shield__0__DR_INV CYREG_GPIO_PRT3_DR_INV
 #define CapSense_1_Shield__0__DR_SET CYREG_GPIO_PRT3_DR_SET
 #define CapSense_1_Shield__0__HSIOM CYREG_HSIOM_PORT_SEL3
-#define CapSense_1_Shield__0__HSIOM_MASK 0x000F0000u
-#define CapSense_1_Shield__0__HSIOM_SHIFT 16u
+#define CapSense_1_Shield__0__HSIOM_MASK 0x00F00000u
+#define CapSense_1_Shield__0__HSIOM_SHIFT 20u
 #define CapSense_1_Shield__0__INTCFG CYREG_GPIO_PRT3_INTR_CFG
 #define CapSense_1_Shield__0__INTR CYREG_GPIO_PRT3_INTR
 #define CapSense_1_Shield__0__INTR_CFG CYREG_GPIO_PRT3_INTR_CFG
 #define CapSense_1_Shield__0__INTSTAT CYREG_GPIO_PRT3_INTR
-#define CapSense_1_Shield__0__MASK 0x10u
+#define CapSense_1_Shield__0__MASK 0x20u
 #define CapSense_1_Shield__0__PA__CFG0 CYREG_UDB_PA3_CFG0
 #define CapSense_1_Shield__0__PA__CFG1 CYREG_UDB_PA3_CFG1
 #define CapSense_1_Shield__0__PA__CFG10 CYREG_UDB_PA3_CFG10
@@ -615,7 +615,7 @@
 #define CapSense_1_Shield__0__PC2 CYREG_GPIO_PRT3_PC2
 #define CapSense_1_Shield__0__PORT 3u
 #define CapSense_1_Shield__0__PS CYREG_GPIO_PRT3_PS
-#define CapSense_1_Shield__0__SHIFT 4u
+#define CapSense_1_Shield__0__SHIFT 5u
 #define CapSense_1_Shield__DR CYREG_GPIO_PRT3_DR
 #define CapSense_1_Shield__DR_CLR CYREG_GPIO_PRT3_DR_CLR
 #define CapSense_1_Shield__DR_INV CYREG_GPIO_PRT3_DR_INV
@@ -624,7 +624,7 @@
 #define CapSense_1_Shield__INTR CYREG_GPIO_PRT3_INTR
 #define CapSense_1_Shield__INTR_CFG CYREG_GPIO_PRT3_INTR_CFG
 #define CapSense_1_Shield__INTSTAT CYREG_GPIO_PRT3_INTR
-#define CapSense_1_Shield__MASK 0x10u
+#define CapSense_1_Shield__MASK 0x20u
 #define CapSense_1_Shield__PA__CFG0 CYREG_UDB_PA3_CFG0
 #define CapSense_1_Shield__PA__CFG1 CYREG_UDB_PA3_CFG1
 #define CapSense_1_Shield__PA__CFG10 CYREG_UDB_PA3_CFG10
@@ -652,7 +652,7 @@
 #define CapSense_1_Shield__Shield__INTR CYREG_GPIO_PRT3_INTR
 #define CapSense_1_Shield__Shield__INTR_CFG CYREG_GPIO_PRT3_INTR_CFG
 #define CapSense_1_Shield__Shield__INTSTAT CYREG_GPIO_PRT3_INTR
-#define CapSense_1_Shield__Shield__MASK 0x10u
+#define CapSense_1_Shield__Shield__MASK 0x20u
 #define CapSense_1_Shield__Shield__PA__CFG0 CYREG_UDB_PA3_CFG0
 #define CapSense_1_Shield__Shield__PA__CFG1 CYREG_UDB_PA3_CFG1
 #define CapSense_1_Shield__Shield__PA__CFG10 CYREG_UDB_PA3_CFG10
@@ -672,20 +672,20 @@
 #define CapSense_1_Shield__Shield__PC2 CYREG_GPIO_PRT3_PC2
 #define CapSense_1_Shield__Shield__PORT 3u
 #define CapSense_1_Shield__Shield__PS CYREG_GPIO_PRT3_PS
-#define CapSense_1_Shield__Shield__SHIFT 4u
-#define CapSense_1_Shield__SHIFT 4u
+#define CapSense_1_Shield__Shield__SHIFT 5u
+#define CapSense_1_Shield__SHIFT 5u
 #define CapSense_1_Sns__0__DR CYREG_GPIO_PRT3_DR
 #define CapSense_1_Sns__0__DR_CLR CYREG_GPIO_PRT3_DR_CLR
 #define CapSense_1_Sns__0__DR_INV CYREG_GPIO_PRT3_DR_INV
 #define CapSense_1_Sns__0__DR_SET CYREG_GPIO_PRT3_DR_SET
 #define CapSense_1_Sns__0__HSIOM CYREG_HSIOM_PORT_SEL3
-#define CapSense_1_Sns__0__HSIOM_MASK 0xF0000000u
-#define CapSense_1_Sns__0__HSIOM_SHIFT 28u
+#define CapSense_1_Sns__0__HSIOM_MASK 0x000F0000u
+#define CapSense_1_Sns__0__HSIOM_SHIFT 16u
 #define CapSense_1_Sns__0__INTCFG CYREG_GPIO_PRT3_INTR_CFG
 #define CapSense_1_Sns__0__INTR CYREG_GPIO_PRT3_INTR
 #define CapSense_1_Sns__0__INTR_CFG CYREG_GPIO_PRT3_INTR_CFG
 #define CapSense_1_Sns__0__INTSTAT CYREG_GPIO_PRT3_INTR
-#define CapSense_1_Sns__0__MASK 0x80u
+#define CapSense_1_Sns__0__MASK 0x10u
 #define CapSense_1_Sns__0__PA__CFG0 CYREG_UDB_PA3_CFG0
 #define CapSense_1_Sns__0__PA__CFG1 CYREG_UDB_PA3_CFG1
 #define CapSense_1_Sns__0__PA__CFG10 CYREG_UDB_PA3_CFG10
@@ -705,7 +705,7 @@
 #define CapSense_1_Sns__0__PC2 CYREG_GPIO_PRT3_PC2
 #define CapSense_1_Sns__0__PORT 3u
 #define CapSense_1_Sns__0__PS CYREG_GPIO_PRT3_PS
-#define CapSense_1_Sns__0__SHIFT 7u
+#define CapSense_1_Sns__0__SHIFT 4u
 #define CapSense_1_Sns__Button0__BTN__DR CYREG_GPIO_PRT3_DR
 #define CapSense_1_Sns__Button0__BTN__DR_CLR CYREG_GPIO_PRT3_DR_CLR
 #define CapSense_1_Sns__Button0__BTN__DR_INV CYREG_GPIO_PRT3_DR_INV
@@ -714,7 +714,7 @@
 #define CapSense_1_Sns__Button0__BTN__INTR CYREG_GPIO_PRT3_INTR
 #define CapSense_1_Sns__Button0__BTN__INTR_CFG CYREG_GPIO_PRT3_INTR_CFG
 #define CapSense_1_Sns__Button0__BTN__INTSTAT CYREG_GPIO_PRT3_INTR
-#define CapSense_1_Sns__Button0__BTN__MASK 0x80u
+#define CapSense_1_Sns__Button0__BTN__MASK 0x10u
 #define CapSense_1_Sns__Button0__BTN__PA__CFG0 CYREG_UDB_PA3_CFG0
 #define CapSense_1_Sns__Button0__BTN__PA__CFG1 CYREG_UDB_PA3_CFG1
 #define CapSense_1_Sns__Button0__BTN__PA__CFG10 CYREG_UDB_PA3_CFG10
@@ -734,7 +734,7 @@
 #define CapSense_1_Sns__Button0__BTN__PC2 CYREG_GPIO_PRT3_PC2
 #define CapSense_1_Sns__Button0__BTN__PORT 3u
 #define CapSense_1_Sns__Button0__BTN__PS CYREG_GPIO_PRT3_PS
-#define CapSense_1_Sns__Button0__BTN__SHIFT 7u
+#define CapSense_1_Sns__Button0__BTN__SHIFT 4u
 #define CapSense_1_Sns__DR CYREG_GPIO_PRT3_DR
 #define CapSense_1_Sns__DR_CLR CYREG_GPIO_PRT3_DR_CLR
 #define CapSense_1_Sns__DR_INV CYREG_GPIO_PRT3_DR_INV
@@ -743,7 +743,7 @@
 #define CapSense_1_Sns__INTR CYREG_GPIO_PRT3_INTR
 #define CapSense_1_Sns__INTR_CFG CYREG_GPIO_PRT3_INTR_CFG
 #define CapSense_1_Sns__INTSTAT CYREG_GPIO_PRT3_INTR
-#define CapSense_1_Sns__MASK 0x80u
+#define CapSense_1_Sns__MASK 0x10u
 #define CapSense_1_Sns__PA__CFG0 CYREG_UDB_PA3_CFG0
 #define CapSense_1_Sns__PA__CFG1 CYREG_UDB_PA3_CFG1
 #define CapSense_1_Sns__PA__CFG10 CYREG_UDB_PA3_CFG10
@@ -763,7 +763,7 @@
 #define CapSense_1_Sns__PC2 CYREG_GPIO_PRT3_PC2
 #define CapSense_1_Sns__PORT 3u
 #define CapSense_1_Sns__PS CYREG_GPIO_PRT3_PS
-#define CapSense_1_Sns__SHIFT 7u
+#define CapSense_1_Sns__SHIFT 4u
 
 /* Miscellaneous */
 #define CY_PROJECT_NAME "Care_support_system_peripheral"

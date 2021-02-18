@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccsGHgTi.s 			page 1
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccpdW8uK.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccsGHgTi.s 			page 1
   28:Generated_Source\PSoC4/CapSense_1_Sns.c **** #else
   29:Generated_Source\PSoC4/CapSense_1_Sns.c ****     #if (CY_PSOC4_4200L)
   30:Generated_Source\PSoC4/CapSense_1_Sns.c ****         #define CapSense_1_Sns_SetP4PinDriveMode(shift, mode)  \
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccsGHgTi.s 			page 2
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccpdW8uK.s 			page 2
 
 
   31:Generated_Source\PSoC4/CapSense_1_Sns.c ****         do { \
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccsGHgTi.s 			page 1
   39              		.cfi_def_cfa_register 7
   40 0006 0200     		movs	r2, r0
   41 0008 FB1D     		adds	r3, r7, #7
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccsGHgTi.s 			page 3
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccpdW8uK.s 			page 3
 
 
   42 000a 1A70     		strb	r2, [r3]
@@ -131,7 +131,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccsGHgTi.s 			page 1
   48 0014 1140     		ands	r1, r2
   49 0016 FA1D     		adds	r2, r7, #7
   50 0018 1278     		ldrb	r2, [r2]
-  51 001a 5205     		lsls	r2, r2, #21
+  51 001a 1203     		lsls	r2, r2, #12
   52 001c 0A43     		orrs	r2, r1
   53 001e 1A60     		str	r2, [r3]
   75:Generated_Source\PSoC4/CapSense_1_Sns.c ****     }
@@ -145,7 +145,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccsGHgTi.s 			page 1
   61              		.align	2
   62              	.L2:
   63 0028 08030440 		.word	1074004744
-  64 002c FFFF1FFF 		.word	-14680065
+  64 002c FF8FFFFF 		.word	-28673
   65              		.cfi_endproc
   66              	.LFE0:
   67              		.size	CapSense_1_Sns_SetDriveMode, .-CapSense_1_Sns_SetDriveMode
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccsGHgTi.s 			page 1
   94:Generated_Source\PSoC4/CapSense_1_Sns.c **** * \param value
   95:Generated_Source\PSoC4/CapSense_1_Sns.c **** *  Value to write to the component instance.
   96:Generated_Source\PSoC4/CapSense_1_Sns.c **** *
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccsGHgTi.s 			page 4
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccpdW8uK.s 			page 4
 
 
   97:Generated_Source\PSoC4/CapSense_1_Sns.c **** * \return 
@@ -214,59 +214,62 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccsGHgTi.s 			page 1
   90 000a 1A70     		strb	r2, [r3]
  113:Generated_Source\PSoC4/CapSense_1_Sns.c ****     uint8 drVal = (uint8)(CapSense_1_Sns_DR & (uint8)(~CapSense_1_Sns_MASK));
   91              		.loc 1 113 0
-  92 000c 0D4B     		ldr	r3, .L5
+  92 000c 0F4B     		ldr	r3, .L5
   93 000e 1B68     		ldr	r3, [r3]
   94 0010 DAB2     		uxtb	r2, r3
   95 0012 0F23     		movs	r3, #15
   96 0014 FB18     		adds	r3, r7, r3
-  97 0016 7F21     		movs	r1, #127
-  98 0018 0A40     		ands	r2, r1
+  97 0016 1021     		movs	r1, #16
+  98 0018 8A43     		bics	r2, r1
   99 001a 1A70     		strb	r2, [r3]
  114:Generated_Source\PSoC4/CapSense_1_Sns.c ****     drVal = (drVal | ((uint8)(value << CapSense_1_Sns_SHIFT) & CapSense_1_Sns_MASK));
  100              		.loc 1 114 0
  101 001c FB1D     		adds	r3, r7, #7
  102 001e 1B78     		ldrb	r3, [r3]
- 103 0020 DB01     		lsls	r3, r3, #7
- 104 0022 D9B2     		uxtb	r1, r3
- 105 0024 0F23     		movs	r3, #15
- 106 0026 FB18     		adds	r3, r7, r3
- 107 0028 0F22     		movs	r2, #15
- 108 002a BA18     		adds	r2, r7, r2
- 109 002c 1278     		ldrb	r2, [r2]
- 110 002e 0A43     		orrs	r2, r1
- 111 0030 1A70     		strb	r2, [r3]
+ 103 0020 1B01     		lsls	r3, r3, #4
+ 104 0022 DBB2     		uxtb	r3, r3
+ 105 0024 1022     		movs	r2, #16
+ 106 0026 1340     		ands	r3, r2
+ 107 0028 D9B2     		uxtb	r1, r3
+ 108 002a 0F23     		movs	r3, #15
+ 109 002c FB18     		adds	r3, r7, r3
+ 110 002e 0F22     		movs	r2, #15
+ 111 0030 BA18     		adds	r2, r7, r2
+ 112 0032 1278     		ldrb	r2, [r2]
+ 113 0034 0A43     		orrs	r2, r1
+ 114 0036 1A70     		strb	r2, [r3]
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccpdW8uK.s 			page 5
+
+
  115:Generated_Source\PSoC4/CapSense_1_Sns.c ****     CapSense_1_Sns_DR = (uint32)drVal;
- 112              		.loc 1 115 0
- 113 0032 044B     		ldr	r3, .L5
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccsGHgTi.s 			page 5
-
-
- 114 0034 0F22     		movs	r2, #15
- 115 0036 BA18     		adds	r2, r7, r2
- 116 0038 1278     		ldrb	r2, [r2]
- 117 003a 1A60     		str	r2, [r3]
+ 115              		.loc 1 115 0
+ 116 0038 044B     		ldr	r3, .L5
+ 117 003a 0F22     		movs	r2, #15
+ 118 003c BA18     		adds	r2, r7, r2
+ 119 003e 1278     		ldrb	r2, [r2]
+ 120 0040 1A60     		str	r2, [r3]
  116:Generated_Source\PSoC4/CapSense_1_Sns.c **** }
- 118              		.loc 1 116 0
- 119 003c C046     		nop
- 120 003e BD46     		mov	sp, r7
- 121 0040 04B0     		add	sp, sp, #16
- 122              		@ sp needed
- 123 0042 80BD     		pop	{r7, pc}
- 124              	.L6:
- 125              		.align	2
- 126              	.L5:
- 127 0044 00030440 		.word	1074004736
- 128              		.cfi_endproc
- 129              	.LFE1:
- 130              		.size	CapSense_1_Sns_Write, .-CapSense_1_Sns_Write
- 131              		.section	.text.CapSense_1_Sns_Read,"ax",%progbits
- 132              		.align	2
- 133              		.global	CapSense_1_Sns_Read
- 134              		.code	16
- 135              		.thumb_func
- 136              		.type	CapSense_1_Sns_Read, %function
- 137              	CapSense_1_Sns_Read:
- 138              	.LFB2:
+ 121              		.loc 1 116 0
+ 122 0042 C046     		nop
+ 123 0044 BD46     		mov	sp, r7
+ 124 0046 04B0     		add	sp, sp, #16
+ 125              		@ sp needed
+ 126 0048 80BD     		pop	{r7, pc}
+ 127              	.L6:
+ 128 004a C046     		.align	2
+ 129              	.L5:
+ 130 004c 00030440 		.word	1074004736
+ 131              		.cfi_endproc
+ 132              	.LFE1:
+ 133              		.size	CapSense_1_Sns_Write, .-CapSense_1_Sns_Write
+ 134              		.section	.text.CapSense_1_Sns_Read,"ax",%progbits
+ 135              		.align	2
+ 136              		.global	CapSense_1_Sns_Read
+ 137              		.code	16
+ 138              		.thumb_func
+ 139              		.type	CapSense_1_Sns_Read, %function
+ 140              	CapSense_1_Sns_Read:
+ 141              	.LFB2:
  117:Generated_Source\PSoC4/CapSense_1_Sns.c **** 
  118:Generated_Source\PSoC4/CapSense_1_Sns.c **** 
  119:Generated_Source\PSoC4/CapSense_1_Sns.c **** /*******************************************************************************
@@ -288,48 +291,48 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccsGHgTi.s 			page 1
  135:Generated_Source\PSoC4/CapSense_1_Sns.c **** *******************************************************************************/
  136:Generated_Source\PSoC4/CapSense_1_Sns.c **** uint8 CapSense_1_Sns_Read(void)
  137:Generated_Source\PSoC4/CapSense_1_Sns.c **** {
- 139              		.loc 1 137 0
- 140              		.cfi_startproc
- 141              		@ args = 0, pretend = 0, frame = 0
- 142              		@ frame_needed = 1, uses_anonymous_args = 0
- 143 0000 80B5     		push	{r7, lr}
- 144              		.cfi_def_cfa_offset 8
- 145              		.cfi_offset 7, -8
- 146              		.cfi_offset 14, -4
- 147 0002 00AF     		add	r7, sp, #0
- 148              		.cfi_def_cfa_register 7
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccsGHgTi.s 			page 6
+ 142              		.loc 1 137 0
+ 143              		.cfi_startproc
+ 144              		@ args = 0, pretend = 0, frame = 0
+ 145              		@ frame_needed = 1, uses_anonymous_args = 0
+ 146 0000 80B5     		push	{r7, lr}
+ 147              		.cfi_def_cfa_offset 8
+ 148              		.cfi_offset 7, -8
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccpdW8uK.s 			page 6
 
 
+ 149              		.cfi_offset 14, -4
+ 150 0002 00AF     		add	r7, sp, #0
+ 151              		.cfi_def_cfa_register 7
  138:Generated_Source\PSoC4/CapSense_1_Sns.c ****     return (uint8)((CapSense_1_Sns_PS & CapSense_1_Sns_MASK) >> CapSense_1_Sns_SHIFT);
- 149              		.loc 1 138 0
- 150 0004 044B     		ldr	r3, .L9
- 151 0006 1B68     		ldr	r3, [r3]
- 152 0008 8022     		movs	r2, #128
- 153 000a 1340     		ands	r3, r2
- 154 000c DB09     		lsrs	r3, r3, #7
- 155 000e DBB2     		uxtb	r3, r3
+ 152              		.loc 1 138 0
+ 153 0004 044B     		ldr	r3, .L9
+ 154 0006 1B68     		ldr	r3, [r3]
+ 155 0008 1022     		movs	r2, #16
+ 156 000a 1340     		ands	r3, r2
+ 157 000c 1B09     		lsrs	r3, r3, #4
+ 158 000e DBB2     		uxtb	r3, r3
  139:Generated_Source\PSoC4/CapSense_1_Sns.c **** }
- 156              		.loc 1 139 0
- 157 0010 1800     		movs	r0, r3
- 158 0012 BD46     		mov	sp, r7
- 159              		@ sp needed
- 160 0014 80BD     		pop	{r7, pc}
- 161              	.L10:
- 162 0016 C046     		.align	2
- 163              	.L9:
- 164 0018 04030440 		.word	1074004740
- 165              		.cfi_endproc
- 166              	.LFE2:
- 167              		.size	CapSense_1_Sns_Read, .-CapSense_1_Sns_Read
- 168              		.section	.text.CapSense_1_Sns_ReadDataReg,"ax",%progbits
- 169              		.align	2
- 170              		.global	CapSense_1_Sns_ReadDataReg
- 171              		.code	16
- 172              		.thumb_func
- 173              		.type	CapSense_1_Sns_ReadDataReg, %function
- 174              	CapSense_1_Sns_ReadDataReg:
- 175              	.LFB3:
+ 159              		.loc 1 139 0
+ 160 0010 1800     		movs	r0, r3
+ 161 0012 BD46     		mov	sp, r7
+ 162              		@ sp needed
+ 163 0014 80BD     		pop	{r7, pc}
+ 164              	.L10:
+ 165 0016 C046     		.align	2
+ 166              	.L9:
+ 167 0018 04030440 		.word	1074004740
+ 168              		.cfi_endproc
+ 169              	.LFE2:
+ 170              		.size	CapSense_1_Sns_Read, .-CapSense_1_Sns_Read
+ 171              		.section	.text.CapSense_1_Sns_ReadDataReg,"ax",%progbits
+ 172              		.align	2
+ 173              		.global	CapSense_1_Sns_ReadDataReg
+ 174              		.code	16
+ 175              		.thumb_func
+ 176              		.type	CapSense_1_Sns_ReadDataReg, %function
+ 177              	CapSense_1_Sns_ReadDataReg:
+ 178              	.LFB3:
  140:Generated_Source\PSoC4/CapSense_1_Sns.c **** 
  141:Generated_Source\PSoC4/CapSense_1_Sns.c **** 
  142:Generated_Source\PSoC4/CapSense_1_Sns.c **** /*******************************************************************************
@@ -355,49 +358,49 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccsGHgTi.s 			page 1
  162:Generated_Source\PSoC4/CapSense_1_Sns.c **** *  \snippet CapSense_1_Sns_SUT.c usage_CapSense_1_Sns_ReadDataReg 
  163:Generated_Source\PSoC4/CapSense_1_Sns.c **** *******************************************************************************/
  164:Generated_Source\PSoC4/CapSense_1_Sns.c **** uint8 CapSense_1_Sns_ReadDataReg(void)
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccpdW8uK.s 			page 7
+
+
  165:Generated_Source\PSoC4/CapSense_1_Sns.c **** {
- 176              		.loc 1 165 0
- 177              		.cfi_startproc
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccsGHgTi.s 			page 7
-
-
- 178              		@ args = 0, pretend = 0, frame = 0
- 179              		@ frame_needed = 1, uses_anonymous_args = 0
- 180 0000 80B5     		push	{r7, lr}
- 181              		.cfi_def_cfa_offset 8
- 182              		.cfi_offset 7, -8
- 183              		.cfi_offset 14, -4
- 184 0002 00AF     		add	r7, sp, #0
- 185              		.cfi_def_cfa_register 7
+ 179              		.loc 1 165 0
+ 180              		.cfi_startproc
+ 181              		@ args = 0, pretend = 0, frame = 0
+ 182              		@ frame_needed = 1, uses_anonymous_args = 0
+ 183 0000 80B5     		push	{r7, lr}
+ 184              		.cfi_def_cfa_offset 8
+ 185              		.cfi_offset 7, -8
+ 186              		.cfi_offset 14, -4
+ 187 0002 00AF     		add	r7, sp, #0
+ 188              		.cfi_def_cfa_register 7
  166:Generated_Source\PSoC4/CapSense_1_Sns.c ****     return (uint8)((CapSense_1_Sns_DR & CapSense_1_Sns_MASK) >> CapSense_1_Sns_SHIFT);
- 186              		.loc 1 166 0
- 187 0004 044B     		ldr	r3, .L13
- 188 0006 1B68     		ldr	r3, [r3]
- 189 0008 8022     		movs	r2, #128
- 190 000a 1340     		ands	r3, r2
- 191 000c DB09     		lsrs	r3, r3, #7
- 192 000e DBB2     		uxtb	r3, r3
+ 189              		.loc 1 166 0
+ 190 0004 044B     		ldr	r3, .L13
+ 191 0006 1B68     		ldr	r3, [r3]
+ 192 0008 1022     		movs	r2, #16
+ 193 000a 1340     		ands	r3, r2
+ 194 000c 1B09     		lsrs	r3, r3, #4
+ 195 000e DBB2     		uxtb	r3, r3
  167:Generated_Source\PSoC4/CapSense_1_Sns.c **** }
- 193              		.loc 1 167 0
- 194 0010 1800     		movs	r0, r3
- 195 0012 BD46     		mov	sp, r7
- 196              		@ sp needed
- 197 0014 80BD     		pop	{r7, pc}
- 198              	.L14:
- 199 0016 C046     		.align	2
- 200              	.L13:
- 201 0018 00030440 		.word	1074004736
- 202              		.cfi_endproc
- 203              	.LFE3:
- 204              		.size	CapSense_1_Sns_ReadDataReg, .-CapSense_1_Sns_ReadDataReg
- 205              		.section	.text.CapSense_1_Sns_SetInterruptMode,"ax",%progbits
- 206              		.align	2
- 207              		.global	CapSense_1_Sns_SetInterruptMode
- 208              		.code	16
- 209              		.thumb_func
- 210              		.type	CapSense_1_Sns_SetInterruptMode, %function
- 211              	CapSense_1_Sns_SetInterruptMode:
- 212              	.LFB4:
+ 196              		.loc 1 167 0
+ 197 0010 1800     		movs	r0, r3
+ 198 0012 BD46     		mov	sp, r7
+ 199              		@ sp needed
+ 200 0014 80BD     		pop	{r7, pc}
+ 201              	.L14:
+ 202 0016 C046     		.align	2
+ 203              	.L13:
+ 204 0018 00030440 		.word	1074004736
+ 205              		.cfi_endproc
+ 206              	.LFE3:
+ 207              		.size	CapSense_1_Sns_ReadDataReg, .-CapSense_1_Sns_ReadDataReg
+ 208              		.section	.text.CapSense_1_Sns_SetInterruptMode,"ax",%progbits
+ 209              		.align	2
+ 210              		.global	CapSense_1_Sns_SetInterruptMode
+ 211              		.code	16
+ 212              		.thumb_func
+ 213              		.type	CapSense_1_Sns_SetInterruptMode, %function
+ 214              	CapSense_1_Sns_SetInterruptMode:
+ 215              	.LFB4:
  168:Generated_Source\PSoC4/CapSense_1_Sns.c **** 
  169:Generated_Source\PSoC4/CapSense_1_Sns.c **** 
  170:Generated_Source\PSoC4/CapSense_1_Sns.c **** /*******************************************************************************
@@ -415,12 +418,12 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccsGHgTi.s 			page 1
  182:Generated_Source\PSoC4/CapSense_1_Sns.c **** *  The pin position as listed in the Pins component. You may OR these to be 
  183:Generated_Source\PSoC4/CapSense_1_Sns.c **** *  able to configure the interrupt mode of multiple pins within a Pins 
  184:Generated_Source\PSoC4/CapSense_1_Sns.c **** *  component. Or you may use CapSense_1_Sns_INTR_ALL to configure the
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccpdW8uK.s 			page 8
+
+
  185:Generated_Source\PSoC4/CapSense_1_Sns.c **** *  interrupt mode of all the pins in the Pins component.       
  186:Generated_Source\PSoC4/CapSense_1_Sns.c **** *  - CapSense_1_Sns_0_INTR       (First pin in the list)
  187:Generated_Source\PSoC4/CapSense_1_Sns.c **** *  - CapSense_1_Sns_1_INTR       (Second pin in the list)
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccsGHgTi.s 			page 8
-
-
  188:Generated_Source\PSoC4/CapSense_1_Sns.c **** *  - ...
  189:Generated_Source\PSoC4/CapSense_1_Sns.c **** *  - CapSense_1_Sns_INTR_ALL     (All pins in Pins component)
  190:Generated_Source\PSoC4/CapSense_1_Sns.c **** *
@@ -442,73 +445,73 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccsGHgTi.s 			page 1
  206:Generated_Source\PSoC4/CapSense_1_Sns.c **** *******************************************************************************/
  207:Generated_Source\PSoC4/CapSense_1_Sns.c **** void CapSense_1_Sns_SetInterruptMode(uint16 position, uint16 mode)
  208:Generated_Source\PSoC4/CapSense_1_Sns.c **** {
- 213              		.loc 1 208 0
- 214              		.cfi_startproc
- 215              		@ args = 0, pretend = 0, frame = 16
- 216              		@ frame_needed = 1, uses_anonymous_args = 0
- 217 0000 80B5     		push	{r7, lr}
- 218              		.cfi_def_cfa_offset 8
- 219              		.cfi_offset 7, -8
- 220              		.cfi_offset 14, -4
- 221 0002 84B0     		sub	sp, sp, #16
- 222              		.cfi_def_cfa_offset 24
- 223 0004 00AF     		add	r7, sp, #0
- 224              		.cfi_def_cfa_register 7
- 225 0006 0200     		movs	r2, r0
- 226 0008 BB1D     		adds	r3, r7, #6
- 227 000a 1A80     		strh	r2, [r3]
- 228 000c 3B1D     		adds	r3, r7, #4
- 229 000e 0A1C     		adds	r2, r1, #0
- 230 0010 1A80     		strh	r2, [r3]
+ 216              		.loc 1 208 0
+ 217              		.cfi_startproc
+ 218              		@ args = 0, pretend = 0, frame = 16
+ 219              		@ frame_needed = 1, uses_anonymous_args = 0
+ 220 0000 80B5     		push	{r7, lr}
+ 221              		.cfi_def_cfa_offset 8
+ 222              		.cfi_offset 7, -8
+ 223              		.cfi_offset 14, -4
+ 224 0002 84B0     		sub	sp, sp, #16
+ 225              		.cfi_def_cfa_offset 24
+ 226 0004 00AF     		add	r7, sp, #0
+ 227              		.cfi_def_cfa_register 7
+ 228 0006 0200     		movs	r2, r0
+ 229 0008 BB1D     		adds	r3, r7, #6
+ 230 000a 1A80     		strh	r2, [r3]
+ 231 000c 3B1D     		adds	r3, r7, #4
+ 232 000e 0A1C     		adds	r2, r1, #0
+ 233 0010 1A80     		strh	r2, [r3]
  209:Generated_Source\PSoC4/CapSense_1_Sns.c ****     uint32 intrCfg;
  210:Generated_Source\PSoC4/CapSense_1_Sns.c ****     
  211:Generated_Source\PSoC4/CapSense_1_Sns.c ****     intrCfg =  CapSense_1_Sns_INTCFG & (uint32)(~(uint32)position);
- 231              		.loc 1 211 0
- 232 0012 0B4B     		ldr	r3, .L16
- 233 0014 1B68     		ldr	r3, [r3]
- 234 0016 BA1D     		adds	r2, r7, #6
- 235 0018 1288     		ldrh	r2, [r2]
- 236 001a D243     		mvns	r2, r2
- 237 001c 1340     		ands	r3, r2
- 238 001e FB60     		str	r3, [r7, #12]
+ 234              		.loc 1 211 0
+ 235 0012 0B4B     		ldr	r3, .L16
+ 236 0014 1B68     		ldr	r3, [r3]
+ 237 0016 BA1D     		adds	r2, r7, #6
+ 238 0018 1288     		ldrh	r2, [r2]
+ 239 001a D243     		mvns	r2, r2
+ 240 001c 1340     		ands	r3, r2
+ 241 001e FB60     		str	r3, [r7, #12]
  212:Generated_Source\PSoC4/CapSense_1_Sns.c ****     CapSense_1_Sns_INTCFG = intrCfg | ((uint32)position & (uint32)mode);
- 239              		.loc 1 212 0
- 240 0020 074B     		ldr	r3, .L16
- 241 0022 BA1D     		adds	r2, r7, #6
- 242 0024 391D     		adds	r1, r7, #4
- 243 0026 1288     		ldrh	r2, [r2]
- 244 0028 0988     		ldrh	r1, [r1]
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccsGHgTi.s 			page 9
+ 242              		.loc 1 212 0
+ 243 0020 074B     		ldr	r3, .L16
+ 244 0022 BA1D     		adds	r2, r7, #6
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccpdW8uK.s 			page 9
 
 
- 245 002a 0A40     		ands	r2, r1
- 246 002c 92B2     		uxth	r2, r2
- 247 002e 1100     		movs	r1, r2
- 248 0030 FA68     		ldr	r2, [r7, #12]
- 249 0032 0A43     		orrs	r2, r1
- 250 0034 1A60     		str	r2, [r3]
+ 245 0024 391D     		adds	r1, r7, #4
+ 246 0026 1288     		ldrh	r2, [r2]
+ 247 0028 0988     		ldrh	r1, [r1]
+ 248 002a 0A40     		ands	r2, r1
+ 249 002c 92B2     		uxth	r2, r2
+ 250 002e 1100     		movs	r1, r2
+ 251 0030 FA68     		ldr	r2, [r7, #12]
+ 252 0032 0A43     		orrs	r2, r1
+ 253 0034 1A60     		str	r2, [r3]
  213:Generated_Source\PSoC4/CapSense_1_Sns.c **** }
- 251              		.loc 1 213 0
- 252 0036 C046     		nop
- 253 0038 BD46     		mov	sp, r7
- 254 003a 04B0     		add	sp, sp, #16
- 255              		@ sp needed
- 256 003c 80BD     		pop	{r7, pc}
- 257              	.L17:
- 258 003e C046     		.align	2
- 259              	.L16:
- 260 0040 0C030440 		.word	1074004748
- 261              		.cfi_endproc
- 262              	.LFE4:
- 263              		.size	CapSense_1_Sns_SetInterruptMode, .-CapSense_1_Sns_SetInterruptMode
- 264              		.section	.text.CapSense_1_Sns_ClearInterrupt,"ax",%progbits
- 265              		.align	2
- 266              		.global	CapSense_1_Sns_ClearInterrupt
- 267              		.code	16
- 268              		.thumb_func
- 269              		.type	CapSense_1_Sns_ClearInterrupt, %function
- 270              	CapSense_1_Sns_ClearInterrupt:
- 271              	.LFB5:
+ 254              		.loc 1 213 0
+ 255 0036 C046     		nop
+ 256 0038 BD46     		mov	sp, r7
+ 257 003a 04B0     		add	sp, sp, #16
+ 258              		@ sp needed
+ 259 003c 80BD     		pop	{r7, pc}
+ 260              	.L17:
+ 261 003e C046     		.align	2
+ 262              	.L16:
+ 263 0040 0C030440 		.word	1074004748
+ 264              		.cfi_endproc
+ 265              	.LFE4:
+ 266              		.size	CapSense_1_Sns_SetInterruptMode, .-CapSense_1_Sns_SetInterruptMode
+ 267              		.section	.text.CapSense_1_Sns_ClearInterrupt,"ax",%progbits
+ 268              		.align	2
+ 269              		.global	CapSense_1_Sns_ClearInterrupt
+ 270              		.code	16
+ 271              		.thumb_func
+ 272              		.type	CapSense_1_Sns_ClearInterrupt, %function
+ 273              	CapSense_1_Sns_ClearInterrupt:
+ 274              	.LFB5:
  214:Generated_Source\PSoC4/CapSense_1_Sns.c **** 
  215:Generated_Source\PSoC4/CapSense_1_Sns.c **** 
  216:Generated_Source\PSoC4/CapSense_1_Sns.c **** /*******************************************************************************
@@ -533,660 +536,660 @@ ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccsGHgTi.s 			page 1
  235:Generated_Source\PSoC4/CapSense_1_Sns.c **** *******************************************************************************/
  236:Generated_Source\PSoC4/CapSense_1_Sns.c **** uint8 CapSense_1_Sns_ClearInterrupt(void)
  237:Generated_Source\PSoC4/CapSense_1_Sns.c **** {
- 272              		.loc 1 237 0
- 273              		.cfi_startproc
- 274              		@ args = 0, pretend = 0, frame = 8
- 275              		@ frame_needed = 1, uses_anonymous_args = 0
- 276 0000 80B5     		push	{r7, lr}
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccsGHgTi.s 			page 10
+ 275              		.loc 1 237 0
+ 276              		.cfi_startproc
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccpdW8uK.s 			page 10
 
 
- 277              		.cfi_def_cfa_offset 8
- 278              		.cfi_offset 7, -8
- 279              		.cfi_offset 14, -4
- 280 0002 82B0     		sub	sp, sp, #8
- 281              		.cfi_def_cfa_offset 16
- 282 0004 00AF     		add	r7, sp, #0
- 283              		.cfi_def_cfa_register 7
+ 277              		@ args = 0, pretend = 0, frame = 8
+ 278              		@ frame_needed = 1, uses_anonymous_args = 0
+ 279 0000 80B5     		push	{r7, lr}
+ 280              		.cfi_def_cfa_offset 8
+ 281              		.cfi_offset 7, -8
+ 282              		.cfi_offset 14, -4
+ 283 0002 82B0     		sub	sp, sp, #8
+ 284              		.cfi_def_cfa_offset 16
+ 285 0004 00AF     		add	r7, sp, #0
+ 286              		.cfi_def_cfa_register 7
  238:Generated_Source\PSoC4/CapSense_1_Sns.c **** 	uint8 maskedStatus = (uint8)(CapSense_1_Sns_INTSTAT & CapSense_1_Sns_MASK);
- 284              		.loc 1 238 0
- 285 0006 094B     		ldr	r3, .L20
- 286 0008 1B68     		ldr	r3, [r3]
- 287 000a DAB2     		uxtb	r2, r3
- 288 000c FB1D     		adds	r3, r7, #7
- 289 000e 7F21     		movs	r1, #127
- 290 0010 8A43     		bics	r2, r1
- 291 0012 1A70     		strb	r2, [r3]
+ 287              		.loc 1 238 0
+ 288 0006 094B     		ldr	r3, .L20
+ 289 0008 1B68     		ldr	r3, [r3]
+ 290 000a DAB2     		uxtb	r2, r3
+ 291 000c FB1D     		adds	r3, r7, #7
+ 292 000e 1021     		movs	r1, #16
+ 293 0010 0A40     		ands	r2, r1
+ 294 0012 1A70     		strb	r2, [r3]
  239:Generated_Source\PSoC4/CapSense_1_Sns.c **** 	CapSense_1_Sns_INTSTAT = maskedStatus;
- 292              		.loc 1 239 0
- 293 0014 054B     		ldr	r3, .L20
- 294 0016 FA1D     		adds	r2, r7, #7
- 295 0018 1278     		ldrb	r2, [r2]
- 296 001a 1A60     		str	r2, [r3]
+ 295              		.loc 1 239 0
+ 296 0014 054B     		ldr	r3, .L20
+ 297 0016 FA1D     		adds	r2, r7, #7
+ 298 0018 1278     		ldrb	r2, [r2]
+ 299 001a 1A60     		str	r2, [r3]
  240:Generated_Source\PSoC4/CapSense_1_Sns.c ****     return maskedStatus >> CapSense_1_Sns_SHIFT;
- 297              		.loc 1 240 0
- 298 001c FB1D     		adds	r3, r7, #7
- 299 001e 1B78     		ldrb	r3, [r3]
- 300 0020 DB09     		lsrs	r3, r3, #7
- 301 0022 DBB2     		uxtb	r3, r3
+ 300              		.loc 1 240 0
+ 301 001c FB1D     		adds	r3, r7, #7
+ 302 001e 1B78     		ldrb	r3, [r3]
+ 303 0020 1B09     		lsrs	r3, r3, #4
+ 304 0022 DBB2     		uxtb	r3, r3
  241:Generated_Source\PSoC4/CapSense_1_Sns.c **** }
- 302              		.loc 1 241 0
- 303 0024 1800     		movs	r0, r3
- 304 0026 BD46     		mov	sp, r7
- 305 0028 02B0     		add	sp, sp, #8
- 306              		@ sp needed
- 307 002a 80BD     		pop	{r7, pc}
- 308              	.L21:
- 309              		.align	2
- 310              	.L20:
- 311 002c 10030440 		.word	1074004752
- 312              		.cfi_endproc
- 313              	.LFE5:
- 314              		.size	CapSense_1_Sns_ClearInterrupt, .-CapSense_1_Sns_ClearInterrupt
- 315              		.text
- 316              	.Letext0:
- 317              		.file 2 "Generated_Source\\PSoC4\\cytypes.h"
- 318              		.section	.debug_info,"",%progbits
- 319              	.Ldebug_info0:
- 320 0000 96010000 		.4byte	0x196
- 321 0004 0400     		.2byte	0x4
- 322 0006 00000000 		.4byte	.Ldebug_abbrev0
- 323 000a 04       		.byte	0x4
- 324 000b 01       		.uleb128 0x1
- 325 000c D2000000 		.4byte	.LASF28
- 326 0010 0C       		.byte	0xc
- 327 0011 2A020000 		.4byte	.LASF29
- 328 0015 2C000000 		.4byte	.LASF30
- 329 0019 00000000 		.4byte	.Ldebug_ranges0+0
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccsGHgTi.s 			page 11
+ 305              		.loc 1 241 0
+ 306 0024 1800     		movs	r0, r3
+ 307 0026 BD46     		mov	sp, r7
+ 308 0028 02B0     		add	sp, sp, #8
+ 309              		@ sp needed
+ 310 002a 80BD     		pop	{r7, pc}
+ 311              	.L21:
+ 312              		.align	2
+ 313              	.L20:
+ 314 002c 10030440 		.word	1074004752
+ 315              		.cfi_endproc
+ 316              	.LFE5:
+ 317              		.size	CapSense_1_Sns_ClearInterrupt, .-CapSense_1_Sns_ClearInterrupt
+ 318              		.text
+ 319              	.Letext0:
+ 320              		.file 2 "Generated_Source\\PSoC4\\cytypes.h"
+ 321              		.section	.debug_info,"",%progbits
+ 322              	.Ldebug_info0:
+ 323 0000 96010000 		.4byte	0x196
+ 324 0004 0400     		.2byte	0x4
+ 325 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 326 000a 04       		.byte	0x4
+ 327 000b 01       		.uleb128 0x1
+ 328 000c D7000000 		.4byte	.LASF28
+ 329 0010 0C       		.byte	0xc
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccpdW8uK.s 			page 11
 
 
- 330 001d 00000000 		.4byte	0
- 331 0021 00000000 		.4byte	.Ldebug_line0
- 332 0025 02       		.uleb128 0x2
- 333 0026 01       		.byte	0x1
- 334 0027 06       		.byte	0x6
- 335 0028 5B020000 		.4byte	.LASF0
- 336 002c 02       		.uleb128 0x2
- 337 002d 01       		.byte	0x1
- 338 002e 08       		.byte	0x8
- 339 002f 8A000000 		.4byte	.LASF1
- 340 0033 02       		.uleb128 0x2
- 341 0034 02       		.byte	0x2
- 342 0035 05       		.byte	0x5
- 343 0036 1A020000 		.4byte	.LASF2
- 344 003a 02       		.uleb128 0x2
- 345 003b 02       		.byte	0x2
- 346 003c 07       		.byte	0x7
- 347 003d BF000000 		.4byte	.LASF3
- 348 0041 02       		.uleb128 0x2
- 349 0042 04       		.byte	0x4
- 350 0043 05       		.byte	0x5
- 351 0044 52020000 		.4byte	.LASF4
- 352 0048 02       		.uleb128 0x2
- 353 0049 04       		.byte	0x4
- 354 004a 07       		.byte	0x7
- 355 004b AD000000 		.4byte	.LASF5
- 356 004f 02       		.uleb128 0x2
- 357 0050 08       		.byte	0x8
- 358 0051 05       		.byte	0x5
- 359 0052 E6010000 		.4byte	.LASF6
- 360 0056 02       		.uleb128 0x2
- 361 0057 08       		.byte	0x8
- 362 0058 07       		.byte	0x7
- 363 0059 AE010000 		.4byte	.LASF7
- 364 005d 03       		.uleb128 0x3
- 365 005e 04       		.byte	0x4
- 366 005f 05       		.byte	0x5
- 367 0060 696E7400 		.ascii	"int\000"
- 368 0064 02       		.uleb128 0x2
- 369 0065 04       		.byte	0x4
- 370 0066 07       		.byte	0x7
- 371 0067 A1010000 		.4byte	.LASF8
- 372 006b 04       		.uleb128 0x4
- 373 006c 24020000 		.4byte	.LASF9
- 374 0070 02       		.byte	0x2
- 375 0071 E601     		.2byte	0x1e6
- 376 0073 2C000000 		.4byte	0x2c
- 377 0077 04       		.uleb128 0x4
- 378 0078 82010000 		.4byte	.LASF10
- 379 007c 02       		.byte	0x2
- 380 007d E701     		.2byte	0x1e7
- 381 007f 3A000000 		.4byte	0x3a
- 382 0083 04       		.uleb128 0x4
- 383 0084 92010000 		.4byte	.LASF11
- 384 0088 02       		.byte	0x2
- 385 0089 E801     		.2byte	0x1e8
- 386 008b 48000000 		.4byte	0x48
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccsGHgTi.s 			page 12
+ 330 0011 2F020000 		.4byte	.LASF29
+ 331 0015 06000000 		.4byte	.LASF30
+ 332 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 333 001d 00000000 		.4byte	0
+ 334 0021 00000000 		.4byte	.Ldebug_line0
+ 335 0025 02       		.uleb128 0x2
+ 336 0026 01       		.byte	0x1
+ 337 0027 06       		.byte	0x6
+ 338 0028 60020000 		.4byte	.LASF0
+ 339 002c 02       		.uleb128 0x2
+ 340 002d 01       		.byte	0x1
+ 341 002e 08       		.byte	0x8
+ 342 002f 8F000000 		.4byte	.LASF1
+ 343 0033 02       		.uleb128 0x2
+ 344 0034 02       		.byte	0x2
+ 345 0035 05       		.byte	0x5
+ 346 0036 1F020000 		.4byte	.LASF2
+ 347 003a 02       		.uleb128 0x2
+ 348 003b 02       		.byte	0x2
+ 349 003c 07       		.byte	0x7
+ 350 003d C4000000 		.4byte	.LASF3
+ 351 0041 02       		.uleb128 0x2
+ 352 0042 04       		.byte	0x4
+ 353 0043 05       		.byte	0x5
+ 354 0044 57020000 		.4byte	.LASF4
+ 355 0048 02       		.uleb128 0x2
+ 356 0049 04       		.byte	0x4
+ 357 004a 07       		.byte	0x7
+ 358 004b B2000000 		.4byte	.LASF5
+ 359 004f 02       		.uleb128 0x2
+ 360 0050 08       		.byte	0x8
+ 361 0051 05       		.byte	0x5
+ 362 0052 EB010000 		.4byte	.LASF6
+ 363 0056 02       		.uleb128 0x2
+ 364 0057 08       		.byte	0x8
+ 365 0058 07       		.byte	0x7
+ 366 0059 B3010000 		.4byte	.LASF7
+ 367 005d 03       		.uleb128 0x3
+ 368 005e 04       		.byte	0x4
+ 369 005f 05       		.byte	0x5
+ 370 0060 696E7400 		.ascii	"int\000"
+ 371 0064 02       		.uleb128 0x2
+ 372 0065 04       		.byte	0x4
+ 373 0066 07       		.byte	0x7
+ 374 0067 A6010000 		.4byte	.LASF8
+ 375 006b 04       		.uleb128 0x4
+ 376 006c 29020000 		.4byte	.LASF9
+ 377 0070 02       		.byte	0x2
+ 378 0071 E601     		.2byte	0x1e6
+ 379 0073 2C000000 		.4byte	0x2c
+ 380 0077 04       		.uleb128 0x4
+ 381 0078 87010000 		.4byte	.LASF10
+ 382 007c 02       		.byte	0x2
+ 383 007d E701     		.2byte	0x1e7
+ 384 007f 3A000000 		.4byte	0x3a
+ 385 0083 04       		.uleb128 0x4
+ 386 0084 97010000 		.4byte	.LASF11
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccpdW8uK.s 			page 12
 
 
- 387 008f 02       		.uleb128 0x2
- 388 0090 04       		.byte	0x4
- 389 0091 04       		.byte	0x4
- 390 0092 84000000 		.4byte	.LASF12
- 391 0096 02       		.uleb128 0x2
- 392 0097 08       		.byte	0x8
- 393 0098 04       		.byte	0x4
- 394 0099 60010000 		.4byte	.LASF13
- 395 009d 02       		.uleb128 0x2
- 396 009e 01       		.byte	0x1
- 397 009f 08       		.byte	0x8
- 398 00a0 01020000 		.4byte	.LASF14
- 399 00a4 04       		.uleb128 0x4
- 400 00a5 00000000 		.4byte	.LASF15
- 401 00a9 02       		.byte	0x2
- 402 00aa 9202     		.2byte	0x292
- 403 00ac B0000000 		.4byte	0xb0
- 404 00b0 05       		.uleb128 0x5
- 405 00b1 83000000 		.4byte	0x83
- 406 00b5 06       		.uleb128 0x6
- 407 00b6 C5010000 		.4byte	.LASF16
- 408 00ba 01       		.byte	0x1
- 409 00bb 48       		.byte	0x48
- 410 00bc 00000000 		.4byte	.LFB0
- 411 00c0 30000000 		.4byte	.LFE0-.LFB0
- 412 00c4 01       		.uleb128 0x1
- 413 00c5 9C       		.byte	0x9c
- 414 00c6 D9000000 		.4byte	0xd9
- 415 00ca 07       		.uleb128 0x7
- 416 00cb E1010000 		.4byte	.LASF18
- 417 00cf 01       		.byte	0x1
- 418 00d0 48       		.byte	0x48
- 419 00d1 6B000000 		.4byte	0x6b
- 420 00d5 02       		.uleb128 0x2
- 421 00d6 91       		.byte	0x91
- 422 00d7 77       		.sleb128 -9
- 423 00d8 00       		.byte	0
- 424 00d9 06       		.uleb128 0x6
- 425 00da 98000000 		.4byte	.LASF17
- 426 00de 01       		.byte	0x1
- 427 00df 6F       		.byte	0x6f
- 428 00e0 00000000 		.4byte	.LFB1
- 429 00e4 48000000 		.4byte	.LFE1-.LFB1
- 430 00e8 01       		.uleb128 0x1
- 431 00e9 9C       		.byte	0x9c
- 432 00ea 0B010000 		.4byte	0x10b
- 433 00ee 07       		.uleb128 0x7
- 434 00ef 26000000 		.4byte	.LASF19
- 435 00f3 01       		.byte	0x1
- 436 00f4 6F       		.byte	0x6f
- 437 00f5 6B000000 		.4byte	0x6b
- 438 00f9 02       		.uleb128 0x2
- 439 00fa 91       		.byte	0x91
- 440 00fb 6F       		.sleb128 -17
- 441 00fc 08       		.uleb128 0x8
- 442 00fd 85020000 		.4byte	.LASF24
- 443 0101 01       		.byte	0x1
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccsGHgTi.s 			page 13
+ 387 0088 02       		.byte	0x2
+ 388 0089 E801     		.2byte	0x1e8
+ 389 008b 48000000 		.4byte	0x48
+ 390 008f 02       		.uleb128 0x2
+ 391 0090 04       		.byte	0x4
+ 392 0091 04       		.byte	0x4
+ 393 0092 89000000 		.4byte	.LASF12
+ 394 0096 02       		.uleb128 0x2
+ 395 0097 08       		.byte	0x8
+ 396 0098 04       		.byte	0x4
+ 397 0099 65010000 		.4byte	.LASF13
+ 398 009d 02       		.uleb128 0x2
+ 399 009e 01       		.byte	0x1
+ 400 009f 08       		.byte	0x8
+ 401 00a0 06020000 		.4byte	.LASF14
+ 402 00a4 04       		.uleb128 0x4
+ 403 00a5 00000000 		.4byte	.LASF15
+ 404 00a9 02       		.byte	0x2
+ 405 00aa 9202     		.2byte	0x292
+ 406 00ac B0000000 		.4byte	0xb0
+ 407 00b0 05       		.uleb128 0x5
+ 408 00b1 83000000 		.4byte	0x83
+ 409 00b5 06       		.uleb128 0x6
+ 410 00b6 CA010000 		.4byte	.LASF16
+ 411 00ba 01       		.byte	0x1
+ 412 00bb 48       		.byte	0x48
+ 413 00bc 00000000 		.4byte	.LFB0
+ 414 00c0 30000000 		.4byte	.LFE0-.LFB0
+ 415 00c4 01       		.uleb128 0x1
+ 416 00c5 9C       		.byte	0x9c
+ 417 00c6 D9000000 		.4byte	0xd9
+ 418 00ca 07       		.uleb128 0x7
+ 419 00cb E6010000 		.4byte	.LASF18
+ 420 00cf 01       		.byte	0x1
+ 421 00d0 48       		.byte	0x48
+ 422 00d1 6B000000 		.4byte	0x6b
+ 423 00d5 02       		.uleb128 0x2
+ 424 00d6 91       		.byte	0x91
+ 425 00d7 77       		.sleb128 -9
+ 426 00d8 00       		.byte	0
+ 427 00d9 06       		.uleb128 0x6
+ 428 00da 9D000000 		.4byte	.LASF17
+ 429 00de 01       		.byte	0x1
+ 430 00df 6F       		.byte	0x6f
+ 431 00e0 00000000 		.4byte	.LFB1
+ 432 00e4 50000000 		.4byte	.LFE1-.LFB1
+ 433 00e8 01       		.uleb128 0x1
+ 434 00e9 9C       		.byte	0x9c
+ 435 00ea 0B010000 		.4byte	0x10b
+ 436 00ee 07       		.uleb128 0x7
+ 437 00ef 83000000 		.4byte	.LASF19
+ 438 00f3 01       		.byte	0x1
+ 439 00f4 6F       		.byte	0x6f
+ 440 00f5 6B000000 		.4byte	0x6b
+ 441 00f9 02       		.uleb128 0x2
+ 442 00fa 91       		.byte	0x91
+ 443 00fb 6F       		.sleb128 -17
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccpdW8uK.s 			page 13
 
 
- 444 0102 71       		.byte	0x71
- 445 0103 6B000000 		.4byte	0x6b
- 446 0107 02       		.uleb128 0x2
- 447 0108 91       		.byte	0x91
- 448 0109 77       		.sleb128 -9
- 449 010a 00       		.byte	0
- 450 010b 09       		.uleb128 0x9
- 451 010c 06020000 		.4byte	.LASF20
- 452 0110 01       		.byte	0x1
- 453 0111 88       		.byte	0x88
- 454 0112 6B000000 		.4byte	0x6b
- 455 0116 00000000 		.4byte	.LFB2
- 456 011a 1C000000 		.4byte	.LFE2-.LFB2
- 457 011e 01       		.uleb128 0x1
- 458 011f 9C       		.byte	0x9c
- 459 0120 09       		.uleb128 0x9
- 460 0121 67010000 		.4byte	.LASF21
- 461 0125 01       		.byte	0x1
- 462 0126 A4       		.byte	0xa4
- 463 0127 6B000000 		.4byte	0x6b
- 464 012b 00000000 		.4byte	.LFB3
- 465 012f 1C000000 		.4byte	.LFE3-.LFB3
- 466 0133 01       		.uleb128 0x1
- 467 0134 9C       		.byte	0x9c
- 468 0135 06       		.uleb128 0x6
- 469 0136 06000000 		.4byte	.LASF22
- 470 013a 01       		.byte	0x1
- 471 013b CF       		.byte	0xcf
- 472 013c 00000000 		.4byte	.LFB4
- 473 0140 44000000 		.4byte	.LFE4-.LFB4
- 474 0144 01       		.uleb128 0x1
- 475 0145 9C       		.byte	0x9c
- 476 0146 75010000 		.4byte	0x175
- 477 014a 07       		.uleb128 0x7
- 478 014b 89010000 		.4byte	.LASF23
- 479 014f 01       		.byte	0x1
- 480 0150 CF       		.byte	0xcf
- 481 0151 77000000 		.4byte	0x77
- 482 0155 02       		.uleb128 0x2
- 483 0156 91       		.byte	0x91
- 484 0157 6E       		.sleb128 -18
- 485 0158 07       		.uleb128 0x7
- 486 0159 E1010000 		.4byte	.LASF18
- 487 015d 01       		.byte	0x1
- 488 015e CF       		.byte	0xcf
- 489 015f 77000000 		.4byte	0x77
- 490 0163 02       		.uleb128 0x2
- 491 0164 91       		.byte	0x91
- 492 0165 6C       		.sleb128 -20
- 493 0166 08       		.uleb128 0x8
- 494 0167 99010000 		.4byte	.LASF25
- 495 016b 01       		.byte	0x1
- 496 016c D1       		.byte	0xd1
- 497 016d 83000000 		.4byte	0x83
- 498 0171 02       		.uleb128 0x2
- 499 0172 91       		.byte	0x91
- 500 0173 74       		.sleb128 -12
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccsGHgTi.s 			page 14
+ 444 00fc 08       		.uleb128 0x8
+ 445 00fd 8A020000 		.4byte	.LASF24
+ 446 0101 01       		.byte	0x1
+ 447 0102 71       		.byte	0x71
+ 448 0103 6B000000 		.4byte	0x6b
+ 449 0107 02       		.uleb128 0x2
+ 450 0108 91       		.byte	0x91
+ 451 0109 77       		.sleb128 -9
+ 452 010a 00       		.byte	0
+ 453 010b 09       		.uleb128 0x9
+ 454 010c 0B020000 		.4byte	.LASF20
+ 455 0110 01       		.byte	0x1
+ 456 0111 88       		.byte	0x88
+ 457 0112 6B000000 		.4byte	0x6b
+ 458 0116 00000000 		.4byte	.LFB2
+ 459 011a 1C000000 		.4byte	.LFE2-.LFB2
+ 460 011e 01       		.uleb128 0x1
+ 461 011f 9C       		.byte	0x9c
+ 462 0120 09       		.uleb128 0x9
+ 463 0121 6C010000 		.4byte	.LASF21
+ 464 0125 01       		.byte	0x1
+ 465 0126 A4       		.byte	0xa4
+ 466 0127 6B000000 		.4byte	0x6b
+ 467 012b 00000000 		.4byte	.LFB3
+ 468 012f 1C000000 		.4byte	.LFE3-.LFB3
+ 469 0133 01       		.uleb128 0x1
+ 470 0134 9C       		.byte	0x9c
+ 471 0135 06       		.uleb128 0x6
+ 472 0136 63000000 		.4byte	.LASF22
+ 473 013a 01       		.byte	0x1
+ 474 013b CF       		.byte	0xcf
+ 475 013c 00000000 		.4byte	.LFB4
+ 476 0140 44000000 		.4byte	.LFE4-.LFB4
+ 477 0144 01       		.uleb128 0x1
+ 478 0145 9C       		.byte	0x9c
+ 479 0146 75010000 		.4byte	0x175
+ 480 014a 07       		.uleb128 0x7
+ 481 014b 8E010000 		.4byte	.LASF23
+ 482 014f 01       		.byte	0x1
+ 483 0150 CF       		.byte	0xcf
+ 484 0151 77000000 		.4byte	0x77
+ 485 0155 02       		.uleb128 0x2
+ 486 0156 91       		.byte	0x91
+ 487 0157 6E       		.sleb128 -18
+ 488 0158 07       		.uleb128 0x7
+ 489 0159 E6010000 		.4byte	.LASF18
+ 490 015d 01       		.byte	0x1
+ 491 015e CF       		.byte	0xcf
+ 492 015f 77000000 		.4byte	0x77
+ 493 0163 02       		.uleb128 0x2
+ 494 0164 91       		.byte	0x91
+ 495 0165 6C       		.sleb128 -20
+ 496 0166 08       		.uleb128 0x8
+ 497 0167 9E010000 		.4byte	.LASF25
+ 498 016b 01       		.byte	0x1
+ 499 016c D1       		.byte	0xd1
+ 500 016d 83000000 		.4byte	0x83
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccpdW8uK.s 			page 14
 
 
- 501 0174 00       		.byte	0
- 502 0175 0A       		.uleb128 0xa
- 503 0176 67020000 		.4byte	.LASF26
- 504 017a 01       		.byte	0x1
- 505 017b EC       		.byte	0xec
- 506 017c 6B000000 		.4byte	0x6b
- 507 0180 00000000 		.4byte	.LFB5
- 508 0184 30000000 		.4byte	.LFE5-.LFB5
- 509 0188 01       		.uleb128 0x1
- 510 0189 9C       		.byte	0x9c
- 511 018a 08       		.uleb128 0x8
- 512 018b F4010000 		.4byte	.LASF27
- 513 018f 01       		.byte	0x1
- 514 0190 EE       		.byte	0xee
- 515 0191 6B000000 		.4byte	0x6b
- 516 0195 02       		.uleb128 0x2
- 517 0196 91       		.byte	0x91
- 518 0197 77       		.sleb128 -9
- 519 0198 00       		.byte	0
- 520 0199 00       		.byte	0
- 521              		.section	.debug_abbrev,"",%progbits
- 522              	.Ldebug_abbrev0:
- 523 0000 01       		.uleb128 0x1
- 524 0001 11       		.uleb128 0x11
- 525 0002 01       		.byte	0x1
- 526 0003 25       		.uleb128 0x25
- 527 0004 0E       		.uleb128 0xe
- 528 0005 13       		.uleb128 0x13
- 529 0006 0B       		.uleb128 0xb
- 530 0007 03       		.uleb128 0x3
- 531 0008 0E       		.uleb128 0xe
- 532 0009 1B       		.uleb128 0x1b
- 533 000a 0E       		.uleb128 0xe
- 534 000b 55       		.uleb128 0x55
- 535 000c 17       		.uleb128 0x17
- 536 000d 11       		.uleb128 0x11
- 537 000e 01       		.uleb128 0x1
- 538 000f 10       		.uleb128 0x10
- 539 0010 17       		.uleb128 0x17
- 540 0011 00       		.byte	0
- 541 0012 00       		.byte	0
- 542 0013 02       		.uleb128 0x2
- 543 0014 24       		.uleb128 0x24
- 544 0015 00       		.byte	0
- 545 0016 0B       		.uleb128 0xb
- 546 0017 0B       		.uleb128 0xb
- 547 0018 3E       		.uleb128 0x3e
- 548 0019 0B       		.uleb128 0xb
- 549 001a 03       		.uleb128 0x3
- 550 001b 0E       		.uleb128 0xe
- 551 001c 00       		.byte	0
- 552 001d 00       		.byte	0
- 553 001e 03       		.uleb128 0x3
- 554 001f 24       		.uleb128 0x24
- 555 0020 00       		.byte	0
- 556 0021 0B       		.uleb128 0xb
- 557 0022 0B       		.uleb128 0xb
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccsGHgTi.s 			page 15
+ 501 0171 02       		.uleb128 0x2
+ 502 0172 91       		.byte	0x91
+ 503 0173 74       		.sleb128 -12
+ 504 0174 00       		.byte	0
+ 505 0175 0A       		.uleb128 0xa
+ 506 0176 6C020000 		.4byte	.LASF26
+ 507 017a 01       		.byte	0x1
+ 508 017b EC       		.byte	0xec
+ 509 017c 6B000000 		.4byte	0x6b
+ 510 0180 00000000 		.4byte	.LFB5
+ 511 0184 30000000 		.4byte	.LFE5-.LFB5
+ 512 0188 01       		.uleb128 0x1
+ 513 0189 9C       		.byte	0x9c
+ 514 018a 08       		.uleb128 0x8
+ 515 018b F9010000 		.4byte	.LASF27
+ 516 018f 01       		.byte	0x1
+ 517 0190 EE       		.byte	0xee
+ 518 0191 6B000000 		.4byte	0x6b
+ 519 0195 02       		.uleb128 0x2
+ 520 0196 91       		.byte	0x91
+ 521 0197 77       		.sleb128 -9
+ 522 0198 00       		.byte	0
+ 523 0199 00       		.byte	0
+ 524              		.section	.debug_abbrev,"",%progbits
+ 525              	.Ldebug_abbrev0:
+ 526 0000 01       		.uleb128 0x1
+ 527 0001 11       		.uleb128 0x11
+ 528 0002 01       		.byte	0x1
+ 529 0003 25       		.uleb128 0x25
+ 530 0004 0E       		.uleb128 0xe
+ 531 0005 13       		.uleb128 0x13
+ 532 0006 0B       		.uleb128 0xb
+ 533 0007 03       		.uleb128 0x3
+ 534 0008 0E       		.uleb128 0xe
+ 535 0009 1B       		.uleb128 0x1b
+ 536 000a 0E       		.uleb128 0xe
+ 537 000b 55       		.uleb128 0x55
+ 538 000c 17       		.uleb128 0x17
+ 539 000d 11       		.uleb128 0x11
+ 540 000e 01       		.uleb128 0x1
+ 541 000f 10       		.uleb128 0x10
+ 542 0010 17       		.uleb128 0x17
+ 543 0011 00       		.byte	0
+ 544 0012 00       		.byte	0
+ 545 0013 02       		.uleb128 0x2
+ 546 0014 24       		.uleb128 0x24
+ 547 0015 00       		.byte	0
+ 548 0016 0B       		.uleb128 0xb
+ 549 0017 0B       		.uleb128 0xb
+ 550 0018 3E       		.uleb128 0x3e
+ 551 0019 0B       		.uleb128 0xb
+ 552 001a 03       		.uleb128 0x3
+ 553 001b 0E       		.uleb128 0xe
+ 554 001c 00       		.byte	0
+ 555 001d 00       		.byte	0
+ 556 001e 03       		.uleb128 0x3
+ 557 001f 24       		.uleb128 0x24
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccpdW8uK.s 			page 15
 
 
- 558 0023 3E       		.uleb128 0x3e
- 559 0024 0B       		.uleb128 0xb
- 560 0025 03       		.uleb128 0x3
- 561 0026 08       		.uleb128 0x8
- 562 0027 00       		.byte	0
- 563 0028 00       		.byte	0
- 564 0029 04       		.uleb128 0x4
- 565 002a 16       		.uleb128 0x16
- 566 002b 00       		.byte	0
- 567 002c 03       		.uleb128 0x3
- 568 002d 0E       		.uleb128 0xe
- 569 002e 3A       		.uleb128 0x3a
- 570 002f 0B       		.uleb128 0xb
- 571 0030 3B       		.uleb128 0x3b
- 572 0031 05       		.uleb128 0x5
- 573 0032 49       		.uleb128 0x49
- 574 0033 13       		.uleb128 0x13
- 575 0034 00       		.byte	0
- 576 0035 00       		.byte	0
- 577 0036 05       		.uleb128 0x5
- 578 0037 35       		.uleb128 0x35
- 579 0038 00       		.byte	0
- 580 0039 49       		.uleb128 0x49
- 581 003a 13       		.uleb128 0x13
- 582 003b 00       		.byte	0
- 583 003c 00       		.byte	0
- 584 003d 06       		.uleb128 0x6
- 585 003e 2E       		.uleb128 0x2e
- 586 003f 01       		.byte	0x1
- 587 0040 3F       		.uleb128 0x3f
- 588 0041 19       		.uleb128 0x19
- 589 0042 03       		.uleb128 0x3
- 590 0043 0E       		.uleb128 0xe
- 591 0044 3A       		.uleb128 0x3a
- 592 0045 0B       		.uleb128 0xb
- 593 0046 3B       		.uleb128 0x3b
- 594 0047 0B       		.uleb128 0xb
- 595 0048 27       		.uleb128 0x27
- 596 0049 19       		.uleb128 0x19
- 597 004a 11       		.uleb128 0x11
- 598 004b 01       		.uleb128 0x1
- 599 004c 12       		.uleb128 0x12
- 600 004d 06       		.uleb128 0x6
- 601 004e 40       		.uleb128 0x40
- 602 004f 18       		.uleb128 0x18
- 603 0050 9742     		.uleb128 0x2117
- 604 0052 19       		.uleb128 0x19
- 605 0053 01       		.uleb128 0x1
- 606 0054 13       		.uleb128 0x13
- 607 0055 00       		.byte	0
- 608 0056 00       		.byte	0
- 609 0057 07       		.uleb128 0x7
- 610 0058 05       		.uleb128 0x5
- 611 0059 00       		.byte	0
- 612 005a 03       		.uleb128 0x3
- 613 005b 0E       		.uleb128 0xe
- 614 005c 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccsGHgTi.s 			page 16
+ 558 0020 00       		.byte	0
+ 559 0021 0B       		.uleb128 0xb
+ 560 0022 0B       		.uleb128 0xb
+ 561 0023 3E       		.uleb128 0x3e
+ 562 0024 0B       		.uleb128 0xb
+ 563 0025 03       		.uleb128 0x3
+ 564 0026 08       		.uleb128 0x8
+ 565 0027 00       		.byte	0
+ 566 0028 00       		.byte	0
+ 567 0029 04       		.uleb128 0x4
+ 568 002a 16       		.uleb128 0x16
+ 569 002b 00       		.byte	0
+ 570 002c 03       		.uleb128 0x3
+ 571 002d 0E       		.uleb128 0xe
+ 572 002e 3A       		.uleb128 0x3a
+ 573 002f 0B       		.uleb128 0xb
+ 574 0030 3B       		.uleb128 0x3b
+ 575 0031 05       		.uleb128 0x5
+ 576 0032 49       		.uleb128 0x49
+ 577 0033 13       		.uleb128 0x13
+ 578 0034 00       		.byte	0
+ 579 0035 00       		.byte	0
+ 580 0036 05       		.uleb128 0x5
+ 581 0037 35       		.uleb128 0x35
+ 582 0038 00       		.byte	0
+ 583 0039 49       		.uleb128 0x49
+ 584 003a 13       		.uleb128 0x13
+ 585 003b 00       		.byte	0
+ 586 003c 00       		.byte	0
+ 587 003d 06       		.uleb128 0x6
+ 588 003e 2E       		.uleb128 0x2e
+ 589 003f 01       		.byte	0x1
+ 590 0040 3F       		.uleb128 0x3f
+ 591 0041 19       		.uleb128 0x19
+ 592 0042 03       		.uleb128 0x3
+ 593 0043 0E       		.uleb128 0xe
+ 594 0044 3A       		.uleb128 0x3a
+ 595 0045 0B       		.uleb128 0xb
+ 596 0046 3B       		.uleb128 0x3b
+ 597 0047 0B       		.uleb128 0xb
+ 598 0048 27       		.uleb128 0x27
+ 599 0049 19       		.uleb128 0x19
+ 600 004a 11       		.uleb128 0x11
+ 601 004b 01       		.uleb128 0x1
+ 602 004c 12       		.uleb128 0x12
+ 603 004d 06       		.uleb128 0x6
+ 604 004e 40       		.uleb128 0x40
+ 605 004f 18       		.uleb128 0x18
+ 606 0050 9742     		.uleb128 0x2117
+ 607 0052 19       		.uleb128 0x19
+ 608 0053 01       		.uleb128 0x1
+ 609 0054 13       		.uleb128 0x13
+ 610 0055 00       		.byte	0
+ 611 0056 00       		.byte	0
+ 612 0057 07       		.uleb128 0x7
+ 613 0058 05       		.uleb128 0x5
+ 614 0059 00       		.byte	0
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccpdW8uK.s 			page 16
 
 
- 615 005d 0B       		.uleb128 0xb
- 616 005e 3B       		.uleb128 0x3b
- 617 005f 0B       		.uleb128 0xb
- 618 0060 49       		.uleb128 0x49
- 619 0061 13       		.uleb128 0x13
- 620 0062 02       		.uleb128 0x2
- 621 0063 18       		.uleb128 0x18
- 622 0064 00       		.byte	0
- 623 0065 00       		.byte	0
- 624 0066 08       		.uleb128 0x8
- 625 0067 34       		.uleb128 0x34
- 626 0068 00       		.byte	0
- 627 0069 03       		.uleb128 0x3
- 628 006a 0E       		.uleb128 0xe
- 629 006b 3A       		.uleb128 0x3a
- 630 006c 0B       		.uleb128 0xb
- 631 006d 3B       		.uleb128 0x3b
- 632 006e 0B       		.uleb128 0xb
- 633 006f 49       		.uleb128 0x49
- 634 0070 13       		.uleb128 0x13
- 635 0071 02       		.uleb128 0x2
- 636 0072 18       		.uleb128 0x18
- 637 0073 00       		.byte	0
- 638 0074 00       		.byte	0
- 639 0075 09       		.uleb128 0x9
- 640 0076 2E       		.uleb128 0x2e
- 641 0077 00       		.byte	0
- 642 0078 3F       		.uleb128 0x3f
- 643 0079 19       		.uleb128 0x19
- 644 007a 03       		.uleb128 0x3
- 645 007b 0E       		.uleb128 0xe
- 646 007c 3A       		.uleb128 0x3a
- 647 007d 0B       		.uleb128 0xb
- 648 007e 3B       		.uleb128 0x3b
- 649 007f 0B       		.uleb128 0xb
- 650 0080 27       		.uleb128 0x27
- 651 0081 19       		.uleb128 0x19
- 652 0082 49       		.uleb128 0x49
- 653 0083 13       		.uleb128 0x13
- 654 0084 11       		.uleb128 0x11
- 655 0085 01       		.uleb128 0x1
- 656 0086 12       		.uleb128 0x12
- 657 0087 06       		.uleb128 0x6
- 658 0088 40       		.uleb128 0x40
- 659 0089 18       		.uleb128 0x18
- 660 008a 9742     		.uleb128 0x2117
- 661 008c 19       		.uleb128 0x19
- 662 008d 00       		.byte	0
- 663 008e 00       		.byte	0
- 664 008f 0A       		.uleb128 0xa
- 665 0090 2E       		.uleb128 0x2e
- 666 0091 01       		.byte	0x1
- 667 0092 3F       		.uleb128 0x3f
- 668 0093 19       		.uleb128 0x19
- 669 0094 03       		.uleb128 0x3
- 670 0095 0E       		.uleb128 0xe
- 671 0096 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccsGHgTi.s 			page 17
+ 615 005a 03       		.uleb128 0x3
+ 616 005b 0E       		.uleb128 0xe
+ 617 005c 3A       		.uleb128 0x3a
+ 618 005d 0B       		.uleb128 0xb
+ 619 005e 3B       		.uleb128 0x3b
+ 620 005f 0B       		.uleb128 0xb
+ 621 0060 49       		.uleb128 0x49
+ 622 0061 13       		.uleb128 0x13
+ 623 0062 02       		.uleb128 0x2
+ 624 0063 18       		.uleb128 0x18
+ 625 0064 00       		.byte	0
+ 626 0065 00       		.byte	0
+ 627 0066 08       		.uleb128 0x8
+ 628 0067 34       		.uleb128 0x34
+ 629 0068 00       		.byte	0
+ 630 0069 03       		.uleb128 0x3
+ 631 006a 0E       		.uleb128 0xe
+ 632 006b 3A       		.uleb128 0x3a
+ 633 006c 0B       		.uleb128 0xb
+ 634 006d 3B       		.uleb128 0x3b
+ 635 006e 0B       		.uleb128 0xb
+ 636 006f 49       		.uleb128 0x49
+ 637 0070 13       		.uleb128 0x13
+ 638 0071 02       		.uleb128 0x2
+ 639 0072 18       		.uleb128 0x18
+ 640 0073 00       		.byte	0
+ 641 0074 00       		.byte	0
+ 642 0075 09       		.uleb128 0x9
+ 643 0076 2E       		.uleb128 0x2e
+ 644 0077 00       		.byte	0
+ 645 0078 3F       		.uleb128 0x3f
+ 646 0079 19       		.uleb128 0x19
+ 647 007a 03       		.uleb128 0x3
+ 648 007b 0E       		.uleb128 0xe
+ 649 007c 3A       		.uleb128 0x3a
+ 650 007d 0B       		.uleb128 0xb
+ 651 007e 3B       		.uleb128 0x3b
+ 652 007f 0B       		.uleb128 0xb
+ 653 0080 27       		.uleb128 0x27
+ 654 0081 19       		.uleb128 0x19
+ 655 0082 49       		.uleb128 0x49
+ 656 0083 13       		.uleb128 0x13
+ 657 0084 11       		.uleb128 0x11
+ 658 0085 01       		.uleb128 0x1
+ 659 0086 12       		.uleb128 0x12
+ 660 0087 06       		.uleb128 0x6
+ 661 0088 40       		.uleb128 0x40
+ 662 0089 18       		.uleb128 0x18
+ 663 008a 9742     		.uleb128 0x2117
+ 664 008c 19       		.uleb128 0x19
+ 665 008d 00       		.byte	0
+ 666 008e 00       		.byte	0
+ 667 008f 0A       		.uleb128 0xa
+ 668 0090 2E       		.uleb128 0x2e
+ 669 0091 01       		.byte	0x1
+ 670 0092 3F       		.uleb128 0x3f
+ 671 0093 19       		.uleb128 0x19
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccpdW8uK.s 			page 17
 
 
- 672 0097 0B       		.uleb128 0xb
- 673 0098 3B       		.uleb128 0x3b
- 674 0099 0B       		.uleb128 0xb
- 675 009a 27       		.uleb128 0x27
- 676 009b 19       		.uleb128 0x19
- 677 009c 49       		.uleb128 0x49
- 678 009d 13       		.uleb128 0x13
- 679 009e 11       		.uleb128 0x11
- 680 009f 01       		.uleb128 0x1
- 681 00a0 12       		.uleb128 0x12
- 682 00a1 06       		.uleb128 0x6
- 683 00a2 40       		.uleb128 0x40
- 684 00a3 18       		.uleb128 0x18
- 685 00a4 9742     		.uleb128 0x2117
- 686 00a6 19       		.uleb128 0x19
- 687 00a7 00       		.byte	0
- 688 00a8 00       		.byte	0
- 689 00a9 00       		.byte	0
- 690              		.section	.debug_aranges,"",%progbits
- 691 0000 44000000 		.4byte	0x44
- 692 0004 0200     		.2byte	0x2
- 693 0006 00000000 		.4byte	.Ldebug_info0
- 694 000a 04       		.byte	0x4
- 695 000b 00       		.byte	0
- 696 000c 0000     		.2byte	0
- 697 000e 0000     		.2byte	0
- 698 0010 00000000 		.4byte	.LFB0
- 699 0014 30000000 		.4byte	.LFE0-.LFB0
- 700 0018 00000000 		.4byte	.LFB1
- 701 001c 48000000 		.4byte	.LFE1-.LFB1
- 702 0020 00000000 		.4byte	.LFB2
- 703 0024 1C000000 		.4byte	.LFE2-.LFB2
- 704 0028 00000000 		.4byte	.LFB3
- 705 002c 1C000000 		.4byte	.LFE3-.LFB3
- 706 0030 00000000 		.4byte	.LFB4
- 707 0034 44000000 		.4byte	.LFE4-.LFB4
- 708 0038 00000000 		.4byte	.LFB5
- 709 003c 30000000 		.4byte	.LFE5-.LFB5
- 710 0040 00000000 		.4byte	0
- 711 0044 00000000 		.4byte	0
- 712              		.section	.debug_ranges,"",%progbits
- 713              	.Ldebug_ranges0:
- 714 0000 00000000 		.4byte	.LFB0
- 715 0004 30000000 		.4byte	.LFE0
- 716 0008 00000000 		.4byte	.LFB1
- 717 000c 48000000 		.4byte	.LFE1
- 718 0010 00000000 		.4byte	.LFB2
- 719 0014 1C000000 		.4byte	.LFE2
- 720 0018 00000000 		.4byte	.LFB3
- 721 001c 1C000000 		.4byte	.LFE3
- 722 0020 00000000 		.4byte	.LFB4
- 723 0024 44000000 		.4byte	.LFE4
- 724 0028 00000000 		.4byte	.LFB5
- 725 002c 30000000 		.4byte	.LFE5
- 726 0030 00000000 		.4byte	0
- 727 0034 00000000 		.4byte	0
- 728              		.section	.debug_line,"",%progbits
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccsGHgTi.s 			page 18
+ 672 0094 03       		.uleb128 0x3
+ 673 0095 0E       		.uleb128 0xe
+ 674 0096 3A       		.uleb128 0x3a
+ 675 0097 0B       		.uleb128 0xb
+ 676 0098 3B       		.uleb128 0x3b
+ 677 0099 0B       		.uleb128 0xb
+ 678 009a 27       		.uleb128 0x27
+ 679 009b 19       		.uleb128 0x19
+ 680 009c 49       		.uleb128 0x49
+ 681 009d 13       		.uleb128 0x13
+ 682 009e 11       		.uleb128 0x11
+ 683 009f 01       		.uleb128 0x1
+ 684 00a0 12       		.uleb128 0x12
+ 685 00a1 06       		.uleb128 0x6
+ 686 00a2 40       		.uleb128 0x40
+ 687 00a3 18       		.uleb128 0x18
+ 688 00a4 9742     		.uleb128 0x2117
+ 689 00a6 19       		.uleb128 0x19
+ 690 00a7 00       		.byte	0
+ 691 00a8 00       		.byte	0
+ 692 00a9 00       		.byte	0
+ 693              		.section	.debug_aranges,"",%progbits
+ 694 0000 44000000 		.4byte	0x44
+ 695 0004 0200     		.2byte	0x2
+ 696 0006 00000000 		.4byte	.Ldebug_info0
+ 697 000a 04       		.byte	0x4
+ 698 000b 00       		.byte	0
+ 699 000c 0000     		.2byte	0
+ 700 000e 0000     		.2byte	0
+ 701 0010 00000000 		.4byte	.LFB0
+ 702 0014 30000000 		.4byte	.LFE0-.LFB0
+ 703 0018 00000000 		.4byte	.LFB1
+ 704 001c 50000000 		.4byte	.LFE1-.LFB1
+ 705 0020 00000000 		.4byte	.LFB2
+ 706 0024 1C000000 		.4byte	.LFE2-.LFB2
+ 707 0028 00000000 		.4byte	.LFB3
+ 708 002c 1C000000 		.4byte	.LFE3-.LFB3
+ 709 0030 00000000 		.4byte	.LFB4
+ 710 0034 44000000 		.4byte	.LFE4-.LFB4
+ 711 0038 00000000 		.4byte	.LFB5
+ 712 003c 30000000 		.4byte	.LFE5-.LFB5
+ 713 0040 00000000 		.4byte	0
+ 714 0044 00000000 		.4byte	0
+ 715              		.section	.debug_ranges,"",%progbits
+ 716              	.Ldebug_ranges0:
+ 717 0000 00000000 		.4byte	.LFB0
+ 718 0004 30000000 		.4byte	.LFE0
+ 719 0008 00000000 		.4byte	.LFB1
+ 720 000c 50000000 		.4byte	.LFE1
+ 721 0010 00000000 		.4byte	.LFB2
+ 722 0014 1C000000 		.4byte	.LFE2
+ 723 0018 00000000 		.4byte	.LFB3
+ 724 001c 1C000000 		.4byte	.LFE3
+ 725 0020 00000000 		.4byte	.LFB4
+ 726 0024 44000000 		.4byte	.LFE4
+ 727 0028 00000000 		.4byte	.LFB5
+ 728 002c 30000000 		.4byte	.LFE5
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccpdW8uK.s 			page 18
 
 
- 729              	.Ldebug_line0:
- 730 0000 C2000000 		.section	.debug_str,"MS",%progbits,1
- 730      02004B00 
- 730      00000201 
- 730      FB0E0D00 
- 730      01010101 
- 731              	.LASF15:
- 732 0000 72656733 		.ascii	"reg32\000"
- 732      3200
- 733              	.LASF22:
- 734 0006 43617053 		.ascii	"CapSense_1_Sns_SetInterruptMode\000"
- 734      656E7365 
- 734      5F315F53 
- 734      6E735F53 
- 734      6574496E 
- 735              	.LASF19:
- 736 0026 76616C75 		.ascii	"value\000"
- 736      6500
- 737              	.LASF30:
- 738 002c 433A5C55 		.ascii	"C:\\Users\\d4hhm\\Documents\\Care-support-system\\S"
- 738      73657273 
- 738      5C643468 
- 738      686D5C44 
- 738      6F63756D 
- 739 005a 6C617665 		.ascii	"lave\\Care_support_system_peripheral.cydsn\000"
- 739      5C436172 
- 739      655F7375 
- 739      70706F72 
- 739      745F7379 
- 740              	.LASF12:
- 741 0084 666C6F61 		.ascii	"float\000"
- 741      7400
- 742              	.LASF1:
- 743 008a 756E7369 		.ascii	"unsigned char\000"
- 743      676E6564 
- 743      20636861 
- 743      7200
- 744              	.LASF17:
- 745 0098 43617053 		.ascii	"CapSense_1_Sns_Write\000"
- 745      656E7365 
- 745      5F315F53 
- 745      6E735F57 
- 745      72697465 
- 746              	.LASF5:
- 747 00ad 6C6F6E67 		.ascii	"long unsigned int\000"
- 747      20756E73 
- 747      69676E65 
- 747      6420696E 
- 747      7400
- 748              	.LASF3:
- 749 00bf 73686F72 		.ascii	"short unsigned int\000"
- 749      7420756E 
- 749      7369676E 
- 749      65642069 
- 749      6E7400
- 750              	.LASF28:
- 751 00d2 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccsGHgTi.s 			page 19
+ 729 0030 00000000 		.4byte	0
+ 730 0034 00000000 		.4byte	0
+ 731              		.section	.debug_line,"",%progbits
+ 732              	.Ldebug_line0:
+ 733 0000 C2000000 		.section	.debug_str,"MS",%progbits,1
+ 733      02004B00 
+ 733      00000201 
+ 733      FB0E0D00 
+ 733      01010101 
+ 734              	.LASF15:
+ 735 0000 72656733 		.ascii	"reg32\000"
+ 735      3200
+ 736              	.LASF30:
+ 737 0006 433A5C55 		.ascii	"C:\\Users\\d4hhm\\Documents\\Care-support-system\\P"
+ 737      73657273 
+ 737      5C643468 
+ 737      686D5C44 
+ 737      6F63756D 
+ 738 0034 65726970 		.ascii	"eripheral\\Care_support_system_peripheral.cydsn\000"
+ 738      68657261 
+ 738      6C5C4361 
+ 738      72655F73 
+ 738      7570706F 
+ 739              	.LASF22:
+ 740 0063 43617053 		.ascii	"CapSense_1_Sns_SetInterruptMode\000"
+ 740      656E7365 
+ 740      5F315F53 
+ 740      6E735F53 
+ 740      6574496E 
+ 741              	.LASF19:
+ 742 0083 76616C75 		.ascii	"value\000"
+ 742      6500
+ 743              	.LASF12:
+ 744 0089 666C6F61 		.ascii	"float\000"
+ 744      7400
+ 745              	.LASF1:
+ 746 008f 756E7369 		.ascii	"unsigned char\000"
+ 746      676E6564 
+ 746      20636861 
+ 746      7200
+ 747              	.LASF17:
+ 748 009d 43617053 		.ascii	"CapSense_1_Sns_Write\000"
+ 748      656E7365 
+ 748      5F315F53 
+ 748      6E735F57 
+ 748      72697465 
+ 749              	.LASF5:
+ 750 00b2 6C6F6E67 		.ascii	"long unsigned int\000"
+ 750      20756E73 
+ 750      69676E65 
+ 750      6420696E 
+ 750      7400
+ 751              	.LASF3:
+ 752 00c4 73686F72 		.ascii	"short unsigned int\000"
+ 752      7420756E 
+ 752      7369676E 
+ 752      65642069 
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccpdW8uK.s 			page 19
 
 
- 751      43313120 
- 751      352E342E 
- 751      31203230 
- 751      31363036 
- 752 0105 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
- 752      20726576 
- 752      6973696F 
- 752      6E203233 
- 752      37373135 
- 753 0138 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
- 753      66756E63 
- 753      74696F6E 
- 753      2D736563 
- 753      74696F6E 
- 754              	.LASF13:
- 755 0160 646F7562 		.ascii	"double\000"
- 755      6C6500
- 756              	.LASF21:
- 757 0167 43617053 		.ascii	"CapSense_1_Sns_ReadDataReg\000"
- 757      656E7365 
- 757      5F315F53 
- 757      6E735F52 
- 757      65616444 
- 758              	.LASF10:
- 759 0182 75696E74 		.ascii	"uint16\000"
- 759      313600
- 760              	.LASF23:
- 761 0189 706F7369 		.ascii	"position\000"
- 761      74696F6E 
- 761      00
- 762              	.LASF11:
- 763 0192 75696E74 		.ascii	"uint32\000"
- 763      333200
- 764              	.LASF25:
- 765 0199 696E7472 		.ascii	"intrCfg\000"
- 765      43666700 
- 766              	.LASF8:
- 767 01a1 756E7369 		.ascii	"unsigned int\000"
- 767      676E6564 
- 767      20696E74 
- 767      00
- 768              	.LASF7:
- 769 01ae 6C6F6E67 		.ascii	"long long unsigned int\000"
- 769      206C6F6E 
- 769      6720756E 
- 769      7369676E 
- 769      65642069 
- 770              	.LASF16:
- 771 01c5 43617053 		.ascii	"CapSense_1_Sns_SetDriveMode\000"
- 771      656E7365 
- 771      5F315F53 
- 771      6E735F53 
- 771      65744472 
- 772              	.LASF18:
- 773 01e1 6D6F6465 		.ascii	"mode\000"
- 773      00
- 774              	.LASF6:
-ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccsGHgTi.s 			page 20
+ 752      6E7400
+ 753              	.LASF28:
+ 754 00d7 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 754      43313120 
+ 754      352E342E 
+ 754      31203230 
+ 754      31363036 
+ 755 010a 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 755      20726576 
+ 755      6973696F 
+ 755      6E203233 
+ 755      37373135 
+ 756 013d 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 756      66756E63 
+ 756      74696F6E 
+ 756      2D736563 
+ 756      74696F6E 
+ 757              	.LASF13:
+ 758 0165 646F7562 		.ascii	"double\000"
+ 758      6C6500
+ 759              	.LASF21:
+ 760 016c 43617053 		.ascii	"CapSense_1_Sns_ReadDataReg\000"
+ 760      656E7365 
+ 760      5F315F53 
+ 760      6E735F52 
+ 760      65616444 
+ 761              	.LASF10:
+ 762 0187 75696E74 		.ascii	"uint16\000"
+ 762      313600
+ 763              	.LASF23:
+ 764 018e 706F7369 		.ascii	"position\000"
+ 764      74696F6E 
+ 764      00
+ 765              	.LASF11:
+ 766 0197 75696E74 		.ascii	"uint32\000"
+ 766      333200
+ 767              	.LASF25:
+ 768 019e 696E7472 		.ascii	"intrCfg\000"
+ 768      43666700 
+ 769              	.LASF8:
+ 770 01a6 756E7369 		.ascii	"unsigned int\000"
+ 770      676E6564 
+ 770      20696E74 
+ 770      00
+ 771              	.LASF7:
+ 772 01b3 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 772      206C6F6E 
+ 772      6720756E 
+ 772      7369676E 
+ 772      65642069 
+ 773              	.LASF16:
+ 774 01ca 43617053 		.ascii	"CapSense_1_Sns_SetDriveMode\000"
+ 774      656E7365 
+ 774      5F315F53 
+ 774      6E735F53 
+ 774      65744472 
+ 775              	.LASF18:
+ARM GAS  C:\Users\d4hhm\AppData\Local\Temp\ccpdW8uK.s 			page 20
 
 
- 775 01e6 6C6F6E67 		.ascii	"long long int\000"
- 775      206C6F6E 
- 775      6720696E 
- 775      7400
- 776              	.LASF27:
- 777 01f4 6D61736B 		.ascii	"maskedStatus\000"
- 777      65645374 
- 777      61747573 
- 777      00
- 778              	.LASF14:
- 779 0201 63686172 		.ascii	"char\000"
- 779      00
- 780              	.LASF20:
- 781 0206 43617053 		.ascii	"CapSense_1_Sns_Read\000"
- 781      656E7365 
- 781      5F315F53 
- 781      6E735F52 
- 781      65616400 
- 782              	.LASF2:
- 783 021a 73686F72 		.ascii	"short int\000"
- 783      7420696E 
- 783      7400
- 784              	.LASF9:
- 785 0224 75696E74 		.ascii	"uint8\000"
- 785      3800
- 786              	.LASF29:
- 787 022a 47656E65 		.ascii	"Generated_Source\\PSoC4\\CapSense_1_Sns.c\000"
- 787      72617465 
- 787      645F536F 
- 787      75726365 
- 787      5C50536F 
- 788              	.LASF4:
- 789 0252 6C6F6E67 		.ascii	"long int\000"
- 789      20696E74 
- 789      00
- 790              	.LASF0:
- 791 025b 7369676E 		.ascii	"signed char\000"
- 791      65642063 
- 791      68617200 
- 792              	.LASF26:
- 793 0267 43617053 		.ascii	"CapSense_1_Sns_ClearInterrupt\000"
- 793      656E7365 
- 793      5F315F53 
- 793      6E735F43 
- 793      6C656172 
- 794              	.LASF24:
- 795 0285 64725661 		.ascii	"drVal\000"
- 795      6C00
- 796              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 776 01e6 6D6F6465 		.ascii	"mode\000"
+ 776      00
+ 777              	.LASF6:
+ 778 01eb 6C6F6E67 		.ascii	"long long int\000"
+ 778      206C6F6E 
+ 778      6720696E 
+ 778      7400
+ 779              	.LASF27:
+ 780 01f9 6D61736B 		.ascii	"maskedStatus\000"
+ 780      65645374 
+ 780      61747573 
+ 780      00
+ 781              	.LASF14:
+ 782 0206 63686172 		.ascii	"char\000"
+ 782      00
+ 783              	.LASF20:
+ 784 020b 43617053 		.ascii	"CapSense_1_Sns_Read\000"
+ 784      656E7365 
+ 784      5F315F53 
+ 784      6E735F52 
+ 784      65616400 
+ 785              	.LASF2:
+ 786 021f 73686F72 		.ascii	"short int\000"
+ 786      7420696E 
+ 786      7400
+ 787              	.LASF9:
+ 788 0229 75696E74 		.ascii	"uint8\000"
+ 788      3800
+ 789              	.LASF29:
+ 790 022f 47656E65 		.ascii	"Generated_Source\\PSoC4\\CapSense_1_Sns.c\000"
+ 790      72617465 
+ 790      645F536F 
+ 790      75726365 
+ 790      5C50536F 
+ 791              	.LASF4:
+ 792 0257 6C6F6E67 		.ascii	"long int\000"
+ 792      20696E74 
+ 792      00
+ 793              	.LASF0:
+ 794 0260 7369676E 		.ascii	"signed char\000"
+ 794      65642063 
+ 794      68617200 
+ 795              	.LASF26:
+ 796 026c 43617053 		.ascii	"CapSense_1_Sns_ClearInterrupt\000"
+ 796      656E7365 
+ 796      5F315F53 
+ 796      6E735F43 
+ 796      6C656172 
+ 797              	.LASF24:
+ 798 028a 64725661 		.ascii	"drVal\000"
+ 798      6C00
+ 799              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

@@ -1,5 +1,5 @@
--- Project:   C:\Users\d4hhm\Documents\Care-support-system\Slave\Care_support_system_peripheral.cydsn\Care_support_system_peripheral.cyprj
--- Generated: 01/22/2021 19:05:17
+-- Project:   C:\Users\d4hhm\Documents\Care-support-system\Peripheral\Care_support_system_peripheral.cydsn\Care_support_system_peripheral.cyprj
+-- Generated: 02/14/2021 15:45:14
 -- PSoC Creator  4.2
 
 ENTITY Care_support_system_peripheral IS
@@ -74,9 +74,9 @@ ARCHITECTURE __DEFAULT__ OF Care_support_system_peripheral IS
     ATTRIBUTE lib_model OF \CapSense_1:Cmod(0)\ : LABEL IS "iocell1";
     ATTRIBUTE Location OF \CapSense_1:Cmod(0)\ : LABEL IS "P4[0]";
     ATTRIBUTE lib_model OF \CapSense_1:Sns(0)\ : LABEL IS "iocell2";
-    ATTRIBUTE Location OF \CapSense_1:Sns(0)\ : LABEL IS "P3[7]";
+    ATTRIBUTE Location OF \CapSense_1:Sns(0)\ : LABEL IS "P3[4]";
     ATTRIBUTE lib_model OF \CapSense_1:Shield(0)\ : LABEL IS "iocell3";
-    ATTRIBUTE Location OF \CapSense_1:Shield(0)\ : LABEL IS "P3[4]";
+    ATTRIBUTE Location OF \CapSense_1:Shield(0)\ : LABEL IS "P3[5]";
     ATTRIBUTE lib_model OF SCL_1(0) : LABEL IS "iocell4";
     ATTRIBUTE Location OF SCL_1(0) : LABEL IS "P0[5]";
     ATTRIBUTE lib_model OF SDA_1(0) : LABEL IS "iocell5";

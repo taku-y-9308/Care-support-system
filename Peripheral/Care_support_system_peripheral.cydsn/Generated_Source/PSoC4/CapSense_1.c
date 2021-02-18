@@ -82,14 +82,14 @@ const uint8 CapSense_1_pinShiftTbl[] = {
 };
 
 const uint8 CapSense_1_modulationIDAC[CapSense_1_TOTAL_SENSOR_COUNT] = {
-    10u, 
+    80u, 
 };
 const uint8 CapSense_1_compensationIDAC[CapSense_1_TOTAL_SENSOR_COUNT] = {
     80u, 
 };
 
 const uint32 CapSense_1_widgetResolution[CapSense_1_RESOLUTIONS_TBL_SIZE] = {
-    CapSense_1_RESOLUTION_10_BITS,
+    CapSense_1_RESOLUTION_8_BITS,
 };
 
 const uint8 CapSense_1_senseClkDividerVal[CapSense_1_TOTAL_SCANSLOT_COUNT] = {

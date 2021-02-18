@@ -1,5 +1,5 @@
 -- Project:   Care_support_system_peripheral
--- Generated: 01/22/2021 19:05:16
+-- Generated: 02/14/2021 15:45:12
 -- PSoC Creator  4.2
 
 ENTITY Care_support_system_peripheral IS
@@ -72,9 +72,9 @@ ARCHITECTURE __DEFAULT__ OF Care_support_system_peripheral IS
     ATTRIBUTE lib_model OF \CapSense_1:Cmod(0)\ : LABEL IS "iocell1";
     ATTRIBUTE Location OF \CapSense_1:Cmod(0)\ : LABEL IS "P4[0]";
     ATTRIBUTE lib_model OF \CapSense_1:Sns(0)\ : LABEL IS "iocell2";
-    ATTRIBUTE Location OF \CapSense_1:Sns(0)\ : LABEL IS "P3[7]";
+    ATTRIBUTE Location OF \CapSense_1:Sns(0)\ : LABEL IS "P3[4]";
     ATTRIBUTE lib_model OF \CapSense_1:Shield(0)\ : LABEL IS "iocell3";
-    ATTRIBUTE Location OF \CapSense_1:Shield(0)\ : LABEL IS "P3[4]";
+    ATTRIBUTE Location OF \CapSense_1:Shield(0)\ : LABEL IS "P3[5]";
     ATTRIBUTE lib_model OF SCL_1(0) : LABEL IS "iocell4";
     ATTRIBUTE lib_model OF SDA_1(0) : LABEL IS "iocell5";
     ATTRIBUTE Location OF \CapSense_1:CSD_FFB\ : LABEL IS "F(CSD,0)";

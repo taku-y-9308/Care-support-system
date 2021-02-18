@@ -24,7 +24,7 @@ set_io "SCL_1(0)" iocell 0 5
 set_location "ClockBlock" m0s8clockblockcell -1 -1 0
 set_location "\CapSense_1:IDAC2:cy_psoc4_idac\" p4csidac7cell -1 -1 0
 set_io "\CapSense_1:Cmod(0)\" iocell 4 0
-set_io "\CapSense_1:Sns(0)\" iocell 3 7
-set_io "\CapSense_1:Shield(0)\" iocell 3 4
+set_io "\CapSense_1:Sns(0)\" iocell 3 4
+set_io "\CapSense_1:Shield(0)\" iocell 3 5
 set_io "SDA_1(0)" iocell 0 4
 set_location "\CapSense_1:IDAC1:cy_psoc4_idac\" p4csidac8cell -1 -1 0

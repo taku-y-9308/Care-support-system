@@ -10598,13 +10598,13 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  589              	.set CapSense_1_Shield__0__DR_INV, CYREG_GPIO_PRT3_DR_INV
  590              	.set CapSense_1_Shield__0__DR_SET, CYREG_GPIO_PRT3_DR_SET
  591              	.set CapSense_1_Shield__0__HSIOM, CYREG_HSIOM_PORT_SEL3
- 592              	.set CapSense_1_Shield__0__HSIOM_MASK, 0x000F0000
- 593              	.set CapSense_1_Shield__0__HSIOM_SHIFT, 16
+ 592              	.set CapSense_1_Shield__0__HSIOM_MASK, 0x00F00000
+ 593              	.set CapSense_1_Shield__0__HSIOM_SHIFT, 20
  594              	.set CapSense_1_Shield__0__INTCFG, CYREG_GPIO_PRT3_INTR_CFG
  595              	.set CapSense_1_Shield__0__INTR, CYREG_GPIO_PRT3_INTR
  596              	.set CapSense_1_Shield__0__INTR_CFG, CYREG_GPIO_PRT3_INTR_CFG
  597              	.set CapSense_1_Shield__0__INTSTAT, CYREG_GPIO_PRT3_INTR
- 598              	.set CapSense_1_Shield__0__MASK, 0x10
+ 598              	.set CapSense_1_Shield__0__MASK, 0x20
  599              	.set CapSense_1_Shield__0__PA__CFG0, CYREG_UDB_PA3_CFG0
  600              	.set CapSense_1_Shield__0__PA__CFG1, CYREG_UDB_PA3_CFG1
  601              	.set CapSense_1_Shield__0__PA__CFG10, CYREG_UDB_PA3_CFG10
@@ -10627,7 +10627,7 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  615              	.set CapSense_1_Shield__0__PC2, CYREG_GPIO_PRT3_PC2
  616              	.set CapSense_1_Shield__0__PORT, 3
  617              	.set CapSense_1_Shield__0__PS, CYREG_GPIO_PRT3_PS
- 618              	.set CapSense_1_Shield__0__SHIFT, 4
+ 618              	.set CapSense_1_Shield__0__SHIFT, 5
  619              	.set CapSense_1_Shield__DR, CYREG_GPIO_PRT3_DR
  620              	.set CapSense_1_Shield__DR_CLR, CYREG_GPIO_PRT3_DR_CLR
  621              	.set CapSense_1_Shield__DR_INV, CYREG_GPIO_PRT3_DR_INV
@@ -10636,7 +10636,7 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  624              	.set CapSense_1_Shield__INTR, CYREG_GPIO_PRT3_INTR
  625              	.set CapSense_1_Shield__INTR_CFG, CYREG_GPIO_PRT3_INTR_CFG
  626              	.set CapSense_1_Shield__INTSTAT, CYREG_GPIO_PRT3_INTR
- 627              	.set CapSense_1_Shield__MASK, 0x10
+ 627              	.set CapSense_1_Shield__MASK, 0x20
  628              	.set CapSense_1_Shield__PA__CFG0, CYREG_UDB_PA3_CFG0
  629              	.set CapSense_1_Shield__PA__CFG1, CYREG_UDB_PA3_CFG1
  630              	.set CapSense_1_Shield__PA__CFG10, CYREG_UDB_PA3_CFG10
@@ -10664,7 +10664,7 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  652              	.set CapSense_1_Shield__Shield__INTR, CYREG_GPIO_PRT3_INTR
  653              	.set CapSense_1_Shield__Shield__INTR_CFG, CYREG_GPIO_PRT3_INTR_CFG
  654              	.set CapSense_1_Shield__Shield__INTSTAT, CYREG_GPIO_PRT3_INTR
- 655              	.set CapSense_1_Shield__Shield__MASK, 0x10
+ 655              	.set CapSense_1_Shield__Shield__MASK, 0x20
  656              	.set CapSense_1_Shield__Shield__PA__CFG0, CYREG_UDB_PA3_CFG0
  657              	.set CapSense_1_Shield__Shield__PA__CFG1, CYREG_UDB_PA3_CFG1
  658              	.set CapSense_1_Shield__Shield__PA__CFG10, CYREG_UDB_PA3_CFG10
@@ -10687,20 +10687,20 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  672              	.set CapSense_1_Shield__Shield__PC2, CYREG_GPIO_PRT3_PC2
  673              	.set CapSense_1_Shield__Shield__PORT, 3
  674              	.set CapSense_1_Shield__Shield__PS, CYREG_GPIO_PRT3_PS
- 675              	.set CapSense_1_Shield__Shield__SHIFT, 4
- 676              	.set CapSense_1_Shield__SHIFT, 4
+ 675              	.set CapSense_1_Shield__Shield__SHIFT, 5
+ 676              	.set CapSense_1_Shield__SHIFT, 5
  677              	.set CapSense_1_Sns__0__DR, CYREG_GPIO_PRT3_DR
  678              	.set CapSense_1_Sns__0__DR_CLR, CYREG_GPIO_PRT3_DR_CLR
  679              	.set CapSense_1_Sns__0__DR_INV, CYREG_GPIO_PRT3_DR_INV
  680              	.set CapSense_1_Sns__0__DR_SET, CYREG_GPIO_PRT3_DR_SET
  681              	.set CapSense_1_Sns__0__HSIOM, CYREG_HSIOM_PORT_SEL3
- 682              	.set CapSense_1_Sns__0__HSIOM_MASK, 0xF0000000
- 683              	.set CapSense_1_Sns__0__HSIOM_SHIFT, 28
+ 682              	.set CapSense_1_Sns__0__HSIOM_MASK, 0x000F0000
+ 683              	.set CapSense_1_Sns__0__HSIOM_SHIFT, 16
  684              	.set CapSense_1_Sns__0__INTCFG, CYREG_GPIO_PRT3_INTR_CFG
  685              	.set CapSense_1_Sns__0__INTR, CYREG_GPIO_PRT3_INTR
  686              	.set CapSense_1_Sns__0__INTR_CFG, CYREG_GPIO_PRT3_INTR_CFG
  687              	.set CapSense_1_Sns__0__INTSTAT, CYREG_GPIO_PRT3_INTR
- 688              	.set CapSense_1_Sns__0__MASK, 0x80
+ 688              	.set CapSense_1_Sns__0__MASK, 0x10
  689              	.set CapSense_1_Sns__0__PA__CFG0, CYREG_UDB_PA3_CFG0
  690              	.set CapSense_1_Sns__0__PA__CFG1, CYREG_UDB_PA3_CFG1
  691              	.set CapSense_1_Sns__0__PA__CFG10, CYREG_UDB_PA3_CFG10
@@ -10720,7 +10720,7 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  705              	.set CapSense_1_Sns__0__PC2, CYREG_GPIO_PRT3_PC2
  706              	.set CapSense_1_Sns__0__PORT, 3
  707              	.set CapSense_1_Sns__0__PS, CYREG_GPIO_PRT3_PS
- 708              	.set CapSense_1_Sns__0__SHIFT, 7
+ 708              	.set CapSense_1_Sns__0__SHIFT, 4
  709              	.set CapSense_1_Sns__Button0__BTN__DR, CYREG_GPIO_PRT3_DR
  710              	.set CapSense_1_Sns__Button0__BTN__DR_CLR, CYREG_GPIO_PRT3_DR_CLR
  711              	.set CapSense_1_Sns__Button0__BTN__DR_INV, CYREG_GPIO_PRT3_DR_INV
@@ -10729,7 +10729,7 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  714              	.set CapSense_1_Sns__Button0__BTN__INTR, CYREG_GPIO_PRT3_INTR
  715              	.set CapSense_1_Sns__Button0__BTN__INTR_CFG, CYREG_GPIO_PRT3_INTR_CFG
  716              	.set CapSense_1_Sns__Button0__BTN__INTSTAT, CYREG_GPIO_PRT3_INTR
- 717              	.set CapSense_1_Sns__Button0__BTN__MASK, 0x80
+ 717              	.set CapSense_1_Sns__Button0__BTN__MASK, 0x10
  718              	.set CapSense_1_Sns__Button0__BTN__PA__CFG0, CYREG_UDB_PA3_CFG0
  719              	.set CapSense_1_Sns__Button0__BTN__PA__CFG1, CYREG_UDB_PA3_CFG1
  720              	.set CapSense_1_Sns__Button0__BTN__PA__CFG10, CYREG_UDB_PA3_CFG10
@@ -10752,7 +10752,7 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  734              	.set CapSense_1_Sns__Button0__BTN__PC2, CYREG_GPIO_PRT3_PC2
  735              	.set CapSense_1_Sns__Button0__BTN__PORT, 3
  736              	.set CapSense_1_Sns__Button0__BTN__PS, CYREG_GPIO_PRT3_PS
- 737              	.set CapSense_1_Sns__Button0__BTN__SHIFT, 7
+ 737              	.set CapSense_1_Sns__Button0__BTN__SHIFT, 4
  738              	.set CapSense_1_Sns__DR, CYREG_GPIO_PRT3_DR
  739              	.set CapSense_1_Sns__DR_CLR, CYREG_GPIO_PRT3_DR_CLR
  740              	.set CapSense_1_Sns__DR_INV, CYREG_GPIO_PRT3_DR_INV
@@ -10761,7 +10761,7 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  743              	.set CapSense_1_Sns__INTR, CYREG_GPIO_PRT3_INTR
  744              	.set CapSense_1_Sns__INTR_CFG, CYREG_GPIO_PRT3_INTR_CFG
  745              	.set CapSense_1_Sns__INTSTAT, CYREG_GPIO_PRT3_INTR
- 746              	.set CapSense_1_Sns__MASK, 0x80
+ 746              	.set CapSense_1_Sns__MASK, 0x10
  747              	.set CapSense_1_Sns__PA__CFG0, CYREG_UDB_PA3_CFG0
  748              	.set CapSense_1_Sns__PA__CFG1, CYREG_UDB_PA3_CFG1
  749              	.set CapSense_1_Sns__PA__CFG10, CYREG_UDB_PA3_CFG10
@@ -10781,7 +10781,7 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  763              	.set CapSense_1_Sns__PC2, CYREG_GPIO_PRT3_PC2
  764              	.set CapSense_1_Sns__PORT, 3
  765              	.set CapSense_1_Sns__PS, CYREG_GPIO_PRT3_PS
- 766              	.set CapSense_1_Sns__SHIFT, 7
+ 766              	.set CapSense_1_Sns__SHIFT, 4
  767              	
  768              	/* Miscellaneous */
  769              	.set CYDEV_BCLK__HFCLK__HZ, 24000000

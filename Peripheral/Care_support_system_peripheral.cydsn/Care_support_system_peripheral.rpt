@@ -1,13 +1,13 @@
-Loading plugins phase: Elapsed time ==> 0s.125ms
+Loading plugins phase: Elapsed time ==> 0s.188ms
 <CYPRESSTAG name="CyDsfit arguments...">
-cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Users\d4hhm\Documents\Care-support-system\Slave\Care_support_system_peripheral.cydsn\Care_support_system_peripheral.cyprj -d CYBLE-022001-00 -s C:\Users\d4hhm\Documents\Care-support-system\Slave\Care_support_system_peripheral.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Users\d4hhm\Documents\Care-support-system\Peripheral\Care_support_system_peripheral.cydsn\Care_support_system_peripheral.cyprj -d CYBLE-022001-00 -s C:\Users\d4hhm\Documents\Care-support-system\Peripheral\Care_support_system_peripheral.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
 </CYPRESSTAG>
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 1s.546ms
+Elaboration phase: Elapsed time ==> 1s.968ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.046ms
+HDL generation phase: Elapsed time ==> 0s.041ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -25,23 +25,23 @@ HDL generation phase: Elapsed time ==> 0s.046ms
 ======================================================================
 Compiling:  Care_support_system_peripheral.v
 Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\bin\warp.exe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\d4hhm\Documents\Care-support-system\Slave\Care_support_system_peripheral.cydsn\Care_support_system_peripheral.cyprj -dcpsoc3 Care_support_system_peripheral.v -verilog
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\d4hhm\Documents\Care-support-system\Peripheral\Care_support_system_peripheral.cydsn\Care_support_system_peripheral.cyprj -dcpsoc3 Care_support_system_peripheral.v -verilog
 ======================================================================
 
 ======================================================================
 Compiling:  Care_support_system_peripheral.v
 Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\bin\warp.exe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\d4hhm\Documents\Care-support-system\Slave\Care_support_system_peripheral.cydsn\Care_support_system_peripheral.cyprj -dcpsoc3 Care_support_system_peripheral.v -verilog
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\d4hhm\Documents\Care-support-system\Peripheral\Care_support_system_peripheral.cydsn\Care_support_system_peripheral.cyprj -dcpsoc3 Care_support_system_peripheral.v -verilog
 ======================================================================
 
 ======================================================================
 Compiling:  Care_support_system_peripheral.v
 Program  :   vlogfe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\d4hhm\Documents\Care-support-system\Slave\Care_support_system_peripheral.cydsn\Care_support_system_peripheral.cyprj -dcpsoc3 -verilog Care_support_system_peripheral.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\d4hhm\Documents\Care-support-system\Peripheral\Care_support_system_peripheral.cydsn\Care_support_system_peripheral.cyprj -dcpsoc3 -verilog Care_support_system_peripheral.v
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Fri Jan 22 19:05:15 2021
+Sun Feb 14 15:45:12 2021
 
 
 ======================================================================
@@ -51,7 +51,7 @@ Options  :    -yv2 -q10 Care_support_system_peripheral.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Fri Jan 22 19:05:15 2021
+Sun Feb 14 15:45:12 2021
 
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\or_v1_0\or_v1_0.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.v'
@@ -81,11 +81,11 @@ vlogfe:  No errors.
 ======================================================================
 Compiling:  Care_support_system_peripheral.v
 Program  :   tovif
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\d4hhm\Documents\Care-support-system\Slave\Care_support_system_peripheral.cydsn\Care_support_system_peripheral.cyprj -dcpsoc3 -verilog Care_support_system_peripheral.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\d4hhm\Documents\Care-support-system\Peripheral\Care_support_system_peripheral.cydsn\Care_support_system_peripheral.cyprj -dcpsoc3 -verilog Care_support_system_peripheral.v
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Fri Jan 22 19:05:15 2021
+Sun Feb 14 15:45:12 2021
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -96,9 +96,9 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Linking 'C:\Users\d4hhm\Documents\Care-support-system\Slave\Care_support_system_peripheral.cydsn\codegentemp\Care_support_system_peripheral.ctl'.
+Linking 'C:\Users\d4hhm\Documents\Care-support-system\Peripheral\Care_support_system_peripheral.cydsn\codegentemp\Care_support_system_peripheral.ctl'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\or_v1_0\or_v1_0.v'.
-Linking 'C:\Users\d4hhm\Documents\Care-support-system\Slave\Care_support_system_peripheral.cydsn\codegentemp\Care_support_system_peripheral.v'.
+Linking 'C:\Users\d4hhm\Documents\Care-support-system\Peripheral\Care_support_system_peripheral.cydsn\codegentemp\Care_support_system_peripheral.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\OneTerminal\OneTerminal.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
@@ -110,11 +110,11 @@ tovif:  No errors.
 ======================================================================
 Compiling:  Care_support_system_peripheral.v
 Program  :   topld
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\d4hhm\Documents\Care-support-system\Slave\Care_support_system_peripheral.cydsn\Care_support_system_peripheral.cyprj -dcpsoc3 -verilog Care_support_system_peripheral.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\d4hhm\Documents\Care-support-system\Peripheral\Care_support_system_peripheral.cydsn\Care_support_system_peripheral.cyprj -dcpsoc3 -verilog Care_support_system_peripheral.v
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Fri Jan 22 19:05:15 2021
+Sun Feb 14 15:45:12 2021
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -125,9 +125,9 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Linking 'C:\Users\d4hhm\Documents\Care-support-system\Slave\Care_support_system_peripheral.cydsn\codegentemp\Care_support_system_peripheral.ctl'.
+Linking 'C:\Users\d4hhm\Documents\Care-support-system\Peripheral\Care_support_system_peripheral.cydsn\codegentemp\Care_support_system_peripheral.ctl'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\or_v1_0\or_v1_0.v'.
-Linking 'C:\Users\d4hhm\Documents\Care-support-system\Slave\Care_support_system_peripheral.cydsn\codegentemp\Care_support_system_peripheral.v'.
+Linking 'C:\Users\d4hhm\Documents\Care-support-system\Peripheral\Care_support_system_peripheral.cydsn\codegentemp\Care_support_system_peripheral.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\OneTerminal\OneTerminal.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
@@ -219,16 +219,16 @@ topld:  No errors.
 
 CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp
 Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\bin\warp.exe
-Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\d4hhm\Documents\Care-support-system\Slave\Care_support_system_peripheral.cydsn\Care_support_system_peripheral.cyprj -dcpsoc3 Care_support_system_peripheral.v -verilog
+Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\d4hhm\Documents\Care-support-system\Peripheral\Care_support_system_peripheral.cydsn\Care_support_system_peripheral.cyprj -dcpsoc3 Care_support_system_peripheral.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 0s.296ms
+Warp synthesis phase: Elapsed time ==> 0s.367ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V4.2.0.641, Family: PSoC3, Started at: Friday, 22 January 2021 19:05:16
-Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\d4hhm\Documents\Care-support-system\Slave\Care_support_system_peripheral.cydsn\Care_support_system_peripheral.cyprj -d CYBLE-022001-00 Care_support_system_peripheral.v -verilog
+cyp3fit: V4.2.0.641, Family: PSoC3, Started at: Sunday, 14 February 2021 15:45:12
+Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\d4hhm\Documents\Care-support-system\Peripheral\Care_support_system_peripheral.cydsn\Care_support_system_peripheral.cyprj -d CYBLE-022001-00 Care_support_system_peripheral.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
-Design parsing phase: Elapsed time ==> 0s.000ms
+Design parsing phase: Elapsed time ==> 0s.012ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Tech Mapping">
 <CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
@@ -542,8 +542,8 @@ DAC                           :      :      :      :
   7-bit IDAC                  :    1 :    0 :    1 : 100.00 %
   8-bit IDAC                  :    1 :    0 :    1 : 100.00 %
 </CYPRESSTAG>
-Technology Mapping: Elapsed time ==> 0s.015ms
-Tech Mapping phase: Elapsed time ==> 0s.046ms
+Technology Mapping: Elapsed time ==> 0s.022ms
+Tech Mapping phase: Elapsed time ==> 0s.043ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 <CYPRESSTAG name="FFB & IO Pre Placement">
@@ -551,8 +551,8 @@ Tech Mapping phase: Elapsed time ==> 0s.046ms
 
 Cell                                : Block                              
 =========================================================================
-\CapSense_1:Sns(0)\                 : [IOP=(3)][IoId=(7)]                
-\CapSense_1:Shield(0)\              : [IOP=(3)][IoId=(4)]                
+\CapSense_1:Sns(0)\                 : [IOP=(3)][IoId=(4)]                
+\CapSense_1:Shield(0)\              : [IOP=(3)][IoId=(5)]                
 ClockGenBlock                       : CLK_GEN_[FFB(CLK_GEN,0)]           
 \CapSense_1:Cmod(0)\                : [IOP=(4)][IoId=(0)]                
 \BLE_1:cy_m0s8_ble\                 : BLE_[FFB(BLE,0)]                   
@@ -566,15 +566,15 @@ SDA_1(0)                            : [IOP=(0)][IoId=(4)]
 </CYPRESSTAG>
 </CYPRESSTAG>
 <CYPRESSTAG name="Real Analog Placement">
-Elapsed time ==> 0.0535892s
+Elapsed time ==> 0.0635630s
 </CYPRESSTAG>
-Analog Placement phase: Elapsed time ==> 0s.156ms
+Analog Placement phase: Elapsed time ==> 0s.197ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
 <CYPRESSTAG name="Analog Routing">
-Route success=True, Iterations=1 Elapsed=0.0157046 secs
+Route success=True, Iterations=1 Elapsed=0.0024921 secs
 </CYPRESSTAG>
-Analog Routing phase: Elapsed time ==> 0s.015ms
+Analog Routing phase: Elapsed time ==> 0s.002ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Code Generation">
 ============ Analog Final Answer Routes ============
@@ -584,15 +584,15 @@ Map of net to items {
     shield0
     swh_14
     amuxbusb_sar
-    P3_P54
-    p3_4
+    P3_P55
+    p3_5
   }
   Net: \CapSense_1:Net_245\ {
     source0
     swh_13
     amuxbusa_sar
-    P3_P47
-    p3_7
+    P3_P44
+    p3_4
     idac0_out
     swhv_1
   }
@@ -607,13 +607,13 @@ Map of item to net {
   shield0                                          -> \CapSense_1:Net_241\
   swh_14                                           -> \CapSense_1:Net_241\
   amuxbusb_sar                                     -> \CapSense_1:Net_241\
-  P3_P54                                           -> \CapSense_1:Net_241\
-  p3_4                                             -> \CapSense_1:Net_241\
+  P3_P55                                           -> \CapSense_1:Net_241\
+  p3_5                                             -> \CapSense_1:Net_241\
   source0                                          -> \CapSense_1:Net_245\
   swh_13                                           -> \CapSense_1:Net_245\
   amuxbusa_sar                                     -> \CapSense_1:Net_245\
-  P3_P47                                           -> \CapSense_1:Net_245\
-  p3_7                                             -> \CapSense_1:Net_245\
+  P3_P44                                           -> \CapSense_1:Net_245\
+  p3_4                                             -> \CapSense_1:Net_245\
   idac0_out                                        -> \CapSense_1:Net_245\
   swhv_1                                           -> \CapSense_1:Net_245\
   cmod                                             -> \CapSense_1:Net_398\
@@ -623,12 +623,12 @@ Map of item to net {
 }
 Mux Info {
 }
-Analog Code Generation phase: Elapsed time ==> 0s.015ms
+Analog Code Generation phase: Elapsed time ==> 0s.016ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
 I2659: No Constrained paths were found. The placer will run in non-timing driven mode.
-I2076: Total run-time: 0.2 sec.
+I2076: Total run-time: 0.3 sec.
 
 </CYPRESSTAG>
 <CYPRESSTAG name="PLD Packing">
@@ -652,14 +652,14 @@ PLD Packing Summary
 <CYPRESSTAG name="Packed PLD Contents">
 Packed PLD Contents not displayed at this verbose level.</CYPRESSTAG>
 </CYPRESSTAG>
-PLD Packing: Elapsed time ==> 0s.000ms
+PLD Packing: Elapsed time ==> 0s.001ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Partitioning">
 <CYPRESSTAG name="Initial Partitioning Summary">
 Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
 <CYPRESSTAG name="Final Partitioning Summary">
 Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
-Partitioning: Elapsed time ==> 0s.015ms
+Partitioning: Elapsed time ==> 0s.009ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Final Placement Summary">
 
@@ -814,6 +814,47 @@ Pin : Name = SCL_1(0)
 Port 1 contains the following IO cells:
 Port 3 contains the following IO cells:
 [IoId=4]: 
+Pin : Name = \CapSense_1:Sns(0)\
+    Attributes:
+        Alias: Button0__BTN
+        In Group/Port: True
+        In Sync Option: AUTO
+        Out Sync Option: AUTO
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_ANALOG
+        VTrip: EITHER
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: True
+        Can contain Digital: False
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilities: ANALOG
+        Initial Value: 1
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => \CapSense_1:Sns(0)\__PA ,
+        pad => \CapSense_1:Sns(0)_PAD\ );
+    Properties:
+    {
+    }
+
+[IoId=5]: 
 Pin : Name = \CapSense_1:Shield(0)\
     Attributes:
         Alias: Shield
@@ -851,47 +892,6 @@ Pin : Name = \CapSense_1:Shield(0)\
         pa_out => \CapSense_1:Shield(0)\__PA ,
         analog_term => \CapSense_1:Net_241\ ,
         pad => \CapSense_1:Shield(0)_PAD\ );
-    Properties:
-    {
-    }
-
-[IoId=7]: 
-Pin : Name = \CapSense_1:Sns(0)\
-    Attributes:
-        Alias: Button0__BTN
-        In Group/Port: True
-        In Sync Option: AUTO
-        Out Sync Option: AUTO
-        Interrupt generated: False
-        Interrupt mode: NONE
-        Drive mode: HI_Z_ANALOG
-        VTrip: EITHER
-        Slew: FAST
-        Input Sync needed: False
-        Output Sync needed: False
-        SC shield enabled: False
-        POR State: ANY
-        LCD Mode: COMMON
-        Register Mode: RegComb
-        CaSense Mode: NEITHER
-        Treat as pin: True
-        Is OE Registered: False
-        Uses Analog: True
-        Can contain Digital: False
-        Is SIO: False
-        SIO Output Buf: NONREGULATED
-        SIO Input Buf: SINGLE_ENDED
-        SIO HiFreq: LOW
-        SIO Hyst: DISABLED
-        SIO Vtrip: MULTIPLIER_0_5
-        SIO Multiplier Index: 0
-        SIO RefSel: VCC_IO
-        Required Capabilities: ANALOG
-        Initial Value: 1
-        IO Voltage: 0
-    PORT MAP (
-        pa_out => \CapSense_1:Sns(0)\__PA ,
-        pad => \CapSense_1:Sns(0)_PAD\ );
     Properties:
     {
     }
@@ -1068,41 +1068,41 @@ Port | Pin | Fixed |      Type |       Drive Mode |                   Name | Con
    0 |   4 |       |      NONE |    OPEN_DRAIN_LO |               SDA_1(0) | FB(Net_330)
      |   5 |       |      NONE |    OPEN_DRAIN_LO |               SCL_1(0) | FB(Net_329)
 -----+-----+-------+-----------+------------------+------------------------+-----------------------------
-   3 |   4 |     * |      NONE |         CMOS_OUT | \CapSense_1:Shield(0)\ | Analog(\CapSense_1:Net_241\)
-     |   7 |     * |      NONE |      HI_Z_ANALOG |    \CapSense_1:Sns(0)\ | 
+   3 |   4 |     * |      NONE |      HI_Z_ANALOG |    \CapSense_1:Sns(0)\ | 
+     |   5 |     * |      NONE |         CMOS_OUT | \CapSense_1:Shield(0)\ | Analog(\CapSense_1:Net_241\)
 -----+-----+-------+-----------+------------------+------------------------+-----------------------------
    4 |   0 |       |      NONE |      HI_Z_ANALOG |   \CapSense_1:Cmod(0)\ | Analog(\CapSense_1:Net_398\)
 ---------------------------------------------------------------------------------------------------------
 </CYPRESSTAG>
 </CYPRESSTAG>
 </CYPRESSTAG>
-Digital component placer commit/Report: Elapsed time ==> 0s.015ms
-Digital Placement phase: Elapsed time ==> 0s.359ms
+Digital component placer commit/Report: Elapsed time ==> 0s.013ms
+Digital Placement phase: Elapsed time ==> 0s.432ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
 "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\bin/sjrouter.exe" --xml-path "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\dev\psoc4/3/128k/route_arch-rrg.cydata" --vh2-path "Care_support_system_peripheral_r.vh2" --pcf-path "Care_support_system_peripheral.pco" --des-name "Care_support_system_peripheral" --dsf-path "Care_support_system_peripheral.dsf" --sdc-path "Care_support_system_peripheral.sdc" --lib-path "Care_support_system_peripheral_r.lib"
 Routing successful.
-Digital Routing phase: Elapsed time ==> 0s.406ms
+Digital Routing phase: Elapsed time ==> 0s.503ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Generation">
-Bitstream Generation phase: Elapsed time ==> 0s.171ms
+Bitstream Generation phase: Elapsed time ==> 0s.193ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Verification">
-Bitstream Verification phase: Elapsed time ==> 0s.015ms
+Bitstream Verification phase: Elapsed time ==> 0s.021ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
 Timing report is in Care_support_system_peripheral_timing.html.
-Static timing analysis phase: Elapsed time ==> 0s.125ms
+Static timing analysis phase: Elapsed time ==> 0s.143ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
 Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.124ms
+Design database save phase: Elapsed time ==> 0s.155ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 1s.452ms
+cydsfit: Elapsed time ==> 1s.746ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 1s.452ms
-API generation phase: Elapsed time ==> 1s.296ms
-Dependency generation phase: Elapsed time ==> 0s.015ms
-Cleanup phase: Elapsed time ==> 0s.000ms
+Fitter phase: Elapsed time ==> 1s.747ms
+API generation phase: Elapsed time ==> 1s.463ms
+Dependency generation phase: Elapsed time ==> 0s.012ms
+Cleanup phase: Elapsed time ==> 0s.002ms
